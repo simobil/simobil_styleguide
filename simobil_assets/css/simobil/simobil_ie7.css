@@ -1,0 +1,129 @@
+/* Top bar */
+.login-bar .welcome {
+	margin-top: -8px;
+	line-height: 33px;	
+}
+
+.login-bar .btn {
+	border: none;
+	line-height: 10px;
+
+}
+
+/* Frist page */
+.mediascreen {
+	height: 420px !important;
+	overflow: hidden;
+}
+
+.firstpage .focus {
+	position: relative;
+}
+
+.firstpage .focus li a span.title {
+	width: 50%;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	height: 120px;
+	padding-top: 10px;
+}
+
+.firstpage .focus li a span.text {
+	clear: both;	
+}
+
+/* help-info */
+.help-info .slide-nav li a span {
+	display: block;
+	margin-top: 16px;
+}
+
+/* checkout */
+.checkout .shops li span {
+	position: relative;	
+}
+
+.checkout .shops li span.value {
+	position: relative;
+	top: -20px;
+}
+
+.checkout .section:after {
+	display: none;
+}
+
+.checkout .field.t .span {
+	margin-left: 10px;
+}
+
+.checkout .field.s .span {
+	margin-left: 20px;
+}
+
+.checkout .field span.fine {
+	margin-left: 10px;
+}
+
+/* Basket */
+.basket .section .details table thead th {
+	position: relative;
+}
+
+
+.basket .section .details table thead th a {
+	position: absolute;
+	display: block;
+	top: 0px;
+	right: 0px;
+	margin:0;
+	width: 70px;
+}
+
+/* Favourites */
+.favourites .controls a {
+	display: block;
+	margin-right: 0px;
+	margin-left: -10px;
+}
+
+/* Confogurator */
+.configurator .section:after {
+	display: none;
+}
+
+.configurator .section .choices .choice .c1 label input, 
+.configurator .section .choices .choice .c12 label input {
+	margin-top: -10px;
+}
+
+.configurator .section .subsection, 
+.configurator .section .nosubsecton {
+	
+}
+
+.configurator .section .choices .notices span, 
+.configurator .section .choices .notices a {
+}
+
+.configurator .section .choices .notices {
+	
+}
+
+.configurator .section .choices .notices .notice,
+.configurator .section .choices .notices .warning {
+	float: none;
+	display: block;
+	zoom:1;
+	min-height: 20px;
+}
+
+.configurator .section .subsection .row-fluid, 
+.configurator .section .nosubsecton .row-fluid {
+	margin-bottom: 22px;
+	padding-bottom:0;
+} 
+
+.buttler p:after {
+	display: none;
+}
