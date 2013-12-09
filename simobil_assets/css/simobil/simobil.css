@@ -13,279 +13,583 @@
 .ico-small{width:16px;height:16px;line-height:16px;background-image:url("../../images/layout/icons/16x16.png");}
 .ico-medium{width:32px;height:32px;line-height:32px;background-image:url("../../images/layout/icons/32x32.png");}
 .ico-large{width:64px;height:64px;line-height:64px;background-image:url("../../images/layout/icons/64x64.png");}
-.ico-cart{background-position:0 0px;}.ico-cart.ico-medium{background-position:0 0px;}
+
+.ico-cart{background-position:0 0px;}
+.ico-cart.ico-medium{background-position:0 0px;}
 .ico-cart.ico-large{background-position:0 0px;}
-.ico-search-header{background-position:0 -16px;}.ico-search-header.ico-medium{background-position:0 -32px;}
+.ico-search-header{background-position:0 -16px;}
+.ico-search-header.ico-medium{background-position:0 -32px;}
 .ico-search-header.ico-large{background-position:0 -64px;}
-.ico-arrow-right-green{background-position:0 -32px;}.ico-arrow-right-green.ico-medium{background-position:0 -64px;}
+.ico-arrow-right-green{background-position:0 -32px;}
+.ico-arrow-right-green.ico-medium{background-position:0 -64px;}
 .ico-arrow-right-green.ico-large{background-position:0 -128px;}
-.ico-arrow-right-black{background-position:0 -48px;}.ico-arrow-right-black.ico-medium{background-position:0 -96px;}
+.ico-arrow-right-black{background-position:0 -48px;}
+.ico-arrow-right-black.ico-medium{background-position:0 -96px;}
 .ico-arrow-right-black.ico-large{background-position:0 -192px;}
-.ico-arrow-right-brown{background-position:0 -64px;}.ico-arrow-right-brown.ico-medium{background-position:0 -128px;}
+.ico-arrow-right-brown{background-position:0 -64px;}
+.ico-arrow-right-brown.ico-medium{background-position:0 -128px;}
 .ico-arrow-right-brown.ico-large{background-position:0 -256px;}
-.ico-arrow-right-white{background-position:0 -80px;}.ico-arrow-right-white.ico-medium{background-position:0 -160px;}
+.ico-arrow-right-white{background-position:0 -80px;}
+.ico-arrow-right-white.ico-medium{background-position:0 -160px;}
 .ico-arrow-right-white.ico-large{background-position:0 -320px;}
-.ico-arrow-right-blue{background-position:0 -96px;}.ico-arrow-right-blue.ico-medium{background-position:0 -192px;}
+.ico-arrow-right-blue{background-position:0 -96px;}
+.ico-arrow-right-blue.ico-medium{background-position:0 -192px;}
 .ico-arrow-right-blue.ico-large{background-position:0 -384px;}
-.ico-arrow-right-gal-blue{background-position:0 -112px;}.ico-arrow-right-gal-blue.ico-medium{background-position:0 -224px;}
+.ico-arrow-right-gal-blue{background-position:0 -112px;}
+.ico-arrow-right-gal-blue.ico-medium{background-position:0 -224px;}
 .ico-arrow-right-gal-blue.ico-large{background-position:0 -448px;}
-.ico-arrow-right-gal-brown{background-position:0 -128px;}.ico-arrow-right-gal-brown.ico-medium{background-position:0 -256px;}
+.ico-arrow-right-gal-brown{background-position:0 -128px;}
+.ico-arrow-right-gal-brown.ico-medium{background-position:0 -256px;}
 .ico-arrow-right-gal-brown.ico-large{background-position:0 -512px;}
-.ico-arrow-right-gal-white{background-position:0 -144px;}.ico-arrow-right-gal-white.ico-medium{background-position:0 -288px;}
+.ico-arrow-right-gal-white{background-position:0 -144px;}
+.ico-arrow-right-gal-white.ico-medium{background-position:0 -288px;}
 .ico-arrow-right-gal-white.ico-large{background-position:0 -576px;}
-.ico-arrow-right-gal-shadow-white{background-position:0 -160px;}.ico-arrow-right-gal-shadow-white.ico-medium{background-position:0 -320px;}
+.ico-arrow-right-gal-shadow-white{background-position:0 -160px;}
+.ico-arrow-right-gal-shadow-white.ico-medium{background-position:0 -320px;}
 .ico-arrow-right-gal-shadow-white.ico-large{background-position:0 -640px;}
-.ico-arrow-right-config-green{background-position:0 -176px;}.ico-arrow-right-config-green.ico-medium{background-position:0 -352px;}
+.ico-arrow-right-config-green{background-position:0 -176px;}
+.ico-arrow-right-config-green.ico-medium{background-position:0 -352px;}
 .ico-arrow-right-config-green.ico-large{background-position:0 -704px;}
-.ico-arrow-right-date-picker-white{background-position:0 -192px;}.ico-arrow-right-date-picker-white.ico-medium{background-position:0 -384px;}
+.ico-arrow-right-date-picker-white{background-position:0 -192px;}
+.ico-arrow-right-date-picker-white.ico-medium{background-position:0 -384px;}
 .ico-arrow-right-date-picker-white.ico-large{background-position:0 -768px;}
-.ico-arrow-right-progressbar-brown{background-position:0 -208px;}.ico-arrow-right-progressbar-brown.ico-medium{background-position:0 -416px;}
+.ico-arrow-right-progressbar-brown{background-position:0 -208px;}
+.ico-arrow-right-progressbar-brown.ico-medium{background-position:0 -416px;}
 .ico-arrow-right-progressbar-brown.ico-large{background-position:0 -832px;}
-.ico-arrow-right-progressbar-blue{background-position:0 -224px;}.ico-arrow-right-progressbar-blue.ico-medium{background-position:0 -448px;}
+.ico-arrow-right-progressbar-blue{background-position:0 -224px;}
+.ico-arrow-right-progressbar-blue.ico-medium{background-position:0 -448px;}
 .ico-arrow-right-progressbar-blue.ico-large{background-position:0 -896px;}
-.ico-arrow-left-black{background-position:0 -240px;}.ico-arrow-left-black.ico-medium{background-position:0 -480px;}
+.ico-arrow-left-black{background-position:0 -240px;}
+.ico-arrow-left-black.ico-medium{background-position:0 -480px;}
 .ico-arrow-left-black.ico-large{background-position:0 -960px;}
-.ico-arrow-left-brown{background-position:0 -256px;}.ico-arrow-left-brown.ico-medium{background-position:0 -512px;}
+.ico-arrow-left-brown{background-position:0 -256px;}
+.ico-arrow-left-brown.ico-medium{background-position:0 -512px;}
 .ico-arrow-left-brown.ico-large{background-position:0 -1024px;}
-.ico-arrow-left-white{background-position:0 -272px;}.ico-arrow-left-white.ico-medium{background-position:0 -544px;}
+.ico-arrow-left-white{background-position:0 -272px;}
+.ico-arrow-left-white.ico-medium{background-position:0 -544px;}
 .ico-arrow-left-white.ico-large{background-position:0 -1088px;}
-.ico-arrow-left-blue{background-position:0 -288px;}.ico-arrow-left-blue.ico-medium{background-position:0 -576px;}
+.ico-arrow-left-blue{background-position:0 -288px;}
+.ico-arrow-left-blue.ico-medium{background-position:0 -576px;}
 .ico-arrow-left-blue.ico-large{background-position:0 -1152px;}
-.ico-arrow-left-gal-blue{background-position:0 -304px;}.ico-arrow-left-gal-blue.ico-medium{background-position:0 -608px;}
+.ico-arrow-left-gal-blue{background-position:0 -304px;}
+.ico-arrow-left-gal-blue.ico-medium{background-position:0 -608px;}
 .ico-arrow-left-gal-blue.ico-large{background-position:0 -1216px;}
-.ico-arrow-left-gal-brown{background-position:0 -320px;}.ico-arrow-left-gal-brown.ico-medium{background-position:0 -640px;}
+.ico-arrow-left-gal-brown{background-position:0 -320px;}
+.ico-arrow-left-gal-brown.ico-medium{background-position:0 -640px;}
 .ico-arrow-left-gal-brown.ico-large{background-position:0 -1280px;}
-.ico-arrow-left-gal-white{background-position:0 -336px;}.ico-arrow-left-gal-white.ico-medium{background-position:0 -672px;}
+.ico-arrow-left-gal-white{background-position:0 -336px;}
+.ico-arrow-left-gal-white.ico-medium{background-position:0 -672px;}
 .ico-arrow-left-gal-white.ico-large{background-position:0 -1344px;}
-.ico-arrow-left-gal-shadow-white{background-position:0 -352px;}.ico-arrow-left-gal-shadow-white.ico-medium{background-position:0 -704px;}
+.ico-arrow-left-gal-shadow-white{background-position:0 -352px;}
+.ico-arrow-left-gal-shadow-white.ico-medium{background-position:0 -704px;}
 .ico-arrow-left-gal-shadow-white.ico-large{background-position:0 -1408px;}
-.ico-arrow-left-config-green{background-position:0 -368px;}.ico-arrow-left-config-green.ico-medium{background-position:0 -736px;}
+.ico-arrow-left-config-green{background-position:0 -368px;}
+.ico-arrow-left-config-green.ico-medium{background-position:0 -736px;}
 .ico-arrow-left-config-green.ico-large{background-position:0 -1472px;}
-.ico-arrow-left-date-picker-white{background-position:0 -384px;}.ico-arrow-left-date-picker-white.ico-medium{background-position:0 -768px;}
+.ico-arrow-left-date-picker-white{background-position:0 -384px;}
+.ico-arrow-left-date-picker-white.ico-medium{background-position:0 -768px;}
 .ico-arrow-left-date-picker-white.ico-large{background-position:0 -1536px;}
-.ico-arrow-up-white{background-position:0 -400px;}.ico-arrow-up-white.ico-medium{background-position:0 -800px;}
+.ico-arrow-up-white{background-position:0 -400px;}
+.ico-arrow-up-white.ico-medium{background-position:0 -800px;}
 .ico-arrow-up-white.ico-large{background-position:0 -1600px;}
-.ico-arrow-up-blue{background-position:0 -416px;}.ico-arrow-up-blue.ico-medium{background-position:0 -832px;}
+.ico-arrow-up-blue{background-position:0 -416px;}
+.ico-arrow-up-blue.ico-medium{background-position:0 -832px;}
 .ico-arrow-up-blue.ico-large{background-position:0 -1664px;}
-.ico-arrow-up-brown{background-position:0 -432px;}.ico-arrow-up-brown.ico-medium{background-position:0 -864px;}
+.ico-arrow-up-brown{background-position:0 -432px;}
+.ico-arrow-up-brown.ico-medium{background-position:0 -864px;}
 .ico-arrow-up-brown.ico-large{background-position:0 -1728px;}
-.ico-arrow-up-black{background-position:0 -448px;}.ico-arrow-up-black.ico-medium{background-position:0 -896px;}
+.ico-arrow-up-black{background-position:0 -448px;}
+.ico-arrow-up-black.ico-medium{background-position:0 -896px;}
 .ico-arrow-up-black.ico-large{background-position:0 -1792px;}
-.ico-arrow-down-blue{background-position:0 -464px;}.ico-arrow-down-blue.ico-medium{background-position:0 -928px;}
+.ico-arrow-down-blue{background-position:0 -464px;}
+.ico-arrow-down-blue.ico-medium{background-position:0 -928px;}
 .ico-arrow-down-blue.ico-large{background-position:0 -1856px;}
-.ico-arrow-down-brown{background-position:0 -480px;}.ico-arrow-down-brown.ico-medium{background-position:0 -960px;}
+.ico-arrow-down-brown{background-position:0 -480px;}
+.ico-arrow-down-brown.ico-medium{background-position:0 -960px;}
 .ico-arrow-down-brown.ico-large{background-position:0 -1920px;}
-.ico-arrow-down-black{background-position:0 -496px;}.ico-arrow-down-black.ico-medium{background-position:0 -992px;}
+.ico-arrow-down-black{background-position:0 -496px;}
+.ico-arrow-down-black.ico-medium{background-position:0 -992px;}
 .ico-arrow-down-black.ico-large{background-position:0 -1984px;}
-.ico-checkmark-brown{background-position:0 -512px;}.ico-checkmark-brown.ico-medium{background-position:0 -1024px;}
+.ico-checkmark-brown{background-position:0 -512px;}
+.ico-checkmark-brown.ico-medium{background-position:0 -1024px;}
 .ico-checkmark-brown.ico-large{background-position:0 -2048px;}
-.ico-checkmark-blue{background-position:0 -528px;}.ico-checkmark-blue.ico-medium{background-position:0 -1056px;}
+.ico-checkmark-blue{background-position:0 -528px;}
+.ico-checkmark-blue.ico-medium{background-position:0 -1056px;}
 .ico-checkmark-blue.ico-large{background-position:0 -2112px;}
-.ico-checkmark-green{background-position:0 -544px;}.ico-checkmark-green.ico-medium{background-position:0 -1088px;}
+.ico-checkmark-green{background-position:0 -544px;}
+.ico-checkmark-green.ico-medium{background-position:0 -1088px;}
 .ico-checkmark-green.ico-large{background-position:0 -2176px;}
-.ico-refresh-blue{background-position:0 -560px;}.ico-refresh-blue.ico-medium{background-position:0 -1120px;}
+.ico-refresh-blue{background-position:0 -560px;}
+.ico-refresh-blue.ico-medium{background-position:0 -1120px;}
 .ico-refresh-blue.ico-large{background-position:0 -2240px;}
-.ico-refresh-brown{background-position:0 -576px;}.ico-refresh-brown.ico-medium{background-position:0 -1152px;}
+.ico-refresh-brown{background-position:0 -576px;}
+.ico-refresh-brown.ico-medium{background-position:0 -1152px;}
 .ico-refresh-brown.ico-large{background-position:0 -2304px;}
-.ico-refresh-gray{background-position:0 -592px;}.ico-refresh-gray.ico-medium{background-position:0 -1184px;}
+.ico-refresh-gray{background-position:0 -592px;}
+.ico-refresh-gray.ico-medium{background-position:0 -1184px;}
 .ico-refresh-gray.ico-large{background-position:0 -2368px;}
-.ico-close-brown{background-position:0 -608px;}.ico-close-brown.ico-medium{background-position:0 -1216px;}
+.ico-close-brown{background-position:0 -608px;}
+.ico-close-brown.ico-medium{background-position:0 -1216px;}
 .ico-close-brown.ico-large{background-position:0 -2432px;}
-.ico-close-blue{background-position:0 -624px;}.ico-close-blue.ico-medium{background-position:0 -1248px;}
+.ico-close-blue{background-position:0 -624px;}
+.ico-close-blue.ico-medium{background-position:0 -1248px;}
 .ico-close-blue.ico-large{background-position:0 -2496px;}
-.ico-remove-gray{background-position:0 -640px;}.ico-remove-gray.ico-medium{background-position:0 -1280px;}
+.ico-remove-gray{background-position:0 -640px;}
+.ico-remove-gray.ico-medium{background-position:0 -1280px;}
 .ico-remove-gray.ico-large{background-position:0 -2560px;}
-.ico-information-blue{background-position:0 -656px;}.ico-information-blue.ico-medium{background-position:0 -1312px;}
+.ico-information-blue{background-position:0 -656px;}
+.ico-information-blue.ico-medium{background-position:0 -1312px;}
 .ico-information-blue.ico-large{background-position:0 -2624px;}
-.ico-information-brown{background-position:0 -672px;}.ico-information-brown.ico-medium{background-position:0 -1344px;}
+.ico-information-brown{background-position:0 -672px;}
+.ico-information-brown.ico-medium{background-position:0 -1344px;}
 .ico-information-brown.ico-large{background-position:0 -2688px;}
-.ico-warning-blue{background-position:0 -688px;}.ico-warning-blue.ico-medium{background-position:0 -1376px;}
+.ico-warning-blue{background-position:0 -688px;}
+.ico-warning-blue.ico-medium{background-position:0 -1376px;}
 .ico-warning-blue.ico-large{background-position:0 -2752px;}
-.ico-warning-orange{background-position:0 -704px;}.ico-warning-orange.ico-medium{background-position:0 -1408px;}
+.ico-warning-orange{background-position:0 -704px;}
+.ico-warning-orange.ico-medium{background-position:0 -1408px;}
 .ico-warning-orange.ico-large{background-position:0 -2816px;}
-.ico-zoom-gal-shadow{background-position:0 -720px;}.ico-zoom-gal-shadow.ico-medium{background-position:0 -1440px;}
+.ico-zoom-gal-shadow{background-position:0 -720px;}
+.ico-zoom-gal-shadow.ico-medium{background-position:0 -1440px;}
 .ico-zoom-gal-shadow.ico-large{background-position:0 -2880px;}
-.ico-zoom-brown{background-position:0 -736px;}.ico-zoom-brown.ico-medium{background-position:0 -1472px;}
+.ico-zoom-brown{background-position:0 -736px;}
+.ico-zoom-brown.ico-medium{background-position:0 -1472px;}
 .ico-zoom-brown.ico-large{background-position:0 -2944px;}
-.ico-zoom-blue{background-position:0 -752px;}.ico-zoom-blue.ico-medium{background-position:0 -1504px;}
+.ico-zoom-blue{background-position:0 -752px;}
+.ico-zoom-blue.ico-medium{background-position:0 -1504px;}
 .ico-zoom-blue.ico-large{background-position:0 -3008px;}
-.ico-techspec-camera-brown{background-position:0 -768px;}.ico-techspec-camera-brown.ico-medium{background-position:0 -1536px;}
+.ico-techspec-camera-brown{background-position:0 -768px;}
+.ico-techspec-camera-brown.ico-medium{background-position:0 -1536px;}
 .ico-techspec-camera-brown.ico-large{background-position:0 -3072px;}
-.ico-techspec-connection-brown{background-position:0 -784px;}.ico-techspec-connection-brown.ico-medium{background-position:0 -1568px;}
+.ico-techspec-connection-brown{background-position:0 -784px;}
+.ico-techspec-connection-brown.ico-medium{background-position:0 -1568px;}
 .ico-techspec-connection-brown.ico-large{background-position:0 -3136px;}
-.ico-techspec-messaging-brown{background-position:0 -800px;}.ico-techspec-messaging-brown.ico-medium{background-position:0 -1600px;}
+.ico-techspec-messaging-brown{background-position:0 -800px;}
+.ico-techspec-messaging-brown.ico-medium{background-position:0 -1600px;}
 .ico-techspec-messaging-brown.ico-large{background-position:0 -3200px;}
-.ico-techspec-fun-brown{background-position:0 -816px;}.ico-techspec-fun-brown.ico-medium{background-position:0 -1632px;}
+.ico-techspec-fun-brown{background-position:0 -816px;}
+.ico-techspec-fun-brown.ico-medium{background-position:0 -1632px;}
 .ico-techspec-fun-brown.ico-large{background-position:0 -3264px;}
-.ico-techspec-misc-brown{background-position:0 -832px;}.ico-techspec-misc-brown.ico-medium{background-position:0 -1664px;}
+.ico-techspec-misc-brown{background-position:0 -832px;}
+.ico-techspec-misc-brown.ico-medium{background-position:0 -1664px;}
 .ico-techspec-misc-brown.ico-large{background-position:0 -3328px;}
-.ico-techspec-battery-brown{background-position:0 -848px;}.ico-techspec-battery-brown.ico-medium{background-position:0 -1696px;}
+.ico-techspec-battery-brown{background-position:0 -848px;}
+.ico-techspec-battery-brown.ico-medium{background-position:0 -1696px;}
 .ico-techspec-battery-brown.ico-large{background-position:0 -3392px;}
-.ico-techspec-camera-blue{background-position:0 -864px;}.ico-techspec-camera-blue.ico-medium{background-position:0 -1728px;}
+.ico-techspec-camera-blue{background-position:0 -864px;}
+.ico-techspec-camera-blue.ico-medium{background-position:0 -1728px;}
 .ico-techspec-camera-blue.ico-large{background-position:0 -3456px;}
-.ico-techspec-connection-blue{background-position:0 -880px;}.ico-techspec-connection-blue.ico-medium{background-position:0 -1760px;}
+.ico-techspec-connection-blue{background-position:0 -880px;}
+.ico-techspec-connection-blue.ico-medium{background-position:0 -1760px;}
 .ico-techspec-connection-blue.ico-large{background-position:0 -3520px;}
-.ico-techspec-messaging-blue{background-position:0 -896px;}.ico-techspec-messaging-blue.ico-medium{background-position:0 -1792px;}
+.ico-techspec-messaging-blue{background-position:0 -896px;}
+.ico-techspec-messaging-blue.ico-medium{background-position:0 -1792px;}
 .ico-techspec-messaging-blue.ico-large{background-position:0 -3584px;}
-.ico-techspec-fun-blue{background-position:0 -912px;}.ico-techspec-fun-blue.ico-medium{background-position:0 -1824px;}
+.ico-techspec-fun-blue{background-position:0 -912px;}
+.ico-techspec-fun-blue.ico-medium{background-position:0 -1824px;}
 .ico-techspec-fun-blue.ico-large{background-position:0 -3648px;}
-.ico-techspec-misc-blue{background-position:0 -928px;}.ico-techspec-misc-blue.ico-medium{background-position:0 -1856px;}
+.ico-techspec-misc-blue{background-position:0 -928px;}
+.ico-techspec-misc-blue.ico-medium{background-position:0 -1856px;}
 .ico-techspec-misc-blue.ico-large{background-position:0 -3712px;}
-.ico-techspec-battery-blue{background-position:0 -944px;}.ico-techspec-battery-blue.ico-medium{background-position:0 -1888px;}
+.ico-techspec-battery-blue{background-position:0 -944px;}
+.ico-techspec-battery-blue.ico-medium{background-position:0 -1888px;}
 .ico-techspec-battery-blue.ico-large{background-position:0 -3776px;}
-.ico-calls{background-position:0 -960px;}.ico-calls.ico-medium{background-position:0 -1920px;}
+.ico-calls{background-position:0 -960px;}
+.ico-calls.ico-medium{background-position:0 -1920px;}
 .ico-calls.ico-large{background-position:0 -3840px;}
-.ico-data-transfer{background-position:0 -976px;}.ico-data-transfer.ico-medium{background-position:0 -1952px;}
+.ico-data-transfer{background-position:0 -976px;}
+.ico-data-transfer.ico-medium{background-position:0 -1952px;}
 .ico-data-transfer.ico-large{background-position:0 -3904px;}
-.ico-messages{background-position:0 -992px;}.ico-messages.ico-medium{background-position:0 -1984px;}
+.ico-messages{background-position:0 -992px;}
+.ico-messages.ico-medium{background-position:0 -1984px;}
 .ico-messages.ico-large{background-position:0 -3968px;}
-.ico-plan{background-position:0 -1008px;}.ico-plan.ico-medium{background-position:0 -2016px;}
+.ico-plan{background-position:0 -1008px;}
+.ico-plan.ico-medium{background-position:0 -2016px;}
 .ico-plan.ico-large{background-position:0 -4032px;}
-.ico-callstransfer{background-position:0 -1024px;}.ico-callstransfer.ico-medium{background-position:0 -2048px;}
+.ico-callstransfer{background-position:0 -1024px;}
+.ico-callstransfer.ico-medium{background-position:0 -2048px;}
 .ico-callstransfer.ico-large{background-position:0 -4096px;}
-.ico-telephone{background-position:0 -1040px;}.ico-telephone.ico-medium{background-position:0 -2080px;}
+.ico-telephone{background-position:0 -1040px;}
+.ico-telephone.ico-medium{background-position:0 -2080px;}
 .ico-telephone.ico-large{background-position:0 -4160px;}
-.ico-touchscreen-phone{background-position:0 -1056px;}.ico-touchscreen-phone.ico-medium{background-position:0 -2112px;}
+.ico-touchscreen-phone{background-position:0 -1056px;}
+.ico-touchscreen-phone.ico-medium{background-position:0 -2112px;}
 .ico-touchscreen-phone.ico-large{background-position:0 -4224px;}
-.ico-keyboard-phone{background-position:0 -1072px;}.ico-keyboard-phone.ico-medium{background-position:0 -2144px;}
+.ico-keyboard-phone{background-position:0 -1072px;}
+.ico-keyboard-phone.ico-medium{background-position:0 -2144px;}
 .ico-keyboard-phone.ico-large{background-position:0 -4288px;}
-.ico-flip-phone{background-position:0 -1088px;}.ico-flip-phone.ico-medium{background-position:0 -2176px;}
+.ico-flip-phone{background-position:0 -1088px;}
+.ico-flip-phone.ico-medium{background-position:0 -2176px;}
 .ico-flip-phone.ico-large{background-position:0 -4352px;}
-.ico-facebook-color{background-position:0 -1104px;}.ico-facebook-color.ico-medium{background-position:0 -2208px;}
+.ico-facebook-color{background-position:0 -1104px;}
+.ico-facebook-color.ico-medium{background-position:0 -2208px;}
 .ico-facebook-color.ico-large{background-position:0 -4416px;}
-.ico-twitter-color{background-position:0 -1120px;}.ico-twitter-color.ico-medium{background-position:0 -2240px;}
+.ico-twitter-color{background-position:0 -1120px;}
+.ico-twitter-color.ico-medium{background-position:0 -2240px;}
 .ico-twitter-color.ico-large{background-position:0 -4480px;}
-.ico-youtube-color{background-position:0 -1136px;}.ico-youtube-color.ico-medium{background-position:0 -2272px;}
+.ico-youtube-color{background-position:0 -1136px;}
+.ico-youtube-color.ico-medium{background-position:0 -2272px;}
 .ico-youtube-color.ico-large{background-position:0 -4544px;}
-.ico-facebook-gray{background-position:0 -1152px;}.ico-facebook-gray.ico-medium{background-position:0 -2304px;}
+.ico-facebook-gray{background-position:0 -1152px;}
+.ico-facebook-gray.ico-medium{background-position:0 -2304px;}
 .ico-facebook-gray.ico-large{background-position:0 -4608px;}
-.ico-twitter-gray{background-position:0 -1168px;}.ico-twitter-gray.ico-medium{background-position:0 -2336px;}
+.ico-twitter-gray{background-position:0 -1168px;}
+.ico-twitter-gray.ico-medium{background-position:0 -2336px;}
 .ico-twitter-gray.ico-large{background-position:0 -4672px;}
-.ico-youtube-gray{background-position:0 -1184px;}.ico-youtube-gray.ico-medium{background-position:0 -2368px;}
+.ico-youtube-gray{background-position:0 -1184px;}
+.ico-youtube-gray.ico-medium{background-position:0 -2368px;}
 .ico-youtube-gray.ico-large{background-position:0 -4736px;}
-.ico-faq1-gray{background-position:0 -1200px;}.ico-faq1-gray.ico-medium{background-position:0 -2400px;}
+.ico-faq1-gray{background-position:0 -1200px;}
+.ico-faq1-gray.ico-medium{background-position:0 -2400px;}
 .ico-faq1-gray.ico-large{background-position:0 -4800px;}
-.ico-112-sos{background-position:0 -1216px;}.ico-112-sos.ico-medium{background-position:0 -2432px;}
+.ico-112-sos{background-position:0 -1216px;}
+.ico-112-sos.ico-medium{background-position:0 -2432px;}
 .ico-112-sos.ico-large{background-position:0 -4864px;}
-.ico-pdf-document{background-position:0 -1232px;}.ico-pdf-document.ico-medium{background-position:0 -2464px;}
+.ico-pdf-document{background-position:0 -1232px;}
+.ico-pdf-document.ico-medium{background-position:0 -2464px;}
 .ico-pdf-document.ico-large{background-position:0 -4928px;}
-.ico-articles-brown{background-position:0 -1248px;}.ico-articles-brown.ico-medium{background-position:0 -2496px;}
+.ico-articles-brown{background-position:0 -1248px;}
+.ico-articles-brown.ico-medium{background-position:0 -2496px;}
 .ico-articles-brown.ico-large{background-position:0 -4992px;}
-.ico-articles-blue{background-position:0 -1264px;}.ico-articles-blue.ico-medium{background-position:0 -2528px;}
+.ico-articles-blue{background-position:0 -1264px;}
+.ico-articles-blue.ico-medium{background-position:0 -2528px;}
 .ico-articles-blue.ico-large{background-position:0 -5056px;}
-.ico-rss-brown{background-position:0 -1280px;}.ico-rss-brown.ico-medium{background-position:0 -2560px;}
+.ico-rss-brown{background-position:0 -1280px;}
+.ico-rss-brown.ico-medium{background-position:0 -2560px;}
 .ico-rss-brown.ico-large{background-position:0 -5120px;}
-.ico-rss-blue{background-position:0 -1296px;}.ico-rss-blue.ico-medium{background-position:0 -2592px;}
+.ico-rss-blue{background-position:0 -1296px;}
+.ico-rss-blue.ico-medium{background-position:0 -2592px;}
 .ico-rss-blue.ico-large{background-position:0 -5184px;}
-.ico-2g{background-position:0 -1312px;}.ico-2g.ico-medium{background-position:0 -2624px;}
+.ico-2g{background-position:0 -1312px;}
+.ico-2g.ico-medium{background-position:0 -2624px;}
 .ico-2g.ico-large{background-position:0 -5248px;}
-.ico-3g{background-position:0 -1328px;}.ico-3g.ico-medium{background-position:0 -2656px;}
+.ico-3g{background-position:0 -1328px;}
+.ico-3g.ico-medium{background-position:0 -2656px;}
 .ico-3g.ico-large{background-position:0 -5312px;}
-.ico-lte{background-position:0 -1344px;}.ico-lte.ico-medium{background-position:0 -2688px;}
+.ico-lte{background-position:0 -1344px;}
+.ico-lte.ico-medium{background-position:0 -2688px;}
 .ico-lte.ico-large{background-position:0 -5376px;}
-.ico-popolna-pisarna-telefonija{background-position:0 -1360px;}.ico-popolna-pisarna-telefonija.ico-medium{background-position:0 -2720px;}
+.ico-popolna-pisarna-telefonija{background-position:0 -1360px;}
+.ico-popolna-pisarna-telefonija.ico-medium{background-position:0 -2720px;}
 .ico-popolna-pisarna-telefonija.ico-large{background-position:0 -5440px;}
-.ico-popolna-pisarna-internet{background-position:0 -1376px;}.ico-popolna-pisarna-internet.ico-medium{background-position:0 -2752px;}
+.ico-popolna-pisarna-internet{background-position:0 -1376px;}
+.ico-popolna-pisarna-internet.ico-medium{background-position:0 -2752px;}
 .ico-popolna-pisarna-internet.ico-large{background-position:0 -5504px;}
-.ico-popolna-pisarna-pr{background-position:0 -1392px;}.ico-popolna-pisarna-pr.ico-medium{background-position:0 -2784px;}
+.ico-popolna-pisarna-pr{background-position:0 -1392px;}
+.ico-popolna-pisarna-pr.ico-medium{background-position:0 -2784px;}
 .ico-popolna-pisarna-pr.ico-large{background-position:0 -5568px;}
-.ico-popolna-pisarna-naprave{background-position:0 -1408px;}.ico-popolna-pisarna-naprave.ico-medium{background-position:0 -2816px;}
+.ico-popolna-pisarna-naprave{background-position:0 -1408px;}
+.ico-popolna-pisarna-naprave.ico-medium{background-position:0 -2816px;}
 .ico-popolna-pisarna-naprave.ico-large{background-position:0 -5632px;}
-.ico-pin-simobil-centri{background-position:0 -1424px;}.ico-pin-simobil-centri.ico-medium{background-position:0 -2848px;}
+.ico-pin-simobil-centri{background-position:0 -1424px;}
+.ico-pin-simobil-centri.ico-medium{background-position:0 -2848px;}
 .ico-pin-simobil-centri.ico-large{background-position:0 -5696px;}
-.ico-pin-simobil-fransize{background-position:0 -1440px;}.ico-pin-simobil-fransize.ico-medium{background-position:0 -2880px;}
+.ico-pin-simobil-fransize{background-position:0 -1440px;}
+.ico-pin-simobil-fransize.ico-medium{background-position:0 -2880px;}
 .ico-pin-simobil-fransize.ico-large{background-position:0 -5760px;}
-.ico-pin-simobil-pooblasceni{background-position:0 -1456px;}.ico-pin-simobil-pooblasceni.ico-medium{background-position:0 -2912px;}
+.ico-pin-simobil-pooblasceni{background-position:0 -1456px;}
+.ico-pin-simobil-pooblasceni.ico-medium{background-position:0 -2912px;}
 .ico-pin-simobil-pooblasceni.ico-large{background-position:0 -5824px;}
-.ico-pin-popolna-pisarna{background-position:0 -1472px;}.ico-pin-popolna-pisarna.ico-medium{background-position:0 -2944px;}
+.ico-pin-popolna-pisarna{background-position:0 -1472px;}
+.ico-pin-popolna-pisarna.ico-medium{background-position:0 -2944px;}
 .ico-pin-popolna-pisarna.ico-large{background-position:0 -5888px;}
-.ico-pin-simpl-kidz{background-position:0 -1488px;}.ico-pin-simpl-kidz.ico-medium{background-position:0 -2976px;}
+.ico-pin-simpl-kidz{background-position:0 -1488px;}
+.ico-pin-simpl-kidz.ico-medium{background-position:0 -2976px;}
 .ico-pin-simpl-kidz.ico-large{background-position:0 -5952px;}
-.ico-pin-placilni-avtomati{background-position:0 -1504px;}.ico-pin-placilni-avtomati.ico-medium{background-position:0 -3008px;}
+.ico-pin-placilni-avtomati{background-position:0 -1504px;}
+.ico-pin-placilni-avtomati.ico-medium{background-position:0 -3008px;}
 .ico-pin-placilni-avtomati.ico-large{background-position:0 -6016px;}
-.ico-pin-apple-naprave{background-position:0 -1520px;}.ico-pin-apple-naprave.ico-medium{background-position:0 -3040px;}
+.ico-pin-apple-naprave{background-position:0 -1520px;}
+.ico-pin-apple-naprave.ico-medium{background-position:0 -3040px;}
 .ico-pin-apple-naprave.ico-large{background-position:0 -6080px;}
-.ico-notifications{background-position:0 -1536px;}.ico-notifications.ico-medium{background-position:0 -3072px;}
+.ico-notifications{background-position:0 -1536px;}
+.ico-notifications.ico-medium{background-position:0 -3072px;}
 .ico-notifications.ico-large{background-position:0 -6144px;}
-.ico-faq2{background-position:0 -1552px;}.ico-faq2.ico-medium{background-position:0 -3104px;}
+.ico-faq2{background-position:0 -1552px;}
+.ico-faq2.ico-medium{background-position:0 -3104px;}
 .ico-faq2.ico-large{background-position:0 -6208px;}
-.ico-e-chat{background-position:0 -1568px;}.ico-e-chat.ico-medium{background-position:0 -3136px;}
+.ico-e-chat{background-position:0 -1568px;}
+.ico-e-chat.ico-medium{background-position:0 -3136px;}
 .ico-e-chat.ico-large{background-position:0 -6272px;}
-.ico-question-forms{background-position:0 -1584px;}.ico-question-forms.ico-medium{background-position:0 -3168px;}
+.ico-question-forms{background-position:0 -1584px;}
+.ico-question-forms.ico-medium{background-position:0 -3168px;}
 .ico-question-forms.ico-large{background-position:0 -6336px;}
-.ico-shops{background-position:0 -1600px;}.ico-shops.ico-medium{background-position:0 -3200px;}
+.ico-shops{background-position:0 -1600px;}
+.ico-shops.ico-medium{background-position:0 -3200px;}
 .ico-shops.ico-large{background-position:0 -6400px;}
-.ico-telephone-numbers{background-position:0 -1616px;}.ico-telephone-numbers.ico-medium{background-position:0 -3232px;}
+.ico-telephone-numbers{background-position:0 -1616px;}
+.ico-telephone-numbers.ico-medium{background-position:0 -3232px;}
 .ico-telephone-numbers.ico-large{background-position:0 -6464px;}
-.ico-menjava-kartice-sim{background-position:0 -1632px;}.ico-menjava-kartice-sim.ico-medium{background-position:0 -3264px;}
+.ico-menjava-kartice-sim{background-position:0 -1632px;}
+.ico-menjava-kartice-sim.ico-medium{background-position:0 -3264px;}
 .ico-menjava-kartice-sim.ico-large{background-position:0 -6528px;}
-.ico-dodatna-sim-kartica{background-position:0 -1648px;}.ico-dodatna-sim-kartica.ico-medium{background-position:0 -3296px;}
+.ico-dodatna-sim-kartica{background-position:0 -1648px;}
+.ico-dodatna-sim-kartica.ico-medium{background-position:0 -3296px;}
 .ico-dodatna-sim-kartica.ico-large{background-position:0 -6592px;}
-.ico-mikro-sim-kartica{background-position:0 -1664px;}.ico-mikro-sim-kartica.ico-medium{background-position:0 -3328px;}
+.ico-mikro-sim-kartica{background-position:0 -1664px;}
+.ico-mikro-sim-kartica.ico-medium{background-position:0 -3328px;}
 .ico-mikro-sim-kartica.ico-large{background-position:0 -6656px;}
-.ico-servis-telefona{background-position:0 -1680px;}.ico-servis-telefona.ico-medium{background-position:0 -3360px;}
+.ico-servis-telefona{background-position:0 -1680px;}
+.ico-servis-telefona.ico-medium{background-position:0 -3360px;}
 .ico-servis-telefona.ico-large{background-position:0 -6720px;}
-.ico-si-podpora{background-position:0 -1696px;}.ico-si-podpora.ico-medium{background-position:0 -3392px;}
+.ico-si-podpora{background-position:0 -1696px;}
+.ico-si-podpora.ico-medium{background-position:0 -3392px;}
 .ico-si-podpora.ico-large{background-position:0 -6784px;}
-.ico-tezave-s-telefonom{background-position:0 -1712px;}.ico-tezave-s-telefonom.ico-medium{background-position:0 -3424px;}
+.ico-tezave-s-telefonom{background-position:0 -1712px;}
+.ico-tezave-s-telefonom.ico-medium{background-position:0 -3424px;}
 .ico-tezave-s-telefonom.ico-large{background-position:0 -6848px;}
-.ico-nakup-telefona{background-position:0 -1728px;}.ico-nakup-telefona.ico-medium{background-position:0 -3456px;}
+.ico-nakup-telefona{background-position:0 -1728px;}
+.ico-nakup-telefona.ico-medium{background-position:0 -3456px;}
 .ico-nakup-telefona.ico-large{background-position:0 -6912px;}
-.ico-iphone{background-position:0 -1744px;}.ico-iphone.ico-medium{background-position:0 -3488px;}
+.ico-iphone{background-position:0 -1744px;}
+.ico-iphone.ico-medium{background-position:0 -3488px;}
 .ico-iphone.ico-large{background-position:0 -6976px;}
-.ico-telefoni-in-naprave{background-position:0 -1760px;}.ico-telefoni-in-naprave.ico-medium{background-position:0 -3520px;}
+.ico-telefoni-in-naprave{background-position:0 -1760px;}
+.ico-telefoni-in-naprave.ico-medium{background-position:0 -3520px;}
 .ico-telefoni-in-naprave.ico-large{background-position:0 -7040px;}
-.ico-moj-simobilov-paket{background-position:0 -1776px;}.ico-moj-simobilov-paket.ico-medium{background-position:0 -3552px;}
+.ico-moj-simobilov-paket{background-position:0 -1776px;}
+.ico-moj-simobilov-paket.ico-medium{background-position:0 -3552px;}
 .ico-moj-simobilov-paket.ico-large{background-position:0 -7104px;}
-.ico-storitve-in-aplikacije{background-position:0 -1792px;}.ico-storitve-in-aplikacije.ico-medium{background-position:0 -3584px;}
+.ico-storitve-in-aplikacije{background-position:0 -1792px;}
+.ico-storitve-in-aplikacije.ico-medium{background-position:0 -3584px;}
 .ico-storitve-in-aplikacije.ico-large{background-position:0 -7168px;}
-.ico-internet{background-position:0 -1808px;}.ico-internet.ico-medium{background-position:0 -3616px;}
+.ico-internet{background-position:0 -1808px;}
+.ico-internet.ico-medium{background-position:0 -3616px;}
 .ico-internet.ico-large{background-position:0 -7232px;}
-.ico-imam-paket-z-narocnino{background-position:0 -1824px;}.ico-imam-paket-z-narocnino.ico-medium{background-position:0 -3648px;}
+.ico-imam-paket-z-narocnino{background-position:0 -1824px;}
+.ico-imam-paket-z-narocnino.ico-medium{background-position:0 -3648px;}
 .ico-imam-paket-z-narocnino.ico-large{background-position:0 -7296px;}
-.ico-prestop-k-simobilu{background-position:0 -1840px;}.ico-prestop-k-simobilu.ico-medium{background-position:0 -3680px;}
+.ico-prestop-k-simobilu{background-position:0 -1840px;}
+.ico-prestop-k-simobilu.ico-medium{background-position:0 -3680px;}
 .ico-prestop-k-simobilu.ico-large{background-position:0 -7360px;}
-.ico-racuni{background-position:0 -1856px;}.ico-racuni.ico-medium{background-position:0 -3712px;}
+.ico-racuni{background-position:0 -1856px;}
+.ico-racuni.ico-medium{background-position:0 -3712px;}
 .ico-racuni.ico-large{background-position:0 -7424px;}
-.ico-imam-paket-brez-narocnine-simpl{background-position:0 -1872px;}.ico-imam-paket-brez-narocnine-simpl.ico-medium{background-position:0 -3744px;}
+.ico-imam-paket-brez-narocnine-simpl{background-position:0 -1872px;}
+.ico-imam-paket-brez-narocnine-simpl.ico-medium{background-position:0 -3744px;}
 .ico-imam-paket-brez-narocnine-simpl.ico-large{background-position:0 -7488px;}
-.ico-nadzor-nad-porabo{background-position:0 -1888px;}.ico-nadzor-nad-porabo.ico-medium{background-position:0 -3776px;}
+.ico-nadzor-nad-porabo{background-position:0 -1888px;}
+.ico-nadzor-nad-porabo.ico-medium{background-position:0 -3776px;}
 .ico-nadzor-nad-porabo.ico-large{background-position:0 -7552px;}
-.ico-varnost-kraja-izguba{background-position:0 -1904px;}.ico-varnost-kraja-izguba.ico-medium{background-position:0 -3808px;}
+.ico-varnost-kraja-izguba{background-position:0 -1904px;}
+.ico-varnost-kraja-izguba.ico-medium{background-position:0 -3808px;}
 .ico-varnost-kraja-izguba.ico-large{background-position:0 -7616px;}
-.ico-tujina{background-position:0 -1920px;}.ico-tujina.ico-medium{background-position:0 -3840px;}
+.ico-tujina{background-position:0 -1920px;}
+.ico-tujina.ico-medium{background-position:0 -3840px;}
 .ico-tujina.ico-large{background-position:0 -7680px;}
-.ico-vse-cene-na-enem-mestu{background-position:0 -1936px;}.ico-vse-cene-na-enem-mestu.ico-medium{background-position:0 -3872px;}
+.ico-vse-cene-na-enem-mestu{background-position:0 -1936px;}
+.ico-vse-cene-na-enem-mestu.ico-medium{background-position:0 -3872px;}
 .ico-vse-cene-na-enem-mestu.ico-large{background-position:0 -7744px;}
-.ico-vsi-obrazci-na-enem-mestu{background-position:0 -1952px;}.ico-vsi-obrazci-na-enem-mestu.ico-medium{background-position:0 -3904px;}
+.ico-vsi-obrazci-na-enem-mestu{background-position:0 -1952px;}
+.ico-vsi-obrazci-na-enem-mestu.ico-medium{background-position:0 -3904px;}
 .ico-vsi-obrazci-na-enem-mestu.ico-large{background-position:0 -7808px;}
-.ico-navodila-za-rocno-nastavljanje{background-position:0 -1968px;}.ico-navodila-za-rocno-nastavljanje.ico-medium{background-position:0 -3936px;}
+.ico-navodila-za-rocno-nastavljanje{background-position:0 -1968px;}
+.ico-navodila-za-rocno-nastavljanje.ico-medium{background-position:0 -3936px;}
 .ico-navodila-za-rocno-nastavljanje.ico-large{background-position:0 -7872px;}
-.ico-ota-nastavitve{background-position:0 -1984px;}.ico-ota-nastavitve.ico-medium{background-position:0 -3968px;}
+.ico-ota-nastavitve{background-position:0 -1984px;}
+.ico-ota-nastavitve.ico-medium{background-position:0 -3968px;}
 .ico-ota-nastavitve.ico-large{background-position:0 -7936px;}
-.ico-video-predstavitev{background-position:0 -2000px;}.ico-video-predstavitev.ico-medium{background-position:0 -4000px;}
+.ico-video-predstavitev{background-position:0 -2000px;}
+.ico-video-predstavitev.ico-medium{background-position:0 -4000px;}
 .ico-video-predstavitev.ico-large{background-position:0 -8000px;}
-.ico-navodila-za-uporabo{background-position:0 -2016px;}.ico-navodila-za-uporabo.ico-medium{background-position:0 -4032px;}
+.ico-navodila-za-uporabo{background-position:0 -2016px;}
+.ico-navodila-za-uporabo.ico-medium{background-position:0 -4032px;}
 .ico-navodila-za-uporabo.ico-large{background-position:0 -8064px;}
-.ico-servis{background-position:0 -2032px;}.ico-servis.ico-medium{background-position:0 -4064px;}
+.ico-servis{background-position:0 -2032px;}
+.ico-servis.ico-medium{background-position:0 -4064px;}
 .ico-servis.ico-large{background-position:0 -8128px;}
-.ico-povezave{background-position:0 -2048px;}.ico-povezave.ico-medium{background-position:0 -4096px;}
+.ico-povezave{background-position:0 -2048px;}
+.ico-povezave.ico-medium{background-position:0 -4096px;}
 .ico-povezave.ico-large{background-position:0 -8192px;}
-.ico-direktna-pomoc{background-position:0 -2064px;}.ico-direktna-pomoc.ico-medium{background-position:0 -4128px;}
+.ico-direktna-pomoc{background-position:0 -2064px;}
+.ico-direktna-pomoc.ico-medium{background-position:0 -4128px;}
 .ico-direktna-pomoc.ico-large{background-position:0 -8256px;}
-.ico-storitve{background-position:0 -2080px;}.ico-storitve.ico-medium{background-position:0 -4160px;}
+.ico-storitve{background-position:0 -2080px;}
+.ico-storitve.ico-medium{background-position:0 -4160px;}
 .ico-storitve.ico-large{background-position:0 -8320px;}
-.ico-techspec-measures-blue{background-position:0 -2096px;}.ico-techspec-measures-blue.ico-medium{background-position:0 -4192px;}
+.ico-techspec-measures-blue{background-position:0 -2096px;}
+.ico-techspec-measures-blue.ico-medium{background-position:0 -4192px;}
 .ico-techspec-measures-blue.ico-large{background-position:0 -8384px;}
-.ico-techspec-measures-brown{background-position:0 -2112px;}.ico-techspec-measures-brown.ico-medium{background-position:0 -4224px;}
+.ico-techspec-measures-brown{background-position:0 -2112px;}
+.ico-techspec-measures-brown.ico-medium{background-position:0 -4224px;}
 .ico-techspec-measures-brown.ico-large{background-position:0 -8448px;}
-.ico-favourite-blue{background-position:0 -2128px;}.ico-favourite-blue.ico-medium{background-position:0 -4256px;}
+.ico-favourite-blue{background-position:0 -2128px;}
+.ico-favourite-blue.ico-medium{background-position:0 -4256px;}
 .ico-favourite-blue.ico-large{background-position:0 -8512px;}
-.ico-favourite-brown{background-position:0 -2144px;}.ico-favourite-brown.ico-medium{background-position:0 -4288px;}
+.ico-favourite-brown{background-position:0 -2144px;}
+.ico-favourite-brown.ico-medium{background-position:0 -4288px;}
 .ico-favourite-brown.ico-large{background-position:0 -8576px;}
-.ico-favourite-gray{background-position:0 -2160px;}.ico-favourite-gray.ico-medium{background-position:0 -4320px;}
+.ico-favourite-gray{background-position:0 -2160px;}
+.ico-favourite-gray.ico-medium{background-position:0 -4320px;}
 .ico-favourite-gray.ico-large{background-position:0 -8640px;}
-.btn-green{color:#ffffff;font-family:"SimbleWeb",Arial,sans-serif;font-size:12px;text-shadow:none;border:1px solid #49921a;-webkit-border-radius:0px;-moz-border-radius:0px;border-radius:0px;background-image:url("../../images/layout/buttons-bg.png");background-color:transparent;height:22px;line-height:22px;background-position:0 0;padding:0 10px;}.btn-green .arrow{display:inline-block;margin:0 -4px 0 14px;display:inline-block;width:16px;height:16px;*margin-right:.3em;line-height:16px;vertical-align:text-top;background-image:url("../../images/layout/icons/16x16.png");background-position:0 0;background-repeat:no-repeat;font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0;background-position:0 -80px;}.btn-green .arrow:last-child{*margin-left:0;}
+.ico-tablet-7{background-position:0 -2176px;}
+.ico-tablet-7.ico-medium{background-position:0 -4352px;}
+.ico-tablet-7.ico-large{background-position:0 -8704px;}
+.ico-tablet-10{background-position:0 -2192px;}
+.ico-tablet-10.ico-medium{background-position:0 -4384px;}
+.ico-tablet-10.ico-large{background-position:0 -8768px;}
+.ico-circle-open{background-position:0 -2208px;}
+.ico-circle-open.ico-medium{background-position:0 -4416px;}
+.ico-circle-open.ico-large{background-position:0 -8832px;}
+.ico-circle-close{background-position:0 -2224px;}
+.ico-circle-close.ico-medium{background-position:0 -4448px;}
+.ico-circle-close.ico-large{background-position:0 -8896px;}
+.ico-sprememba-tarife{background-position:0 -2240px;}
+.ico-sprememba-tarife.ico-medium{background-position:0 -4480px;}
+.ico-sprememba-tarife.ico-large{background-position:0 -8960px;}
+.ico-zamenjava-paketa{background-position:0 -2256px;}
+.ico-zamenjava-paketa.ico-medium{background-position:0 -4512px;}
+.ico-zamenjava-paketa.ico-large{background-position:0 -9024px;}
+.ico-checkmark-lightbox{background-position:0 -2272px;}
+.ico-checkmark-lightbox.ico-medium{background-position:0 -4544px;}
+.ico-checkmark-lightbox.ico-large{background-position:0 -9088px;}
+.ico-enkratni-zakup{background-position:0 -2288px;}
+.ico-enkratni-zakup.ico-medium{background-position:0 -4576px;}
+.ico-enkratni-zakup.ico-large{background-position:0 -9152px;}
+.ico-nov-telefon{background-position:0 -2304px;}
+.ico-nov-telefon.ico-medium{background-position:0 -4608px;}
+.ico-nov-telefon.ico-large{background-position:0 -9216px;}
+.ico-druga-omrezja{background-position:0 -2320px;}
+.ico-druga-omrezja.ico-medium{background-position:0 -4640px;}
+.ico-druga-omrezja.ico-large{background-position:0 -9280px;}
+.ico-download{background-position:0 -2336px;}
+.ico-download.ico-medium{background-position:0 -4672px;}
+.ico-download.ico-large{background-position:0 -9344px;}
+.ico-infocircle-blue{background-position:0 -2352px;}
+.ico-infocircle-blue.ico-medium{background-position:0 -4704px;}
+.ico-infocircle-blue.ico-large{background-position:0 -9408px;}
+.ico-target-blue{background-position:0 -2368px;}
+.ico-target-blue.ico-medium{background-position:0 -4736px;}
+.ico-target-blue.ico-large{background-position:0 -9472px;}
+.ico-man-tie-blue{background-position:0 -2384px;}
+.ico-man-tie-blue.ico-medium{background-position:0 -4768px;}
+.ico-man-tie-blue.ico-large{background-position:0 -9536px;}
+.ico-data-blue{background-position:0 -2400px;}
+.ico-data-blue.ico-medium{background-position:0 -4800px;}
+.ico-data-blue.ico-large{background-position:0 -9600px;}
+.ico-man-blue{background-position:0 -2416px;}
+.ico-man-blue.ico-medium{background-position:0 -4832px;}
+.ico-man-blue.ico-large{background-position:0 -9664px;}
+.ico-shield-blue{background-position:0 -2432px;}
+.ico-shield-blue.ico-medium{background-position:0 -4864px;}
+.ico-shield-blue.ico-large{background-position:0 -9728px;}
+.ico-world-blue{background-position:0 -2448px;}
+.ico-world-blue.ico-medium{background-position:0 -4896px;}
+.ico-world-blue.ico-large{background-position:0 -9792px;}
+.ico-exclamation-blue{background-position:0 -2464px;}
+.ico-exclamation-blue.ico-medium{background-position:0 -4928px;}
+.ico-exclamation-blue.ico-large{background-position:0 -9856px;}
+.ico-support{background-position:0 -2480px;}
+.ico-support.ico-medium{background-position:0 -4960px;}
+.ico-support.ico-large{background-position:0 -9920px;}
+.ico-plus{background-position:0 -2496px;}
+.ico-plus.ico-medium{background-position:0 -4992px;}
+.ico-plus.ico-large{background-position:0 -9984px;}
+.ico-equals{background-position:0 -2512px;}
+.ico-equals.ico-medium{background-position:0 -5024px;}
+.ico-equals.ico-large{background-position:0 -10048px;}
+.ico-calls-internal{background-position:0 -2528px;}
+.ico-calls-internal.ico-medium{background-position:0 -5056px;}
+.ico-calls-internal.ico-large{background-position:0 -10112px;}
+.ico-wifi{background-position:0 -2544px;}
+.ico-wifi.ico-medium{background-position:0 -5088px;}
+.ico-wifi.ico-large{background-position:0 -10176px;}
+.ico-cloud-plus-orange{background-position:0 -2624px;}
+.ico-cloud-plus-orange.ico-medium{background-position:0 -5248px;}
+.ico-cloud-plus-orange.ico-large{background-position:0 -10496px;}
+.ico-cloud-percent-orange{background-position:0 -2640px;}
+.ico-cloud-percent-orange.ico-medium{background-position:0 -5280px;}
+.ico-cloud-percent-orange.ico-large{background-position:0 -10560px;}
+.ico-cloud-plus-blue{background-position:0 -2656px;}
+.ico-cloud-plus-blue.ico-medium{background-position:0 -5312px;}
+.ico-cloud-plus-blue.ico-large{background-position:0 -10624px;}
+.ico-cloud-percent-blue{background-position:0 -2672px;}
+.ico-cloud-percent-blue.ico-medium{background-position:0 -5344px;}
+.ico-cloud-percent-blue.ico-large{background-position:0 -10688px;}
+.ico-savings{background-position:0 -2688px;}
+.ico-savings.ico-medium{background-position:0 -5376px;}
+.ico-savings.ico-large{background-position:0 -10752px;}
+.ico-call-sms-data{background-position:0 -2704px;}
+.ico-call-sms-data.ico-medium{background-position:0 -5408px;}
+.ico-call-sms-data.ico-large{background-position:0 -10816px;}
+.ico-simpl-tel-sim{background-position:0 -2720px;}
+.ico-simpl-tel-sim.ico-medium{background-position:0 -5440px;}
+.ico-simpl-tel-sim.ico-large{background-position:0 -10880px;}
+.ico-simpl-sim{background-position:0 -2736px;}
+.ico-simpl-sim.ico-medium{background-position:0 -5472px;}
+.ico-simpl-sim.ico-large{background-position:0 -10944px;}
+.ico-corpo-call{background-position:0 -2752px;}
+.ico-corpo-call.ico-medium{background-position:0 -5504px;}
+.ico-corpo-call.ico-large{background-position:0 -11008px;}
+.ico-features-brown{background-position:0 -2768px;}
+.ico-features-brown.ico-medium{background-position:0 -5536px;}
+.ico-features-brown.ico-large{background-position:0 -11072px;}
+.ico-screen-brown{background-position:0 -2784px;}
+.ico-screen-brown.ico-medium{background-position:0 -5568px;}
+.ico-screen-brown.ico-large{background-position:0 -11136px;}
+.ico-contents-brown{background-position:0 -2800px;}
+.ico-contents-brown.ico-medium{background-position:0 -5600px;}
+.ico-contents-brown.ico-large{background-position:0 -11200px;}
+.ico-features-blue{background-position:0 -2816px;}
+.ico-features-blue.ico-medium{background-position:0 -5632px;}
+.ico-features-blue.ico-large{background-position:0 -11264px;}
+.ico-screen-blue{background-position:0 -2832px;}
+.ico-screen-blue.ico-medium{background-position:0 -5664px;}
+.ico-screen-blue.ico-large{background-position:0 -11328px;}
+.ico-contents-blue{background-position:0 -2848px;}
+.ico-contents-blue.ico-medium{background-position:0 -5696px;}
+.ico-contents-blue.ico-large{background-position:0 -11392px;}
+.ico-heart-orange{background-position:0 -2864px;}
+.ico-heart-orange.ico-medium{background-position:0 -5728px;}
+.ico-heart-orange.ico-large{background-position:0 -11456px;}
+.ico-heart-blue{background-position:0 -2880px;}
+.ico-heart-blue.ico-medium{background-position:0 -5760px;}
+.ico-heart-blue.ico-large{background-position:0 -11520px;}
+.ico-ortonet{background-position:0 -2896px;}
+.ico-ortonet.ico-medium{background-position:0 -5792px;}
+.ico-ortonet.ico-large{background-position:0 -11584px;}
+.ico-heart-semiorange{background-position:0 -2912px;}
+.ico-heart-semiorange.ico-medium{background-position:0 -5824px;}
+.ico-heart-semiorange.ico-large{background-position:0 -11648px;}
+.ico-heart-semiblue{background-position:0 -2928px;}
+.ico-heart-semiblue.ico-medium{background-position:0 -5856px;}
+.ico-heart-semiblue.ico-large{background-position:0 -11712px;}
+.ico-app-android{background-position:0 -2944px;}
+.ico-app-android.ico-medium{background-position:0 -5888px;}
+.ico-app-android.ico-large{background-position:0 -11776px;}
+.ico-app-ios{background-position:0 -2960px;}
+.ico-app-ios.ico-medium{background-position:0 -5920px;}
+.ico-app-ios.ico-large{background-position:0 -11840px;}
+.ico-app-win{background-position:0 -2976px;}
+.ico-app-win.ico-medium{background-position:0 -5952px;}
+.ico-app-win.ico-large{background-position:0 -11904px;}
+.ico-app-bb{background-position:0 -2992px;}
+.ico-app-bb.ico-medium{background-position:0 -5984px;}
+.ico-app-bb.ico-large{background-position:0 -11968px;}
+.ico-eracun-trees{background-position:0 -3008px;}
+.ico-eracun-trees.ico-medium{background-position:0 -6016px;}
+.ico-eracun-trees.ico-large{background-position:0 -12032px;}
+.ico-eracun-clock{background-position:0 -3024px;}
+.ico-eracun-clock.ico-medium{background-position:0 -6048px;}
+.ico-eracun-clock.ico-large{background-position:0 -12096px;}
+.ico-eracun-drawer{background-position:0 -3040px;}
+.ico-eracun-drawer.ico-medium{background-position:0 -6080px;}
+.ico-eracun-drawer.ico-large{background-position:0 -12160px;}
+.ico-eracun-package{background-position:0 -3056px;}
+.ico-eracun-package.ico-medium{background-position:0 -6112px;}
+.ico-eracun-package.ico-large{background-position:0 -12224px;}
+.ico-eracun-devices{background-position:0 -3072px;}
+.ico-eracun-devices.ico-medium{background-position:0 -6144px;}
+.ico-eracun-devices.ico-large{background-position:0 -12288px;}
+.ico-eracun-search{background-position:0 -3088px;}
+.ico-eracun-search.ico-medium{background-position:0 -6176px;}
+.ico-eracun-search.ico-large{background-position:0 -12352px;}
+.ico-eracun-video{background-position:0 -3104px;}
+.ico-eracun-video.ico-medium{background-position:0 -6208px;}
+.ico-eracun-video.ico-large{background-position:0 -12416px;}
+.btn-green{color:#ffffff;font-family:"SimbleWeb",Arial,sans-serif;font-size:12px;text-shadow:none;border:1px solid #49921a;-webkit-border-radius:0px;-moz-border-radius:0px;border-radius:0px;background-image:url("../../images/layout/buttons-bg.png");background-color:transparent;height:22px;line-height:22px;background-position:0 0;padding:0 10px;}
+.btn-green .arrow{display:inline-block;margin:0 -4px 0 14px;display:inline-block;width:16px;height:16px;*margin-right:.3em;line-height:16px;vertical-align:text-top;background-image:url("../../images/layout/icons/16x16.png");background-position:0 0;background-repeat:no-repeat;font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0;background-position:0 -80px;}
+.btn-green .arrow:last-child{*margin-left:0;}
 .btn-green .arrow.ico-medium{background-position:0 -160px;}
 .btn-green .arrow.ico-large{background-position:0 -320px;}
 .btn-green:hover,.btn-green:active{background-image:url("../../images/layout/buttons-bg.png");background-position:0 -22px;color:#ffffff;-webkit-transition:none;-moz-transition:none;-ms-transition:none;-o-transition:none;transition:none;}
