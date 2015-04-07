@@ -62,6 +62,7 @@
 
   <body class="entry" data-spy="scroll" data-target=".subnav" data-offset="50">
 
+  <div id="last-push"><?php echo $lastPush; ?></div>
 
   <!-- Navbar
     ================================================== -->
