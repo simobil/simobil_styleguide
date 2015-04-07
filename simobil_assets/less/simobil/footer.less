@@ -1,0 +1,163 @@
+/******************************************************************/
+/* FOOTER
+/******************************************************************/
+footer {
+	color: @grayLight;
+}
+
+.bordered-ribbon {
+	background: url("@{layout-url}dots.gif") repeat-x left bottom;
+	padding: 15px 0;
+	
+	a {
+		color: @grayLight;
+		text-decoration: none;
+		display: inline;
+	
+		&:hover, &.selected {
+			color: @black;
+		}
+	}
+}
+
+.simobil-family {
+
+	text-align: center;
+	.bordered-ribbon;
+	
+	a {
+		padding: 0 30px;
+		font-weight: 700;
+	}
+}
+
+.footer-nav-phone { 
+	color: @black;
+}
+
+#footer-nav-select {
+	width:80%;
+}
+
+.sitemap {
+	.bordered-ribbon;
+	
+	h6 {
+		color: @black;
+		text-transform: none;
+		font-weight: normal;	
+		font-size: 13px;
+		margin-bottom: 10px;
+	}
+	
+	ul {
+		.ul-reset;
+		font-size: 12px;
+	}
+	
+	span {
+		font-size: 12px;
+	}
+	
+	.social {
+		margin-bottom:35px;
+		padding-top: 9px;
+		margin-left: -10px;
+		
+		[class*="ico-"] {
+			margin-right: 10px;
+		}
+		
+		.ico-twitter-gray {
+			margin-left: -6px;
+		}
+	}
+	
+	.kontakt {
+		padding-top: 28px;
+		
+	}
+	
+	.sos {
+		display: inline-block;
+		height: 64px;
+		font-size: 11px;
+		width: 200px;
+		
+		i {
+			.ico-slot-large(77);
+			float: left;
+			margin-right: 10px;
+		}
+		
+		span {
+			display: block;
+			overflow: hidden;
+		}
+		
+		strong, b {
+			color: @black;
+			font-weight: normal;
+		}
+		
+	}
+	
+}
+
+.copyright {
+	
+	.bordered-ribbon;
+	
+	a {
+		padding: 0 10px;
+	}
+	
+	.simobil-logo {
+		.hide-text;
+		width: 96px;
+		height: 19px;
+		background: url("@{layout-url}footer/logo-simobil.png") no-repeat 0 0;
+	}
+}
+
+.ta-group {
+	
+	.bordered-ribbon;
+	background: none;
+	font-size: 11px;
+	
+	a {
+		padding: 0 0 0 0;
+	}
+	
+	.ta-logo {
+		.hide-text;
+		width: 167px;
+		height: 15px;
+		background: url("@{layout-url}footer/logo-ta.png") no-repeat 0 bottom;
+	}
+}
+
+#footer-gallery {
+
+	margin-top: 30px;
+	height: 120px;
+
+	.scrollable {
+		width: 210px;
+		height:80px;
+		margin-bottom: 20px;
+		
+		li {
+			width: 210px;
+			height: 80px;
+			color: @black;
+			
+			img {
+				float: left;
+				margin-right: 13px;
+			}
+		}
+	}
+	.prev, .next {display: none;}
+}

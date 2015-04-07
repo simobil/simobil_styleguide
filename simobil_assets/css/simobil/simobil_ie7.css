@@ -10,7 +10,7 @@
 
 }
 
-/* Frist page */
+/* First page */
 .mediascreen {
 	height: 420px !important;
 	overflow: hidden;
@@ -97,19 +97,6 @@
 	margin-top: -10px;
 }
 
-.configurator .section .subsection, 
-.configurator .section .nosubsecton {
-	
-}
-
-.configurator .section .choices .notices span, 
-.configurator .section .choices .notices a {
-}
-
-.configurator .section .choices .notices {
-	
-}
-
 .configurator .section .choices .notices .notice,
 .configurator .section .choices .notices .warning {
 	float: none;
@@ -126,4 +113,12 @@
 
 .buttler p:after {
 	display: none;
+}
+
+.box.generic.potovanje-search {
+	min-height: 222px;
+}
+
+.aplikacije .nav-tabs a {
+	padding: 12px 18px;
 }

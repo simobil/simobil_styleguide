@@ -1,0 +1,294 @@
+/******************************************************************/
+/* MAIN NAVIGATION
+/******************************************************************/
+.page-block nav.main {
+	
+	.collapse {
+		position: static;
+	}
+	
+	position: relative;
+	background-color: @white;
+	margin-top: 12px;
+	margin-bottom: 0px;
+	
+	padding: 0 24px 0;
+	
+	.box-shadow(2px 2px 2px #999);
+
+	.brand {
+		.hide-text;
+		margin: 0;
+		padding:0;
+		width: 49px;
+		height: 70px;
+		border: none;
+		background: url("@{layout-url}main-menu/logo.gif") top center no-repeat;
+	}
+	
+	.btn-navbar {
+		float: left;
+		margin-left: 24px;
+		margin-top:	15px;
+		border-color: @black;
+		.icon-bar {
+			background-color: @black;
+		}
+	}
+	
+	ul.first {
+		list-style: none;
+		margin:0;
+		
+	}
+	
+	ul.first > li {
+		margin: 0 0 0 5px;
+		max-width: 70px;
+		padding: 0 20px;
+		float: left;
+		
+		
+		&:hover .submenu {
+			display: block;
+			height: auto;
+		}
+		
+		.submenu {
+			display: none;
+			position: absolute;
+			width: 100%;
+			left: 0px;
+			top: 70px;
+			border-top: 1px solid #999;
+			background-color: @white;
+			.box-shadow(2px 2px 2px #999);
+			z-index: @zindexDropdown;
+			
+			.row {
+				.clearfix;
+			}
+			
+			.container {
+				
+				padding: 24px 24px 0 24px;
+				font-size: 12px;
+				
+				.items {
+					a {
+						color: @grayDarker;
+						display: block;
+						padding: 2px 8px;
+						
+					}
+					
+					h4 {
+						margin-bottom: 10px;
+					}
+					
+					ul {
+						.ul-reset;
+						margin-bottom: 24px;
+						
+						a:hover {
+							background-color: @simobilGreen;
+							color: @white;
+						}
+					}
+				}
+				
+				.banners {
+					margin-bottom: 24px;
+					
+					.links {
+						.clearfix;
+						padding: 14px;
+						background: #e8e8e8 url("@{layout-url}submenu_links_bg.png") no-repeat center bottom;
+						
+						h4 {
+							font-weight: 400;
+							color: @simobilGreen;
+							margin-bottom: 10px;
+						}
+						
+						a {
+							color: @grayDarker;
+						}
+						
+						a.more {
+							position: relative;
+							display: inline-block;
+							font-weight: 700;
+							color: @simobilGreen;
+
+							line-height: 13px;
+						}
+					}	
+				}
+			}
+		}
+	}
+	
+	ul.first > li > a {
+		display: block;
+		text-shadow: none;
+		padding:0;
+		margin:0;
+		font-size: 15px;
+		padding-top: 15px;
+		height: 51px;
+		border-bottom: 4px solid @white;
+		color: @black;
+		cursor: pointer;
+		&.active {
+			color: @simobilGreen;
+			border-color: @simobilGreen;
+			text-decoration: none;
+			cursor: pointer;
+		}
+	}
+	
+	ul.first > li:hover > a {
+			color: @simobilGreen;
+			border-color: @simobilGreen;
+			text-decoration: none;
+			cursor: pointer;
+	}
+	
+	form {
+		margin-top: 22px;
+		position: relative;
+		
+		input {
+			margin:0;
+			font-size: 12px;
+			height: 14px;
+			width: 100px;
+			padding-right: 20px;
+			
+		}
+		
+		button {
+			.hide-text();
+			position: absolute;
+			display: block;
+			right: 1px;
+			top: 1px;
+			width: 20px;
+			height: 20px;
+			padding:0;
+			
+			[class*="ico-"] {
+				margin-right: 4px;
+				margin-top: 2px;
+			}
+		}
+	}
+}
+
+body.business {
+	nav.main {
+		.brand {
+			background: url("@{layout-url}main-menu/logo.business.gif") top center no-repeat;
+		}
+		
+		ul.first > li {
+			margin-left: 5px;
+			padding: 0 15px;
+		}
+	}
+}
+
+
+/* hover only for desktop version */
+//@media (min-width: 481px) {
+@media (min-width: 768px) {
+	
+	.nav-collapse.collapse {
+		height: auto !important;
+	}
+	
+	nav.main {
+		ul.first > li {
+			&:hover .submenu {
+				display: block;
+			}
+		}
+	}
+}
+
+
+//@media (max-width: 480px) {
+@media (max-width: 767px) {
+	nav.main > .container {
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+	
+	nav.main .collapse, body.business nav.main .collapse {
+		
+		margin: 0 -24px;
+		
+		ul.first > li {
+			float: none;
+			display: block;
+			margin: 0;
+			width: auto;
+			max-width: 100%;
+			
+			> a {
+				margin:0;
+				padding: 8px 24px;
+				border: none;
+				height: auto;	
+				width: auto;
+				max-width: 100%;
+				font-size: 15px;
+			}
+			
+			&:hover .submenu {
+				display: none;
+			}
+		}
+		/************************************/
+		ul.first > li > .submenu {
+			display: none;
+			position: relative;
+			background: @grayLighter;
+			left: auto;
+			top: auto;
+			min-height: 0;
+			.box-shadow(none);
+			
+			.container {
+				padding: 20px 0;
+			}
+			
+			.items {
+				h4 {margin: 0 0 5px 0; font-weight: 400;}
+				a {padding:0;}
+				ul {display: none;}
+				.row-fluid [class*="span"] {min-height: 0;}
+			}
+			
+		}
+	}
+	
+	body.residential nav.main .collapse {
+		ul.first > li > a {
+			border-top: 1px solid @residential;
+		}
+	}
+	
+	body.business nav.main .collapse {
+		ul.first > li > a {
+			border-top: 1px solid @business;
+		}
+	}
+	
+}
+
+
+

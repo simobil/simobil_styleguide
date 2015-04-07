@@ -1,0 +1,39 @@
+/******************************************************************/
+/* SCROLLABLE
+/******************************************************************/
+.scrollable {
+	position:relative;
+	overflow:hidden;
+	
+  
+  	.items {
+  		width:20000em;
+		position:absolute;
+		.ul-reset;
+		
+		li {
+			position: relative;
+			display: inline-block;
+			float: left;
+		}
+  	}
+}	
+	
+.navi {
+	text-align: center;	
+		
+	a {
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		margin: 0 5px;
+		background: #ccc;
+		cursor: pointer;
+		
+		.border-radius(5px);
+		
+		&.active {
+			background: #666;
+		}
+	}
+}

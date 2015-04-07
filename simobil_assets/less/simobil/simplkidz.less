@@ -1,0 +1,222 @@
+.simplkidz {
+	
+	&.product-list.paketi .product-listing .item {
+		height: 294px;	
+	}
+	
+	.articles {
+		margin: @gridGutterWidth 0;
+		padding: @gridGutterWidth 0;
+		border-top: 1px solid @residential;
+		border-bottom: 1px solid @residential;
+	}
+	
+	.white-bg {
+		padding-top: 0;	
+		padding-bottom: 0;
+	}
+	
+	.section.tabbable {
+		margin-top: 0;
+		padding-top: 0;
+	}
+	
+	.cukrcki {
+		margin: @gridGutterWidth 0;
+		
+		.item {
+			margin-bottom: @gridGutterWidth;
+			img {
+				margin-bottom: @gridGutterWidth/2;				
+			}
+		}
+	}
+}
+
+.banners {
+	.row-fluid {
+		margin-top: @gridGutterWidth;
+		&:first-child {
+			margin-top: 0;
+		}	
+	}
+	
+	.banner {
+		position: relative;
+		display: block;
+		padding: 12px @gridGutterWidth 16px @gridGutterWidth;
+		border: 1px solid @residential;
+		background-color: @white;
+		color: @black;
+		height: 133px - @gridGutterWidth/2 - 16px;
+		overflow: hidden;
+		
+		img {
+			position: absolute;
+			right: 0px;
+			top:0;
+		}
+		
+		img.ribbon {
+			z-index: 1;
+			right: -1px;
+			top: -1px;
+		}
+		
+		.title, .text {
+			position: relative;
+			display: block;
+		}
+		
+		.title {
+			position: relative;
+			font-size: 20px;
+  			line-height: @baseLineHeight * 2;
+		}
+	}
+	
+	.span4 .banner {
+		.title, .text {
+			width: 80%;
+		}
+	}
+	
+	.span8 .banner {
+		.title, .text {
+			width: 70%;
+		}
+	
+	}
+	.span12 .banner {
+		.title, .text {
+			width: 60%;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	
+	.simplkidz {
+	
+		&.product-list.paketi .product-listing .item {
+			height: auto;	
+		}
+		
+		.tab-content {
+			margin: 0 @gridGutterWidth;
+			position: relative;
+		}
+		
+		.content {
+			[class*="span"] {
+				margin:0;
+				display :block;
+				float: none;
+				width: auto;
+			}
+		}
+		
+		.choices .btn {
+			display: block;
+		}
+		
+		.cukrcki {
+			.span3 {
+				float: left;
+				width: 210px;
+				margin-right: @gridGutterWidth;
+				margin-left: 0;
+			}
+			.item {
+				margin-bottom: @gridGutterWidth;
+				img {
+					margin-bottom: @gridGutterWidth/2;				
+				}
+			}
+		}
+		
+		.container.product-listing {
+			padding:0;
+		}
+	}
+	
+	.banners {
+		
+		//margin: 0 5%;
+		
+		.row-fluid {
+			margin:0;
+		}
+		[class*="span"] .banner {
+			margin-bottom: @gridGutterWidth;
+			
+			.title, .text {
+				width: 66%;	
+				//font-size: 12px;
+				//line-height: 14px;
+			}
+			
+			.title {
+				line-height: 22px;
+			}
+			
+			.text {
+				font-size: 12px;
+				line-height: 15px; 
+			}
+		}
+	}
+	
+	
+	.banners .span8 .banner {
+		.title, .text {
+			
+		} 
+		
+		img {
+			right: -70px;
+		}
+	}
+	
+	.banners .span12 .banner {
+		.title, .text {
+			
+		} 
+		
+		img {
+			right: -140px;
+		}
+	}
+}
+
+
+@media (max-width: 480px) {
+	
+	.simplkidz {
+		.cukrcki {
+			margin: @gridGutterWidth 0;
+			
+			.span3 {
+				float: none;
+				width: auto;
+				margin-right: 0;
+				margin-left: 0;
+			}
+			
+			.item {
+				margin-bottom: @gridGutterWidth;
+				img {
+					margin-bottom: @gridGutterWidth/2;				
+				}
+			}
+		}
+	}
+	
+	.banners .banner {
+		
+		.text { display: none;}	
+		img {
+			
+		}
+	}
+}

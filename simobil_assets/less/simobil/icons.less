@@ -1,0 +1,335 @@
+// Si.mobil icons
+// -------------------------
+@icon-path-small:		"@{layout-url}icons/16x16.png";
+@icon-path-medium:		"@{layout-url}icons/32x32.png";
+@icon-path-large:		"@{layout-url}icons/64x64.png";
+
+// icon sizes
+@icon-size-small:	16px;
+@icon-size-medium:	32px;
+@icon-size-large:	64px;
+
+
+.ico-slot(@index) {
+	background-position: 0 -(@index - 1) * @icon-size-small;
+	
+	&.ico-medium {
+		background-position: 0 -(@index - 1) * @icon-size-medium;
+	}
+	&.ico-large {
+		background-position: 0 -(@index - 1) * @icon-size-large;
+	}
+}
+
+
+[class^="ico-"],
+[class*=" ico-"],
+.ico-base {
+	display: inline-block;
+	width: @icon-size-small;
+	height: @icon-size-small;
+	.ie7-restore-right-whitespace();
+	line-height: @icon-size-small;
+	vertical-align: text-top;
+	background-image: url("@{icon-path-small}");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	.hide-text();
+}
+
+.ico-base-text {
+	background-image: url("@{icon-path-small}");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+
+.ico-small {
+	width: @icon-size-small;
+	height: @icon-size-small;
+	line-height: @icon-size-small;
+	background-image: url("@{icon-path-small}");
+}
+
+.ico-medium {
+	width: @icon-size-medium;
+	height: @icon-size-medium;
+	line-height: @icon-size-medium;
+	background-image: url("@{icon-path-medium}");
+}
+
+.ico-large {
+	width: @icon-size-large;
+	height: @icon-size-large;
+	line-height: @icon-size-large;
+	background-image: url("@{icon-path-large}");
+}
+
+//hack, because of Liferay icon override.
+.page-block {
+	[class^="ico-"],
+	[class*=" ico-"],
+	.ico-base {
+		display: inline-block;
+		width: @icon-size-small;
+		height: @icon-size-small;
+		.ie7-restore-right-whitespace();
+		line-height: @icon-size-small;
+		vertical-align: text-top;
+		background-image: url("@{icon-path-small}");
+		//background-position: 0 0;
+		background-repeat: no-repeat;
+		.hide-text();
+	}
+
+	.ico-base-text {
+		background-image: url("@{icon-path-small}");
+		background-position: 0 0;
+		background-repeat: no-repeat;
+	}
+
+
+	.ico-small {
+		width: @icon-size-small;
+		height: @icon-size-small;
+		line-height: @icon-size-small;
+		background-image: url("@{icon-path-small}");
+	}
+
+	.ico-medium {
+		width: @icon-size-medium;
+		height: @icon-size-medium;
+		line-height: @icon-size-medium;
+		background-image: url("@{icon-path-medium}");
+	}
+
+	.ico-large {
+		width: @icon-size-large;
+		height: @icon-size-large;
+		line-height: @icon-size-large;
+		background-image: url("@{icon-path-large}");
+	}
+}
+
+.ico-slot-small(@index:0) { 
+	.ico-base;
+	.ico-small;
+	background-position: 0 -(@index - 1) * @icon-size-small;
+}
+
+.ico-slot-medium(@index:0) { 
+	.ico-base;
+	.ico-medium;
+	background-position: 0 -(@index - 1) * @icon-size-medium;
+}
+
+.ico-slot-large(@index:0) {
+	.ico-base;
+	.ico-large; 
+	background-position: 0 -(@index - 1) * @icon-size-large;
+}
+
+
+.ico-cart								{ .ico-slot(1);   }
+.ico-search-header						{ .ico-slot(2);   }
+.ico-arrow-right-green 					{ .ico-slot(3);   }
+.ico-arrow-right-black 					{ .ico-slot(4);   }
+.ico-arrow-right-brown 					{ .ico-slot(5);   }
+.ico-arrow-right-white 					{ .ico-slot(6);   }
+.ico-arrow-right-blue 					{ .ico-slot(7);   }
+.ico-arrow-right-gal-blue 				{ .ico-slot(8);   }
+.ico-arrow-right-gal-brown 				{ .ico-slot(9);   }
+.ico-arrow-right-gal-white 				{ .ico-slot(10);  }
+.ico-arrow-right-gal-shadow-white 		{ .ico-slot(11);  }
+.ico-arrow-right-config-green 			{ .ico-slot(12);  }
+.ico-arrow-right-date-picker-white 		{ .ico-slot(13);  }
+.ico-arrow-right-progressbar-brown 		{ .ico-slot(14);  }
+.ico-arrow-right-progressbar-blue 		{ .ico-slot(15);  }
+.ico-arrow-left-black 					{ .ico-slot(16);  }
+.ico-arrow-left-brown 					{ .ico-slot(17);  }
+.ico-arrow-left-white 					{ .ico-slot(18);  }
+.ico-arrow-left-blue 					{ .ico-slot(19);  }
+.ico-arrow-left-gal-blue 				{ .ico-slot(20);  }
+.ico-arrow-left-gal-brown 				{ .ico-slot(21);  }
+.ico-arrow-left-gal-white 				{ .ico-slot(22);  }
+.ico-arrow-left-gal-shadow-white 		{ .ico-slot(23);  }
+.ico-arrow-left-config-green 			{ .ico-slot(24);  }
+.ico-arrow-left-date-picker-white 		{ .ico-slot(25);  }
+.ico-arrow-up-white 					{ .ico-slot(26);  }
+.ico-arrow-up-blue 						{ .ico-slot(27);  }
+.ico-arrow-up-brown 					{ .ico-slot(28);  }
+.ico-arrow-up-black 					{ .ico-slot(29);  }
+.ico-arrow-down-blue 					{ .ico-slot(30);  }
+.ico-arrow-down-brown 					{ .ico-slot(31);  }
+.ico-arrow-down-black 					{ .ico-slot(32);  }
+.ico-checkmark-brown 					{ .ico-slot(33);  }
+.ico-checkmark-blue 					{ .ico-slot(34);  }
+.ico-checkmark-green 					{ .ico-slot(35);  }
+.ico-refresh-blue 						{ .ico-slot(36);  }
+.ico-refresh-brown 						{ .ico-slot(37);  }
+.ico-refresh-gray 						{ .ico-slot(38);  }
+.ico-close-brown 						{ .ico-slot(39);  }
+.ico-close-blue 						{ .ico-slot(40);  }
+.ico-remove-gray 						{ .ico-slot(41);  }
+.ico-information-blue 					{ .ico-slot(42);  }
+.ico-information-brown 					{ .ico-slot(43);  }
+.ico-warning-blue 						{ .ico-slot(44);  }
+.ico-warning-orange 					{ .ico-slot(45);  }
+.ico-zoom-gal-shadow 					{ .ico-slot(46);  }
+.ico-zoom-brown 						{ .ico-slot(47);  }
+.ico-zoom-blue 							{ .ico-slot(48);  }
+.ico-techspec-camera-brown 				{ .ico-slot(49);  }
+.ico-techspec-connection-brown 			{ .ico-slot(50);  }
+.ico-techspec-messaging-brown 			{ .ico-slot(51);  }
+.ico-techspec-fun-brown 				{ .ico-slot(52);  }
+.ico-techspec-misc-brown 				{ .ico-slot(53);  }
+.ico-techspec-battery-brown 			{ .ico-slot(54);  }
+.ico-techspec-camera-blue 				{ .ico-slot(55);  }
+.ico-techspec-connection-blue 			{ .ico-slot(56);  }
+.ico-techspec-messaging-blue 			{ .ico-slot(57);  }
+.ico-techspec-fun-blue 					{ .ico-slot(58);  }
+.ico-techspec-misc-blue 				{ .ico-slot(59);  }
+.ico-techspec-battery-blue 				{ .ico-slot(60);  }
+.ico-calls 								{ .ico-slot(61);  }
+.ico-data-transfer 						{ .ico-slot(62);  }
+.ico-messages 							{ .ico-slot(63);  }
+.ico-plan 								{ .ico-slot(64);  }
+.ico-callstransfer 						{ .ico-slot(65);  }
+.ico-telephone 							{ .ico-slot(66);  }
+.ico-touchscreen-phone 					{ .ico-slot(67);  }
+.ico-keyboard-phone 					{ .ico-slot(68);  }
+.ico-flip-phone 						{ .ico-slot(69);  }
+.ico-facebook-color 					{ .ico-slot(70);  }
+.ico-twitter-color 						{ .ico-slot(71);  }
+.ico-youtube-color 						{ .ico-slot(72);  }
+.ico-facebook-gray 						{ .ico-slot(73);  }
+.ico-twitter-gray 						{ .ico-slot(74);  }
+.ico-youtube-gray 						{ .ico-slot(75);  }
+.ico-faq1-gray 							{ .ico-slot(76);  }
+.ico-112-sos 							{ .ico-slot(77);  }
+.ico-pdf-document 						{ .ico-slot(78);  }
+.ico-articles-brown 					{ .ico-slot(79);  }
+.ico-articles-blue 						{ .ico-slot(80);  }
+.ico-rss-brown 							{ .ico-slot(81);  }
+.ico-rss-blue 							{ .ico-slot(82);  }
+.ico-2g 								{ .ico-slot(83);  }
+.ico-3g 								{ .ico-slot(84);  }
+.ico-lte 								{ .ico-slot(85);  }
+.ico-popolna-pisarna-telefonija 		{ .ico-slot(86);  }
+.ico-popolna-pisarna-internet 			{ .ico-slot(87);  }
+.ico-popolna-pisarna-pr 				{ .ico-slot(88);  }
+.ico-popolna-pisarna-naprave 			{ .ico-slot(89);  }
+.ico-pin-simobil-centri 				{ .ico-slot(90);  }
+.ico-pin-simobil-fransize 				{ .ico-slot(91);  }
+.ico-pin-simobil-pooblasceni 			{ .ico-slot(92);  }
+.ico-pin-popolna-pisarna 				{ .ico-slot(93);  }
+.ico-pin-simpl-kidz 					{ .ico-slot(94);  }
+.ico-pin-placilni-avtomati 				{ .ico-slot(95);  }
+.ico-pin-apple-naprave 					{ .ico-slot(96);  }
+.ico-notifications 						{ .ico-slot(97);  }
+.ico-faq2 								{ .ico-slot(98);  }
+.ico-e-chat 							{ .ico-slot(99);  }
+.ico-question-forms						{ .ico-slot(100); }
+.ico-shops 								{ .ico-slot(101); }
+.ico-telephone-numbers					{ .ico-slot(102); }
+.ico-menjava-kartice-sim 				{ .ico-slot(103); }
+.ico-dodatna-sim-kartica 				{ .ico-slot(104); }
+.ico-mikro-sim-kartica 					{ .ico-slot(105); }
+.ico-servis-telefona 					{ .ico-slot(106); }
+.ico-si-podpora 						{ .ico-slot(107); }
+.ico-tezave-s-telefonom 				{ .ico-slot(108); }
+.ico-nakup-telefona 					{ .ico-slot(109); }
+.ico-iphone 							{ .ico-slot(110); }
+.ico-telefoni-in-naprave 				{ .ico-slot(111); }
+.ico-moj-simobilov-paket 				{ .ico-slot(112); }
+.ico-storitve-in-aplikacije 			{ .ico-slot(113); }
+.ico-internet 							{ .ico-slot(114); }
+.ico-imam-paket-z-narocnino 			{ .ico-slot(115); }
+.ico-prestop-k-simobilu 				{ .ico-slot(116); }
+.ico-racuni 							{ .ico-slot(117); }
+.ico-imam-paket-brez-narocnine-simpl	{ .ico-slot(118); }
+.ico-nadzor-nad-porabo 					{ .ico-slot(119); }
+.ico-varnost-kraja-izguba 				{ .ico-slot(120); }
+.ico-tujina 							{ .ico-slot(121); }
+.ico-vse-cene-na-enem-mestu 			{ .ico-slot(122); }
+.ico-vsi-obrazci-na-enem-mestu 			{ .ico-slot(123); }
+.ico-navodila-za-rocno-nastavljanje 	{ .ico-slot(124); }
+.ico-ota-nastavitve 					{ .ico-slot(125); }
+.ico-video-predstavitev 				{ .ico-slot(126); }
+.ico-navodila-za-uporabo 				{ .ico-slot(127); }
+.ico-servis 							{ .ico-slot(128); }
+.ico-povezave 							{ .ico-slot(129); }
+.ico-direktna-pomoc 					{ .ico-slot(130); }
+.ico-storitve 							{ .ico-slot(131); }
+.ico-techspec-measures-blue 			{ .ico-slot(132); }
+.ico-techspec-measures-brown 			{ .ico-slot(133); }
+.ico-favourite-blue 					{ .ico-slot(134); }
+.ico-favourite-brown 					{ .ico-slot(135); }
+.ico-favourite-gray 					{ .ico-slot(136); }
+.ico-tablet-7							{ .ico-slot(137); }
+.ico-tablet-10							{ .ico-slot(138); }
+.ico-circle-open						{ .ico-slot(139); }
+.ico-circle-close						{ .ico-slot(140); }
+.ico-sprememba-tarife					{ .ico-slot(141); }
+.ico-zamenjava-paketa					{ .ico-slot(142); }
+.ico-checkmark-lightbox					{ .ico-slot(143); }
+.ico-enkratni-zakup						{ .ico-slot(144); }
+.ico-nov-telefon						{ .ico-slot(145); }
+.ico-druga-omrezja						{ .ico-slot(146); }
+.ico-download							{ .ico-slot(147); }
+.ico-infocircle-blue					{ .ico-slot(148); }
+.ico-target-blue						{ .ico-slot(149); }
+.ico-man-tie-blue						{ .ico-slot(150); }
+.ico-data-blue							{ .ico-slot(151); }
+.ico-man-blue							{ .ico-slot(152); }
+.ico-shield-blue						{ .ico-slot(153); }
+.ico-world-blue							{ .ico-slot(154); }
+.ico-exclamation-blue					{ .ico-slot(155); }
+.ico-support							{ .ico-slot(156); }
+.ico-plus								{ .ico-slot(157); }
+.ico-equals								{ .ico-slot(158); }
+.ico-calls-internal						{ .ico-slot(159); }
+.ico-wifi								{ .ico-slot(160); }
+.ico-cloud-plus-orange					{ .ico-slot(165); }
+.ico-cloud-percent-orange				{ .ico-slot(166); }
+.ico-cloud-plus-blue					{ .ico-slot(167); }
+.ico-cloud-percent-blue					{ .ico-slot(168); }
+.ico-savings							{ .ico-slot(169); }
+
+.ico-call-sms-data						{ .ico-slot(170); }
+.ico-simpl-tel-sim						{ .ico-slot(171); }
+.ico-simpl-sim							{ .ico-slot(172); }
+.ico-corpo-call							{ .ico-slot(173); }
+.ico-features-brown						{ .ico-slot(174); }
+.ico-screen-brown						{ .ico-slot(175); }
+.ico-contents-brown						{ .ico-slot(176); }
+.ico-features-blue						{ .ico-slot(177); }
+.ico-screen-blue						{ .ico-slot(178); }
+.ico-contents-blue						{ .ico-slot(179); }
+.ico-heart-orange						{ .ico-slot(180); }
+.ico-heart-blue							{ .ico-slot(181); }
+
+.ico-ortonet							{ .ico-slot(182); }
+.ico-heart-semiorange					{ .ico-slot(183); }
+.ico-heart-semiblue						{ .ico-slot(184); }
+.ico-app-android						{ .ico-slot(185); }
+.ico-app-ios							{ .ico-slot(186); }
+.ico-app-win							{ .ico-slot(187); }
+.ico-app-bb								{ .ico-slot(188); }
+
+.ico-eracun-trees						{ .ico-slot(189); }
+.ico-eracun-clock						{ .ico-slot(190); }
+.ico-eracun-drawer						{ .ico-slot(191); }
+.ico-eracun-package						{ .ico-slot(192); }
+.ico-eracun-devices						{ .ico-slot(193); }
+.ico-eracun-search						{ .ico-slot(194); }
+.ico-eracun-video						{ .ico-slot(195); }
+
+.ico-ms-tujina							{ .ico-slot(196); }
+.ico-ms-drugo							{ .ico-slot(197); }
+.ico-ms-izhodni							{ .ico-slot(198); }
+.ico-ms-excel							{ .ico-slot(199); }
+
+
+.ico-techspec-apps-brown				{ .ico-slot(200); }
+.ico-techspec-apps-blue					{ .ico-slot(201); }

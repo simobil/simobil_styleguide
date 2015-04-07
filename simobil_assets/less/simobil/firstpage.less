@@ -1,0 +1,295 @@
+/******************************************************************/
+/* FIRST PAGE
+/******************************************************************/
+.firstpage {
+	margin-top: 24px;
+	
+	.focus {
+		.ul-reset;
+		.clearfix;
+		margin-left: -24px;
+		
+		> li {
+			position: relative;
+			float: left;
+			margin: 0 0 24px 24px;
+			width: 220px;
+			
+			/*
+			width: 22.745%;
+			margin: 0 0 24px 2.0%;
+			*/
+			height: 130px;
+			border: 1px solid @white;
+			.box-shadow(2px 2px 2px #999);
+			overflow: hidden;
+			background: transparent url("@{layout-url}firstpage/box-bg.jpg") no-repeat top center;
+			background-size: 100% 132px;
+			
+			
+			a {
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				display: block;
+				width: 100%;
+				height: 260px;
+				text-decoration: none;
+				color: @black;
+				
+				.transition(0.5s ease-in-out);
+				
+				.title {
+					display: block;
+					height: 120px;
+					padding-top: 10px;
+					.clearfix;	
+					.transition(0.5s ease-in-out);
+				}
+				
+				img {
+					float: left;
+					width: 100px;
+					height:130px;
+					.clearfix;
+					.transition(0.5s ease-in-out);
+				}
+				
+				.text {
+					display: block;
+					margin:0;
+					padding:10px;
+				}
+				
+				
+				&:hover {
+					top: -130px;
+					.title, img {
+						opacity: 0;
+					}
+				}
+			}
+		}	
+	}
+	
+}
+
+/******************************************************************/
+/* MEDIASCREEN
+/******************************************************************/
+
+.mediascreen {
+	position: relative;
+	display: block;
+	margin-bottom: 24px;
+	height: 100%;
+	
+	.banners {
+		
+		> div {
+			display: none;
+			overflow: hidden;
+			
+			img {
+				width: 100%;
+			}
+		}
+		
+		> div:first-child {
+			display: block;
+		}
+	}
+	
+	.navigation {
+		position: absolute;
+		right: 24px;
+		top: 48px;
+		width: 4.1666%;
+		
+		.ul-reset;
+		
+		li {
+			margin-bottom: 24px;
+			
+			a {
+				display: block;
+				border: 3px solid @white;
+				opacity: .5;
+				
+				&.active, &:hover {
+					opacity: 1;	
+				}
+			}
+		}
+	}
+	
+}
+
+.urgent-alert {
+	background-color: #e78601;
+	color: #fff;
+	padding: 17px 24px;
+	
+	h4 {
+		margin-bottom: 0px;
+	}
+}
+
+body.business {
+	.urgent-alert {
+		background-color: #4f4a8a;
+	}
+}
+
+.alert-message {
+	padding: 17px 24px;
+	font-size: 12px;
+	border: 1px solid @residential;
+	
+	h4 {
+		margin-bottom: 0px;
+	}
+}
+
+.business .alert-message {
+	border: 1px solid @businessBorder;
+}
+
+
+/** Responsive tablet **/
+/*
+@media (max-width: 768px) {
+	.firstpage {
+		.mediascreen {
+			.navigation {
+				
+				li {
+					margin-bottom: 20px;
+				}
+			}
+		}
+		
+		.focus {
+			margin-left: -18px;
+			> li {
+				width: 176px;
+				height: 188px;
+				margin-left: 18px;
+				a {
+					height: 372px;
+					padding-top: 10px;
+					&:hover {
+						top: -188px;
+					}
+					img {
+						display: block;
+						float: none;
+						margin: 0 auto 24px auto;
+					}
+					.title {
+						padding: 0 10px;
+					}
+				}
+			}
+		}
+	}
+}
+*/
+
+//@media (max-width: 480px) {
+@media (max-width: 767px) {
+	
+	.mediascreen {
+		.banners {
+			margin-bottom: 24px;
+			
+		}
+		
+		.navigation {
+			position: relative;
+			text-align: center;
+			width: 100%;
+			right: auto;
+			left: auto;
+			top: auto;
+			
+			li {
+				display: inline-block;
+				margin: 0 0 0 5%;
+				
+				&:first-child {
+					margin-left: 0px;
+				}
+			}
+		}
+	}
+	
+	.firstpage {
+		
+		.focus {
+			
+			margin-left: -5%;
+			
+			> li {
+				/*width: 226px;*/
+				width: 44%;
+				margin: 0 0 5% 5%;
+				
+				
+				a {
+					top: 0px;
+					.transition(none);
+					
+					.title {
+						.transition(none);
+					}
+				
+					img {
+						width: 40%;
+						max-width: 100px;
+						height: auto;
+						.transition(none);
+					}
+					
+					&:hover {
+						top: 0px;
+						.title, img {
+							opacity: 1;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 320px) {
+	
+	.mediascreen {
+		.navigation {
+			li {
+				margin: 2%;
+			}				
+		}
+	}
+	
+	.firstpage {
+		
+		.focus {
+			width: 95%;
+			margin: 0 auto;
+			
+			
+			> li {
+				width: 100%;
+				margin-left: 0px;
+				a{
+					img {
+						width: 100px;
+					}
+				}
+				
+			}
+		}
+	}
+}

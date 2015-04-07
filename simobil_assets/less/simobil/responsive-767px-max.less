@@ -1,0 +1,86 @@
+/* 768 - 9xx */
+
+@media (min-width: 768px) and (max-width: 960px) {
+	
+	.login-bar {
+		
+		background: @black;
+		
+		.left {
+			width: auto;
+		}
+		
+		p {
+			float: none;
+			clear: left;
+			padding-bottom: 10px;
+		}
+	}
+}
+
+@media (max-width: 940px) {
+	nav.main ul.first > li {
+		margin-left: 24px;
+		max-width: 60px;
+		
+		> a {
+			font-size:13px;
+		}
+	}
+	
+	body.business {
+		
+		nav.main ul.first > li {
+			max-width: 50px;
+			margin-left: 24px;
+		}
+	}
+	
+}
+
+@media (max-width: 768px) {
+	
+	.login-bar {
+		
+		background: @black;
+		
+		.page-block {
+			min-height: 90px;
+			.clearfix();
+		}
+		
+		
+		p {
+			clear: left;
+			float: none;
+			width: 420px;
+			padding-bottom: 10px;
+		}
+		
+	}
+	
+	footer {
+	
+		.simobil-family {
+			a {
+				padding: 0 20px;
+				font-size: 11px;
+			}
+		}
+		
+		.sitemap {
+			
+			[class*="span"] {
+				width: 166px;
+			}	
+			
+		}
+		
+		.copyright {
+			font-size: 11px;
+		}
+	
+	}
+
+}
+

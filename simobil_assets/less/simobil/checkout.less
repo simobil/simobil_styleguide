@@ -1,0 +1,843 @@
+/******************************************************************/
+/* CHECKOUT
+/******************************************************************/
+.checkout {
+	
+	color: @black;
+
+	.section {
+		position: relative;
+		
+		margin-top: 21px;
+		margin-bottom: 13px;
+		
+		border-bottom: 1px solid #ddd4b9;
+		
+		background-color: @white;
+
+		padding-top: 24px;
+		padding-bottom: 24px;
+
+		&:before {
+			display: block;
+			position: absolute;
+			top: -21px;
+			left: 0px;
+			width: 100%;
+			content: "";
+			height: 21px;
+			background: transparent url("@{layout-url}/checkout/section-separator.png") center bottom no-repeat;
+		}
+
+		
+		&:after {
+			display: block;
+			position: absolute;
+			bottom: -13px;
+			width: 100%;
+			content: "";
+			height: 13px;
+			background: transparent url("@{layout-url}/checkout/section-separator-arrow.png") center bottom no-repeat;
+		}
+		
+		&:last-child:after {
+			display: none;
+		}
+
+		&:first-child {
+			margin-top: 0;
+			padding-top: 0;
+			&:before {
+				display: none;
+			}
+		}
+
+		.first {
+			&:before {
+				display: none;
+			}
+		}
+	}
+	
+	.subsection {
+		padding: 24px 0 0 0;
+		#border > .dotted-top;
+		
+		line-height: 1.6em;
+		
+		&:first-child {
+			#border > .clear;
+		}
+	}
+	
+	.subform {
+		padding-top: @gridGutterWidth;
+		
+		label {
+			float: none !important;
+			clear: left;
+			margin: @gridGutterWidth/2 0 0 0 !important;
+			padding: 0 !important;
+		}
+		
+		input {
+			position: static !important;
+			margin-right: 6px;
+		}
+		
+		label+input {
+			margin-top: 10px;
+		}
+	}
+	
+	.solid-line {
+		border-top: 1px solid @residential;
+	}
+	
+	h4 {
+		margin-bottom: 24px;
+	}
+	
+	.configurations-table {
+		
+		
+		.table-row { 
+			.clearfix;
+			position: relative;
+			
+			padding: 6px 0 7px 0;
+			
+			#border > .dotted-bottom;
+		
+			&.head {
+				font-weight: 700;
+				
+				border-top: 1px solid @residential;
+				padding-top: 24px;
+			}
+			
+			.col1 {
+				margin-right: 280px;
+			}
+			.col2, .col3 {
+				position: absolute;
+				right: 140px;
+				top: 7px;
+				width: 140px;
+				text-align: center;
+			}
+			&.head {
+				padding-bottom: 2px;
+				.col2, .col3 {
+					top: auto;
+					bottom: 2px;
+				}
+			}
+			.col3 {
+				right: 0;
+			}
+		}
+		
+		&:first-child {
+			.table-row.head:first-child {
+				margin-top: 0;
+				border: none;
+			}
+		}
+		
+		.table-sum {
+			float: right;
+			width: 350px;
+			height: 44px;
+			margin-top: 12px;
+			margin-bottom: 24px;
+			padding: 13px 0 13px 21px;
+			background-color: #eeece7;
+			
+			div {
+				float: left;
+				width: 140px;
+				text-align: center;
+				
+				span {
+					display: block;
+					white-space: nowrap;
+					margin-bottom: 8px;
+					font-size: 15px;
+					&:first-child {
+						font-size: 13px;
+					}
+				}
+				&:first-child {
+					text-align: left;
+					width: 70px;
+				}
+			}
+		}
+		
+	}
+	
+	.total-sum {
+		float: right;
+		background-color: #eeece7;
+		
+		padding: 24px;
+		margin: 24px 0;
+		
+		span {
+			display: block;
+			float: left;
+			width: 140px;
+			font-size: 27px;
+			line-height: 27px;
+			white-space: nowrap;
+			text-align: right;
+			
+			&:first-child {
+				text-align: left;
+				font-size: 20px;
+				line-height: 27px;
+				vertical-align: middle;
+			}
+		}
+	}
+	
+	.field {
+		margin-bottom: 12px;
+		zoom: 1;		
+		&.margin-more {
+			margin-bottom: 24px;
+		}
+		
+		span.fine {
+			margin-top: -8px;
+			display: block;
+			font-size: 10px;
+			color: #4e4e4e;
+		}
+		
+		&.l {
+			font-weight: 700;
+		}
+		&.l-small {
+			font-size: 12px;
+		}
+		
+		&.r {
+			label {
+				display: inline-block;
+				line-height: 22px;
+				min-width: 80px;
+					
+				&.long {
+					min-width: 140px;
+				}
+				
+				input[type=radio], input[type=checkbox] {
+//					margin-top: -1px;
+					vertical-align: baseline;
+				}
+			}
+			&.address .field .span3 {
+				padding-left: 16px;
+				margin-right: -16px;
+			}
+			&.small label {
+				position: relative;
+				padding-left: 27px;
+				
+				input {
+					position: absolute;
+					left: 0;
+					top: 3px;
+				}
+				span {
+					font-size: 12px;
+				}
+			}
+		}
+		
+		&.cb {
+			label, .option {
+				position: relative;
+				padding-left: 26px;
+				input {
+					position: absolute;
+					left: 0;
+				}
+				span {
+					display: block;
+				}
+				.title {
+					font-weight: 700;
+				}
+				.desc {
+					margin-top: 6px;
+					img {
+						float: left;
+						margin-left: -24px;
+						margin-right: 12px;
+					}
+				}
+				label, +label {
+					display: block;
+					float: left;
+					margin-top: 12px;
+					min-width: 80px;
+					padding-left: 18px;
+				}
+				
+				+label {
+					margin-left: 26px;
+				}
+			}
+		}
+
+		&.t {
+			div:first-child {
+				padding-top: 2px;
+			}
+			input {
+				height: 13px;
+				width: (3*@gridColumnWidth + 2*@gridGutterWidth - 10);
+			}
+			
+			&.post {
+				input {
+					width: 130px;
+					&:first-child {
+						width: 50px;
+						margin-right: 10px;
+					}
+				}
+			}
+			
+			&.n input {
+				width: 24px;
+			}
+			
+		}
+		
+		&.s {
+			select {
+				
+				line-height: 11px;
+				color: black;
+				padding: 1px;
+				height: 23px;
+				width: 210px;
+				
+			}
+		}
+		
+		&.phone {
+			select {
+				float: left;
+				width: 60px;
+				margin-right: 10px;
+			}
+			input {
+				width: 130px;
+			}
+		}
+		
+		&.map-tools {
+			padding-top: 6px;
+			label {
+				display: inline-block;
+				margin-right: 12px;
+			}
+			select {
+				margin-top: 6px;
+			}
+			a {
+				position: relative;
+				color: @residential;
+				font-weight: 700;
+			}
+		}
+		
+		&.poll {
+			padding-left: 24px;
+			.question {
+				clear: both;
+				margin-bottom: 12px;
+			}
+			.choices {
+				clear: both;
+				label {
+					display: inline-block;
+					min-width: 36px;
+					margin-bottom: 12px;
+				}
+				
+				input[type=radio], input[type=checkbox] {
+					margin-top: 0px;
+					margin-bottom: 4px;
+				}
+			}
+		}
+		
+	}
+	
+	.header {
+		position: relative;
+		padding: 24px;
+		
+		min-height: (275px - 2*24px);
+		
+		border-bottom: 1px solid @residential;
+		
+		overflow: hidden;
+		
+		img.bg {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		
+		.desc {
+			position: relative;
+			width: 250px;
+			
+			h1 {
+				font-size: 51px;
+				line-height: 1.2em;
+				font-weight: 400;
+				
+				margin-bottom: 24px;
+				
+				&.wide {
+					width: 400px;
+				}
+			}
+			
+			.txt {
+				display: block;
+				font-size: 15px;
+				line-height: 1.3em;
+			}
+			a.info {
+				color: @residential;
+				display: block;
+				position: relative;
+				margin-top: 24px;
+				padding-top: 0px;
+				font-size: 13px;
+				font-weight: 700;
+			}
+		}
+		
+	}
+	
+	.btn-green {
+		font-weight: 400;
+		float: right;
+		margin-bottom: 24px;
+	}
+	
+	.shops {
+		.clearfix;
+		list-style: none;
+		margin: 0 -24px 0 0;
+		padding: 0;
+		
+		li {
+			display: block;
+			position: relative;
+			width: 288px;
+			float: left;
+			min-height: 180px;
+			margin-right: 24px;
+			margin-bottom: 24px;
+			
+			label {
+				display: block;
+				padding-left: 24px
+			}
+			
+			input {
+				position: absolute;
+				left: 0;
+				top: -2px;
+			}
+			
+			span {
+				display: block;
+				clear: both;
+				margin-bottom: 6px;
+				color: @gray;
+				&.name {
+					display: inline-block;
+					font-weight: 700;
+					margin-bottom: 12px;
+					color: @black;
+				}
+				&.value {
+					float: right;
+					width: 132px;
+					clear: right;
+					color: @black;
+				}
+			}
+			
+		}
+	}
+	
+	.shopping-menu {
+		float: left;
+		padding: 10px;
+		background-color: #eeece6;
+		text-align: left;
+		margin-bottom: 7px;
+
+		ul {
+			.ul-reset;
+			li {
+				margin-top:4px;
+			}
+			a {
+				display:block;
+				font-weight:700;
+				color:@black;
+				position: relative;
+				
+				i {
+					margin-left: -4px;
+				}
+			}
+		}
+	}
+	
+	
+}
+
+.business .checkout {
+	.section {
+		border: none;
+		border-bottom: 1px solid @businessBorder;
+		
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+	
+	.subsection {
+		#border > .dotted-top(left, top, business);
+		
+		&:first-child {
+			#border > .clear;
+		}
+	}
+	
+	.radiobuttons {
+		h2 {
+			line-height: 24px;	
+			margin-bottom: @gridGutterWidth;
+		}
+		
+		.row {
+			margin-bottom: @gridGutterWidth;
+		}
+	}
+	
+	.btn.btn-green.medium {
+		margin-bottom: 0;
+	}
+}
+
+.business .checkout.inquire {
+	h1 {
+		font-size: 27px;
+		line-height: 1.4em;
+	}
+	
+	.subsection {
+		#border > .dotted-top(left, top, business);
+		
+		&:first-child {
+			#border > .clear;
+		}
+	}	
+	
+	.inquire-info {
+		background-color: @simobilPurple;
+		color: white;
+		padding: 16px;
+		margin: 28px 0;
+		margin-bottom: 0;
+	}
+	
+	.inquire-table {
+		
+		border-bottom: 1px solid @business;
+		margin-bottom: 12px;
+		margin-top: 28px;
+		
+		.title {
+			font-weight: 700;
+			margin-bottom: 6px;
+		}
+	
+		.table-section {
+			
+			border-top: 1px solid @business;
+			
+			.section-title {
+				position: relative;
+				font-size: 20px;
+				padding: 12px 36px;
+				
+				i {
+					margin: 7px 5px 0 -25px;
+				}
+			}
+			
+			.table-row {
+				margin-left: 36px;
+				#border > .dotted-top(top, left, business);
+				.clearfix;
+				
+				padding: 8px 0;
+
+				.col1 {
+					float: left;
+					width: 32px;
+				}
+				.col2 {
+					float: left;
+				}
+				.col3 {
+					float: right;
+					font-weight: 700;
+				}
+			}
+			
+		}
+		
+	}
+	
+	.table-sum {
+		background-color: @businessBg;
+	}
+	
+	.border-bottom {
+		border-top: 1px solid @business;
+	}
+	
+	.inquire-form {
+		
+		padding-top: 24px;
+		
+		h4 {
+			font-weight: 400;
+		}
+	}
+	
+	.header {
+		border-bottom: 1px solid @business;
+		
+		.desc {
+			a.info {
+				color: @business;
+			}
+		}
+	}
+	
+}
+
+
+@media (max-width: 767px) {
+	.checkout {
+		
+		.span6, .span12 {width: auto; margin:0;}
+		
+		.collapsable {
+			.span6 {
+				width: 100%;
+				margin: 0 24px;
+			}
+		}
+		
+		.header {
+			
+			
+			img.bg {
+				position: relative;
+				width: auto;
+				max-width: 100%;
+			}
+			
+			.desc {
+				margin: 0;
+				width: auto;
+				
+				h1.wide {
+					width: auto;
+				}
+			}
+		}
+		
+		.sections .container {
+			padding-right: 24px;
+		}
+		
+		.section {
+			.subform {
+				padding-top: 0px !important;
+				h5 {
+					margin-top: @gridGutterWidth/2 !important;
+				}
+			}
+		}
+		
+		&.inquire {
+			.sections .container {
+				padding-left: 24px;
+				
+				.row {
+					margin-left: -24px;
+				}
+			}	
+		}
+		
+		a.back {
+			margin-left: 24px;
+		}
+		.map-tools {
+			padding-left: 24px;
+		}
+		
+		.field span.fine {
+			width: 159px;
+		}
+		
+		.field.s select {
+			width: 159px;
+		}
+		
+		.field.r {
+			label {
+				display: inline-block;
+				min-width: 80px;				
+			}
+			
+			.field > label {
+				margin-left: 24px;
+			}
+			
+			&.address .field .span3 {
+				padding-left: 0;
+				margin-right: 0;
+			}
+
+		}
+		
+		.field.t {
+			input {
+				width: auto;
+				
+			}
+			
+			&.post input, &.phone input {
+				max-width: 80px;
+			}
+		}
+		
+		
+		
+		.field.cb label input {
+			vertical-align: top;
+			margin:0;
+		}
+		
+		.shops {
+			padding-left: 24px;
+			
+			li {
+				width: auto;
+			}
+			
+		}
+		
+		.configurations-table {
+			padding-left: 24px;
+			
+			.table-row {
+				.col1 {
+					margin-right: 70%;
+				}
+				.col2, .col3 {
+					width: 30%;
+				}
+				.col2 {
+					right: 35%;
+				}
+			}
+			.table-sum {
+				width: auto;
+				height: auto;
+				padding: 13px 21px 9px 21px;
+				div {
+					float: none;
+					text-align: left;
+					width: auto;
+					span {
+						display: inline-block;
+						text-align: left;
+						margin-bottom: 4px;
+						&:first-child {
+							width: 120px;
+						}
+					}
+					&:first-child {
+						margin-bottom: 4px;
+					}
+				}
+			}
+		}
+		.total-sum {
+			span {
+				width: 100px;
+			}
+		}
+		.shopping-menu {
+			margin-left: 24px;
+		}
+		
+		.btn-green.large {
+		 	margin-left: @gridGutterWidth;
+		}
+		
+		.btn.back + .btn-green.large {
+			float: inherit;
+			width: 50%;
+			float: right;
+			display: inline-block;
+			margin-left: @gridGutterWidth;
+		}
+				
+		.btn.back {
+			margin-bottom: 12px;
+		}
+		
+		&.inquire .btn-green.large {
+			float: none;
+			display: block;
+			margin-left: 0;
+		}
+		
+	}	
+}
+
+@media (max-width: 480px) {
+	.checkout {
+		.field {
+			[class*=span] {
+				float: none;
+				display: block;
+			}
+		}
+	}
+	
+}

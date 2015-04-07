@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="64px" height="64px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+<filter  height="140%" width="160%" id="AI_BevelShadow_1" y="-20%" x="-20%">
+	<feGaussianBlur  result="blur" stdDeviation="1" in="SourceAlpha"></feGaussianBlur>
+	<feOffset  result="offsetBlur" in="blur" dy="0" dx="0"></feOffset>
+	
+		<feSpecularLighting  result="specOut" in="blur" surfaceScale="5" style="lighting-color:white" specularConstant="1" specularExponent="10">
+		<fePointLight  z="-20000" y="-10000" x="-5000"></fePointLight>
+	</feSpecularLighting>
+	<feComposite  result="specOut" operator="in" in="specOut" in2="SourceAlpha"></feComposite>
+	<feComposite  result="litPaint" operator="arithmetic" in="SourceGraphic" in2="specOut" k1="0" k4="0" k3="1" k2="1">
+		</feComposite>
+	<feMerge>
+		<feMergeNode  in="offsetBlur"></feMergeNode>
+		<feMergeNode  in="litPaint"></feMergeNode>
+	</feMerge>
+</filter>
+<path style="fill:#FFFFFF;filter:url(#AI_BevelShadow_1);" d="M20.545,35.253c-4.83-4.092-5.422-11.356-1.316-16.187
+	c0.382-0.446,0.79-0.867,1.237-1.25c4.225-3.67,10.659-3.697,14.949-0.066c2.33,1.988,3.751,4.765,4.001,7.831
+	c0.25,3.052-0.697,6.013-2.685,8.356c-0.382,0.448-0.803,0.869-1.236,1.25C31.256,38.872,24.821,38.898,20.545,35.253z M53.68,47.4
+	l-9.712-10.423c2.329-3.54,3.436-7.724,3.079-12.027c-0.407-5.094-2.79-9.712-6.684-13.028c-7.146-6.066-17.858-6.013-24.924,0.119
+	c-0.724,0.631-1.421,1.329-2.053,2.08c-6.83,8.041-5.843,20.133,2.198,26.964c5.645,4.802,13.501,5.75,20.041,2.934
+	c0.08,0.092,0.146,0.197,0.237,0.288l9.83,10.542c1.197,1.29,2.854,1.868,4.474,1.724c1.171-0.105,2.33-0.578,3.25-1.448
+	C55.627,53.058,55.746,49.597,53.68,47.4z"/>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>

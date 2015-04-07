@@ -1,0 +1,414 @@
+
+
+.mi {
+	
+	.content {
+		margin: @gridGutterWidth 0;
+	}
+	
+	.accordion {
+		margin-bottom: @gridGutterWidth;
+	}
+
+
+	&.paketi.product-list .product-listing {
+		
+		margin-bottom: @gridGutterWidth;
+
+		.item {
+			height: auto !important;
+			
+			.controls {
+				padding: 10px 10px @gridGutterWidth 10px;
+			}
+			
+			&.over {
+				cursor: default;
+			}
+		}
+	}
+
+	.configurator {
+		.choices .choice {
+			.c1, .c12 {
+				height: 43px;
+				
+				label {
+					min-height: 43px;
+					span {
+						padding-top: 15px;
+						padding-bottom: 15px;
+						
+						&.multiline {
+							padding-top: 8px;
+							padding-bottom: 5px;
+						}
+					}
+				}
+			}
+			
+			.c3 {
+				height: 43px;
+				line-height: 43px;
+			}
+			
+			.border-right {
+				border-right: 1px solid #d4d4d4;
+			}
+			
+			.border-left {
+				border-left: 1px solid #d4d4d4;
+			}
+			
+			.mini-info {
+				
+				line-height: 43px;
+				height: 43px;
+				width: 306px;
+				right: 0;
+				padding:0;
+				text-align: center;
+				
+				[class*="span"] {
+					height: 43px;
+				}
+				
+				.small {
+					line-height: 12px;
+					font-size: 10px;
+					padding-top: 8px;
+				}
+				
+				.row-fluid {
+					background: none;
+				}
+				&.large {
+					width: 439px;
+					
+				}
+				
+			}
+		}
+	}
+	
+	.nav-wrapper {
+		margin-top: @gridGutterWidth;
+	}
+	
+	.usage-calculator {
+		
+		padding-bottom: @gridGutterWidth;
+		#border > .dotted-bottom();
+		
+		.example {
+			margin-top: 5px;
+			margin-bottom: 0;
+		}
+		.row {
+			margin-bottom: @gridGutterWidth/2;
+			
+			&.border-top {
+				padding-top: @gridGutterWidth;
+				#border > .dotted-top();
+			}
+		}
+		.text-right {
+			font-size: 15px;
+			line-height: 18px;
+			padding-top: 8px;
+		}
+		.btn {
+			padding-top: 8px;
+			padding-bottom: 8px;
+			//width: 74px;
+			width: 16.7%;
+			border-color: #e3e3e3;
+			text-shadow: none;
+			&.active {
+				background-color: @residential;
+				color: #fff;
+				text-shadow: none;
+			}
+		}
+		.unit {
+			width: 98px;
+			margin-bottom: 0;
+			height: 34px;
+			float: left;
+		}
+		.ammount {
+			width: 100px;
+			float:right;
+			padding-top: 8px;
+		}
+		small {
+			display: inline-block;
+			margin-top: @gridGutterWidth;
+			font-size: 10px;
+			line-height: 12px;
+		}
+		.sum {
+			font-size: 32px;
+			line-height: 54px;
+			color: @residential;
+			
+			span {
+				display: inline-block;
+				width: 284px;
+				text-align: center;
+				border: 1px solid @residential;
+				float: none;
+				margin-left: 17px;
+			}
+		}
+	}
+	
+	.banner {
+		position: relative;
+		height: 130px;
+		border: 1px solid @white;
+		.box-shadow (2px 2px 2px #999);
+		overflow: hidden;
+		background: transparent url("@{layout-url}firstpage/box-bg.jpg") no-repeat bottom center;
+		background-size: 100% 130px;
+		margin-right: 4px;
+		margin-bottom: 4px;
+		
+		img {
+			float: left;
+			width: 100px;
+			height: 130px;
+			margin-right: 10px;
+		}
+		
+		a {
+			color: @black;
+			display: block;
+			.clearfix;
+		}
+		
+		.title {
+			display: block;
+			padding: 10px;
+		}
+		
+	}
+	
+}
+
+
+
+@media (max-width: 767px) {
+	.mi {
+		.row {
+			padding:0;
+			margin:0; 
+		}
+		
+		.row [class*=span] {
+			float: none; 
+			display: block;
+			width: auto;
+			margin-left:0;
+			margin-right:0;
+		}
+			
+		.articles {
+			margin: 0 @gridGutterWidth;
+		}
+		
+		.configurator {
+			.choices .choice {
+				
+				.c3 {
+					margin-right: 0;
+				}
+				
+				.mini-info {
+					display: block;
+					width: auto;
+					
+					.small {
+						padding-bottom: 8px;
+					}
+					
+					.border-right,
+					.border-left { border: none; }
+					
+					.row-fluid {
+						width: 100%;
+						//height: 43px;
+						height: auto;
+						text-align: left;
+						[class*="span"] {
+							float: left;
+							display: inline-block;
+							padding-left: @gridGutterWidth;
+							padding-right: @gridGutterWidth;
+							//height: 43px;
+							height: auto;
+						}
+					}
+	
+					&.large {
+						width: auto;
+						height: auto;
+						border-left: none;
+						border-right: none;
+						
+						.c1, .c12 {
+							height: auto !important;
+							margin-top: 0;
+						}
+						.row-fluid {
+							height: auto;
+							height: auto;
+							
+							[class*="span"] {
+								height: auto;
+								padding: 8px 12px;
+							}
+						}
+					}
+				}
+				
+				&.large {
+					height: auto;
+					.c1, .c12, .c3 {
+						height: auto !important;
+						margin-top: 0;
+						line-height: 43px !important;
+						
+						label {
+							margin-top: 0 !important;
+						}
+					}
+					.row-fluid {
+						height: auto;
+						
+						[class*="span"] {
+							height: auto;
+							padding: 8px 12px;
+						}
+					}
+				}
+			}
+		}
+		
+		.accordion {
+			//margin-left: @gridGutterWidth;
+			//margin-right: @gridGutterWidth;
+		}
+		
+		.tab-content {
+			margin: 0 @gridGutterWidth;
+			position: relative;
+		}
+		
+		.banner {
+			margin-bottom: @gridGutterWidth;
+		}
+		
+		&.calculator {
+			.header h1 {
+				padding: 0 @gridGutterWidth;
+			}
+		}
+		
+		.usage-calculator {
+			 .text-right {
+				text-align: left;
+				margin-bottom: @gridGutterWidth/2;
+			}
+			
+			.btn-group {
+				margin-bottom: @gridGutterWidth/2;
+				.btn {
+					//font-size: 10px;
+				}
+			}
+			
+			.example {
+				margin: 12px 0;
+			}
+			
+			.ammount {
+				float: left;
+				width: auto;
+				padding: 2px 12px;
+				text-align: left;
+				font-weight: bold;
+			}
+			
+			.sum {
+				text-align: left;
+				
+				span {
+					display: block;
+					margin:0;
+					width: 99%;
+				}
+			}
+			
+		}
+	}
+	
+	.nav-wrapper {
+		position: relative;
+		margin-top: 24px;
+		margin-bottom: 0;
+	}
+
+}
+
+@media (max-width: 480px) {
+	.mi {
+		.usage-calculator {
+			.btn {
+				height: 50px;
+				font-size: 10px;
+			}
+		}
+		.configurator {
+			.choices .choice {
+				.mini-info {
+					.row-fluid {
+						height: auto;
+						[class*="span"] {
+							float: left;
+							display: inline-block;
+							padding-left: @gridGutterWidth/2;
+							padding-right: @gridGutterWidth/2;
+							height: auto;
+						}
+					}
+					
+				}
+			}
+		}
+	}
+}
+
+
+@media (max-width: 320px) {
+	.mi {
+		.configurator {
+			.choices .choice {
+				.mini-info {
+					height: auto;
+					.row-fluid {
+						height: auto;
+						[class*="span"] {
+							float: none;
+							display:block;
+							padding-left: @gridGutterWidth/2;
+							padding-right: @gridGutterWidth/2;
+							height: auto;
+						}
+					}
+					
+				}
+			}
+		}
+	}
+}

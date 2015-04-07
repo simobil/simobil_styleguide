@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Encode</title>
+</head>
+<body>
+	<button onclick="encode();">Encode!</button><br />
+	<textarea rows="30" cols="100" id="code"></textarea><br />
+	<hr>
+	<textarea rows="30" cols="100" id="result"></textarea>
+	<script>
+	function encode() {
+		_code = document.getElementById('code');
+		_res = document.getElementById('result');
+		
+		fixed = _code.value.replace(/</gi, '&lt;');
+		fixed = fixed.replace(/>/gi, '&gt;');
+		fixed = fixed.replace(/\t/gi, ' '); 
+		
+		_res.value=fixed;
+		
+	}
+	</script>
+
+
+</body>
+</html>

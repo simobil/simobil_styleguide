@@ -1,0 +1,221 @@
+/******************************************************************/
+/* PRODUCT LIST - PAKETI
+/******************************************************************/
+.product-list.paketi {
+	
+	
+	
+	h2 {
+		margin-bottom: 15px;
+		font-weight: 400;
+	}
+	
+}
+
+.fixed-height {
+	.item {
+		.controls {
+			position:absolute;
+			bottom:0;
+		}
+	}
+}
+
+.fixed-290 {
+	.item {
+		height:290px !important;
+	}
+}
+
+.paketi .product-listing, .paketi.product-listing {
+	
+	.item {
+		padding: 0px;
+		height: auto; 
+		display: block;
+			
+		&.small {
+			height: 240px;
+		}
+		
+		
+
+		
+
+		img {
+			position: static;
+			border-bottom: 1px solid @residentialBorder;
+		}
+		
+		h4 {
+			font-size: 13px;
+		}
+		
+		h4, h2 {
+			padding: 10px;
+			margin-bottom: 0;
+			color: @black;			
+		}
+		
+		p, .options {
+			padding: 0 10px;
+			font-size: 13px;
+			line-height: 14px;
+			color: @black;
+		}
+		
+		.info {
+			right: auto;
+			left: 0px;
+			bottom: 0px;
+			width: 100%;
+			height: auto;
+			
+			.controls {
+				padding: 10px;
+				position: relative;
+				
+				.btn {
+					width: auto;
+					margin:0;
+				}
+				
+				.more {
+					float: right;
+					line-height: 24px;
+				}
+
+
+			}
+		}
+
+		.controls {
+			form {
+				margin:0;
+			}
+		}
+			
+	}
+}
+
+.business {
+	.product-list.paketi {
+		.product-listing {
+			.item {
+				img {
+					border-color: @businessBorder;
+				}
+			}
+		}
+	}
+} 
+
+
+
+@media (max-width: 767px) {
+	
+	.product-list.paketi {
+		
+		
+		.container.product-listing {
+			padding:0;	
+		}
+		
+	}
+
+	.fixed-height {
+		.item {
+			.controls {
+				position:static;
+			}
+		}
+	}
+	.paketi .product-listing, .paketi.product-listing {
+		
+		.span4, .span6 {
+			//padding: 0 5%;
+			width: auto;
+			margin: 0 auto;
+		}
+		
+		h2 {
+			padding: 0 5%;
+		}
+		
+		.item {
+			position: relative;
+			
+			height: auto !important;
+			
+			img {
+				float: none;
+				width: 100%;
+				margin:0;
+			}
+			
+			.info, h4 {
+				
+				float: none;
+				margin:0;
+			}
+			
+			h2 {
+				line-height: 24px;
+			}
+			
+			.info {
+				position:relative;
+				
+				.controls {
+					margin:0;
+				}
+			}
+			
+		}
+	}
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+	.product-list.paketi .product-listing, .paketi.product-listing {
+		padding:0 !important;
+		.span4, .span6 {
+			padding: 0 5%;
+			width: 50%;
+			float: left;
+			margin:0;
+			
+			.item {
+				//height: 270px !important;
+				.info {
+					position: absolute;
+					right: auto;
+					left: 0px;
+					bottom: 0px;
+					width: 100%;
+					height: auto;
+				}
+
+				&.bottom-padding {
+					padding-bottom:3 * @gridGutterWidth/2 !important;
+				}
+			}
+
+
+		}
+	}
+	
+}
+
+@media (max-width: 480px) {
+	.product-list.paketi .product-listing, .paketi.product-listing {
+		.span4, .span6 {
+			.item {
+				&.bottom-padding {
+					padding-bottom:@gridGutterWidth/2 !important;
+				}
+			}
+
+
+		}
+	}
+}

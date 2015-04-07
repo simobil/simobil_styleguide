@@ -1,0 +1,259 @@
+/******************************************************************/
+/* TABS
+/******************************************************************/
+.nav-tabs {
+	.clearfix();
+	margin-bottom: 0;
+	padding: 0 24px;
+	border-bottom: 1px solid @residential;
+	#border > .dotted-left(24px, top); 
+}
+
+.nav-tabs > li {
+	#border > .dotted-right; 
+}
+
+.nav-tabs > li > a {
+	color: @grayDarker;
+	padding: 18px 24px 22px;
+	margin-right: 0px;
+	font-size: 15px;
+	line-height: @baseLineHeight;
+	border: 1px solid transparent;
+	.border-radius(0);
+	&:hover {
+		border-color: @grayLighter @grayLighter #ddd;
+	}
+}
+
+.nav-tabs > li > a:hover {
+	background-color: transparent !important;
+	border: 1px solid transparent;
+}
+
+.nav-tabs > .active {
+	margin-left: -2px;
+}
+
+.nav-tabs > .active > a,
+.nav-tabs > .active > a:hover {
+	color: @residential;
+	padding-left: 26px;
+	background-color: @white !important;
+	border: 1px solid @residential;
+	border-bottom-color: transparent;
+	cursor: default;
+} 
+
+.business {
+	.nav-tabs {
+		border-color: @business;
+		#border > .dotted-left(24px, top, business); 
+	}
+	
+	.nav-tabs > li {
+		#border > .dotted-right(right, top, business); 
+	}
+
+	.nav-tabs > .active > a,
+	.nav-tabs > .active > a:hover {
+		color: @business;
+		border-color: @business;
+		border-bottom-color: transparent;
+	}
+}
+
+
+@media (max-width: 480px) {
+	
+	.nav-tabs {
+		padding: 0 24px;
+		#border > .dotted-left(24px, top); 
+	}
+	
+	.nav-tabs > li > a {
+		padding: 18px 8px 22px;
+		font-size: 13px;
+	}	
+	
+	.nav-tabs > .active > a,
+	.nav-tabs > .active > a:hover {
+		padding-left: 10px;
+	}
+}
+
+/******************************************************************/
+/* TABBABLE NAVIGATION
+/******************************************************************/
+.tabbable {
+	margin-bottom: 24px;
+}
+
+.tabbable-nav {
+	display: none;
+}
+
+.nav-tabs {
+	margin-left: 0;
+}
+
+@media (min-width: 768px) {
+	.nav-tabs {
+		margin-left: 0 !important;
+	}
+	
+}
+
+
+//@media (max-width: 480px) {
+@media (max-width: 767px) {
+	
+	.tabbable {
+		width: 100%;
+		overflow: hidden;
+		position: relative;
+		
+		.nav-tabs {
+			//position: relative;
+		}
+	}
+	
+	.tabbable-nav {
+		display: block;
+		position:absolute;
+		left:0;
+		top:0;
+		width: 100%;
+		height: 60px;
+		z-index: 10;
+	
+		a {
+			display: block;
+			width: 40px;
+			height: 99%;
+			span {
+				display: block;
+				width: 32px;
+				height: 32px;
+				margin: 15px 5px;
+			}
+		}
+		
+		a.prev {
+			float: left;
+			span {
+				.ico-slot-medium(21);
+			}
+		}
+		
+		a.next {
+			float: right;
+			span {
+				.ico-slot-medium(9);
+			}
+		}
+		
+	}
+	
+	.tabbable-nav + div {
+		position: relative;
+	}
+	
+	.business {
+		.tabbable-nav {
+			a.prev {
+				span {
+					.ico-slot-medium(20);
+				}
+			}
+			
+			a.next {
+				span {
+					.ico-slot-medium(8);
+				}
+			}
+		}
+	}
+	
+	.nav-tabs {
+		clear: both;
+		width: 100%;
+		padding: 0;
+		
+		> li {
+			width: 100%;
+			display: none;
+			text-align: center;
+			margin-bottom: 0;
+		}
+		> .active {
+			display: block;
+			margin-left: 0;
+		}
+		
+		> .active > a,
+		> .active > a:hover {
+			border-width: 1px 0;
+		}
+	}
+	
+	.business {
+		.tabbable-nav {
+			a {
+				span {
+					background-image: url("@{layout-url}product-detail/gallery_zoom_business.png");
+				}
+			}
+		}
+	}
+	.business, .residential {
+		.tabbable-nav.white {
+/*			a.prev {background-image: url("@{layout-url}arrow_bg_left_white.png");}
+			a.next {background-image: url("@{layout-url}arrow_bg_right_white.png");}*/
+		}
+	}
+	
+}
+
+.nav-tabs.image-tabs {
+	margin-bottom: @gridGutterWidth;
+	background: none;
+	
+	> li {
+		background: none;
+		margin-top: 9px;
+		
+		img { 
+			display: none;
+		}
+		
+		&.active {
+			margin-top: 0;
+			max-width: 230px; 
+			
+			img {
+				display: block;
+				float: right; 
+				vertical-align: bottom;
+				margin-right: -10px;
+				margin-left: 20px;
+				margin-top: -25px;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.nav-tabs.wide-nav-tabs {
+		a, a:hover {
+			padding: @gridGutterWidth/2 @gridGutterWidth;
+			
+		}
+		span {
+			float: left;
+			font-size: 20px;
+			width: 180px;
+			margin-right: 20px;
+		}
+	}
+}

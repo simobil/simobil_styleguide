@@ -1,0 +1,190 @@
+.horizontal, .ul-horizontal {
+	
+	margin:0;
+	padding:0;
+	list-style: none;
+	
+	li {
+		display: inline-block;
+	}
+}
+
+.ul-reset {
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+
+/** Dotted border **/
+#border {
+
+	.dotted(@repeat: repeat-x, @x: left, @y: top, @type: residential) when (@repeat = repeat-x) {
+		background: url("@{layout-url}dots-@{type}-horizontal.png") @repeat @x @y;
+	}
+	
+	.dotted(@repeat: repeat-x, @x: left, @y: top, @type: residential) when (@repeat = repeat-y) {
+		background: url("@{layout-url}dots-@{type}.png") @repeat @x @y;
+	}
+	
+	.clear {
+		background: none;
+	}
+
+	.dotted-left(@x: left, @y: top, @type: residential) {
+		#border > .dotted(repeat-y, @x, @y, @type);
+	}
+	
+	.dotted-right(@x: right, @y: top, @type: residential) {
+		#border > .dotted(repeat-y, @x, @y, @type);
+	}
+	
+	.dotted-top(@x: left, @y: top, @type: residential) {
+		#border > .dotted(repeat-x, @x, @y, @type);
+	}
+	
+	.dotted-bottom(@x: left, @y: bottom, @type: residential) {
+		#border > .dotted(repeat-x, @x, @y, @type);
+	}
+	
+}
+
+/** filters  **/
+#filter {
+	.grayscale {
+	    filter: gray; /* IE6-9 */
+	    -moz-filter: grayscale(100%); /* Firefox */
+	    -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+	}
+	
+	.grayscale-disable {
+		filter: none;
+	    -moz-filter: grayscale(0%); /* Firefox */
+    	-webkit-filter: grayscale(0%);
+	}
+}
+
+/** Icons **/
+#icon {
+	
+	.base(@slot, @x: 0, @y: 0, @size: 1, @type:residential) {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 20px;
+		height: (@size * 20px);
+		top: @y;
+		background: transparent url("@{layout-url}icons-@{type}.png") no-repeat 0px -(@slot * 20px);
+		
+	}
+	
+	.left(@slot, @x: 0, @y: 0, @size: 1, @type:residential) {
+		&:before {
+			#icon > .base(@slot, @x, @y, @size, @type);
+			left: @x;
+		}
+	}
+	
+	.right(@slot, @x: 0, @y: 0, @size: 1, @type:residential) {
+		&:before {
+			#icon > .base(@slot, @x, @y, @size, @type);
+			right: @x;
+		}
+	}
+	
+	.clear {
+		&:before, &:after {
+			content: "";
+			display: block;
+			position: absolute;
+			width: auto;
+			height: auto;
+			left: auto;
+			right: auto;
+			top: auto;
+			background: none;
+		}		
+	}
+}
+
+/*
+#icon-pisarna {
+	
+	.base(@slot, @x: 0, @y: 0, @size: 1, @type:small) when (@type = big) {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 33px;
+		height: (@size * 39px);
+		top: @y;
+		background: transparent url("@{layout-url}popolna-pisarna/icons-@{type}.png") no-repeat 0px -(@slot * 39px);
+	}
+	
+	.base(@slot, @x: 0, @y: 0, @size: 1, @type:small) when (@type = small) {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 22px;
+		height: (@size * 26px);
+		top: @y;
+		background: transparent url("@{layout-url}popolna-pisarna/icons-@{type}.png") no-repeat 0px -(@slot * 26px);
+	}
+	
+	.left(@slot, @x: 0, @y: 0, @size: 1, @type:small) {
+		&:before {
+			#icon-pisarna > .base(@slot, @x, @y, @size, @type);
+			left: @x;
+		}
+	}
+}
+ */
+
+/** Buttler */
+.ribbon (@height, @type: residential) {
+	clear: both;
+	display: block;
+	height: @height;
+	width: 100%;
+	padding: 10px 0;
+	
+	p {
+		position: relative;
+		color: @white;
+		font-weight: bold;
+		background-color: @simobilOrange;
+		padding: 8px 6px;
+		display: block;
+		margin-right: -31px;
+		z-index: 1;
+		min-height: @height - 10;
+		
+		
+		img {
+			float: left;
+			margin-right: 10px;
+		
+		}
+		
+		&:after {
+			content: "";
+			position:absolute;
+			display: block;
+			width:0px;
+			height: 4px;
+			right: 0px;
+			bottom: -12px;
+			border-top: 8px solid darken(@simobilOrange, 10%);
+			border-right: 7px solid transparent;
+			z-index: -1;
+		}
+	}
+	
+}
+.ribbon (@height, @type: residential) when (@type = business) {
+	p {
+		background-color: @simobilPurple;
+		
+		&:after {
+			border-top: 8px solid darken(@simobilPurple, 20%);
+		}
+	}
+}

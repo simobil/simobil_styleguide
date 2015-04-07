@@ -61,7 +61,12 @@ body.entry {
 	text-shadow: none;	
 }
 
-
+.navbar .btn {
+	display: none;
+	background: #fff;
+	float: right;
+	border: 1px solid #ccc;
+}
 
 /* Space out sub-sections more
 -------------------------------------------------- */
@@ -767,6 +772,10 @@ form.well {
   .jumbotron .btn {
     margin-bottom: 10px;
   }
+  
+  .navbar .btn {
+	display: inline-block;
+  }
 
   /* Subnav */
   .subnav {
@@ -816,7 +825,19 @@ form.well {
   .footer p {
     margin-bottom: 9px;
   }
+  
+  .row [class*=span] {
+	width:100%;
+	margin-left: 0;
+  }
 
+  .page-block {
+	margin-left: 24px;
+	margin-right: 24px;
+	display: block;
+	width: auto;
+  }
+  
 }
 
 @media (max-width: 767px) {

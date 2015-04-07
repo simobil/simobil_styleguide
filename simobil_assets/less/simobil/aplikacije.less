@@ -1,0 +1,72 @@
+.aplikacije {
+	.download {
+		margin-bottom: @gridGutterWidth;
+		
+		.btn {
+			margin-right: @gridGutterWidth;
+		}
+	}
+	
+	.section {
+		padding-top: @gridGutterWidth;
+	}
+}
+@media (min-width: 768px) {
+	.aplikacije {
+		.nav-tabs {
+
+			a {
+				padding: @gridGutterWidth/2 @gridGutterWidth;
+				max-width: 180px;
+				
+				
+				&:hover {
+					padding-left: @gridGutterWidth;
+				}
+				
+				i {
+					vertical-align: middle;
+					margin: -10px 0;
+				}
+			}
+			span {
+				float: left;
+				font-size: 15px;
+				max-width: 100px;
+				margin-right: 12px; 
+			}
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	
+	.aplikacije {
+		.header h1 {
+			padding: 0 @gridGutterWidth;
+		}
+		
+		.tab-content {
+			//margin: 0 @gridGutterWidth; .container has that margin already.
+
+		}
+				
+		.row [class*="span"] {
+			width: auto;
+			margin:0;
+			padding:0;
+			float: none;
+		}
+		
+		.download {
+			margin-bottom: @gridGutterWidth;
+			text-align: center;
+			
+			.btn {
+				margin-right: 0;
+				margin-bottom: @gridGutterWidth/2;
+				display: block;
+			}
+		}
+	}
+}

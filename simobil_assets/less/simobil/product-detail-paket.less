@@ -1,0 +1,101 @@
+/******************************************************************/
+/* PRODUCT DETAIL - PAKET
+/******************************************************************/
+.paket-detail {
+	.section {
+		padding: 12px 0 24px 0;
+		border-top: 1px solid @residentialBorder;
+		&:first-child {
+			border-top: 0;
+		}
+		
+		background: @white;	
+	
+		.container {
+			position: relative;
+			padding: 0 @gridGutterWidth;
+		}
+		
+		.accordion-body .container {
+			padding:0;
+			width: auto;
+		}
+	
+		&.header {
+			padding: 15px 0;
+	
+			.btn {
+				position: absolute;
+				right: 0;
+				top: -5px;
+				width: 140px;
+				text-transform: uppercase;
+			}
+	
+			h1 {
+				margin-right: 124px;
+				font-weight: 400;
+				color: @black;
+				line-height: 38px;
+			}
+		}
+		
+		h2 {
+			font-weight: 400;
+			margin: 0 0 10px 0;
+		}
+		
+		.heading {
+			margin-bottom: 20px;
+		}
+		
+		.circle {
+			float: right;
+			margin-left: 100px;
+		}
+		
+	}
+}
+
+.business .paket-detail {
+	.section {
+		border-color: @businessBorder;
+	}
+}
+
+
+@media (max-width: 767px) {
+	.paket-detail {
+		.section {
+			.btn-green.large {
+				margin-top: 24px;
+			}
+			
+			&.header {
+				h1 {
+					margin-right: 0;
+				}
+			}
+		}
+		
+		.configurator {
+			.paket-selector {
+				margin-left: 0;
+				margin-right: 0;
+				padding-left: 0;
+				padding-right:0;
+			}
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.paket-detail {
+		.section {
+			.btn-green.large {
+				display: block;
+				float: none;
+			}
+		}
+	}
+}

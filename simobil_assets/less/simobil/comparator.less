@@ -1,0 +1,176 @@
+/******************************************************************/
+/* COMPARATOR
+/******************************************************************/
+.comparator {
+	
+	.selection {
+		position: relative;
+		.clearfix;
+		margin-bottom: 35px;
+		 
+		[class*=span] {
+			#border > .dotted-right();
+			
+			height: 238px;
+		}
+		
+		h1 {
+			font-weight: 400;
+			margin-bottom: 20px;
+		}
+		
+		.choose {
+			display: block;
+			min-height: 53px;
+			font-size: 18px;
+			padding-left: 42px;
+			color: @gray;
+			background: url("@{layout-url}comparator/ico-phone.png") 0 0 no-repeat;
+			margin-bottom: 20px;
+		}
+		
+		.item {
+			border: none;
+			padding-top: 0px;
+			padding-left: 0px;
+			
+			&:hover {
+				background: none;
+			}
+			
+			.controls a {
+				color: @black;
+				font-weight: 700;
+				
+				i {
+					margin-top: 2px;
+				}
+				
+				&:hover {
+					color: @black;
+				}
+			}
+		}
+	}
+	
+	.back {
+		position: absolute;
+		bottom: 0px;
+	}
+	
+	.white-bg {
+		margin-bottom: 25px;
+	}
+	
+	#lastnosti h3 {
+		border-bottom: 1px solid @residential;
+		padding-bottom:5px;
+		line-height: 18px;
+		color: @residential;
+		font-weight: 400;
+		
+	}
+	
+	.table {
+		margin-bottom: 20px;
+		
+		display: table;
+		
+		.table-row {
+			.clearfix;
+			position: relative;
+			padding: 0 0 1px 0;
+			#border > .dotted-bottom;
+			
+			.col {
+				position: relative;
+				display: block;
+				//height: 23px;
+				//float: left;
+				line-height: 23px;
+				width: 214px;
+				padding: 2px 10px;
+				
+				margin-bottom: 1px;
+				margin-top: 1px;
+				
+				display: table-cell;
+				
+				&:first-child {
+					width: 209px; 
+					padding:0;
+				}
+				
+				&:nth-child(even) {
+					background-color: #f6f5f3;
+				}
+			}
+		}
+		
+		&.buttons {
+			
+			margin-top: -20px;
+			
+			.table-row {
+				background: none;
+				
+				.col {
+					height: 48px;
+					text-align: center;
+					padding-top: 24px;
+					padding-bottom: 24px;
+					
+					&:first-child {
+						text-align: left;
+					}
+				}
+			}
+		}
+	}
+	
+	i.yes {
+		margin-top: 2px;
+		.ico-slot-small(35);		
+	}
+	
+	i.no {
+		margin-top: 2px;
+		.ico-slot-small(41);
+	}
+	
+}
+
+@media (max-width: 767px) {
+	.comparator {
+		.selection {
+			[class*=span] {
+				
+				&:first-child {
+					float: none;
+					width: auto;
+					display: block;
+				}
+				
+				height: auto;
+				min-height: 0;
+				background: none;
+			}
+			/*
+			.back {
+				position: relative;
+				margin-left: 3%;
+			}
+			*/	
+		}
+		
+		#lastnosti {
+			padding: 0 @gridGutterWidth;
+		}
+		
+		.table .table-row .col {
+			float: none;
+			width: auto;
+			display: block;
+		}
+	}
+}
