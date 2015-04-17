@@ -41,7 +41,7 @@
     <link href="simobil_assets/css/simobil/simobil.css" rel="stylesheet">
     <link href="simobil_assets/css/simobil/responsive.css" rel="stylesheet">
 
-    
+    <style>#last-push { display: none; }</style>
     
     <link href="assets/css/docs.css" rel="stylesheet">
     <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">

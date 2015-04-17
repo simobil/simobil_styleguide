@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="128px" height="128px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3 (11970) - http://www.bohemiancoding.com/sketch -->
+    <title>ico-dostava-nadom</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="ico-dostava-nadom" sketch:type="MSArtboardGroup" fill="#C1B294">
+            <g id="Imported-Layers" sketch:type="MSLayerGroup" transform="translate(2.000000, 12.000000)">
+                <path d="M95.6769524,25.5605 L95.6769524,5.7225 L83.7912381,5.7225 L83.7912381,16.35 L62.7260952,0.0363333333 L2.65142857,46.5732778 L9.95961905,55.8867222 L62.7260952,15.0117222 L115.498667,55.8867222 L122.806857,46.5732778 L95.6769524,25.5605" id="Fill-1" sketch:type="MSShapeGroup"></path>
+                <path d="M62.7260952,25.0639444 L16.7009524,60.7069444 L16.7009524,106.123611 L50.1942857,106.123611 L50.1942857,65.5937778 L75.264,65.5937778 L75.264,106.123611 L108.757333,106.123611 L108.757333,60.7069444 L62.7260952,25.0639444" id="Fill-2" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

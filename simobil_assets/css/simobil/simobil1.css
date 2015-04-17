@@ -13024,6 +13024,198 @@ a.btn.btn-brown {
   background: transparent url("../../images/layout/icons/svg/ico-arrow-right-black.svg") 0 0 no-repeat;
   background-size: 64px 64px;
 }
+.ico-dostava-na-dom.ico-small-svg,
+.page-block .ico-dostava-na-dom.ico-small-svg {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background-image: url("../../images/layout/icons/svg/ico-dostava-nadom.svg");
+  background-size: 16px;
+}
+.ico-dostava-na-dom.ico-medium-svg,
+.page-block .ico-dostava-na-dom.ico-medium-svg {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background-image: url("../../images/layout/icons/svg/ico-dostava-nadom.svg");
+  background-size: 32px;
+}
+.ico-dostava-na-dom.ico-large-svg,
+.page-block .ico-dostava-na-dom.ico-large-svg {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  background-image: url("../../images/layout/icons/svg/ico-dostava-nadom.svg");
+  background-size: 64px;
+}
+.ico-placila-gotovina.ico-small-svg,
+.page-block .ico-placila-gotovina.ico-small-svg {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background-image: url("../../images/layout/icons/svg/ico-placila-gotovina.svg");
+  background-size: 16px;
+}
+.ico-placila-gotovina.ico-medium-svg,
+.page-block .ico-placila-gotovina.ico-medium-svg {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background-image: url("../../images/layout/icons/svg/ico-placila-gotovina.svg");
+  background-size: 32px;
+}
+.ico-placila-gotovina.ico-large-svg,
+.page-block .ico-placila-gotovina.ico-large-svg {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  background-image: url("../../images/layout/icons/svg/ico-placila-gotovina.svg");
+  background-size: 64px;
+}
+.ico-placila-kartica.ico-small-svg,
+.page-block .ico-placila-kartica.ico-small-svg {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background-image: url("../../images/layout/icons/svg/ico-placila-kartica.svg");
+  background-size: 16px;
+}
+.ico-placila-kartica.ico-medium-svg,
+.page-block .ico-placila-kartica.ico-medium-svg {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background-image: url("../../images/layout/icons/svg/ico-placila-kartica.svg");
+  background-size: 32px;
+}
+.ico-placila-kartica.ico-large-svg,
+.page-block .ico-placila-kartica.ico-large-svg {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  background-image: url("../../images/layout/icons/svg/ico-placila-kartica.svg");
+  background-size: 64px;
+}
+.ico-check.ico-small-svg,
+.page-block .ico-check.ico-small-svg {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background-image: url("../../images/layout/icons/svg/ico-check.svg");
+  background-size: 16px;
+}
+.ico-check.ico-medium-svg,
+.page-block .ico-check.ico-medium-svg {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background-image: url("../../images/layout/icons/svg/ico-check.svg");
+  background-size: 32px;
+}
+.ico-check.ico-large-svg,
+.page-block .ico-check.ico-large-svg {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  background-image: url("../../images/layout/icons/svg/ico-check.svg");
+  background-size: 64px;
+}
+.ico-clovek.ico-small-svg,
+.page-block .ico-clovek.ico-small-svg {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background-image: url("../../images/layout/icons/svg/ico-clovek.svg");
+  background-size: 16px;
+}
+.ico-clovek.ico-medium-svg,
+.page-block .ico-clovek.ico-medium-svg {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background-image: url("../../images/layout/icons/svg/ico-clovek.svg");
+  background-size: 32px;
+}
+.ico-clovek.ico-large-svg,
+.page-block .ico-clovek.ico-large-svg {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  background-image: url("../../images/layout/icons/svg/ico-clovek.svg");
+  background-size: 64px;
+}
+.ico-dostava-avtomobil.ico-small-svg,
+.page-block .ico-dostava-avtomobil.ico-small-svg {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background-image: url("../../images/layout/icons/svg/ico-dostava-avtomobil.svg");
+  background-size: 16px;
+}
+.ico-dostava-avtomobil.ico-medium-svg,
+.page-block .ico-dostava-avtomobil.ico-medium-svg {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background-image: url("../../images/layout/icons/svg/ico-dostava-avtomobil.svg");
+  background-size: 32px;
+}
+.ico-dostava-avtomobil.ico-large-svg,
+.page-block .ico-dostava-avtomobil.ico-large-svg {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  background-image: url("../../images/layout/icons/svg/ico-dostava-avtomobil.svg");
+  background-size: 64px;
+}
+.ico-obdelavanarocila.ico-small-svg,
+.page-block .ico-obdelavanarocila.ico-small-svg {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background-image: url("../../images/layout/icons/svg/ico-obdelavanarocila.svg");
+  background-size: 16px;
+}
+.ico-obdelavanarocila.ico-medium-svg,
+.page-block .ico-obdelavanarocila.ico-medium-svg {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background-image: url("../../images/layout/icons/svg/ico-obdelavanarocila.svg");
+  background-size: 32px;
+}
+.ico-obdelavanarocila.ico-large-svg,
+.page-block .ico-obdelavanarocila.ico-large-svg {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  background-image: url("../../images/layout/icons/svg/ico-obdelavanarocila.svg");
+  background-size: 64px;
+}
+.ico-posta.ico-small-svg,
+.page-block .ico-posta.ico-small-svg {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background-image: url("../../images/layout/icons/svg/ico-posta.svg");
+  background-size: 16px;
+}
+.ico-posta.ico-medium-svg,
+.page-block .ico-posta.ico-medium-svg {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background-image: url("../../images/layout/icons/svg/ico-posta.svg");
+  background-size: 32px;
+}
+.ico-posta.ico-large-svg,
+.page-block .ico-posta.ico-large-svg {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  background-image: url("../../images/layout/icons/svg/ico-posta.svg");
+  background-size: 64px;
+}
 .btn-group > .btn,
 .btn-group > .btn:first-child,
 .btn-group > .btn:last-child {
