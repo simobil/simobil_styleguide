@@ -6,12 +6,19 @@
         $lastPush = "";
         $lastPushFile = "./last_push";
 
+        $message = "";
+        $messageFile = "./message";
+
         if (file_exists($branchFile)) {
                 $branch = trim(file_get_contents($branchFile));
         }
 
         if (file_exists($lastPushFile)) {
                 $lastPush = trim(file_get_contents($lastPushFile));
+        }
+
+        if (file_exists($messageFile)) {
+                $message = trim(file_get_contents($messageFile));
         }
 
         $envType = explode(".", $_SERVER['SERVER_NAME']);
@@ -42,7 +49,7 @@
     <link href="simobil_assets/css/simobil/responsive.css" rel="stylesheet">
 
     <style>
-        #last-push { display: none; }
+        #last-push, #lastmessage { display: none; }
     </style>
     
     <link href="assets/css/docs.css" rel="stylesheet">
@@ -65,6 +72,7 @@
   <body class="entry" data-spy="scroll" data-target=".subnav" data-offset="50">
 
   <div id="last-push"><?php echo $lastPush; ?></div>
+  <div id="lastmessage"><?php echo $message; ?></div>
 
   <!-- Navbar
     ================================================== -->
