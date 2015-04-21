@@ -1113,7 +1113,9 @@ Page content
 					</form>
 					<div class="nav-collapse collapse">
 						<ul class="first">
-							<li>
+							<li class="has-sub-menu single-liner">
+                <i class="ico-arrow-down-blue menu-closed"></i>
+                <i class="ico-arrow-up-green menu-opened"></i>
 								<a href="#" class="active"><span>Item 1</span></a>
 								<div class="submenu">
 									<div class="container">
@@ -1172,7 +1174,9 @@ Page content
 									</div>
 								</div>
 							</li>
-							<li>
+							<li class="has-sub-menu single-liner">
+                <i class="ico-arrow-down-blue menu-closed"></i>
+                <i class="ico-arrow-up-green menu-opened"></i>
 								<a href="#"><span>Item 2</span></a>
 								<div class="submenu">
 									<div class="container">
@@ -1193,7 +1197,9 @@ Page content
 									</div>
 								</div>
 							</li>
-							<li>
+							<li class="has-sub-menu single-liner">
+                <i class="ico-arrow-down-blue menu-closed"></i>
+                <i class="ico-arrow-up-green menu-opened"></i>
 								<a href="#"><span>Item 3</span></a>
 								<div class="submenu">
 									<div class="container">
@@ -1201,7 +1207,7 @@ Page content
 									</div>
 								</div>
 							</li>
-							<li><a href="#"><span>Item 4</span></a></li>
+							<li class="single-liner"><a href="#"><span>Item 4</span></a></li>
 						</ul>
 					</div>
 				</div>
@@ -1264,6 +1270,21 @@ Page content
 
 		</div>
 	</div>
+  <div class="row">
+    <div class="span6">
+      <strong>Main menu item has text for one line only</strong>
+<pre class="prettyprint linenums">
+&lt;ul class="first"&gt;
+  &lt;li class="single-liner"&gt;
+    &lt;!-- item content --&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+    </div>
+    <div class="span6">
+      <p>If text in main menu item comes in one line, class <code>single-liner</code> must be added to the parent <code>li</code> element.</p>
+    </div>
+  </div>
 	<div class="row">
 		<div class="span6">
 		<strong>The left and right block defined by the grid:</strong>

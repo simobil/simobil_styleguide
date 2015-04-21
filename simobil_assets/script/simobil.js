@@ -145,7 +145,7 @@ var Simobil = {
 		
 		var placeHolderSupport = ("placeholder" in document.createElement("input"));
 		if (!placeHolderSupport) {
-			$.getScript('script/lib/placeholder.min.js', function() {
+			$.getScript('simobil_assets/script/lib/placeholder.min.js', function() {
 				 Placeholder.init();
 			});
 		}
@@ -154,7 +154,7 @@ var Simobil = {
 		 * Custom search input for device search
 		 * @see: http://loopj.com/jquery-tokeninput/
 		 */
-		$.getScript('script/lib/jquery.tokeninput.js', function() {
+		$.getScript('simobil_assets/script/lib/jquery.tokeninput.js', function() {
 			$('#device-search-input').tokenInput("demo-naprave.json", {
 				
 				method:			"GET",
@@ -189,11 +189,37 @@ var Simobil = {
 				$('.cart')[0].className = $('.cart')[0].className; // IE7 force redraw
 			});
 		});
-		
-		
+
+
 		Simobil.init();
 
+		/** Top Menu */
+		$('nav ul.first').on('click', 'li.has-sub-menu', function(e) {
 
+			if( $(e.target).parents('.submenu').length == 0 ) {
+				e.stopPropagation();
+
+				var that = $(this);
+				that.toggleClass('active').siblings('li').removeClass('active');
+
+				if( $('li.has-sub-menu.active').length > 0 ) {
+					$('body').addClass('main-menu-opened');
+				} else {
+					$('body').removeClass('main-menu-opened');
+				}
+				return false;
+			}
+		});
+
+		/** Close main menu if clicked elsewhere than on menu */
+		$(document).on('click', function(e){
+			var that = $('body');
+
+			if( $(e.target).parents('nav ul.first').length == 0 && that.hasClass('main-menu-opened') ) {
+				that.removeClass('main-menu-opened');
+				$('li.has-sub-menu').removeClass('active');
+			}
+		});
 
 		$('a[data-toggle="tab"]').on('shown', function (e) {
 			$('.scrollable').each(function() {
@@ -206,9 +232,9 @@ var Simobil = {
 				Simobil.updateScrollableNav($(this));
 			});
 		});
-		
-		
-		
+
+
+
         $( document ).on("click", '.mini-gallery .zoom', (function() {
 			$('.product .data').hide();
 			$('.product .big-gallery').show();
@@ -442,7 +468,7 @@ var Simobil = {
 		});
 		
 		/** Configurator paket selector **/
-		$.getScript('script/paket.selector.js', function() {
+		$.getScript('simobil_assets/script/paket.selector.js', function() {
 			$('.configurator .paket-selector').paketSelector(function(obj) {
 				//console.log(obj);
 			});
@@ -610,7 +636,7 @@ var Simobil = {
 
 		
 		// E-racun
-		$.getScript('script/lib/waypoints.min.js', function() {
+		$.getScript('simobil_assets/script/lib/waypoints.min.js', function() {
 			
 			$('.eracun .slides .slide').waypoint(function(direction) {
 				if (direction == 'down') {
