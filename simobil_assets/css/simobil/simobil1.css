@@ -12325,6 +12325,30 @@
   line-height: 64px;
   background: transparent url("../../images/layout/icons/svg/ico-eu-balkan.svg") 0 0 no-repeat;
 }
+.ico-sim-dvojni.ico-small-svg,
+.page-block .ico-sim-dvojni.ico-small-svg {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background: transparent url("../../images/layout/icons/svg/ico-sim-dvojni.svg");
+  background-size: 16px;
+}
+.ico-sim-dvojni.ico-medium-svg,
+.page-block .ico-sim-dvojni.ico-medium-svg {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background: transparent url("../../images/layout/icons/svg/ico-sim-dvojni.svg") 0 0 no-repeat;
+  background-size: 32px;
+}
+.ico-sim-dvojni.ico-large-svg,
+.page-block .ico-sim-dvojni.ico-large-svg {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  background: transparent url("../../images/layout/icons/svg/ico-sim-dvojni.svg") 0 0 no-repeat;
+  background-size: 64px;
+}
 /******************************************************************/
 /* BUTTONS
 /******************************************************************/

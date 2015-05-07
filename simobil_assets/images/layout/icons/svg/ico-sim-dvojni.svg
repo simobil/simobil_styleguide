@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="113px" height="113px"
+	 viewBox="-4 0 113 113" enable-background="new -4 0 113 113" xml:space="preserve">
+<title>Imported Layers</title>
+<desc>Created with Sketch.</desc>
+<g id="Page-1" sketch:type="MSPage">
+	<g id="Artboard-1" transform="translate(-368.000000, -144.000000)" sketch:type="MSArtboardGroup">
+		<g id="Imported-Layers" transform="translate(368.000000, 144.000000)" sketch:type="MSLayerGroup">
+			<path id="Fill-1" sketch:type="MSShapeGroup" fill="#ADADAD" d="M62.477,112.256H5.827c-3.033,0-5.5-2.467-5.5-5.5V21.695
+				c0-3.033,2.467-5.5,5.5-5.5h36.681l25.469,25.468v65.093C67.977,109.789,65.509,112.256,62.477,112.256L62.477,112.256z
+				 M5.827,19.195c-1.378,0-2.5,1.121-2.5,2.5v85.061c0,1.379,1.122,2.5,2.5,2.5h56.649c1.379,0,2.5-1.121,2.5-2.5V42.905
+				l-23.71-23.71H5.827L5.827,19.195z"/>
+			<path id="Fill-2" sketch:type="MSShapeGroup" fill="#ADADAD" d="M45.005,56.96H23.71c-7.444,0-13.5,6.058-13.5,13.5v18.414
+				c0,7.442,6.056,13.5,13.5,13.5h21.295c7.444,0,13.5-6.058,13.5-13.5V70.46C58.505,63.018,52.449,56.96,45.005,56.96L45.005,56.96
+				z M55.505,70.46v2.972H43.269V59.96h1.736C50.795,59.96,55.505,64.671,55.505,70.46L55.505,70.46z M43.269,76.432h12.236v9.971
+				H43.269V76.432z M23.71,59.96h16.559v39.414H28.446V73.432H13.21V70.46C13.21,64.671,17.92,59.96,23.71,59.96L23.71,59.96z
+				 M13.21,76.432h12.236v9.971H13.21V76.432z M13.237,89.402h12.209v9.972H23.71C18.099,99.374,13.515,94.945,13.237,89.402
+				L13.237,89.402z M45.005,99.374h-1.736v-9.972h12.209C55.2,94.945,50.616,99.374,45.005,99.374L45.005,99.374z"/>
+			<path id="Fill-3" sketch:type="MSShapeGroup" fill="#ADADAD" d="M79,0.753H42.318c-3.032,0-5.5,2.468-5.5,5.5v10.226h3V6.253
+				c0-1.378,1.122-2.5,2.5-2.5h35.439l23.711,23.711v63.851c0,1.379-1.122,2.5-2.5,2.5H67.977v3h30.991c3.033,0,5.5-2.467,5.5-5.5
+				V26.222L79,0.753"/>
+			<path id="Fill-4" sketch:type="MSShapeGroup" fill="#ADADAD" d="M81.497,41.519H67.977v3h8.785v39.413h-8.785v3h13.521
+				c7.442,0,13.5-6.056,13.5-13.5V55.019C94.997,47.575,88.939,41.519,81.497,41.519L81.497,41.519z M81.497,44.519
+				c5.789,0,10.5,4.711,10.5,10.5v2.971H79.762V44.519H81.497L81.497,44.519z M79.762,60.99h12.235v9.971H79.762V60.99z
+				 M81.497,83.932h-1.735v-9.971h12.209C91.691,79.504,87.107,83.932,81.497,83.932L81.497,83.932z"/>
+		</g>
+	</g>
+</g>
+</svg>
