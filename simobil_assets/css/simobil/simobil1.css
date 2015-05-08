@@ -12349,6 +12349,54 @@
   background: transparent url("../../images/layout/icons/svg/ico-sim-dvojni.svg") 0 0 no-repeat;
   background-size: 64px;
 }
+.ico-20prihranka.ico-small-svg,
+.page-block .ico-20prihranka.ico-small-svg {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background: transparent url("../../images/layout/icons/svg/ico-20prihranka.svg");
+  background-size: 16px;
+}
+.ico-20prihranka.ico-medium-svg,
+.page-block .ico-20prihranka.ico-medium-svg {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background: transparent url("../../images/layout/icons/svg/ico-20prihranka.svg") 0 0 no-repeat;
+  background-size: 32px;
+}
+.ico-20prihranka.ico-large-svg,
+.page-block .ico-20prihranka.ico-large-svg {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  background: transparent url("../../images/layout/icons/svg/ico-20prihranka.svg") 0 0 no-repeat;
+  background-size: 64px;
+}
+.ico-center.ico-small-svg,
+.page-block .ico-center.ico-small-svg {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background: transparent url("../../images/layout/icons/svg/ico-center.svg");
+  background-size: 16px;
+}
+.ico-center.ico-medium-svg,
+.page-block .ico-center.ico-medium-svg {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background: transparent url("../../images/layout/icons/svg/ico-center.svg") 0 0 no-repeat;
+  background-size: 32px;
+}
+.ico-center.ico-large-svg,
+.page-block .ico-center.ico-large-svg {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  background: transparent url("../../images/layout/icons/svg/ico-center.svg") 0 0 no-repeat;
+  background-size: 64px;
+}
 /******************************************************************/
 /* BUTTONS
 /******************************************************************/
