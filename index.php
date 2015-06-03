@@ -9,6 +9,9 @@
         $message = "";
         $messageFile = "./message";
 
+        $hash = "";
+        $hashFile = "./hash";
+
         if (file_exists($branchFile)) {
                 $branch = trim(file_get_contents($branchFile));
         }
@@ -19,6 +22,10 @@
 
         if (file_exists($messageFile)) {
                 $message = trim(file_get_contents($messageFile));
+        }
+
+        if (file_exists($hashFile)) {
+                $hash = trim(file_get_contents($hashFile));
         }
 
         $envType = explode(".", $_SERVER['SERVER_NAME']);
@@ -49,9 +56,9 @@
     <link href="simobil_assets/css/simobil/responsive.css" rel="stylesheet">
 
     <style>
-        #last-push, #lastmessage { display: none; }
+        #last-push, #lastmessage, #hash { display: none; }
     </style>
-    
+
     <link href="assets/css/docs.css" rel="stylesheet">
     <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
 
@@ -73,6 +80,7 @@
 
   <div id="last-push"><?php echo $lastPush; ?></div>
   <div id="lastmessage"><?php echo $message; ?></div>
+  <div id="hash"><?php echo $hash; ?></div>
 
   <!-- Navbar
     ================================================== -->
@@ -136,7 +144,7 @@
     <h1>Si.mobil Styleguide</h1>
     <p>For quick and easy creation of web pages and web sites.</p>
     <p style="font-size: 15px; font-weight: normal; line-height: 20px;">
-    An overview of approved, ready-to-use elements, which are all compliant with<br> 
+    An overview of approved, ready-to-use elements, which are all compliant with<br>
     Si.mobil's <strong>general design guidelines</strong>. A tool for designers and developers.
     </p>
   </div>
@@ -152,25 +160,25 @@
             <div class="row">
                 <div class="span3">
                 <p>
-                <strong>Simple use</strong> for developers and designers. Styleguide contains readymade elements, which 
-                can be used in a standard copy-paste manner. 
+                <strong>Simple use</strong> for developers and designers. Styleguide contains readymade elements, which
+                can be used in a standard copy-paste manner.
                 </p>
                 </div>
                 <div class="span3">
                 <p>
-                <strong>Compliance with design guidelines.</strong> All the elements available have already been 
+                <strong>Compliance with design guidelines.</strong> All the elements available have already been
                 approved for use.
                 </p>
                 </div>
                 <div class="span3">
                 <p>
-                <strong>Everything in one place.</strong> All the elements and their pertaining documentation are 
-                always found in one place. 
+                <strong>Everything in one place.</strong> All the elements and their pertaining documentation are
+                always found in one place.
                 </p>
                 </div>
                 <div class="span3">
                 <p>
-                <strong>Upscale ability.</strong> With the help of the Styleguide and Twitter Bootstrap, upgrading 
+                <strong>Upscale ability.</strong> With the help of the Styleguide and Twitter Bootstrap, upgrading
                 existing elements and web pages is both time efficient and simple.
                 </p>
                 </div>
@@ -182,54 +190,54 @@
                 <div class="span6">
                     <h2><img src="assets/img/ico_designers.gif" style="margin-right: 20px"> For designers</h2>
                     <p>
-                    Si.mobil Styleguide is a tool that gives designers a simple, yet extensive overview of all approved and used elements, 
-                    all of which are compliant with Si.mobil's general design guidelines. It provides detailed instructions on desired use 
+                    Si.mobil Styleguide is a tool that gives designers a simple, yet extensive overview of all approved and used elements,
+                    all of which are compliant with Si.mobil's general design guidelines. It provides detailed instructions on desired use
                     of colours, grid, typography, buttons, sliders, and any other elements a designer may need when working on a web site design.
                     </p>
                     <p>
-                    When creating new pages, a designer should choose to use any of the already created elements and thus simplify the process 
-                    of designing a new web page or web site. 
+                    When creating new pages, a designer should choose to use any of the already created elements and thus simplify the process
+                    of designing a new web page or web site.
                     </p>
                     <p>
-                    All the elements are created based on the Bootstrap grid, which enables an effortless adaptation of layouts to smaller 
+                    All the elements are created based on the Bootstrap grid, which enables an effortless adaptation of layouts to smaller
                     screens or mobile/tablet devices.
-                    </p> 
-                </div> 
+                    </p>
+                </div>
                 <div class="span6">
                     <h2><img src="assets/img/ico_developers.gif" style="margin-right: 20px"> For developers</h2>
                     <p>
-                    Si.mobil Styleguide is a tool that allows for a simple creation and adaptation of existing and new web pages, 
+                    Si.mobil Styleguide is a tool that allows for a simple creation and adaptation of existing and new web pages,
                     which are in line with Si.mobil's design guidelines.
                     </p>
                     <p>
-                    You are provided with a structured, organized and documented library of adaptable elements. All the elements are defined in 
-                    terms of structure and design as well as functionality for both desktop and mobile devices. 
+                    You are provided with a structured, organized and documented library of adaptable elements. All the elements are defined in
+                    terms of structure and design as well as functionality for both desktop and mobile devices.
                     </p>
                     <p>
-                    Basic coding guidelines are also set by the Styleguide, which contains CSS files, typography files and 
+                    Basic coding guidelines are also set by the Styleguide, which contains CSS files, typography files and
                     easy-to-download-and-use plug-ins.
                     </p>
                     <p>
-                    Developers can access the entire documentation containing instructions on how to use each separate element, complete with 
-                    practical examples which can simply be copied and pasted at developer's own discretion.  
+                    Developers can access the entire documentation containing instructions on how to use each separate element, complete with
+                    practical examples which can simply be copied and pasted at developer's own discretion.
                     </p>
                     <p>
-                    Styleguide is based on <a href="http://twitter.github.io/bootstrap/" target="_blank">Twitter Bootstrap</a>, 
+                    Styleguide is based on <a href="http://twitter.github.io/bootstrap/" target="_blank">Twitter Bootstrap</a>,
                     version <a href="https://github.com/twitter/bootstrap/tree/v2.0.4" target="_blank">2.0.4</a>.
-                    </p>    
-                </div> 
+                    </p>
+                </div>
             </div>
         </div>
-        
+
         <hr>
-        
+
         <div class="container">
             <h1>Benefits</h1>
             <br>
             <div class="row">
                 <div class="span6">
                     <p>
-                    <strong>Control/reference point</strong> for those in charge with the representation of Si.mobil through online assets. 
+                    <strong>Control/reference point</strong> for those in charge with the representation of Si.mobil through online assets.
                     Styleguide enables a continuous and instant overview of currently approved design and coding  guidelines.
                     </p>
                 </div>
@@ -241,7 +249,7 @@
                 </div>
             </div>
         </div>
-        
+
         <style>
         .flex-video {
           position: relative;
@@ -251,10 +259,10 @@
           margin-bottom: 16px;
           overflow: hidden;
         }
-         
+
         .flex-video.widescreen { padding-bottom: 57.25%; }
         .flex-video.vimeo { padding-top: 0; }
-         
+
         .flex-video iframe,
         .flex-video object,
         .flex-video embed {
