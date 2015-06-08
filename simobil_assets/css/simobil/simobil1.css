@@ -12397,6 +12397,30 @@
   background: transparent url("../../images/layout/icons/svg/ico-puscica-naprej.svg") 0 0 no-repeat;
   background-size: 64px;
 }
+.ico-ekskluzivne.ico-small-svg,
+.page-block .ico-ekskluzivne.ico-small-svg {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background: transparent url("../../images/layout/icons/svg/ico-ekskluzivne.svg");
+  background-size: 16px;
+}
+.ico-ekskluzivne.ico-medium-svg,
+.page-block .ico-ekskluzivne.ico-medium-svg {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background: transparent url("../../images/layout/icons/svg/ico-ekskluzivne.svg") 0 0 no-repeat;
+  background-size: 32px;
+}
+.ico-ekskluzivne.ico-large-svg,
+.page-block .ico-ekskluzivne.ico-large-svg {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  background: transparent url("../../images/layout/icons/svg/ico-ekskluzivne.svg") 0 0 no-repeat;
+  background-size: 64px;
+}
 .ico-20prihranka.ico-small-svg,
 .page-block .ico-20prihranka.ico-small-svg {
   width: 16px;
