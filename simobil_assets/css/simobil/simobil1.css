@@ -103,7 +103,7 @@
 }
 /*
 #icon-pisarna {
-	
+
 	.base(@slot, @x: 0, @y: 0, @size: 1, @type:small) when (@type = big) {
 		content: "";
 		display: block;
@@ -113,7 +113,7 @@
 		top: @y;
 		background: transparent url("@{layout-url}popolna-pisarna/icons-@{type}.png") no-repeat 0px -(@slot * 39px);
 	}
-	
+
 	.base(@slot, @x: 0, @y: 0, @size: 1, @type:small) when (@type = small) {
 		content: "";
 		display: block;
@@ -123,7 +123,7 @@
 		top: @y;
 		background: transparent url("@{layout-url}popolna-pisarna/icons-@{type}.png") no-repeat 0px -(@slot * 26px);
 	}
-	
+
 	.left(@slot, @x: 0, @y: 0, @size: 1, @type:small) {
 		&:before {
 			#icon-pisarna > .base(@slot, @x, @y, @size, @type);
@@ -12349,6 +12349,54 @@
   background: transparent url("../../images/layout/icons/svg/ico-sim-dvojni.svg") 0 0 no-repeat;
   background-size: 64px;
 }
+.ico-sim.ico-small-svg,
+.page-block .ico-sim.ico-small-svg {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background: transparent url("../../images/layout/icons/svg/ico-sim.svg");
+  background-size: 16px;
+}
+.ico-sim.ico-medium-svg,
+.page-block .ico-sim.ico-medium-svg {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background: transparent url("../../images/layout/icons/svg/ico-sim.svg") 0 0 no-repeat;
+  background-size: 32px;
+}
+.ico-sim.ico-large-svg,
+.page-block .ico-sim.ico-large-svg {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  background: transparent url("../../images/layout/icons/svg/ico-sim.svg") 0 0 no-repeat;
+  background-size: 64px;
+}
+.ico-puscica-naprej.ico-small-svg,
+.page-block .ico-puscica-naprej.ico-small-svg {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background: transparent url("../../images/layout/icons/svg/ico-puscica-naprej.svg");
+  background-size: 16px;
+}
+.ico-puscica-naprej.ico-medium-svg,
+.page-block .ico-puscica-naprej.ico-medium-svg {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background: transparent url("../../images/layout/icons/svg/ico-puscica-naprej.svg") 0 0 no-repeat;
+  background-size: 32px;
+}
+.ico-puscica-naprej.ico-large-svg,
+.page-block .ico-puscica-naprej.ico-large-svg {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  background: transparent url("../../images/layout/icons/svg/ico-puscica-naprej.svg") 0 0 no-repeat;
+  background-size: 64px;
+}
 .ico-20prihranka.ico-small-svg,
 .page-block .ico-20prihranka.ico-small-svg {
   width: 16px;
@@ -13745,7 +13793,7 @@ a.btn.btn-brown {
   }
 }
 @media (max-width: 320px) {
-  
+
 }
 /******************************************************************/
 /* SCROLLABLE
@@ -14023,7 +14071,7 @@ a.btn.btn-brown {
   .residential .tabbable-nav.white {
     /*			a.prev {background-image: url("@{layout-url}arrow_bg_left_white.png");}
   			a.next {background-image: url("@{layout-url}arrow_bg_right_white.png");}*/
-  
+
   }
 }
 .nav-tabs.image-tabs {
@@ -14483,8 +14531,8 @@ small {
   	.container {
   		padding-left:0 !important;
   		padding-right:0 !important;
-  
-  
+
+
   		.header {
   			padding-right:0 !important;
   			padding-left:0 !important;
@@ -15083,7 +15131,7 @@ table.dotted .infinite {
   }
 }
 @media (max-width: 480px) {
-  
+
 }
 ul.software-menu {
   list-style-image: url("../../images/layout/help-info/ico-software-menu.png");
@@ -16173,14 +16221,14 @@ a.cancel i {
   						}
   					}
   				}
-  				
+
   				.c4 {
   					height: 100%;
   				}
-  				
+
   			}
   			*/
-  
+
   }
   .choices .choice .c12,
   .choices .choice .c1 {
@@ -16359,7 +16407,7 @@ a.cancel i {
   						white-space: nowrap;
   						text-overflow: ellipsis;
   						*/
-  
+
   }
   .choices .choice .c3 {
     width: 25%;
@@ -16982,7 +17030,7 @@ h2 > .icon-messages {
   margin-bottom: 25px;
 }
 /********************/
-/* FORMS 
+/* FORMS
 /********************/
 .control-group .help-inline,
 .control-group .help-block {
@@ -17149,7 +17197,7 @@ h2 > .icon-messages {
   border-color: #9299a9;
 }
 /************************/
-/* GENERIC BOXES 
+/* GENERIC BOXES
 /************************/
 .contact-item {
   position: relative;
@@ -17980,7 +18028,7 @@ h2 > .icon-messages {
 }
 .page-block nav.main ul.first > li > .menu-closed,
 .page-block nav.main ul.first > li > .menu-opened {
-  margin: 0 15px 0 0; 
+  margin: 0 15px 0 0;
 }
 .page-block nav.main ul.first.six-items > li > .menu-closed,
 .page-block nav.main ul.first.six-items > li > .menu-opened {
@@ -18085,7 +18133,7 @@ body.business nav.main .brand {
   body.business nav.main .collapse {
     margin: 0 -24px;
     /************************************/
-  
+
   }
   nav.main .collapse ul.first > li,
   body.business nav.main .collapse ul.first > li {
@@ -18112,7 +18160,7 @@ body.business nav.main .brand {
   }
   nav.main .collapse ul.first > li.active .submenu,
   body.business nav.main .collapse ul.first > li.active .submenu {
-    
+
   }
   .page-block nav.main ul.first > li {
     border-bottom: none;
