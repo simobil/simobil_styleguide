@@ -222,6 +222,30 @@
   line-height: 64px;
   background: transparent url("../../images/layout/icons/64x64/ico-cart.png") 0 0 no-repeat;
 }
+.ico-simobil-logo.ico-small-svg,
+.page-block .ico-simobil-logo.ico-small-svg {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background: url("../../images/layout/icons/svg/ico-simobil-logo.svg") 0 0 no-repeat;
+  background-size: 16px 16px;
+}
+.ico-simobil-logo.ico-medium-svg,
+.page-block .ico-simobil-logo.ico-medium-svg {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background: transparent url("../../images/layout/icons/svg/ico-simobil-logo.svg") 0 0 no-repeat;
+  background-size: 32px 32px;
+}
+.ico-simobil-logo.ico-large-svg,
+.page-block .ico-simobil-logo.ico-large-svg {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  background: transparent url("../../images/layout/icons/svg/ico-simobil-logo.svg") 0 0 no-repeat;
+  background-size: 64px 64px;
+}
 .ico-cart.ico-small-svg,
 .page-block .ico-cart.ico-small-svg {
   width: 16px;
