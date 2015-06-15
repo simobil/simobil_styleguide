@@ -12,6 +12,9 @@
         $hash = "";
         $hashFile = "./hash";
 
+        $lastFiles = "";
+        $lastFilesFile = "./last_git_files";
+
         if (file_exists($branchFile)) {
                 $branch = trim(file_get_contents($branchFile));
         }
@@ -26,6 +29,10 @@
 
         if (file_exists($hashFile)) {
                 $hash = trim(file_get_contents($hashFile));
+        }
+
+        if (file_exists($lastFilesFile)) {
+                $lastFiles = trim(file_get_contents($lastFilesFile));
         }
 
         $envType = explode(".", $_SERVER['SERVER_NAME']);
@@ -56,7 +63,7 @@
     <link href="simobil_assets/css/simobil/responsive.css" rel="stylesheet">
 
     <style>
-        #last-push, #lastmessage, #hash { display: none; }
+        #last-push, #lastmessage, #hash, #last_files { display: none; }
     </style>
 
     <link href="assets/css/docs.css" rel="stylesheet">
@@ -81,6 +88,7 @@
   <div id="last-push"><?php echo $lastPush; ?></div>
   <div id="lastmessage"><?php echo $message; ?></div>
   <div id="hash"><?php echo $hash; ?></div>
+  <div id="last_files"><?php echo $lastFiles; ?></div>
 
   <!-- Navbar
     ================================================== -->
