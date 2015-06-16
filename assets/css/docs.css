@@ -28,7 +28,7 @@ body.entry {
 
 .navbar .brand {
 	padding:0;
-	
+
 }
 
 .navbar .nav {
@@ -47,7 +47,7 @@ body.entry {
   text-indent: -9999em;
   width: 46px;
   height: 69px;
-  background: url(../img/logo.gif) no-repeat 0 0;
+  background: url(../img/logo.svg) no-repeat 0 0;
 }
 .navbar-fixed-top .brand:hover {
   text-decoration: none;
@@ -58,7 +58,7 @@ body.entry {
 }
 
 .navbar .nav>li>a {
-	text-shadow: none;	
+	text-shadow: none;
 }
 
 .navbar .btn {
@@ -762,7 +762,7 @@ form.well {
   body {
     padding-top: 0;
   }
-  
+
   section, header, footer {
   	margin-left: 24px;
   	margin-right: 24px;
@@ -772,7 +772,7 @@ form.well {
   .jumbotron .btn {
     margin-bottom: 10px;
   }
-  
+
   .navbar .btn {
 	display: inline-block;
   }
@@ -825,7 +825,7 @@ form.well {
   .footer p {
     margin-bottom: 9px;
   }
-  
+
   .row [class*=span] {
 	width:100%;
 	margin-left: 0;
@@ -837,7 +837,7 @@ form.well {
 	display: block;
 	width: auto;
   }
-  
+
 }
 
 @media (max-width: 767px) {
@@ -845,11 +845,11 @@ form.well {
 		margin-left: 0px;
 		margin-right: 0px;
 	}
-	
+
 	.nav-collapse .nav>li>a:hover, .nav-collapse .dropdown-menu a:hover {
 		color: #333;
 	}
-	
+
 	.navbar .nav {
 		float: left;
 	}
