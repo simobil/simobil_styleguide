@@ -355,7 +355,7 @@
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background-image: url("../../images/layout/icons/svg/ico-arrow-right-green.svg") 0 0 no-repeat;
+  background-image: url("../../images/layout/icons/svg/ico-arrow-right-green.svg");
   background-size: 16px 16px;
 }
 .ico-arrow-right-green.ico-medium-svg,
@@ -407,7 +407,7 @@
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background-image: url("../../images/layout/icons/svg/ico-arrow-right-black.svg") 0 0 no-repeat;
+  background-image: url("../../images/layout/icons/svg/ico-arrow-right-black.svg");
   background-size: 16px 16px;
 }
 .ico-arrow-right-black.ico-medium-svg,
@@ -459,7 +459,7 @@
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background-image: url("../../images/layout/icons/svg/ico-arrow-right-brown.svg") 0 0 no-repeat;
+  background-image: url("../../images/layout/icons/svg/ico-arrow-right-brown.svg");
   background-size: 16px 16px;
 }
 .ico-arrow-right-brown.ico-medium-svg,
@@ -511,7 +511,7 @@
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background-image: url("../../images/layout/icons/svg/ico-arrow-right-white.svg") 0 0 no-repeat;
+  background-image: url("../../images/layout/icons/svg/ico-arrow-right-white.svg");
   background-size: 16px 16px;
 }
 .ico-arrow-right-white.ico-medium-svg,
@@ -563,7 +563,7 @@
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background-image: url("../../images/layout/icons/svg/ico-arrow-right-blue.svg") 0 0 no-repeat;
+  background-image: url("../../images/layout/icons/svg/ico-arrow-right-blue.svg");
   background-size: 16px 16px;
 }
 .ico-arrow-right-blue.ico-medium-svg,
@@ -615,7 +615,7 @@
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background-image: url("../../images/layout/icons/svg/ico-arrow-right-gal-blue.svg") 0 0 no-repeat;
+  background-image: url("../../images/layout/icons/svg/ico-arrow-right-gal-blue.svg");
   background-size: 16px 16px;
 }
 .ico-arrow-right-gal-blue.ico-medium-svg,
@@ -667,7 +667,7 @@
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background-image: url("../../images/layout/icons/svg/ico-arrow-right-gal-brown.svg") 0 0 no-repeat;
+  background-image: url("../../images/layout/icons/svg/ico-arrow-right-gal-brown.svg");
   background-size: 16px 16px;
 }
 .ico-arrow-right-gal-brown.ico-medium-svg,
@@ -719,7 +719,7 @@
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background-image: url("../../images/layout/icons/svg/ico-arrow-right-gal-white.svg") 0 0 no-repeat;
+  background-image: url("../../images/layout/icons/svg/ico-arrow-right-gal-white.svg");
   background-size: 16px 16px;
 }
 .ico-arrow-right-gal-white.ico-medium-svg,
@@ -771,7 +771,7 @@
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background-image: url("../../images/layout/icons/svg/ico-arrow-right-gal-shadow-white.svg") 0 0 no-repeat;
+  background-image: url("../../images/layout/icons/svg/ico-arrow-right-gal-shadow-white.svg");
   background-size: 16px 16px;
 }
 .ico-arrow-right-gal-shadow-white.ico-medium-svg,
@@ -823,7 +823,7 @@
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background-image: url("../../images/layout/icons/svg/ico-arrow-right-config-green.svg") 0 0 no-repeat;
+  background-image: url("../../images/layout/icons/svg/ico-arrow-right-config-green.svg");
   background-size: 16px 16px;
 }
 .ico-arrow-right-config-green.ico-medium-svg,
@@ -875,7 +875,7 @@
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background-image: url("../../images/layout/icons/svg/ico-arrow-right-date-picker-white.svg") 0 0 no-repeat;
+  background-image: url("../../images/layout/icons/svg/ico-arrow-right-date-picker-white.svg");
   background-size: 16px 16px;
 }
 .ico-arrow-right-date-picker-white.ico-medium-svg,
@@ -927,7 +927,7 @@
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background-image: url("../../images/layout/icons/svg/ico-arrow-right-progressbar-brown.svg") 0 0 no-repeat;
+  background-image: url("../../images/layout/icons/svg/ico-arrow-right-progressbar-brown.svg");
   background-size: 16px 16px;
 }
 .ico-arrow-right-progressbar-brown.ico-medium-svg,
@@ -979,7 +979,7 @@
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background-image: url("../../images/layout/icons/svg/ico-arrow-right-progressbar-blue.svg") 0 0 no-repeat;
+  background-image: url("../../images/layout/icons/svg/ico-arrow-right-progressbar-blue.svg");
   background-size: 16px 16px;
 }
 .ico-arrow-right-progressbar-blue.ico-medium-svg,
@@ -1031,7 +1031,7 @@
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background-image: url("../../images/layout/icons/svg/ico-arrow-left-black.svg") 0 0 no-repeat;
+  background-image: url("../../images/layout/icons/svg/ico-arrow-left-black.svg");
   background-size: 16px 16px;
 }
 .ico-arrow-left-black.ico-medium-svg,
@@ -1083,7 +1083,7 @@
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background-image: url("../../images/layout/icons/svg/ico-arrow-left-brown.svg") 0 0 no-repeat;
+  background-image: url("../../images/layout/icons/svg/ico-arrow-left-brown.svg");
   background-size: 16px 16px;
 }
 .ico-arrow-left-brown.ico-medium-svg,
@@ -1135,7 +1135,7 @@
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background-image: url("../../images/layout/icons/svg/ico-arrow-left-white.svg") 0 0 no-repeat;
+  background-image: url("../../images/layout/icons/svg/ico-arrow-left-white.svg");
   background-size: 16px 16px;
 }
 .ico-arrow-left-white.ico-medium-svg,
@@ -1187,7 +1187,7 @@
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background-image: url("../../images/layout/icons/svg/ico-arrow-left-blue.svg") 0 0 no-repeat;
+  background-image: url("../../images/layout/icons/svg/ico-arrow-left-blue.svg");
   background-size: 16px 16px;
 }
 .ico-arrow-left-blue.ico-medium-svg,
@@ -1239,7 +1239,7 @@
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background-image: url("../../images/layout/icons/svg/ico-arrow-left-gal-blue.svg") 0 0 no-repeat;
+  background-image: url("../../images/layout/icons/svg/ico-arrow-left-gal-blue.svg");
   background-size: 16px 16px;
 }
 .ico-arrow-left-gal-blue.ico-medium-svg,
@@ -1291,7 +1291,7 @@
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background-image: url("../../images/layout/icons/svg/ico-arrow-left-gal-brown.svg") 0 0 no-repeat;
+  background-image: url("../../images/layout/icons/svg/ico-arrow-left-gal-brown.svg");
   background-size: 16px 16px;
 }
 .ico-arrow-left-gal-brown.ico-medium-svg,
@@ -1343,7 +1343,7 @@
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background-image: url("../../images/layout/icons/svg/ico-arrow-left-gal-white.svg") 0 0 no-repeat;
+  background-image: url("../../images/layout/icons/svg/ico-arrow-left-gal-white.svg");
   background-size: 16px 16px;
 }
 .ico-arrow-left-gal-white.ico-medium-svg,
@@ -1395,7 +1395,7 @@
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background-image: url("../../images/layout/icons/svg/ico-arrow-left-gal-shadow-white.svg") 0 0 no-repeat;
+  background-image: url("../../images/layout/icons/svg/ico-arrow-left-gal-shadow-white.svg");
   background-size: 16px 16px;
 }
 .ico-arrow-left-gal-shadow-white.ico-medium-svg,
@@ -1447,7 +1447,7 @@
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background-image: url("../../images/layout/icons/svg/ico-arrow-left-config-green.svg") 0 0 no-repeat;
+  background-image: url("../../images/layout/icons/svg/ico-arrow-left-config-green.svg");
   background-size: 16px 16px;
 }
 .ico-arrow-left-config-green.ico-medium-svg,
@@ -1499,7 +1499,7 @@
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background-image: url("../../images/layout/icons/svg/ico-arrow-left-date-picker-white.svg") 0 0 no-repeat;
+  background-image: url("../../images/layout/icons/svg/ico-arrow-left-date-picker-white.svg");
   background-size: 16px 16px;
 }
 .ico-arrow-left-date-picker-white.ico-medium-svg,
@@ -1551,7 +1551,7 @@
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background-image: url("../../images/layout/icons/svg/ico-arrow-up-white.svg") 0 0 no-repeat;
+  background-image: url("../../images/layout/icons/svg/ico-arrow-up-white.svg");
   background-size: 16px 16px;
 }
 .ico-arrow-up-white.ico-medium-svg,
@@ -1598,6 +1598,27 @@
   line-height: 64px;
   background: transparent url("../../images/layout/icons/64x64/ico-arrow-up-green.png") 0 0 no-repeat;
 }
+.ico-arrow-up-green.ico-small-svg,
+.page-block .ico-arrow-up-green.ico-small-svg {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background-image: url("../../images/layout/icons/svg/ico-arrow-up-green.svg");
+}
+.ico-arrow-up-green.ico-medium-svg,
+.page-block .ico-arrow-up-green.ico-medium-svg {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background: transparent url("../../images/layout/icons/svg/ico-arrow-up-green.svg") 0 0 no-repeat;
+}
+.ico-arrow-up-green.ico-large-svg,
+.page-block .ico-arrow-up-green.ico-large-svg {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  background: transparent url("../../images/layout/icons/svg/ico-arrow-up-green.svg") 0 0 no-repeat;
+}
 .ico-arrow-up-blue,
 .page-block .ico-arrow-up-blue {
   width: 16px;
@@ -1631,7 +1652,7 @@
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background-image: url("../../images/layout/icons/svg/ico-arrow-up-blue.svg") 0 0 no-repeat;
+  background-image: url("../../images/layout/icons/svg/ico-arrow-up-blue.svg");
   background-size: 16px 16px;
 }
 .ico-arrow-up-blue.ico-medium-svg,
@@ -1683,7 +1704,7 @@
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background-image: url("../../images/layout/icons/svg/ico-arrow-up-brown.svg") 0 0 no-repeat;
+  background-image: url("../../images/layout/icons/svg/ico-arrow-up-brown.svg");
   background-size: 16px 16px;
 }
 .ico-arrow-up-brown.ico-medium-svg,
@@ -4907,7 +4928,7 @@
 	width: 16px;
 	height: 16px;
 	line-height: 16px;
-	background-image: url("../../images/layout/icons/svg/ico-pin-simobil-centri.svg") 0 0 no-repeat;
+	background-image: url("../../images/layout/icons/svg/ico-pin-simobil-centri.svg");
 	background-size: 16px 16px;
 }
 .ico-pin-simobil-centri.ico-medium-svg,
@@ -11058,7 +11079,7 @@
 		width: @icon-size-small;
 		height: @icon-size-small;
 		line-height: @icon-size-small;
-		background-image: url("@{layout-url}icons/svg/ico-nocna-opcija.svg") 0 0 no-repeat;
+		background-image: url("@{layout-url}icons/svg/ico-nocna-opcija.svg");
 	}
 
 	&.ico-medium-svg {
@@ -12284,7 +12305,7 @@
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background-image: url("../../images/layout/icons/svg/ico-moneta-block.svg") 0 0 no-repeat;
+  background-image: url("../../images/layout/icons/svg/ico-moneta-block.svg");
 }
 .ico-moneta-block.ico-medium-svg,
 .page-block .ico-moneta-block.ico-medium-svg {
@@ -12333,7 +12354,7 @@
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background-image: url("../../images/layout/icons/svg/ico-eu-balkan.svg") 0 0 no-repeat;
+  background-image: url("../../images/layout/icons/svg/ico-eu-balkan.svg");
 }
 .ico-eu-balkan.ico-medium-svg,
 .page-block .ico-eu-balkan.ico-medium-svg {
@@ -12643,7 +12664,8 @@
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background: transparent url("../../images/layout/icons/16x16/ico-arrow-right-white.png") 0 0 no-repeat;
+  background: transparent url("../../images/layout/icons/svg/ico-arrow-right-white.svg") 0 0 no-repeat;
+  background-size: 16px;
 }
 .page-block .btn-green .arrow:last-child,
 .btn-green .arrow:last-child {
@@ -12654,28 +12676,31 @@
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background-image: url("../../images/layout/icons/16x16/ico-arrow-right-white.png");
+  background-image: url("../../images/layout/icons/svg/ico-arrow-right-white.svg");
+  background-size: 16px;
 }
 .page-block .btn-green .arrow.ico-medium,
 .btn-green .arrow.ico-medium {
   width: 32px;
   height: 32px;
   line-height: 32px;
-  background: transparent url("../../images/layout/icons/32x32/ico-arrow-right-white.png") 0 0 no-repeat;
+  background: transparent url("../../images/layout/icons/svg/ico-arrow-right-white.svg") 0 0 no-repeat;
+  background-size: 32px;
 }
 .page-block .btn-green .arrow.ico-large,
 .btn-green .arrow.ico-large {
   width: 64px;
   height: 64px;
   line-height: 64px;
-  background: transparent url("../../images/layout/icons/64x64/ico-arrow-right-white.png") 0 0 no-repeat;
+  background: transparent url("../../images/layout/icons/svg/ico-arrow-right-white.svg") 0 0 no-repeat;
+  background-size: 64px;
 }
 .page-block .btn-green .arrow.ico-small-svg,
 .btn-green .arrow.ico-small-svg {
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background-image: url("../../images/layout/icons/svg/ico-arrow-right-white.svg") 0 0 no-repeat;
+  background-image: url("../../images/layout/icons/svg/ico-arrow-right-white.svg");
   background-size: 16px 16px;
 }
 .page-block .btn-green .arrow.ico-medium-svg,
@@ -12993,7 +13018,8 @@ button.btn.btn-green.large.disabled.active {
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background: transparent url("../../images/layout/icons/16x16/ico-arrow-left-white.png") 0 0 no-repeat;
+  background: transparent url("../../images/layout/icons/svg/ico-arrow-left-white.svg") 0 0 no-repeat;
+  background-size: 16px;
   margin-top: 0;
   margin-right: 0;
 }
@@ -13010,7 +13036,8 @@ button.btn.btn-green.large.disabled.active {
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background-image: url("../../images/layout/icons/16x16/ico-arrow-left-white.png");
+  background-image: url("../../images/layout/icons/svg/ico-arrow-left-white.svg");
+  background-size: 16px;
 }
 .btn-brown .arrow.ico-medium,
 .btn-blue .arrow.ico-medium,
@@ -13019,7 +13046,8 @@ button.btn.btn-green.large.disabled.active {
   width: 32px;
   height: 32px;
   line-height: 32px;
-  background: transparent url("../../images/layout/icons/32x32/ico-arrow-left-white.png") 0 0 no-repeat;
+  background: transparent url("../../images/layout/icons/svg/ico-arrow-left-white.svg") 0 0 no-repeat;
+  background-size: 32px;
 }
 .btn-brown .arrow.ico-large,
 .btn-blue .arrow.ico-large,
@@ -13028,7 +13056,8 @@ button.btn.btn-green.large.disabled.active {
   width: 64px;
   height: 64px;
   line-height: 64px;
-  background: transparent url("../../images/layout/icons/64x64/ico-arrow-left-white.png") 0 0 no-repeat;
+  background: transparent url("../../images/layout/icons/svg/ico-arrow-left-white.svg") 0 0 no-repeat;
+  background-size: 64px;
 }
 .btn-brown .arrow.ico-small-svg,
 .btn-blue .arrow.ico-small-svg,
@@ -13037,7 +13066,7 @@ button.btn.btn-green.large.disabled.active {
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background-image: url("../../images/layout/icons/svg/ico-arrow-left-white.svg") 0 0 no-repeat;
+  background-image: url("../../images/layout/icons/svg/ico-arrow-left-white.svg");
   background-size: 16px 16px;
 }
 .btn-brown .arrow.ico-medium-svg,
@@ -13087,7 +13116,8 @@ button.btn.btn-green.large.disabled.active {
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background: transparent url("../../images/layout/icons/16x16/ico-arrow-left-white.png") 0 0 no-repeat;
+  background: transparent url("../../images/layout/icons/svg/ico-arrow-left-white.svg") 0 0 no-repeat;
+  background-size: 16px;
   margin-top: 0;
   margin-left: 0;
 }
@@ -13104,7 +13134,8 @@ button.btn.btn-green.large.disabled.active {
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background-image: url("../../images/layout/icons/16x16/ico-arrow-left-white.png");
+  background-image: url("../../images/layout/icons/svg/ico-arrow-left-white.svg");
+  background-size: 16px;
 }
 .btn-brown.back .arrow.ico-medium,
 .btn-blue.back .arrow.ico-medium,
@@ -13113,7 +13144,8 @@ button.btn.btn-green.large.disabled.active {
   width: 32px;
   height: 32px;
   line-height: 32px;
-  background: transparent url("../../images/layout/icons/32x32/ico-arrow-left-white.png") 0 0 no-repeat;
+  background: transparent url("../../images/layout/icons/svg/ico-arrow-left-white.svg") 0 0 no-repeat;
+  background-size: 32px;
 }
 .btn-brown.back .arrow.ico-large,
 .btn-blue.back .arrow.ico-large,
@@ -13122,7 +13154,8 @@ button.btn.btn-green.large.disabled.active {
   width: 64px;
   height: 64px;
   line-height: 64px;
-  background: transparent url("../../images/layout/icons/64x64/ico-arrow-left-white.png") 0 0 no-repeat;
+  background: transparent url("../../images/layout/icons/svg/ico-arrow-left-white.svg") 0 0 no-repeat;
+  background-size: 64px;
 }
 .btn-brown.back .arrow.ico-small-svg,
 .btn-blue.back .arrow.ico-small-svg,
@@ -13131,7 +13164,7 @@ button.btn.btn-green.large.disabled.active {
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background-image: url("../../images/layout/icons/svg/ico-arrow-left-white.svg") 0 0 no-repeat;
+  background-image: url("../../images/layout/icons/svg/ico-arrow-left-white.svg");
   background-size: 16px 16px;
 }
 .btn-brown.back .arrow.ico-medium-svg,
@@ -13299,7 +13332,7 @@ a.btn.btn-brown {
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background-image: url("../../images/layout/icons/svg/ico-arrow-right-black.svg") 0 0 no-repeat;
+  background-image: url("../../images/layout/icons/svg/ico-arrow-right-black.svg");
   background-size: 16px 16px;
 }
 .btn.btn-white .arrow.ico-medium-svg,
@@ -15588,7 +15621,7 @@ ul.software-menu .dl span {
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background-image: url("../../images/layout/icons/svg/ico-warning-orange.svg") 0 0 no-repeat;
+  background-image: url("../../images/layout/icons/svg/ico-warning-orange.svg");
   background-size: 16px 16px;
 }
 .notices span.warning i.ico-medium-svg,
@@ -15657,7 +15690,7 @@ ul.software-menu .dl span {
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background-image: url("../../images/layout/icons/svg/ico-information-brown.svg") 0 0 no-repeat;
+  background-image: url("../../images/layout/icons/svg/ico-information-brown.svg");
   background-size: 16px 16px;
 }
 .notices span.notice i.ico-medium-svg,
@@ -15751,7 +15784,7 @@ a.cancel i {
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background-image: url("../../images/layout/icons/svg/ico-warning-blue.svg") 0 0 no-repeat;
+  background-image: url("../../images/layout/icons/svg/ico-warning-blue.svg");
   background-size: 16px 16px;
 }
 .business .notices span.warning i.ico-medium-svg,
@@ -15819,7 +15852,7 @@ a.cancel i {
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background-image: url("../../images/layout/icons/svg/ico-information-blue.svg") 0 0 no-repeat;
+  background-image: url("../../images/layout/icons/svg/ico-information-blue.svg");
   background-size: 16px 16px;
 }
 .business .notices span.notice i.ico-medium-svg,
@@ -17445,7 +17478,7 @@ h2 > .icon-messages {
 /* TOP BAR
 /******************************************************************/
 .login-bar {
-  background: #222222 url("../../images/layout/top-bar/login-bg.png") repeat-x center top;
+  background: #222222 url("../../images/layout/top-bar/login-bg.svg") repeat-x center top;
   color: #ffffff;
 }
 .login-bar .page-block {
@@ -17567,7 +17600,8 @@ h2 > .icon-messages {
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background: transparent url("../../images/layout/icons/16x16/ico-arrow-right-white.png") 0 0 no-repeat;
+  background: transparent url("../../images/layout/icons/svg/ico-arrow-right-white.svg") 0 0 no-repeat;
+  background-size: 16px;
 }
 .login-bar .btn .arrow:last-child {
   *margin-left: 0;
@@ -17576,25 +17610,28 @@ h2 > .icon-messages {
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background-image: url("../../images/layout/icons/16x16/ico-arrow-right-white.png");
+  background-image: url("../../images/layout/icons/svg/ico-arrow-right-white.svg");
+  background-size: 16px;
 }
 .login-bar .btn .arrow.ico-medium {
   width: 32px;
   height: 32px;
   line-height: 32px;
-  background: transparent url("../../images/layout/icons/32x32/ico-arrow-right-white.png") 0 0 no-repeat;
+  background: transparent url("../../images/layout/icons/svg/ico-arrow-right-white.svg") 0 0 no-repeat;
+  background-size: 32px;
 }
 .login-bar .btn .arrow.ico-large {
   width: 64px;
   height: 64px;
   line-height: 64px;
-  background: transparent url("../../images/layout/icons/64x64/ico-arrow-right-white.png") 0 0 no-repeat;
+  background: transparent url("../../images/layout/icons/svg/ico-arrow-right-white.svg") 0 0 no-repeat;
+  background-size: 64px;
 }
 .login-bar .btn .arrow.ico-small-svg {
   width: 16px;
   height: 16px;
   line-height: 16px;
-  background-image: url("../../images/layout/icons/svg/ico-arrow-right-white.svg") 0 0 no-repeat;
+  background-image: url("../../images/layout/icons/svg/ico-arrow-right-white.svg");
   background-size: 16px 16px;
 }
 .login-bar .btn .arrow.ico-medium-svg {
@@ -17720,7 +17757,7 @@ h2 > .icon-messages {
   margin: 0;
   padding: 0;
   list-style: none;
-  background: url("../../images/layout/top-bar/cart-divider.png") no-repeat right bottom;
+  background: url("../../images/layout/top-bar/cart-divider.svg") no-repeat right bottom;
 }
 .user-cart li {
   display: inline-block;
@@ -17729,7 +17766,7 @@ h2 > .icon-messages {
   padding: 0 24px;
   height: 40px;
   float: left;
-  background: url("../../images/layout/top-bar/cart-divider.png") no-repeat left bottom;
+  background: url("../../images/layout/top-bar/cart-divider.svg") no-repeat left bottom;
 }
 .user-cart li > a {
   display: block;
@@ -17749,7 +17786,7 @@ h2 > .icon-messages {
   border-top: 4px solid #222222;
   padding-left: 35px;
   position: relative;
-  background: url("../../images/layout/top-bar/ico-cart.png") no-repeat 0 8px;
+  background: url("../../images/layout/top-bar/ico-cart.svg") no-repeat 0 12px;
 }
 .user-cart li.cart a.minicart .items {
   position: absolute;

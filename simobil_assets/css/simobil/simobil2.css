@@ -85,7 +85,7 @@ footer {
 	width: 16px;
 	height: 16px;
 	line-height: 16px;
-	background: transparent url("../../images/layout/icons/16x16/ico-twitter-color.png") 0 0 no-repeat;
+	background: transparent url("../../images/layout/icons/svg/ico-twitter-color.svg") 0 0 no-repeat;
 	width: 32px;
 	height: 32px;
 	line-height: 32px;
@@ -94,19 +94,19 @@ footer {
 	width: 16px;
 	height: 16px;
 	line-height: 16px;
-	background-image: url("../../images/layout/icons/16x16/ico-twitter-color.png");
+	background-image: url("../../images/layout/icons/svg/ico-twitter-color.svg");
 }
 .sitemap .social .ico-twitter-gray:hover.ico-medium {
 	width: 32px;
 	height: 32px;
 	line-height: 32px;
-	background: transparent url("../../images/layout/icons/32x32/ico-twitter-color.png") 0 0 no-repeat;
+	background: transparent url("../../images/layout/icons/svg/ico-twitter-color.svg") 0 0 no-repeat;
 }
 .sitemap .social .ico-twitter-gray:hover.ico-large {
 	width: 64px;
 	height: 64px;
 	line-height: 64px;
-	background: transparent url("../../images/layout/icons/64x64/ico-twitter-color.png") 0 0 no-repeat;
+	background: transparent url("../../images/layout/icons/svg/ico-twitter-color.svg") 0 0 no-repeat;
 }
 .sitemap .social .ico-twitter-gray:hover.ico-small-svg {
 	width: 16px;
@@ -712,7 +712,8 @@ body.business .urgent-alert {
 	width: 32px;
 	height: 32px;
 	line-height: 32px;
-	background: transparent url("../../images/layout/icons/32x32/ico-arrow-left-gal-white.png") 0 0 no-repeat;
+	background: transparent url("../../images/layout/icons/svg/ico-arrow-left-gal-white.svg") 0 0 no-repeat;
+	background-size: 32px;
 }
 .products-landing .scrollable-wrapper a.prev span:last-child {
 	*margin-left: 0;
@@ -736,7 +737,8 @@ body.business .urgent-alert {
 	width: 32px;
 	height: 32px;
 	line-height: 32px;
-	background: transparent url("../../images/layout/icons/32x32/ico-arrow-right-gal-white.png") 0 0 no-repeat;
+	background: transparent url("../../images/layout/icons/svg/ico-arrow-right-gal-white.svg") 0 0 no-repeat;
+	background-size: 32px;
 }
 .products-landing .scrollable-wrapper a.next span:last-child {
 	*margin-left: 0;
@@ -879,12 +881,11 @@ ul.steps li {
 ul.steps li {
 	background-position: 0 0;
 	background-repeat: no-repeat;
-	background-position: 0 0;
-	background-repeat: no-repeat;
 	width: 16px;
 	height: 16px;
 	line-height: 16px;
-	background-image: url("../../images/layout/icons/16x16/ico-arrow-right-progressbar-brown.png");
+	background-image: url("../../images/layout/icons/svg/ico-arrow-right-progressbar-brown.svg");
+	background-size: 16px;
 	background-position-x: -3px;
 	line-height: 32px;
 	padding: 0 24px 0 32px;
@@ -914,7 +915,8 @@ ul.steps li.selected a {
 	width: 16px;
 	height: 16px;
 	line-height: 16px;
-	background: transparent url("../../images/layout/icons/16x16/ico-arrow-right-progressbar-blue.png") 0 0 no-repeat;
+	background: transparent url("../../images/layout/icons/svg/ico-arrow-right-progressbar-blue.svg") 0 0 no-repeat;
+	background-size: 16px;
 	background-position-x: -3px;
 	line-height: 32px;
 }
@@ -922,25 +924,28 @@ ul.steps li.selected a {
 	width: 16px;
 	height: 16px;
 	line-height: 16px;
-	background-image: url("../../images/layout/icons/16x16/ico-arrow-right-progressbar-blue.png");
+	background-image: url("../../images/layout/icons/svg/ico-arrow-right-progressbar-blue.svg");
+	background-size: 16px;
 }
 .business ul.steps li.ico-medium {
 	width: 32px;
 	height: 32px;
 	line-height: 32px;
-	background: transparent url("../../images/layout/icons/32x32/ico-arrow-right-progressbar-blue.png") 0 0 no-repeat;
+	background: transparent url("../../images/layout/icons/svg/ico-arrow-right-progressbar-blue.svg") 0 0 no-repeat;
+	background-size: 32px;
 }
 .business ul.steps li.ico-large {
 	width: 64px;
 	height: 64px;
 	line-height: 64px;
-	background: transparent url("../../images/layout/icons/64x64/ico-arrow-right-progressbar-blue.png") 0 0 no-repeat;
+	background: transparent url("../../images/layout/icons/svg/ico-arrow-right-progressbar-blue.svg") 0 0 no-repeat;
+	background-size: 64px;
 }
 .business ul.steps li.ico-small-svg {
 	width: 16px;
 	height: 16px;
 	line-height: 16px;
-	background-image: url("../../images/layout/icons/svg/ico-arrow-right-progressbar-blue.svg") 0 0 no-repeat;
+	background-image: url("../../images/layout/icons/svg/ico-arrow-right-progressbar-blue.svg");
 	background-size: 16px 16px;
 }
 .business ul.steps li.ico-medium-svg {
@@ -1055,7 +1060,8 @@ ul.breadcrumbs + ul.steps {
 	width: 16px;
 	height: 16px;
 	line-height: 16px;
-	background-image: url("../../images/layout/icons/16x16/ico-favourite-brown.png");
+	background-image: url("../../images/layout/icons/svg/ico-favourite-brown.svg");
+	background-size: 16px;
 }
 .product-listing .item .favourite:last-child {
 	*margin-left: 0;
@@ -1077,7 +1083,8 @@ ul.breadcrumbs + ul.steps {
 	width: 16px;
 	height: 16px;
 	line-height: 16px;
-	background-image: url("../../images/layout/icons/16x16/ico-heart-semiorange.png");
+	background-image: url("../../images/layout/icons/svg/ico-heart-semiorange.svg");
+	background-size: 16px;
 }
 .product-listing .item .favourite.selected:last-child,
 .product-listing .item .favourite:hover:last-child {
@@ -1186,7 +1193,8 @@ ul.breadcrumbs + ul.steps {
 	width: 16px;
 	height: 16px;
 	line-height: 16px;
-	background-image: url("../../images/layout/icons/16x16/ico-arrow-right-black.png");
+	background-image: url("../../images/layout/icons/svg/ico-arrow-right-black.svg");
+	background-size: 16px;
 }
 .product-listing .item .info .controls .more span:last-child {
 	*margin-left: 0;
@@ -1734,7 +1742,7 @@ span.circle-badge.large {
 	width: 16px;
 	height: 16px;
 	line-height: 16px;
-	background-image: url("../../images/layout/icons/svg/ico-arrow-right-brown.svg") 0 0 no-repeat;
+	background-image: url("../../images/layout/icons/svg/ico-arrow-right-brown.svg");
 	background-size: 16px 16px;
 }
 .selection-wrapper .selection .paket .info .arrow.ico-medium-svg {
@@ -1843,7 +1851,8 @@ span.circle-badge.large {
 	width: 16px;
 	height: 16px;
 	line-height: 16px;
-	background-image: url("../../images/layout/icons/16x16/ico-favourite-blue.png");
+	background-image: url("../../images/layout/icons/svg/ico-favourite-blue.svg");
+	background-size: 16px;
 }
 .business .product-listing .item .favourite:last-child {
 	*margin-left: 0;
@@ -1865,7 +1874,8 @@ span.circle-badge.large {
 	width: 16px;
 	height: 16px;
 	line-height: 16px;
-	background-image: url("../../images/layout/icons/16x16/ico-heart-semiblue.png");
+	background-image: url("../../images/layout/icons/svg/ico-heart-semiblue.svg");
+	background-size: 16px;
 }
 .business .product-listing .item .favourite.selected:last-child,
 .business .product-listing .item .favourite:hover:last-child {
@@ -2016,7 +2026,7 @@ span.circle-badge.large {
 	width: 16px;
 	height: 16px;
 	line-height: 16px;
-	background-image: url("../../images/layout/icons/svg/ico-arrow-right-blue.svg") 0 0 no-repeat;
+	background-image: url("../../images/layout/icons/svg/ico-arrow-right-blue.svg");
 	background-size: 16px 16px;
 }
 .business .selection-wrapper .selection .paket .info .arrow.ico-medium-svg {
@@ -2093,7 +2103,7 @@ span.circle-badge.large {
 	width: 16px;
 	height: 16px;
 	line-height: 16px;
-	background-image: url("../../images/layout/icons/svg/ico-arrow-right-blue.svg") 0 0 no-repeat;
+	background-image: url("../../images/layout/icons/svg/ico-arrow-right-blue.svg");
 	background-size: 16px 16px;
 }
 .business .selection-wrapper .selection .inquire .arrow.ico-medium-svg {
@@ -3268,7 +3278,8 @@ span.circle-badge.large {
 	width: 32px;
 	height: 32px;
 	line-height: 32px;
-	background: transparent url("../../images/layout/icons/32x32/ico-arrow-left-gal-white.png") 0 0 no-repeat;
+	background: transparent url("../../images/layout/icons/svg/ico-arrow-left-gal-white.svg") 0 0 no-repeat;
+	background-size: 32px;
 }
 .product-detail .big-gallery .prev:hover span:last-child {
 	*margin-left: 0;
@@ -3313,7 +3324,8 @@ span.circle-badge.large {
 	width: 32px;
 	height: 32px;
 	line-height: 32px;
-	background: transparent url("../../images/layout/icons/32x32/ico-arrow-right-gal-white.png") 0 0 no-repeat;
+	background: transparent url("../../images/layout/icons/svg/ico-arrow-right-gal-white.svg") 0 0 no-repeat;
+	background-size: 32px;
 }
 .product-detail .big-gallery .next:hover span:last-child {
 	*margin-left: 0;
@@ -3986,7 +3998,8 @@ span.circle-badge.large {
 	width: 32px;
 	height: 32px;
 	line-height: 32px;
-	background: transparent url("../../images/layout/icons/32x32/ico-arrow-left-gal-white.png") 0 0 no-repeat;
+	background: transparent url("../../images/layout/icons/svg/ico-arrow-left-gal-white.svg") 0 0 no-repeat;
+	background-size: 32px;
 }
 .business .product-detail .big-gallery .prev:hover span:last-child {
 	*margin-left: 0;
@@ -4028,7 +4041,8 @@ span.circle-badge.large {
 	width: 32px;
 	height: 32px;
 	line-height: 32px;
-	background: transparent url("../../images/layout/icons/32x32/ico-arrow-right-gal-white.png") 0 0 no-repeat;
+	background: transparent url("../../images/layout/icons/svg/ico-arrow-right-gal-white.svg") 0 0 no-repeat;
+	background-size: 32px;
 }
 .business .product-detail .big-gallery .next:hover span:last-child {
 	*margin-left: 0;
@@ -4864,7 +4878,7 @@ span.circle-badge.large {
 	width: 16px;
 	height: 16px;
 	line-height: 16px;
-	background-image: url("../../images/layout/icons/svg/ico-arrow-right-brown.svg") 0 0 no-repeat;
+	background-image: url("../../images/layout/icons/svg/ico-arrow-right-brown.svg");
 	background-size: 16px 16px;
 }
 .configurator .paket-selector .tools a .arrow.ico-medium-svg {
@@ -5151,7 +5165,8 @@ span.circle-badge.large {
 	width: 16px;
 	height: 16px;
 	line-height: 16px;
-	background-image: url("../../images/layout/icons/16x16/ico-arrow-right-white.png");
+	background-image: url("../../images/layout/icons/svg/ico-arrow-right-white.svg");
+	background-size: 16px;
 }
 .configurator .paket-selector-table .choices.highlight a.more i:last-child,
 .configurator .paket-selector-table.options-5-narrow .choices.highlight a.more i:last-child {
@@ -5250,7 +5265,7 @@ span.circle-badge.large {
 	width: 16px;
 	height: 16px;
 	line-height: 16px;
-	background-image: url("../../images/layout/icons/svg/ico-arrow-right-brown.svg") 0 0 no-repeat;
+	background-image: url("../../images/layout/icons/svg/ico-arrow-right-brown.svg");
 	background-size: 16px 16px;
 }
 .configurator .paket-selector-table .tools a .arrow.ico-medium-svg,
@@ -5339,7 +5354,7 @@ span.circle-badge.large {
 	width: 16px;
 	height: 16px;
 	line-height: 16px;
-	background-image: url("../../images/layout/icons/svg/ico-arrow-right-brown.svg") 0 0 no-repeat;
+	background-image: url("../../images/layout/icons/svg/ico-arrow-right-brown.svg");
 	background-size: 16px 16px;
 }
 .configurator .paket-selector-table a.more .arrow.ico-medium-svg,
@@ -5730,7 +5745,7 @@ span.circle-badge.large {
 	width: 16px;
 	height: 16px;
 	line-height: 16px;
-	background-image: url("../../images/layout/icons/svg/ico-arrow-right-brown.svg") 0 0 no-repeat;
+	background-image: url("../../images/layout/icons/svg/ico-arrow-right-brown.svg");
 	background-size: 16px 16px;
 }
 .configurator i.arrow.ico-medium-svg {
@@ -5751,31 +5766,35 @@ span.circle-badge.large {
 	width: 16px;
 	height: 16px;
 	line-height: 16px;
-	background: transparent url("../../images/layout/icons/16x16/ico-arrow-right-white.png") 0 0 no-repeat;
+	background: transparent url("../../images/layout/icons/svg/ico-arrow-right-white.svg") 0 0 no-repeat;
+	background-size: 16px;
 }
 .configurator .btn i.arrow.ico-small {
 	width: 16px;
 	height: 16px;
 	line-height: 16px;
-	background-image: url("../../images/layout/icons/16x16/ico-arrow-right-white.png");
+	background-image: url("../../images/layout/icons/svg/ico-arrow-right-white.svg");
+	background-size: 16px;
 }
 .configurator .btn i.arrow.ico-medium {
 	width: 32px;
 	height: 32px;
 	line-height: 32px;
-	background: transparent url("../../images/layout/icons/32x32/ico-arrow-right-white.png") 0 0 no-repeat;
+	background: transparent url("../../images/layout/icons/svg/ico-arrow-right-white.svg") 0 0 no-repeat;
+	background-size: 32px;
 }
 .configurator .btn i.arrow.ico-large {
 	width: 64px;
 	height: 64px;
 	line-height: 64px;
-	background: transparent url("../../images/layout/icons/64x64/ico-arrow-right-white.png") 0 0 no-repeat;
+	background: transparent url("../../images/layout/icons/svg/ico-arrow-right-white.svg") 0 0 no-repeat;
+	background-size: 64px;
 }
 .configurator .btn i.arrow.ico-small-svg {
 	width: 16px;
 	height: 16px;
 	line-height: 16px;
-	background-image: url("../../images/layout/icons/svg/ico-arrow-right-white.svg") 0 0 no-repeat;
+	background-image: url("../../images/layout/icons/svg/ico-arrow-right-white.svg");
 	background-size: 16px 16px;
 }
 .configurator .btn i.arrow.ico-medium-svg {
@@ -6004,7 +6023,7 @@ span.circle-badge.large {
 	width: 16px;
 	height: 16px;
 	line-height: 16px;
-	background-image: url("../../images/layout/icons/svg/ico-arrow-right-blue.svg") 0 0 no-repeat;
+	background-image: url("../../images/layout/icons/svg/ico-arrow-right-blue.svg");
 	background-size: 16px 16px;
 }
 .business .configurator .paket-selector .tools a .arrow.ico-medium-svg {
@@ -6197,7 +6216,7 @@ span.circle-badge.large {
 	width: 16px;
 	height: 16px;
 	line-height: 16px;
-	background-image: url("../../images/layout/icons/svg/ico-arrow-right-blue.svg") 0 0 no-repeat;
+	background-image: url("../../images/layout/icons/svg/ico-arrow-right-blue.svg");
 	background-size: 16px 16px;
 }
 .business .configurator i.arrow.ico-medium-svg {
@@ -6218,31 +6237,35 @@ span.circle-badge.large {
 	width: 16px;
 	height: 16px;
 	line-height: 16px;
-	background: transparent url("../../images/layout/icons/16x16/ico-arrow-right-white.png") 0 0 no-repeat;
+	background: transparent url("../../images/layout/icons/svg/ico-arrow-right-white.svg") 0 0 no-repeat;
+	background-size: 16px;
 }
 .business .configurator .btn i.arrow.ico-small {
 	width: 16px;
 	height: 16px;
 	line-height: 16px;
-	background-image: url("../../images/layout/icons/16x16/ico-arrow-right-white.png");
+	background-image: url("../../images/layout/icons/svg/ico-arrow-right-white.svg");
+	background-size: 16px;
 }
 .business .configurator .btn i.arrow.ico-medium {
 	width: 32px;
 	height: 32px;
 	line-height: 32px;
-	background: transparent url("../../images/layout/icons/32x32/ico-arrow-right-white.png") 0 0 no-repeat;
+	background: transparent url("../../images/layout/icons/svg/ico-arrow-right-white.svg") 0 0 no-repeat;
+	background-size: 32px;
 }
 .business .configurator .btn i.arrow.ico-large {
 	width: 64px;
 	height: 64px;
 	line-height: 64px;
-	background: transparent url("../../images/layout/icons/64x64/ico-arrow-right-white.png") 0 0 no-repeat;
+	background: transparent url("../../images/layout/icons/svg/ico-arrow-right-white.svg") 0 0 no-repeat;
+	background-size: 64px;
 }
 .business .configurator .btn i.arrow.ico-small-svg {
 	width: 16px;
 	height: 16px;
 	line-height: 16px;
-	background-image: url("../../images/layout/icons/svg/ico-arrow-right-white.svg") 0 0 no-repeat;
+	background-image: url("../../images/layout/icons/svg/ico-arrow-right-white.svg");
 	background-size: 16px 16px;
 }
 .business .configurator .btn i.arrow.ico-medium-svg {
@@ -7350,7 +7373,8 @@ span.circle-badge.large {
 	width: 32px;
 	height: 32px;
 	line-height: 32px;
-	background: transparent url("../../images/layout/icons/32x32/ico-arrow-left-gal-white.png") 0 0 no-repeat;
+	background: transparent url("../../images/layout/icons/svg/ico-arrow-left-gal-white.svg") 0 0 no-repeat;
+	background-size: 32px;
 }
 .configurator.popolna-pisarna .scrollable-wrapper a.prev span:last-child {
 	*margin-left: 0;
@@ -7374,7 +7398,8 @@ span.circle-badge.large {
 	width: 32px;
 	height: 32px;
 	line-height: 32px;
-	background: transparent url("../../images/layout/icons/32x32/ico-arrow-right-gal-white.png") 0 0 no-repeat;
+	background: transparent url("../../images/layout/icons/svg/ico-arrow-right-gal-white.svg") 0 0 no-repeat;
+	background-size: 32px;
 }
 .configurator.popolna-pisarna .scrollable-wrapper a.next span:last-child {
 	*margin-left: 0;
@@ -13652,7 +13677,8 @@ ul.checkmarks li:before {
 	width: 16px;
 	height: 16px;
 	line-height: 16px;
-	background: transparent url("../../images/layout/icons/16x16/ico-checkmark-green.png") 0 0 no-repeat;
+	background: transparent url("../../images/layout/icons/svg/ico-checkmark-green.svg") 0 0 no-repeat;
+	background-size: 16px 16px;
 	content: "";
 	position: absolute;
 	left: 0px;
@@ -13665,19 +13691,20 @@ ul.checkmarks li:before.ico-small {
 	width: 16px;
 	height: 16px;
 	line-height: 16px;
-	background-image: url("../../images/layout/icons/16x16/ico-checkmark-green.png");
+	background-image: url("../../images/layout/icons/svg/ico-checkmark-green.svg");
+	background-size: 16px 16px;
 }
 ul.checkmarks li:before.ico-medium {
 	width: 32px;
 	height: 32px;
 	line-height: 32px;
-	background: transparent url("../../images/layout/icons/32x32/ico-checkmark-green.png") 0 0 no-repeat;
+	background: transparent url("../../images/layout/icons/svg/ico-checkmark-green.svg") 0 0 no-repeat;
 }
 ul.checkmarks li:before.ico-large {
 	width: 64px;
 	height: 64px;
 	line-height: 64px;
-	background: transparent url("../../images/layout/icons/64x64/ico-checkmark-green.png") 0 0 no-repeat;
+	background: transparent url("../../images/layout/icons/svg/ico-checkmark-green.svg") 0 0 no-repeat;
 }
 ul.checkmarks li:before.ico-small-svg {
 	width: 16px;
@@ -14483,7 +14510,8 @@ body.sso .center-page > .inner {
 	width: 32px;
 	height: 32px;
 	line-height: 32px;
-	background: transparent url("../../images/layout/icons/32x32/ico-arrow-left-gal-white.png") 0 0 no-repeat;
+	background: transparent url("../../images/layout/icons/svg/ico-arrow-left-gal-white.svg") 0 0 no-repeat;
+	background-size: 32px;
 }
 .landing .big-gallery .prev span:last-child,
 .landing .big-gallery .prev:hover span:last-child {
@@ -14509,7 +14537,8 @@ body.sso .center-page > .inner {
 	width: 32px;
 	height: 32px;
 	line-height: 32px;
-	background: transparent url("../../images/layout/icons/32x32/ico-arrow-right-gal-white.png") 0 0 no-repeat;
+	background: transparent url("../../images/layout/icons/svg/ico-arrow-right-gal-white.svg") 0 0 no-repeat;
+	background-size: 32px;
 }
 .landing .big-gallery .next span:last-child,
 .landing .big-gallery .next:hover span:last-child {
@@ -14582,7 +14611,8 @@ body.sso .center-page > .inner {
 	width: 32px;
 	height: 32px;
 	line-height: 32px;
-	background: transparent url("../../images/layout/icons/32x32/ico-arrow-left-gal-white.png") 0 0 no-repeat;
+	background: transparent url("../../images/layout/icons/svg/ico-arrow-left-gal-white.svg") 0 0 no-repeat;
+	background-size: 32px;
 }
 .business .landing .big-gallery .prev span:last-child {
 	*margin-left: 0;
@@ -14603,7 +14633,8 @@ body.sso .center-page > .inner {
 	width: 32px;
 	height: 32px;
 	line-height: 32px;
-	background: transparent url("../../images/layout/icons/32x32/ico-arrow-right-gal-white.png") 0 0 no-repeat;
+	background: transparent url("../../images/layout/icons/svg/ico-arrow-right-gal-white.svg") 0 0 no-repeat;
+	background-size: 32px;
 }
 .business .landing .big-gallery .next span:last-child {
 	*margin-left: 0;
@@ -15374,7 +15405,8 @@ table.striped.vertical tbody .btn {
 	width: 32px;
 	height: 32px;
 	line-height: 32px;
-	background: transparent url("../../images/layout/icons/32x32/ico-arrow-left-gal-white.png") 0 0 no-repeat;
+	background: transparent url("../../images/layout/icons/svg/ico-arrow-left-gal-white.svg") 0 0 no-repeat;
+	background-size: 32px;
 }
 .nagradna-igra .big-gallery .prev span:last-child,
 .nagradna-igra .big-gallery .prev:hover span:last-child {
@@ -15400,7 +15432,8 @@ table.striped.vertical tbody .btn {
 	width: 32px;
 	height: 32px;
 	line-height: 32px;
-	background: transparent url("../../images/layout/icons/32x32/ico-arrow-right-gal-white.png") 0 0 no-repeat;
+	background: transparent url("../../images/layout/icons/svg/ico-arrow-right-gal-white.svg") 0 0 no-repeat;
+	background-size: 32px;
 }
 .nagradna-igra .big-gallery .next span:last-child,
 .nagradna-igra .big-gallery .next:hover span:last-child {
@@ -15473,7 +15506,8 @@ table.striped.vertical tbody .btn {
 	width: 32px;
 	height: 32px;
 	line-height: 32px;
-	background: transparent url("../../images/layout/icons/32x32/ico-arrow-left-gal-white.png") 0 0 no-repeat;
+	background: transparent url("../../images/layout/icons/svg/ico-arrow-left-gal-white.svg") 0 0 no-repeat;
+	background-size: 32px;
 }
 .business .nagradna-igra .big-gallery .prev span:last-child {
 	*margin-left: 0;
@@ -15494,7 +15528,8 @@ table.striped.vertical tbody .btn {
 	width: 32px;
 	height: 32px;
 	line-height: 32px;
-	background: transparent url("../../images/layout/icons/32x32/ico-arrow-right-gal-white.png") 0 0 no-repeat;
+	background: transparent url("../../images/layout/icons/svg/ico-arrow-right-gal-white.svg") 0 0 no-repeat;
+	background-size: 32px;
 }
 .business .nagradna-igra .big-gallery .next span:last-child {
 	*margin-left: 0;
