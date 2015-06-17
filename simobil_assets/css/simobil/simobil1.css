@@ -12612,6 +12612,90 @@
 	line-height: 64px;
 	background: transparent url("../../images/layout/icons/svg/ico-vezave-sumarno.svg") 0 0 no-repeat;
 }
+.ico-poslovni-kakovost-odzivnost.ico-small-svg,
+.page-block .ico-poslovni-kakovost-odzivnost.ico-small-svg {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background-image: url("../../images/layout/icons/svg/ico-poslovni-kakovost-odzivnost.svg");
+}
+.ico-poslovni-kakovost-odzivnost.ico-medium-svg,
+.page-block .ico-poslovni-kakovost-odzivnost.ico-medium-svg {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background: transparent url("../../images/layout/icons/svg/ico-poslovni-kakovost-odzivnost.svg") 0 0 no-repeat;
+}
+.ico-poslovni-kakovost-odzivnost.ico-large-svg,
+.page-block .ico-poslovni-kakovost-odzivnost.ico-large-svg {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  background: transparent url("../../images/layout/icons/svg/ico-poslovni-kakovost-odzivnost.svg") 0 0 no-repeat;
+}
+.ico-poslovni-mednarodna-skupina.ico-small-svg,
+.page-block .ico-poslovni-mednarodna-skupina.ico-small-svg {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background-image: url("../../images/layout/icons/svg/ico-poslovni-mednarodna-skupina.svg");
+}
+.ico-poslovni-mednarodna-skupina.ico-medium-svg,
+.page-block .ico-poslovni-mednarodna-skupina.ico-medium-svg {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background: transparent url("../../images/layout/icons/svg/ico-poslovni-mednarodna-skupina.svg") 0 0 no-repeat;
+}
+.ico-poslovni-mednarodna-skupina.ico-large-svg,
+.page-block .ico-poslovni-mednarodna-skupina.ico-large-svg {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  background: transparent url("../../images/layout/icons/svg/ico-poslovni-mednarodna-skupina.svg") 0 0 no-repeat;
+}
+.ico-poslovni-naenemmestu.ico-small-svg,
+.page-block .ico-poslovni-naenemmestu.ico-small-svg {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background-image: url("../../images/layout/icons/svg/ico-poslovni-naenemmestu.svg");
+}
+.ico-poslovni-naenemmestu.ico-medium-svg,
+.page-block .ico-poslovni-naenemmestu.ico-medium-svg {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background: transparent url("../../images/layout/icons/svg/ico-poslovni-naenemmestu.svg") 0 0 no-repeat;
+}
+.ico-poslovni-naenemmestu.ico-large-svg,
+.page-block .ico-poslovni-naenemmestu.ico-large-svg {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  background: transparent url("../../images/layout/icons/svg/ico-poslovni-naenemmestu.svg") 0 0 no-repeat;
+}
+.ico-poslovni-zaupanje-odgovornost.ico-small-svg,
+.page-block .ico-poslovni-zaupanje-odgovornost.ico-small-svg {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background-image: url("../../images/layout/icons/svg/ico-poslovni-zaupanje-odgovornost.svg");
+}
+.ico-poslovni-zaupanje-odgovornost.ico-medium-svg,
+.page-block .ico-poslovni-zaupanje-odgovornost.ico-medium-svg {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background: transparent url("../../images/layout/icons/svg/ico-poslovni-zaupanje-odgovornost.svg") 0 0 no-repeat;
+}
+.ico-poslovni-zaupanje-odgovornost.ico-large-svg,
+.page-block .ico-poslovni-zaupanje-odgovornost.ico-large-svg {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  background: transparent url("../../images/layout/icons/svg/ico-poslovni-zaupanje-odgovornost.svg") 0 0 no-repeat;
+}
 /******************************************************************/
 /* BUTTONS
 /******************************************************************/
