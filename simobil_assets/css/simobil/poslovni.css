@@ -1,0 +1,433 @@
+.business-restructuring .section.header h1 .type {
+  background: #66bb30;
+  color: white;
+  text-transform: uppercase;
+  padding: 0px 12px 3px;
+  font-size: 70%;
+  margin: 0 12px 0 -24px;
+  position: relative;
+  top: -3px;
+}
+
+.business-restructuring .event-date {
+  background: #66bb30;
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 24px;
+  display: inline-block;
+  text-align: center;
+  padding: 2px 12px;
+}
+
+.business-restructuring .section.header .event-date {
+  margin: -15px 0 0;
+  float: right;
+}
+
+.business-restructuring .event-time {
+  font-size: 24px;
+}
+
+.business-restructuring .event-location i {
+  position: relative;
+  top: -5px;
+}
+
+.business-restructuring .event-time i {
+  position: relative;
+  top: 2px;
+}
+
+.business-restructuring .btn-prijava-na-event {
+  text-transform: uppercase;
+}
+
+.business-restructuring .prijavnica {
+  margin-top: 5px;
+  max-height: 0;
+  min-height: 0;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: all 700ms ease;
+  -moz-transition: all 700ms ease;
+  -ms-transition: all 700ms ease;
+  -o-transition: all 700ms ease;
+  transition: all 700ms ease;
+}
+
+.business-restructuring .prijavnica .pdf-name {
+  color: #666;
+}
+
+.business-restructuring .prijavnica:before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  content: '';
+  height: 21px;
+  background: transparent url("../../images/layout/business/section-prijavnica-separator.png") center top no-repeat;
+}
+
+.business-restructuring .prijavnica .zapri-prijavnico {
+  cursor: pointer;
+  margin: 10px 0 0;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+.business-restructuring .prijavnica .zapri-prijavnico:hover {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.business-restructuring .prijavnica form {
+  margin-bottom: 0;
+}
+
+.business-restructuring .delavnice {
+  border-top: none;
+}
+
+.business-restructuring .delavnica {
+  padding: 24px;
+  border: 1px solid #9299a9;
+}
+
+.business-restructuring .delavnica:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.business-restructuring .delavnica .event-date {
+  float: right;
+}
+
+.business-restructuring .delavnica .type {
+  float: left;
+  background: #66bb30;
+  color: white;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0px 12px 3px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.business-restructuring .delavnica .event-date,
+.business-restructuring .delavnica .type {
+  margin: -24px 0 0;
+}
+
+.contact-business {
+  padding: 70px 0 40px;
+  text-align: center;
+}
+
+.contact-business p {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.contact-business p.telephone-number {
+  font-size: 24px;
+}
+
+/** Why Si.mobil */
+.business .title-with-border {
+  padding-bottom: 23px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #6E7683;
+}
+
+.uporabniske-zgodbe {
+  margin-bottom: 24px;
+}
+
+.uporabniske-zgodbe .avatar {
+  border-radius: 100%;
+}
+
+.uporabniske-zgodbe .zgodba:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.uporabniske-zgodbe .zgodba:nth-child(2n+2) {
+  text-align: right;
+}
+
+.ponudba-za-velika-podjetja .uporabniske-zgodbe {
+  margin: 50px 0;
+}
+
+.ponudba-za-mala-podjetja .nav-tabs > li > a {
+  padding-left: 12px !important;
+  padding-right: 16px !important;
+}
+
+.btn-prenesi-pdf:not(:last-child) {
+  margin-right: 15px;
+}
+
+.title-with-icon-and-border {
+  display: block;
+  position: relative;
+  height: 32px;
+  border-bottom: 4px solid black;
+  margin: 40px 0 10px 40px;
+  color: black !important;
+}
+
+.title-with-icon-and-border > i {
+  position: absolute;
+  top: -5px;
+  left: -40px;
+}
+
+.title-with-icon-and-border.green {
+  border-bottom-color: #82B93F;
+}
+
+.title-with-icon-and-border.pink {
+  border-bottom-color: #D02F83;
+}
+
+.title-with-icon-and-border.blue {
+  border-bottom-color: #49BAE5;
+}
+
+.title-with-icon-and-border.orange {
+  border-bottom-color: #F89B3A;
+}
+
+.title-with-icon-and-border {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.title-with-icon-and-border span > i {
+  position: relative;
+  top: 6px;
+}
+
+.title-with-icon-and-border ~ p,
+.title-with-icon-and-border ~ ul {
+  margin-left: 40px !important;
+  padding-left: 0;
+}
+
+.title-with-icon-and-border ~ ul.checkmarks {
+  margin-left: 13px !important;
+}
+
+.title-with-icon-and-border ~ ul {
+  margin-bottom: 24px;
+}
+
+@media (max-width: 767px) {
+
+  .business-restructuring .delavnice {
+    padding: 0;
+  }
+
+  .business-restructuring .delavnica {
+    border: none;
+  }
+
+  .poslovna-resitev-biz-store .span {
+    text-align: center;
+  }
+
+  .poslovna-resitev-biz-store .span > a {
+    display: inline-block;
+    float: none;
+  }
+
+  .business-restructuring .section.header h1 .type {
+    margin: 0 6px 0 0;
+  }
+
+  .business-restructuring .delavnica .type {
+    margin: 0;
+    float: none;
+  }
+
+  .business-restructuring .delavnica .event-date {
+    margin: 0;
+  }
+
+  .contact-business {
+    padding: 30px 0 0;
+  }
+
+  .business-restructuring .delavnica img {
+    min-width: 100%;
+  }
+
+  .uporabniske-zgodbe > h1 {
+    padding: 0 24px;
+  }
+
+  .uporabniske-zgodbe .zgodba:nth-child(2n+2) {
+    text-align: left;
+  }
+
+  .infogram {
+    padding: 0 24px;
+  }
+
+  .uporabniske-zgodbe .zgodba > div {
+    padding: 24px;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+
+    justify-content: center;
+  }
+
+  .uporabniske-zgodbe .zgodba .span3 {
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -ms-flex-order: 1;
+    -webkit-order: 1;
+    order: 1;
+    margin-bottom: 24px;
+  }
+
+  .uporabniske-zgodbe .zgodba .span9 {
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+    order: 2;
+  }
+}
+
+.ico-clock-green,
+.page-block .ico-clock-green {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background: transparent url("../../images/layout/icons/16x16/ico-clock-green.png") 0 0 no-repeat;
+}
+.ico-clock-green.ico-small,
+.page-block .ico-clock-green.ico-small {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background-image: url("../../images/layout/icons/16x16/ico-clock-green.png");
+}
+.ico-clock-green.ico-medium,
+.page-block .ico-clock-green.ico-medium {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background: transparent url("../../images/layout/icons/32x32/ico-clock-green.png") 0 0 no-repeat;
+}
+.ico-clock-green.ico-large,
+.page-block .ico-clock-green.ico-large {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  background: transparent url("../../images/layout/icons/64x64/ico-clock-green.png") 0 0 no-repeat;
+}
+
+.ico-poslovni-kakovost-odzivnost.ico-small-svg,
+.page-block .ico-poslovni-kakovost-odzivnost.ico-small-svg {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background-image: url("../../images/layout/icons/svg/ico-poslovni-kakovost-odzivnost.svg");
+}
+.ico-poslovni-kakovost-odzivnost.ico-medium-svg,
+.page-block .ico-poslovni-kakovost-odzivnost.ico-medium-svg {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background: transparent url("../../images/layout/icons/svg/ico-poslovni-kakovost-odzivnost.svg") 0 0 no-repeat;
+}
+.ico-poslovni-kakovost-odzivnost.ico-large-svg,
+.page-block .ico-poslovni-kakovost-odzivnost.ico-large-svg {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  background: transparent url("../../images/layout/icons/svg/ico-poslovni-kakovost-odzivnost.svg") 0 0 no-repeat;
+}
+.ico-poslovni-mednarodna-skupina.ico-small-svg,
+.page-block .ico-poslovni-mednarodna-skupina.ico-small-svg {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background-image: url("../../images/layout/icons/svg/ico-poslovni-mednarodna-skupina.svg");
+}
+.ico-poslovni-mednarodna-skupina.ico-medium-svg,
+.page-block .ico-poslovni-mednarodna-skupina.ico-medium-svg {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background: transparent url("../../images/layout/icons/svg/ico-poslovni-mednarodna-skupina.svg") 0 0 no-repeat;
+}
+.ico-poslovni-mednarodna-skupina.ico-large-svg,
+.page-block .ico-poslovni-mednarodna-skupina.ico-large-svg {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  background: transparent url("../../images/layout/icons/svg/ico-poslovni-mednarodna-skupina.svg") 0 0 no-repeat;
+}
+.ico-poslovni-naenemmestu.ico-small-svg,
+.page-block .ico-poslovni-naenemmestu.ico-small-svg {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background-image: url("../../images/layout/icons/svg/ico-poslovni-naenemmestu.svg");
+}
+.ico-poslovni-naenemmestu.ico-medium-svg,
+.page-block .ico-poslovni-naenemmestu.ico-medium-svg {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background: transparent url("../../images/layout/icons/svg/ico-poslovni-naenemmestu.svg") 0 0 no-repeat;
+}
+.ico-poslovni-naenemmestu.ico-large-svg,
+.page-block .ico-poslovni-naenemmestu.ico-large-svg {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  background: transparent url("../../images/layout/icons/svg/ico-poslovni-naenemmestu.svg") 0 0 no-repeat;
+}
+.ico-poslovni-zaupanje-odgovornost.ico-small-svg,
+.page-block .ico-poslovni-zaupanje-odgovornost.ico-small-svg {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background-image: url("../../images/layout/icons/svg/ico-poslovni-zaupanje-odgovornost.svg");
+}
+.ico-poslovni-zaupanje-odgovornost.ico-medium-svg,
+.page-block .ico-poslovni-zaupanje-odgovornost.ico-medium-svg {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background: transparent url("../../images/layout/icons/svg/ico-poslovni-zaupanje-odgovornost.svg") 0 0 no-repeat;
+}
+.ico-poslovni-zaupanje-odgovornost.ico-large-svg,
+.page-block .ico-poslovni-zaupanje-odgovornost.ico-large-svg {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  background: transparent url("../../images/layout/icons/svg/ico-poslovni-zaupanje-odgovornost.svg") 0 0 no-repeat;
+}

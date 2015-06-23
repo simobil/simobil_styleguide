@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="29px" height="29px"
+	 viewBox="-1.5 0 29 29" enable-background="new -1.5 0 29 29" xml:space="preserve">
+<title>ico-popolna-pisarna-naprave-no-circle</title>
+<desc>Created with Sketch.</desc>
+<g id="Page-1" sketch:type="MSPage">
+	<g id="ico-popolna-pisarna-naprave-no-circle" sketch:type="MSLayerGroup">
+		
+			<linearGradient id="Shape_1_" gradientUnits="userSpaceOnUse" x1="-281.1133" y1="395.7949" x2="-280.402" y2="396.4294" gradientTransform="matrix(25.258 0 0 -28.318 7104.4961 11232.6982)">
+			<stop  offset="0" style="stop-color:#F15B2A"/>
+			<stop  offset="1" style="stop-color:#FAAF42"/>
+		</linearGradient>
+		<path id="Shape" sketch:type="MSShapeGroup" fill="url(#Shape_1_)" d="M17.699,3.916v5.446c1.968,1.415,3.256,3.719,3.256,6.33
+			c0,4.305-3.49,7.795-7.795,7.795c-4.305,0-7.795-3.49-7.795-7.795c0-2.609,1.287-4.915,3.256-6.33V3.916
+			c-4.729,1.824-8.09,6.401-8.09,11.773c0,6.976,5.654,12.629,12.629,12.629c6.975,0,12.629-5.653,12.629-12.629
+			C25.789,10.316,22.428,5.74,17.699,3.916L17.699,3.916z M15.577,0.001h-4.834v12.235h4.834V0.001L15.577,0.001z"/>
+	</g>
+</g>
+</svg>
