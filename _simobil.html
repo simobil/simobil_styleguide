@@ -15,8 +15,9 @@
 	<link href="simobil_assets/css/bootstrap/bootstrap.css" rel="stylesheet">
 	<link href="simobil_assets/css/bootstrap/responsive.css" rel="stylesheet">
 	<link href="simobil_assets/css/simobil/simobil.css" rel="stylesheet">
+<link href="simobil_assets/css/simobil/icons.css" rel="stylesheet">
 	<link href="simobil_assets/css/simobil/responsive.css" rel="stylesheet">
-	
+
     <link href="assets/css/docs.css" rel="stylesheet">
     <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
 
@@ -204,7 +205,7 @@
 	The grid used in Si.mobil design follows the same principles as the default <a href="./scaffolding.html#gridSystem">Bootrstrap grid</a> including the responsive aspect.
 	</p>
 	<p>
-	The dimensions of the grid and the breakpoints are however custom. The Si.mobil grid system provided utilizes 12 columns that render out at widths of 
+	The dimensions of the grid and the breakpoints are however custom. The Si.mobil grid system provided utilizes 12 columns that render out at widths of
 	912px. Below 767px viewports, the columns become fluid and in most cases stack vertically.
 	</p>
 	<p>
@@ -276,11 +277,11 @@
       </tr>
     </tbody>
   </table>
-  
+
   <hr>
   <h3 id="colors">Colors</h3>
   <p>
-  These colors (color variables) are defined specifically for Si.mobil design: 
+  These colors (color variables) are defined specifically for Si.mobil design:
   </p>
   <table class="table table-bordered table-striped">
     <tbody>
@@ -359,34 +360,34 @@
   </table>
   	</div>
   	<div class="span6">
-  	Since this documentation is based on Si.mobil specific stylesheet, the samples for the different typography 
-  	elements can be found in Bootstrap documentation <a href="./base-css.html#typography">here</a>. 
+  	Since this documentation is based on Si.mobil specific stylesheet, the samples for the different typography
+  	elements can be found in Bootstrap documentation <a href="./base-css.html#typography">here</a>.
   	</div>
   </div>
-  
-  
+
+
 </section>
 
 <!-- Backgrounds & dividers
 ================================================== -->
 <section id="backgrounds">
-	
+
 	<div class="page-header">
 		<h1>Layout elements</h1>
 	</div>
-	
+
 	<p>
-	The whole layout is divided in page blocks, defined by <code>div.page-block</code>. This element enables containing elements to span through the whole 
+	The whole layout is divided in page blocks, defined by <code>div.page-block</code>. This element enables containing elements to span through the whole
 	width of the browser window if needed. The samples for <strong>top bar, main navigation, footer</strong>... are wrapped in this element.
 	</p>
-	
+
 	<h3>Top bar <span class="label">TP1</span></h3>
 	<p>
-	Top bar is made of two elements spanning through the whole width of the page. The first 
+	Top bar is made of two elements spanning through the whole width of the page. The first
 	element <code>.login-bar</code> is hidden by default and opens up when the user clicks on the login (<code>li.user</code>) link.
-	The second element is the <code>div.top-bar</code> containing the site profile switcher <code>.nav-profile</code> (residential/business), 
+	The second element is the <code>div.top-bar</code> containing the site profile switcher <code>.nav-profile</code> (residential/business),
 	login link <code>li.user</code> and the cart link <code>li.cart</code>.
-	with the cart contents dropdown   
+	with the cart contents dropdown
 	</p>
 	<div class="row">
 		<div class="span6">
@@ -401,26 +402,26 @@ $('.top-bar li.user a').click(function(event) {
   $('.cart')[0].className = $('.cart')[0].className; // IE7 force redraw
  });
 });
-</pre>		
+</pre>
 		</div>
 		<div class="span6">
-		The cart contents dropdown is toggled by <a href="./javascript.html#dropdowns">Bootstrap Dropdown</a> plugin. 
-		The documentation can be found <a href="./javascript.html#dropdowns">here</a>. 
+		The cart contents dropdown is toggled by <a href="./javascript.html#dropdowns">Bootstrap Dropdown</a> plugin.
+		The documentation can be found <a href="./javascript.html#dropdowns">here</a>.
 		</div>
 	</div>
 
-	
+
 	</section>
 	</div>
-	
+
 	<!-- ************************************************************************************************************* -->
 	<div class="residential">
 		<div class="login-bar hide">
 			<div class="page-block clearfix">
-	
+
 				<div class="left pull-left">
 					<div class="welcome">Dobrodošli v Moj Si.mobil!</div>
-	
+
 					<p>
 					Registrirani uporabniki <strong>Si.mobil trgovine</strong> in <strong>imetniki Moj Si.mobil</strong>
 					računa so deležni posebnih ugodnosti.
@@ -442,10 +443,10 @@ $('.top-bar li.user a').click(function(event) {
 		</div>
 		<div class="top-bar">
 			<div class="page-block clearfix">
-	
+
 				<!-- Start: Login & Cart links -->
 				<ul class="user-cart pull-right">
-	
+
 					<li class="user"><a href="#">PRIJAVA</a></li>
 					<!-- // prijavljen uporabnik
 					<li class="user"><a href="#">Matej Simobilovec <span>(2)</span></a></li>
@@ -495,14 +496,14 @@ $('.top-bar li.user a').click(function(event) {
 					</li>
 				</ul>
 				<!-- End: Login & Cart links -->
-	
+
 				<!-- Start: Profile navigation -->
 				<ul class="nav-profile pull-left">
 					<li><a class="selected" href="#">ZASEBNI</a></li>
 					<li><a href="#">POSLOVNI</a></li>
 				</ul>
 				<!-- End: Profile navigation -->
-	
+
 			</div>
 		</div>
 	</div>
@@ -598,7 +599,7 @@ $('.top-bar li.user a').click(function(event) {
 	<hr>
 	<h3>Backgrounds</h3>
 	<p>
-		The page background is defined by adding a class <code>.residential</code> or <code>.business</code> 
+		The page background is defined by adding a class <code>.residential</code> or <code>.business</code>
 		on a parent element (<code>body</code> preferred) including a <code>.wrapper</code> element.
 		<br />
 		The background in the wrapper reserves <strong>40px</strong> on top for the black top bar element.
@@ -651,7 +652,7 @@ $('.top-bar li.user a').click(function(event) {
   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Domov&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Telefoni in naprave&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</pre>      
+</pre>
     </div>
   </div>
   <hr>
@@ -682,13 +683,13 @@ $('.top-bar li.user a').click(function(event) {
   &lt;a href="#" class="next btn btn-brown"&gt;&lt;i class="ico-arrow-right-white"&gt;&lt;/i&gt;&lt;/a&gt;
   &lt;a href="#" class="load-more"&gt;&lt;i class="ico-arrow-down-brown"&gt;&lt;/i&gt; &lt;strong&gt;Naloži več&lt;/strong&gt;&lt;/a&gt;
 &lt;/div&gt;
-</pre>      
+</pre>
 	<hr>
 	<h3 id="footer">Site footer <span class="label">FT1</span></h3>
 	<div class="row">
 		<div class="span6">
 			<p>
-			The footer element is defined by the <code>footer</code> tag. It consists of 4 optional elements: 
+			The footer element is defined by the <code>footer</code> tag. It consists of 4 optional elements:
 			</p>
 			<ul>
 				<li>Links for the Si.mobil family</li>
@@ -696,9 +697,9 @@ $('.top-bar li.user a').click(function(event) {
 				<li>Copyright notice</li>
 				<li>Small ribboon for the TA group sites</li>
 			</ul>
-			
-			The content of each element is defined by the basic grid and with individual elements defined in this styleguide. 
-			The whole footer content is beyond the scope of this document and can be viewed on the <a href="./examples.html">example pages</a>. 
+
+			The content of each element is defined by the basic grid and with individual elements defined in this styleguide.
+			The whole footer content is beyond the scope of this document and can be viewed on the <a href="./examples.html">example pages</a>.
 		</div>
 		<div class="span6">
 			The markup:
@@ -730,7 +731,7 @@ $('.top-bar li.user a').click(function(event) {
 <pre class="prettyprint linenums">
 &lt;div class="container"&gt;
 	This is a transparent container
-&lt;/div&gt;		
+&lt;/div&gt;
 </pre>
 	<hr>
 	<p>
@@ -744,9 +745,9 @@ $('.top-bar li.user a').click(function(event) {
 <pre class="prettyprint linenums">
 &lt;div class="container white-bg"&gt;
 	This is a container with white background color
-&lt;/div&gt;		
+&lt;/div&gt;
 </pre>
-	
+
 	<!-- HEADERS
 ================================================== -->
 <hr>
@@ -766,8 +767,8 @@ $('.top-bar li.user a').click(function(event) {
 					</div>
 					Page content
 				</div>
-				
-			</div>	
+
+			</div>
 		</div>
 		<div class="span12">
 		<br />
@@ -787,8 +788,8 @@ $('.top-bar li.user a').click(function(event) {
 </pre>
 		</div>
 	</div>
-	
-	
+
+
 	<hr>
 	<h5>Small header <span class="label">HE2</span></h5>
 	<div class="row">
@@ -821,7 +822,7 @@ Page content
   <br>
   <div class="section tabbable nopadding">
     <div class="white-bg nopadding">
-      
+
       <div class="header with-navigation">
         <div class="header-wrapper">
           <img class="bg" src="simobil_assets/images/res/test960x275.jpg" height="275" alt="">
@@ -887,18 +888,18 @@ Page content
       </pre>
     </div>
   </div>
-	
-	
-	
+
+
+
 	<hr>
 	<h3 id="dividers">Dividers</h3>
 	<p>
-	There are 3 types of sections. Every section can contain subsectoins. 
-	The sections placeholder is defined by the <code>.sections</code> class followed 
+	There are 3 types of sections. Every section can contain subsectoins.
+	The sections placeholder is defined by the <code>.sections</code> class followed
 	by individual elements with <code>.section</code> class.
 	</p>
 	<p>
-		The section style is defined by a parent element wich can have a <code>.configurator</code> class or <code>.checkout</code> class.  
+		The section style is defined by a parent element wich can have a <code>.configurator</code> class or <code>.checkout</code> class.
 	</p>
 	<div class="row">
 		<div class="span4">
@@ -953,7 +954,7 @@ Page content
  &lt;div class="section"&gt;B&lt;/div&gt;
  &lt;div class="section"&gt;C&lt;/div&gt;
  &lt;div class="section"&gt;D&lt;/div&gt;
-&lt;/div&gt;		
+&lt;/div&gt;
 </pre>
 		</div>
 		<div class="span4">
@@ -971,7 +972,7 @@ Page content
    &lt;/div&gt;
   &lt;div class="section"&gt;C&lt;/div&gt;
  &lt;/div&gt;
-&lt;/div&gt;			
+&lt;/div&gt;
 </pre>
 		</div>
 		<div class="span4">
@@ -989,7 +990,7 @@ Page content
    &lt;/div&gt;
   &lt;div class="section"&gt;C&lt;/div&gt;
  &lt;/div&gt;
-&lt;/div&gt;			
+&lt;/div&gt;
 </pre>
 		</div>
 	</div>
@@ -1002,16 +1003,16 @@ Page content
 		<h1>Navigation</h1>
 	</div>
 	<h3>Main navigation <span class="label">NA1</span></h3>
-	
+
 	</section>
 	</div>
-	
+
 		<div class="page-block">
 			<nav class="main navbar">
 				<div class="container">
-					
+
 					<a href="#" class="brand">Brand name</a>
-					
+
 					<a href="#" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
@@ -1119,7 +1120,7 @@ Page content
 		</div>
 	<div class="container">
 	<section>
-	
+
 	<br>
 	<div class="row">
 		<div class="span12">
@@ -1171,7 +1172,7 @@ Page content
 &lt;/div&gt;
 </pre>
 		<p>The markup for the "drop-down" item is specific to Si.mobil style and goes as follows:</p>
-		
+
 		</div>
 	</div>
 	<div class="row">
@@ -1182,7 +1183,7 @@ Page content
 &lt;div class="container"&gt;
  &lt;div class="row"&gt;
   &lt;div class="span8 items"&gt;
-  Left block 
+  Left block
   &lt;/div&gt;
   &lt;div class="span4 banners"&gt;
   Right block
@@ -1195,14 +1196,14 @@ Page content
 		<div class="span6">
 		<br >
 		<p>
-		Each drop down menu consists of a grid placed inside the <code>.container</code> div, followed by navigation items 
+		Each drop down menu consists of a grid placed inside the <code>.container</code> div, followed by navigation items
 		and optional right block containing more info. links and banners.
 		</p>
 		</div>
 	</div>
 	<div class="row">
 		<div class="span6">
-		
+
 		<strong>Link items inside left block (fluid grid):</strong>
 <pre class="prettyprint linenums">
 &lt;div class="span8 items"&gt;
@@ -1228,7 +1229,7 @@ Page content
 		<div class="span6">
 		<br>
 		<p>
-		The links in the left block can also be layed out in one or more columns. These columns are also defined by a grid, 
+		The links in the left block can also be layed out in one or more columns. These columns are also defined by a grid,
 		but in this case the grid is fluid. The block containing sub navigation links must have a class <code>.items</code>
 		</p>
 		</div>
@@ -1252,14 +1253,14 @@ Page content
 		<div class="span6">
 		<br>
 		<p>
-		The block containing the right-side links and banners must have a class <code>.banners</code>. The <code>div.links</code> 
-		contains the extra links for the Q&amp;A section. The banners are only images. 
+		The block containing the right-side links and banners must have a class <code>.banners</code>. The <code>div.links</code>
+		contains the extra links for the Q&amp;A section. The banners are only images.
 		</p>
 		</div>
 	</div>
-	
+
 	<hr>
-	
+
 	<h3 id="progress-bar">Progress bar <span class="label">NA2</span></h3>
 	<div class="row">
 		<div class="span6">
@@ -1292,7 +1293,7 @@ Page content
 			</div>
 		</div>
 	</div>
-	
+
 	<hr>
 	<h3 id="submenu">Side navigation <span class="label">NA3</span></h3>
 	<div class="row">
@@ -1347,7 +1348,7 @@ Page content
  &lt;option value="#"&gt;- Subitem 1&lt;/option&gt;
  &lt;option value="#"&gt;- Subitem 2&lt;/option&gt;
 &lt;/select&gt;
-  
+
 </pre>
 		</div>
 	</div>
@@ -1357,7 +1358,7 @@ Page content
   <h3>Bottom navigation <span class="label">NA4</span></h3>
 	<br>
 
-  
+
 </section>
 </div>
 <div class="page-block">
@@ -1393,7 +1394,7 @@ Page content
 </div>
 <div class="container">
 <section class="nopadding">
-  
+
     <div class="row">
       <div class="span12">
       <p>Markup:</p>
@@ -1428,11 +1429,11 @@ Page content
       &lt;/ul&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt; 
+&lt;/div&gt;
 </pre>
       </div>
     </div>
-    
+
 
 	<hr>
 
@@ -1440,17 +1441,17 @@ Page content
 <!-- Tabs
 ================================================== -->
 
-	
+
 	<h2 id="tabs">Tabs <span class="label">TB1</span></h2>
-	
+
 	<div class="row">
 		<div class="span4">
-		<p>Tabs follow the same prinicple as the original <a href="./components.html#navs">Bootstrap tabs</a> component. 
+		<p>Tabs follow the same prinicple as the original <a href="./components.html#navs">Bootstrap tabs</a> component.
 		To enable tab toggling, the <a href="./javascript.html#tabs">Toggable Tabs plugin</a> is required.
 		</p>
 		<p>
 		The element <code>.tabbable-nav</code> contains helper elements for the tab navigation that are visible on mobile layout (below 767px screen width).
-		If tabs are presend on a white background, this element should also have a <code>.white</code> class. 
+		If tabs are presend on a white background, this element should also have a <code>.white</code> class.
 		</p>
 		</div>
   		<div class="span8">
@@ -1535,28 +1536,28 @@ Page content
     &lt;option value=&quot;&quot;&gt;Telefon&lt;/option&gt;
   &lt;/select&gt;
 &lt;/div&gt;
-</pre>    
+</pre>
     </div>
   </div>
-	
+
 	<hr>
 	<h2>Floater <span class="label">FL1</span></h2>
 	<div class="row">
 		<div class="span4">
 			<p>
-			The floater element <code>div#selection</code> spans through the whole <code>.container</code> element. It can include an optional <code>div.message</code> 
+			The floater element <code>div#selection</code> spans through the whole <code>.container</code> element. It can include an optional <code>div.message</code>
 			element (the orange message with an arrow).
 			</p>
 			<p>
-			The <code>.scroll</code> element contains the content of the floater and is defined by the basic grid. 
+			The <code>.scroll</code> element contains the content of the floater and is defined by the basic grid.
 			</p>
 			<p>
-			When te user scrolls past the starting point of the floater element, the floater sticks to the top of the wiewport and scrolls with the window. 
+			When te user scrolls past the starting point of the floater element, the floater sticks to the top of the wiewport and scrolls with the window.
 			This is achieved with a javascript snipped that adds a class <code>.fixed</code> to the <code>div.selection</code> element.
 			</p>
 			<p>
 			On mobile devices the <code>div.scroll</code> element is hidden, and the floater height is reduced to it minimum height, containing only the <code>.message</code>
-			and the <code>.tools</code> element. 
+			and the <code>.tools</code> element.
 			</p>
 		</div>
 		<div class="span8">
@@ -1597,10 +1598,10 @@ function processScroll() {
   }
  }
 }
-</pre>		
+</pre>
 		</div>
 	</div>
-	
+
 		<div id="selection" class="selection-wrapper">
 			<div class="selection">
 				<div class="message arrow">
@@ -1671,7 +1672,7 @@ function processScroll() {
  &lt;/div&gt;
 &lt;/div&gt;
 </pre>
-		
+
 </section>
 
 <!-- Buttons
@@ -1688,7 +1689,7 @@ function processScroll() {
 		<div class="span8">
 <pre class="prettyprint linenums">
 &lt;a href="#" class="btn btn-green"&gt;Default small green button&lt;/a&gt;
-</pre>		
+</pre>
 		</div>
     <div class="span4">
       <p><a href="#" class="btn btn-green disabled">Disabled green button</a></p>
@@ -1704,7 +1705,7 @@ function processScroll() {
 		<div class="span8">
 <pre class="prettyprint linenums">
 &lt;a href="#" class="btn btn-green medium"&gt;Default medium green button&lt;/a&gt;
-</pre>		
+</pre>
 		</div>
 		<div class="span4">
 	  		<p><a href="#" class="btn btn-green large">Default large green button</a></p>
@@ -1716,7 +1717,7 @@ function processScroll() {
 		</div>
   </div>
 
-	
+
 	<h3>Si.mobil green button with arrow <span class="label">BT2</span></h3>
 	<div class="row">
 		<div class="span4">
@@ -1727,7 +1728,7 @@ function processScroll() {
 &lt;a href="#" class="btn btn-green"&gt;
  Default small arrow &lt;i class="arrow"&gt;&lt;/i&gt;
 &lt;/a&gt;
-</pre>		
+</pre>
 		</div>
 		<div class="span4">
 			<button class="btn btn-green medium">Default medium green button <i class="arrow"></i></button>
@@ -1737,7 +1738,7 @@ function processScroll() {
 &lt;button class="btn btn-green medium"&gt;
  Default medium arrow &lt;i class="arrow"&gt;&lt;/i&gt;
 &lt;/button&gt;
-</pre>	
+</pre>
 		</div>
 		<div class="span4">
 			<div class="btn btn-green large">Default large green button <i class="arrow"></i></div>
@@ -1750,7 +1751,7 @@ function processScroll() {
 </pre>
 		</div>
 	</div>
-	
+
 	<h3>Back button <span class="label">BT3</span></h3>
 	<div class="row">
 		<div class="span4">
@@ -1782,7 +1783,7 @@ function processScroll() {
 		<h1>Links <small>Specific links used for Si.mobil website</small></h1>
 	</div>
 	<p>
-	
+
 	</p>
 	<div class="row">
   		<div class="span3">
@@ -1794,8 +1795,8 @@ function processScroll() {
   			<li><code>green</code> for green links <span class="label">LN2</span></li>
   			<li><code>brown</code> for brown links <span class="label">LN3</span></li>
   			<li><code>blue</code> for blue links <span class="label">LN4</span></li>
-  		</ul> 
-  		<p>Links can also contain <a href="./simobil.html#icons">Icons</a></p> 
+  		</ul>
+  		<p>Links can also contain <a href="./simobil.html#icons">Icons</a></p>
   		</div>
   		<div class="span3">
   			<p><strong>Example:</strong></p>
@@ -1819,24 +1820,24 @@ function processScroll() {
   			<p><strong>Markup:</strong></p>
 <pre class="prettyprint linenums">
 &lt;a class="black" href="#"&gt;
- &lt;i class="ico-arrow-left-black"&gt;&lt;/i&gt; 
+ &lt;i class="ico-arrow-left-black"&gt;&lt;/i&gt;
  Back
 &lt;/a&gt;
 &lt;a class="green" href="#"&gt;
- &lt;i class="ico-arrow-right-green"&gt;&lt;/i&gt; 
+ &lt;i class="ico-arrow-right-green"&gt;&lt;/i&gt;
  More info
 &lt;/a&gt;
 &lt;a class="brown" href="#"&gt;
- Open 
+ Open
  &lt;i class="ico-arrow-down-brown"&gt;&lt;/i&gt;
 &lt;/a&gt;
 &lt;a class="blue" href="#"&gt;
- Close 
+ Close
  &lt;i class="ico-arrow-up-blue"&gt;&lt;/i&gt;
 &lt;/a&gt;
 &lt;a href="#"&gt;Simple link&lt;/a&gt;
 </pre>
-  			
+
   		</div>
 	</div>
 </section>
@@ -1858,10 +1859,10 @@ function processScroll() {
         <p>Hover over the links below to see tooltips:</p>
         <div class="tooltip-demo well">
           <p class="muted" style="margin-bottom: 0;">
-          	Tight pants next level keffiyeh <a href="#" rel="tooltip" title="first tooltip">you probably</a> haven't heard of them. 
-          	Farm-to-table seitan, mcsweeney's fixie sustainable quinoa 
-          	8-bit american apparel <a href="#" rel="tooltip" title="Another tooltip">have a</a> terry richardson vinyl chambray. A really ironic 
-          	artisan, scenester farm-to-table banksy Austin <a href="#" rel="tooltip" title="The last tip!">twitter handle</a> freegan cred raw denim single-origin 
+          	Tight pants next level keffiyeh <a href="#" rel="tooltip" title="first tooltip">you probably</a> haven't heard of them.
+          	Farm-to-table seitan, mcsweeney's fixie sustainable quinoa
+          	8-bit american apparel <a href="#" rel="tooltip" title="Another tooltip">have a</a> terry richardson vinyl chambray. A really ironic
+          	artisan, scenester farm-to-table banksy Austin <a href="#" rel="tooltip" title="The last tip!">twitter handle</a> freegan cred raw denim single-origin
           	coffee viral.
           </p>
         </div>
@@ -1951,16 +1952,16 @@ function processScroll() {
 <!-- BOXES
 ================================================== -->
 <section id="product-listing">
-	
+
 	<div class="page-header">
 		<h1>Boxes</h1>
 	</div>
 	<h3>Product listing</h3>
 	<div class="row">
 		<div class="span6">
-			
+
 			<p>Default product listing element.  <span class="label">PL1</span></p>
-						
+
 			<div class="row product-listing">
 				<div class="span3">
 					<div class="item">
@@ -1997,7 +1998,7 @@ function processScroll() {
 						</div>
 					</div>
 				</div>
-				
+
 			</div>
 			<div class="business">
 			<p>Product listing for business users - same markup wrapped in a <code>div.business</code> element.  <span class="label">PL2</span></p>
@@ -2078,13 +2079,13 @@ function processScroll() {
   &lt;/div&gt;
  &lt;/div&gt;
 &lt;/div&gt;
-</pre>	
+</pre>
 		</div>
-	
+
 	</div>
-	
+
 	<hr>
-	
+
 	<h3 id="product-listing-price-plan">Product listing - price plans  <span class="label">PL3</span></h3>
 	<div class="row">
 		<div class="span6">
@@ -2096,7 +2097,7 @@ function processScroll() {
 								<img alt="" src="http://placehold.it/286x133">
 								<h4>Price PLAN</h4>
 								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in augue at libero venenatis. 
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in augue at libero venenatis.
 								</p>
 								<div class="info">
 									<div class="controls">
@@ -2124,7 +2125,7 @@ function processScroll() {
 					</div>
 				</div>
 			</div>
-			
+
 			<div class="business">
 				<div class="product-list paketi">
 					<div class="product-listing">
@@ -2134,7 +2135,7 @@ function processScroll() {
 									<img alt="" src="http://placehold.it/286x133">
 									<h4>Price PLAN</h4>
 									<p>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in augue at libero venenatis. 
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in augue at libero venenatis.
 									</p>
 									<div class="info">
 										<div class="controls">
@@ -2189,13 +2190,13 @@ function processScroll() {
 </pre>
 		</div>
 	</div>
-	
+
 	<hr>
 	<h3 id="product-listing-pisarna">Product listing - popolna pisarna  <span class="label">PL4</span></h3>
 	<div class="row">
 		<div class="span6">
-			
-			
+
+
 			<div class="configurator popolna-pisarna">
 				<div id="naprave">
 					<div class="scrollable-wrapper">
@@ -2268,8 +2269,8 @@ function processScroll() {
 					</div>
 				</div>
 			</div>
-			
-					
+
+
 		</div>
 		<div class="span6">
 <pre class="prettyprint linenums">
@@ -2407,7 +2408,7 @@ function processScroll() {
   &lt;/div&gt;
 &lt;/div&gt;
       </pre>
-    </div>  
+    </div>
   </div>
 
   <hr>
@@ -2424,7 +2425,7 @@ function processScroll() {
     </div>
     <div class="tab-content">
       <div class="tab-pane active" id="proposal-preview">
-        
+
         <br>
         <div class="row">
           <div class="span12 business">
@@ -2456,9 +2457,9 @@ function processScroll() {
                       <h3 class="noborder">Pametni telefon po izbiri</h3>
                       <ul>
                         <li>Izberite tistega, ki ste si ga vedno želeli</li>
-                        <li>  
-                          Izbirate lahko med več kot 50 modeli pametnih 
-                            telefonov, med njimi tudi Apple iPhone, 
+                        <li>
+                          Izbirate lahko med več kot 50 modeli pametnih
+                            telefonov, med njimi tudi Apple iPhone,
                             Samsung Note II, Samsung Galaxy III, …
                             </li>
                       </ul>
@@ -2520,7 +2521,7 @@ function processScroll() {
         &lt;h3 class=&quot;noborder&quot;&gt;Pametni telefon po izbiri&lt;/h3&gt;
         &lt;ul&gt;
         &lt;li&gt;Izberite tistega, ki ste si ga vedno želeli&lt;/li&gt;
-        &lt;li&gt;  
+        &lt;li&gt;
           Izbirate lahko med …
           &lt;/li&gt;
         &lt;/ul&gt;
@@ -2553,22 +2554,22 @@ function processScroll() {
     </div>
   </div>
 
-  
-	
+
+
 	<hr>
 	<h3 id="boxes-simple">Simple boxes</h3>
 	<p>
-	Simple boxes are div elements with the classes <code>.box</code> and <code>.generic</code> addes to them. 
-	The size of the box is defined by the grid size. 
+	Simple boxes are div elements with the classes <code>.box</code> and <code>.generic</code> addes to them.
+	The size of the box is defined by the grid size.
 	</p>
 	<h4>Simple box with border <span class="label">BX1</span></h4><br>
 	<div class="row">
 		<div class="span4">
 			<div class="box generic">
 				<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat turpis ac 
-				lectus accumsan eget scelerisque risus laoreet. Nulla pharetra, leo at congue 
-				ullamcorper, odio nunc tincidunt massa, sit amet consequat libero eros non leo. 
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat turpis ac
+				lectus accumsan eget scelerisque risus laoreet. Nulla pharetra, leo at congue
+				ullamcorper, odio nunc tincidunt massa, sit amet consequat libero eros non leo.
 				</p>
 			</div>
 		</div>
@@ -2577,26 +2578,26 @@ function processScroll() {
 &lt;div class="span4"&gt;
  &lt;div class="box generic"&gt;
   &lt;p&gt;
-  Lorem ipsum dolor sit amet, consectetur 
-  adipiscing elit. Aenean volutpat turpis ac 
-  lectus accumsan eget scelerisque risus laoreet. 
-  Nulla pharetra, ... 
+  Lorem ipsum dolor sit amet, consectetur
+  adipiscing elit. Aenean volutpat turpis ac
+  lectus accumsan eget scelerisque risus laoreet.
+  Nulla pharetra, ...
   &lt;/p&gt;
  &lt;/div&gt;
 &lt;/div&gt;
 </pre>
 		</div>
-	</div>	
-	
+	</div>
+
 	<h4>Simple box with border and heading <span class="label">BX2</span></h4><br>
 	<div class="row">
 		<div class="span4">
 			<div class="box generic">
 				<h3>Lore ipsum</h3>
 				<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat turpis ac 
-				lectus accumsan eget scelerisque risus laoreet. Nulla pharetra, leo at congue 
-				ullamcorper, odio nunc tincidunt massa, sit amet consequat libero eros non leo. 
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat turpis ac
+				lectus accumsan eget scelerisque risus laoreet. Nulla pharetra, leo at congue
+				ullamcorper, odio nunc tincidunt massa, sit amet consequat libero eros non leo.
 				</p>
 			</div>
 		</div>
@@ -2606,17 +2607,17 @@ function processScroll() {
  &lt;div class="box generic"&gt;
   &lt;h3&gt;Lore ipsum&lt;/h3&gt;
   &lt;p&gt;
-  Lorem ipsum dolor sit amet, consectetur 
-  adipiscing elit. Aenean volutpat turpis ac 
-  lectus accumsan eget scelerisque risus laoreet. 
-  Nulla pharetra, ... 
+  Lorem ipsum dolor sit amet, consectetur
+  adipiscing elit. Aenean volutpat turpis ac
+  lectus accumsan eget scelerisque risus laoreet.
+  Nulla pharetra, ...
   &lt;/p&gt;
  &lt;/div&gt;
 &lt;/div&gt;
 </pre>
 		</div>
-	</div>		
-	
+	</div>
+
   <hr>
   <h3 id="articles">Articles <span class="label">BX3</span></h3>
   <br>
@@ -2642,7 +2643,7 @@ function processScroll() {
           </p>
           <a class="more" href="#"><i class="ico-arrow-right-brown"></i> Več</a>
         </div>
-      
+
         <div class="span4">
   <pre class="prettyprint">
 &lt;div class=&quot;articles&quot;&gt;
@@ -2665,16 +2666,16 @@ function processScroll() {
       </div>
     </div>
   </div>
-	
+
 	<hr>
 	<h3 id="team-list">Team list <span class="label">BX4</span></h3>
 	<p>
-	Team list boxes are defined by the parent element with <code>.team-list</code> class.<br> 
-	The size of the box is defined by the grid size. 
+	Team list boxes are defined by the parent element with <code>.team-list</code> class.<br>
+	The size of the box is defined by the grid size.
 	</p>
-	
+
 	<h4>Small</h4><br>
-	
+
 	<div class="row">
 		<div class="span5">
 <pre class="prettyprint linenums">
@@ -2782,11 +2783,11 @@ function processScroll() {
 					</div>
 				</div>
 			</div>
-		
+
 		</div>
-	
+
 	</div>
-	
+
 	<h4>Large <span class="label">BX5</span></h4><br>
 	<div class="row">
 		<div class="span5">
@@ -2873,7 +2874,7 @@ function processScroll() {
 			</div>
 		</div>
 	</div>
-			
+
 </section>
 
 
@@ -2958,11 +2959,11 @@ function processScroll() {
 		<h1>Accordion</h1>
 	</div>
 	<p>
-	Two types of accordions are used in Si.mobil website. Simple accordion and accordion with groups. 
+	Two types of accordions are used in Si.mobil website. Simple accordion and accordion with groups.
 	The accordion requires the <a href="./javascript.html#collapse">Bootstrap collapse</a> javascript plugin.
 	If you'd like it to default open, add the additional class <code>.in</code> to the accordion body.
 	</p>
-	
+
 	<div class="row">
 		<div class="span4">
 			<h3 id="acc-simple">Simple accordion <span class="label">AC1</span></h3>
@@ -3044,7 +3045,7 @@ function processScroll() {
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="span8">
 <pre class="prettyprint linenums">
 &lt;div class=&quot;accordion&quot;&gt;
@@ -3080,7 +3081,7 @@ function processScroll() {
     &lt;/div&gt;
   &lt;/div&gt;
   &lt;span class=&quot;open&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#item2&quot;&gt;
-    &lt;span class=&quot;more&quot;&gt;Več &lt;i class=&quot;ico-arrow-down-brown&quot;&gt;&lt;/i&gt;&lt;/span&gt; 
+    &lt;span class=&quot;more&quot;&gt;Več &lt;i class=&quot;ico-arrow-down-brown&quot;&gt;&lt;/i&gt;&lt;/span&gt;
 	&lt;span class=&quot;hide&quot;&gt;Skrij &lt;i class=&quot;ico-arrow-up-brown&quot;&gt;&lt;/i&gt;&lt;/span&gt;
   &lt;/span&gt;
   &lt;/div&gt;
@@ -3105,7 +3106,7 @@ function processScroll() {
 			this table are considered labels for the rows and have a smaller font size.
 			</p>
 			<p>
-			The infinite sign is created by wrapping a ∞ sign with any html element with a class <code>.infinite</code>. 
+			The infinite sign is created by wrapping a ∞ sign with any html element with a class <code>.infinite</code>.
 			The same effect would be achieved if the <code>td</code> element had a class <code>.infinite</code>.
 			</p>
 			<table class="dotted">
@@ -3188,7 +3189,7 @@ function processScroll() {
 </pre>
 		</div>
 	</div>
-	
+
 	<h3 id="content-table">Content table  <span class="label">TB2</span></h3>
 	<div class="row">
 		<div class="span6">
@@ -3255,7 +3256,7 @@ function processScroll() {
 </pre>
 		</div>
 	</div>
-	
+
 	<h3 id="orders-table">Orders table <span class="label">TB3</span></h3>
 	<div class="row">
 		<div class="span6">
@@ -3341,7 +3342,7 @@ function processScroll() {
 		<div class="span6">
 			<h2 id="choice">Choice element <span class="label">FE1</span></h2>
 			<p>
-			The choice element can contain checkbox or radiobutton form element with a label. 
+			The choice element can contain checkbox or radiobutton form element with a label.
 			</p>
 			<div class="choices">
 				<div class="choice">
@@ -3379,7 +3380,7 @@ function processScroll() {
   &lt;div class="data"&gt;
    &lt;div class="c1"&gt;
     &lt;label&gt;
-     &lt;input type="radio" checked="checked"&gt; 
+     &lt;input type="radio" checked="checked"&gt;
      &lt;span&gt;Radiobutton option&lt;/span&gt;
     &lt;/label&gt;
    &lt;/div&gt;
@@ -3389,7 +3390,7 @@ function processScroll() {
   &lt;div class="data"&gt;
    &lt;div class="c1"&gt;
     &lt;label&gt;
-     &lt;input type="checkbox"&gt; 
+     &lt;input type="checkbox"&gt;
      &lt;span&gt;Checkbox option&lt;/span&gt;
     &lt;/label&gt;
    &lt;/div&gt;
@@ -3403,7 +3404,7 @@ function processScroll() {
  &lt;/div&gt;
 &lt;/div&gt;
 </pre>
-			
+
 		</div>
 		<div id="calendar" class="span6">
 		<h2>The calendar element <span class="label">FE2</span></h2>
@@ -3425,7 +3426,7 @@ function processScroll() {
   &lt;input type="text" class="date"&gt;
  &lt;/div&gt;
 &lt;/form&gt;
-</pre>	
+</pre>
 		<p>
 		Javascript snippet (with localization example):
 		</p>
@@ -3436,7 +3437,7 @@ $.tools.dateinput.localize("si", {
  days:         'nedelja,ponedeljek,torek...',
  shortDays:    'Ned,Pon,Tor...'
 });
-  
+
 $('form .field.d input').dateinput({
  lang: 'si',
  format: 'd.m.yyyy',
@@ -3444,9 +3445,9 @@ $('form .field.d input').dateinput({
  selectors: true,
  offset: [-10, 0]
 });
-</pre>			
+</pre>
 		</div>
-		
+
 	</div>
   <div class="row">
     <div class="span12">
@@ -3464,8 +3465,8 @@ $('form .field.d input').dateinput({
                   </div>
                   <div class="span9 choices">
                     <p>
-                      Izklop oz. sprememba Opcije 201/Opcije 501 je mogoča en mesec po vklopu. 
-                      Če želite opcijo spremeniti, je ne izklapljajte, temveč direktno izberite 
+                      Izklop oz. sprememba Opcije 201/Opcije 501 je mogoča en mesec po vklopu.
+                      Če želite opcijo spremeniti, je ne izklapljajte, temveč direktno izberite
                       željeno opcijo.
                     </p>
                     <div class="collapse choices1">
@@ -3510,12 +3511,12 @@ $('form .field.d input').dateinput({
                       <a href="#" class="btn btn-green selected">AKTIVIRAJ <i class="arrow"></i></a>
 
                     </div>
-                    
+
                     <a class="reveal-choices" href=".choices1" data-toggle="collapse">
                       <span class="toggle-open"><i class="ico-arrow-down-black ico-medium"></i></span>
                       <span class="toggle-close"><i class="ico-arrow-up-black ico-medium"></i></span>
                     </a>
-                    
+
                   </div>
                 </div>
               </div>
@@ -3538,8 +3539,8 @@ $('form .field.d input').dateinput({
       &lt;/div&gt;
       &lt;div class=&quot;span9 choices&quot;&gt;
       &lt;p&gt;
-        Izklop oz. sprememba Opcije 201/Opcije 501 je mogo&amp;#269;a en mesec po vklopu. 
-        &amp;#268;e želite opcijo spremeniti, je ne izklapljajte, temve&amp;#269; direktno izberite 
+        Izklop oz. sprememba Opcije 201/Opcije 501 je mogo&amp;#269;a en mesec po vklopu.
+        &amp;#268;e želite opcijo spremeniti, je ne izklapljajte, temve&amp;#269; direktno izberite
         željeno opcijo.
       &lt;/p&gt;
       &lt;div class=&quot;collapse choices1&quot;&gt;
@@ -3584,12 +3585,12 @@ $('form .field.d input').dateinput({
         &lt;a href=&quot;#&quot; class=&quot;btn btn-green selected&quot;&gt;AKTIVIRAJ &lt;i class=&quot;arrow&quot;&gt;&lt;/i&gt;&lt;/a&gt;
 
       &lt;/div&gt;
-      
+
       &lt;a class=&quot;reveal-choices&quot; href=&quot;.choices1&quot; data-toggle=&quot;collapse&quot;&gt;
         &lt;span class=&quot;toggle-open&quot;&gt;&lt;i class=&quot;ico-arrow-down-black ico-medium&quot;&gt;&lt;/i&gt;&lt;/span&gt;
         &lt;span class=&quot;toggle-close&quot;&gt;&lt;i class=&quot;ico-arrow-up-black ico-medium&quot;&gt;&lt;/i&gt;&lt;/span&gt;
       &lt;/a&gt;
-      
+
       &lt;/div&gt;
     &lt;/div&gt;
     &lt;/div&gt;
@@ -3674,7 +3675,7 @@ $('form .field.d input').dateinput({
 		  <a href="#" class="prev"><span></span></a>
 		  <a href="#" class="next"><span></span></a>
 		</div>
-		
+
 		<div class="tab-content">
 			<div class="tab-pane active" id="ac4markup">
 			<br>
@@ -3694,7 +3695,7 @@ $('form .field.d input').dateinput({
                 &lt;div class=&quot;data&quot;&gt;
                   &lt;div class=&quot;c123&quot;&gt;
                     &lt;label&gt;
-                      &lt;input type=&quot;checkbox&quot; name=&quot;b3&quot; value=&quot;1&quot; id=&quot;cb1&quot;&gt; 
+                      &lt;input type=&quot;checkbox&quot; name=&quot;b3&quot; value=&quot;1&quot; id=&quot;cb1&quot;&gt;
                       &lt;span&gt;Form in accordion&lt;/span&gt;
                     &lt;/label&gt;
                   &lt;/div&gt;
@@ -3711,7 +3712,7 @@ $('form .field.d input').dateinput({
                 &lt;div class=&quot;data&quot;&gt;
                   &lt;div class=&quot;c123&quot;&gt;
                     &lt;label&gt;
-                      &lt;input type=&quot;checkbox&quot; name=&quot;b3&quot; value=&quot;1&quot; id=&quot;cb2&quot;&gt; 
+                      &lt;input type=&quot;checkbox&quot; name=&quot;b3&quot; value=&quot;1&quot; id=&quot;cb2&quot;&gt;
                       &lt;span&gt;Form in accordion (select to open)&lt;/span&gt;
                     &lt;/label&gt;
                   &lt;/div&gt;
@@ -3728,7 +3729,7 @@ $('form .field.d input').dateinput({
                 &lt;div class=&quot;data&quot;&gt;
                   &lt;div class=&quot;c123&quot;&gt;
                     &lt;label&gt;
-                      &lt;input type=&quot;checkbox&quot; name=&quot;b3&quot; value=&quot;1&quot; id=&quot;cb3&quot;&gt; 
+                      &lt;input type=&quot;checkbox&quot; name=&quot;b3&quot; value=&quot;1&quot; id=&quot;cb3&quot;&gt;
                       &lt;span&gt;Inline form (select to reveal)&lt;/span&gt;
                     &lt;/label&gt;
                   &lt;/div&gt;
@@ -3755,7 +3756,7 @@ $('form .field.d input').dateinput({
 			<div class="tab-pane" id="ac4script">
 <br>
 <p>
-If there is a text input with selector in <code>data-toggle</code> attribute defined, the checkbox marching that selector will be checked/unckecked 
+If there is a text input with selector in <code>data-toggle</code> attribute defined, the checkbox marching that selector will be checked/unckecked
 depending on the text input has value or not.
 </p>
 <br>
@@ -3771,13 +3772,13 @@ $(function() {
 </pre>
 			</div>
 		</div>
-	
+
 	</div>
 
 	</div>
   </div>
   <div class="row">
-	
+
 	<div class="span6">
 		<h2 id="loading">Loading indicator  <span class="label">LD</span></h2>
 		<p>Animated gif telling user to wait while something is loading.</p>
@@ -3803,7 +3804,7 @@ $(function() {
 	<div class="page-header">
 		<h1>Icons <small>Icons specific to Si.mobil website</small></h1>
 	</div>
-	
+
 	<div class="row">
 		<div class="span6">
 			<p>
@@ -3816,7 +3817,7 @@ $(function() {
 			<p><code>.ico-small</code> or without extra class for small icons</p>
 			<p><code>.ico-medium</code> extra class for medium icons</p>
 			<p><code>.ico-large</code> extra class for large icons</p>
-			
+
 		</div>
 		<div class="span6">
 			<p>
@@ -3833,7 +3834,7 @@ $(function() {
 		<p><i class="ico-arrow-right-green ico-large" style="vertical-align: middle"></i> large icon</p>
 		</div>
 	</div>
-	
+
 	<div class="tabbable">
 		<ul class="nav nav-tabs">
 			<li class="active"><a href="#icons16" data-toggle="tab">Icons 16x16</a></li>
@@ -3857,216 +3858,216 @@ $(function() {
 					<div class="span4">
 						<i class="ico-cart"></i> ico-cart<br />
 						<i class="ico-search-header"></i> ico-search-header<br />
-						<i class="ico-arrow-right-green"></i> ico-arrow-right-green<br /> 
-						<i class="ico-arrow-right-black"></i> ico-arrow-right-black<br /> 
-						<i class="ico-arrow-right-brown"></i> ico-arrow-right-brown<br /> 
-						<i class="ico-arrow-right-white"></i> ico-arrow-right-white<br /> 
-						<i class="ico-arrow-right-blue"></i> ico-arrow-right-blue<br /> 
-						<i class="ico-arrow-right-gal-blue"></i> ico-arrow-right-gal-blue<br /> 
-						<i class="ico-arrow-right-gal-brown"></i> ico-arrow-right-gal-brown<br /> 
-						<i class="ico-arrow-right-gal-white"></i> ico-arrow-right-gal-white<br /> 
-						<i class="ico-arrow-right-gal-shadow-white"></i> ico-arrow-right-gal-shadow-white<br /> 
-						<i class="ico-arrow-right-config-green"></i> ico-arrow-right-config-green<br /> 
-						<i class="ico-arrow-right-date-picker-white"></i> ico-arrow-right-date-picker-white<br /> 
-						<i class="ico-arrow-right-progressbar-brown"></i> ico-arrow-right-progressbar-brown<br /> 
-						<i class="ico-arrow-right-progressbar-blue"></i> ico-arrow-right-progressbar-blue<br /> 
-						<i class="ico-arrow-left-black"></i> ico-arrow-left-black<br /> 
-						<i class="ico-arrow-left-brown"></i> ico-arrow-left-brown<br /> 
-						<i class="ico-arrow-left-white"></i> ico-arrow-left-white<br /> 
-						<i class="ico-arrow-left-blue"></i> ico-arrow-left-blue<br /> 
-						<i class="ico-arrow-left-gal-blue"></i> ico-arrow-left-gal-blue<br /> 
-						<i class="ico-arrow-left-gal-brown"></i> ico-arrow-left-gal-brown<br /> 
-						<i class="ico-arrow-left-gal-white"></i> ico-arrow-left-gal-white<br /> 
+						<i class="ico-arrow-right-green"></i> ico-arrow-right-green<br />
+						<i class="ico-arrow-right-black"></i> ico-arrow-right-black<br />
+						<i class="ico-arrow-right-brown"></i> ico-arrow-right-brown<br />
+						<i class="ico-arrow-right-white"></i> ico-arrow-right-white<br />
+						<i class="ico-arrow-right-blue"></i> ico-arrow-right-blue<br />
+						<i class="ico-arrow-right-gal-blue"></i> ico-arrow-right-gal-blue<br />
+						<i class="ico-arrow-right-gal-brown"></i> ico-arrow-right-gal-brown<br />
+						<i class="ico-arrow-right-gal-white"></i> ico-arrow-right-gal-white<br />
+						<i class="ico-arrow-right-gal-shadow-white"></i> ico-arrow-right-gal-shadow-white<br />
+						<i class="ico-arrow-right-config-green"></i> ico-arrow-right-config-green<br />
+						<i class="ico-arrow-right-date-picker-white"></i> ico-arrow-right-date-picker-white<br />
+						<i class="ico-arrow-right-progressbar-brown"></i> ico-arrow-right-progressbar-brown<br />
+						<i class="ico-arrow-right-progressbar-blue"></i> ico-arrow-right-progressbar-blue<br />
+						<i class="ico-arrow-left-black"></i> ico-arrow-left-black<br />
+						<i class="ico-arrow-left-brown"></i> ico-arrow-left-brown<br />
+						<i class="ico-arrow-left-white"></i> ico-arrow-left-white<br />
+						<i class="ico-arrow-left-blue"></i> ico-arrow-left-blue<br />
+						<i class="ico-arrow-left-gal-blue"></i> ico-arrow-left-gal-blue<br />
+						<i class="ico-arrow-left-gal-brown"></i> ico-arrow-left-gal-brown<br />
+						<i class="ico-arrow-left-gal-white"></i> ico-arrow-left-gal-white<br />
 						<i class="ico-arrow-left-gal-shadow-white"></i> ico-arrow-left-gal-shadow-white<br />
-						<i class="ico-arrow-left-config-green"></i> ico-arrow-left-config-green<br /> 
-						<i class="ico-arrow-left-date-picker-white"></i> ico-arrow-left-date-picker-white<br /> 
-						<i class="ico-arrow-up-white"></i> ico-arrow-up-white<br /> 
-						<i class="ico-arrow-up-blue"></i> ico-arrow-up-blue<br /> 
-						<i class="ico-arrow-up-brown"></i> ico-arrow-up-brown<br /> 
-						<i class="ico-arrow-up-black"></i> ico-arrow-up-black<br /> 
-						<i class="ico-arrow-down-blue"></i> ico-arrow-down-blue<br /> 
-						<i class="ico-arrow-down-brown"></i> ico-arrow-down-brown<br /> 
-						<i class="ico-arrow-down-black"></i> ico-arrow-down-black<br /> 
-						<i class="ico-checkmark-brown"></i> ico-checkmark-brown<br /> 
-						<i class="ico-checkmark-blue"></i> ico-checkmark-blue<br /> 
-						<i class="ico-checkmark-green"></i> ico-checkmark-green<br /> 
-						<i class="ico-refresh-blue"></i> ico-refresh-blue<br /> 
-						<i class="ico-refresh-brown"></i> ico-refresh-brown<br /> 
+						<i class="ico-arrow-left-config-green"></i> ico-arrow-left-config-green<br />
+						<i class="ico-arrow-left-date-picker-white"></i> ico-arrow-left-date-picker-white<br />
+						<i class="ico-arrow-up-white"></i> ico-arrow-up-white<br />
+						<i class="ico-arrow-up-blue"></i> ico-arrow-up-blue<br />
+						<i class="ico-arrow-up-brown"></i> ico-arrow-up-brown<br />
+						<i class="ico-arrow-up-black"></i> ico-arrow-up-black<br />
+						<i class="ico-arrow-down-blue"></i> ico-arrow-down-blue<br />
+						<i class="ico-arrow-down-brown"></i> ico-arrow-down-brown<br />
+						<i class="ico-arrow-down-black"></i> ico-arrow-down-black<br />
+						<i class="ico-checkmark-brown"></i> ico-checkmark-brown<br />
+						<i class="ico-checkmark-blue"></i> ico-checkmark-blue<br />
+						<i class="ico-checkmark-green"></i> ico-checkmark-green<br />
+						<i class="ico-refresh-blue"></i> ico-refresh-blue<br />
+						<i class="ico-refresh-brown"></i> ico-refresh-brown<br />
 						<i class="ico-refresh-gray"></i> ico-refresh-gray<br />
-						<i class="ico-close-brown"></i> ico-close-brown<br /> 
-						<i class="ico-close-blue"></i> ico-close-blue<br /> 
-						<i class="ico-remove-gray"></i> ico-remove-gray<br /> 
-						<i class="ico-information-blue"></i> ico-information-blue<br /> 
-						<i class="ico-information-brown"></i> ico-information-brown<br /> 
-						<i class="ico-warning-blue"></i> ico-warning-blue<br /> 
+						<i class="ico-close-brown"></i> ico-close-brown<br />
+						<i class="ico-close-blue"></i> ico-close-blue<br />
+						<i class="ico-remove-gray"></i> ico-remove-gray<br />
+						<i class="ico-information-blue"></i> ico-information-blue<br />
+						<i class="ico-information-brown"></i> ico-information-brown<br />
+						<i class="ico-warning-blue"></i> ico-warning-blue<br />
 						<i class="ico-warning-orange"></i> ico-warning-orange<br />
-						<i class="ico-tablet-7"></i> ico-tablet-7<br /> 
-						<i class="ico-tablet-10"></i> ico-tablet-10<br /> 
-						<i class="ico-circle-open"></i> ico-circle-open<br /> 
-						<i class="ico-circle-close"></i> ico-circle-close<br /> 
-						<i class="ico-sprememba-tarife"></i> ico-sprememba-tarife<br /> 
-						<i class="ico-zamenjava-paketa"></i> ico-zamenjava-paketa<br /> 
-						<i class="ico-checkmark-lightbox"></i> ico-checkmark-lightbox<br /> 
-						<i class="ico-enkratni-zakup"></i> ico-enkratni-zakup<br /> 
-						<i class="ico-nov-telefon"></i> ico-nov-telefon<br /> 
+						<i class="ico-tablet-7"></i> ico-tablet-7<br />
+						<i class="ico-tablet-10"></i> ico-tablet-10<br />
+						<i class="ico-circle-open"></i> ico-circle-open<br />
+						<i class="ico-circle-close"></i> ico-circle-close<br />
+						<i class="ico-sprememba-tarife"></i> ico-sprememba-tarife<br />
+						<i class="ico-zamenjava-paketa"></i> ico-zamenjava-paketa<br />
+						<i class="ico-checkmark-lightbox"></i> ico-checkmark-lightbox<br />
+						<i class="ico-enkratni-zakup"></i> ico-enkratni-zakup<br />
+						<i class="ico-nov-telefon"></i> ico-nov-telefon<br />
 						<i class="ico-druga-omrezja"></i> ico-druga-omrezja<br />
 						<i class="ico-zoom-gal-shadow"></i> ico-zoom-gal-shadow<br />
-						<i class="ico-zoom-brown"></i> ico-zoom-brown<br /> 
-						<i class="ico-zoom-blue"></i> ico-zoom-blue<br /> 
-						<i class="ico-techspec-camera-brown"></i> ico-techspec-camera-brown<br /> 
-						<i class="ico-techspec-connection-brown"></i> ico-techspec-connection-brown<br /> 
-						<i class="ico-techspec-messaging-brown"></i> ico-techspec-messaging-brown<br /> 
-						<i class="ico-techspec-fun-brown"></i> ico-techspec-fun-brown<br /> 
-						<i class="ico-techspec-misc-brown"></i> ico-techspec-misc-brown<br /> 
-						<i class="ico-techspec-battery-brown"></i> ico-techspec-battery-brown<br /> 
-						<i class="ico-techspec-camera-blue"></i> ico-techspec-camera-blue<br /> 
-						<i class="ico-techspec-connection-blue"></i> ico-techspec-connection-blue<br /> 
-						<i class="ico-techspec-messaging-blue"></i> ico-techspec-messaging-blue<br /> 
-						<i class="ico-techspec-fun-blue"></i> ico-techspec-fun-blue<br /> 
-						<i class="ico-techspec-misc-blue"></i> ico-techspec-misc-blue<br /> 
-						<i class="ico-techspec-battery-blue"></i> ico-techspec-battery-blue<br /> 
-						<i class="ico-calls"></i> ico-calls<br /> 
-						<i class="ico-data-transfer"></i> ico-data-transfer<br /> 
-						<i class="ico-messages"></i> ico-messages<br /> 
-						<i class="ico-plan"></i> ico-plan<br /> 
+						<i class="ico-zoom-brown"></i> ico-zoom-brown<br />
+						<i class="ico-zoom-blue"></i> ico-zoom-blue<br />
+						<i class="ico-techspec-camera-brown"></i> ico-techspec-camera-brown<br />
+						<i class="ico-techspec-connection-brown"></i> ico-techspec-connection-brown<br />
+						<i class="ico-techspec-messaging-brown"></i> ico-techspec-messaging-brown<br />
+						<i class="ico-techspec-fun-brown"></i> ico-techspec-fun-brown<br />
+						<i class="ico-techspec-misc-brown"></i> ico-techspec-misc-brown<br />
+						<i class="ico-techspec-battery-brown"></i> ico-techspec-battery-brown<br />
+						<i class="ico-techspec-camera-blue"></i> ico-techspec-camera-blue<br />
+						<i class="ico-techspec-connection-blue"></i> ico-techspec-connection-blue<br />
+						<i class="ico-techspec-messaging-blue"></i> ico-techspec-messaging-blue<br />
+						<i class="ico-techspec-fun-blue"></i> ico-techspec-fun-blue<br />
+						<i class="ico-techspec-misc-blue"></i> ico-techspec-misc-blue<br />
+						<i class="ico-techspec-battery-blue"></i> ico-techspec-battery-blue<br />
+						<i class="ico-calls"></i> ico-calls<br />
+						<i class="ico-data-transfer"></i> ico-data-transfer<br />
+						<i class="ico-messages"></i> ico-messages<br />
+						<i class="ico-plan"></i> ico-plan<br />
 					</div>
 					<div class="span4">
-						
+
 						<i class="ico-callstransfer"></i> ico-callstransfer<br />
-						<i class="ico-telephone"></i> ico-telephone<br /> 
-						<i class="ico-touchscreen-phone"></i> ico-touchscreen-phone<br /> 
-						<i class="ico-keyboard-phone"></i> ico-keyboard-phone<br /> 
+						<i class="ico-telephone"></i> ico-telephone<br />
+						<i class="ico-touchscreen-phone"></i> ico-touchscreen-phone<br />
+						<i class="ico-keyboard-phone"></i> ico-keyboard-phone<br />
 						<i class="ico-flip-phone"></i> ico-flip-phone<br />
-						<i class="ico-facebook-color"></i> ico-facebook-color<br /> 
-						<i class="ico-twitter-color"></i> ico-twitter-color<br /> 
-						<i class="ico-youtube-color"></i> ico-youtube-color<br /> 
-						<i class="ico-facebook-gray"></i> ico-facebook-gray<br /> 
-						<i class="ico-twitter-gray"></i> ico-twitter-gray<br /> 
+						<i class="ico-facebook-color"></i> ico-facebook-color<br />
+						<i class="ico-twitter-color"></i> ico-twitter-color<br />
+						<i class="ico-youtube-color"></i> ico-youtube-color<br />
+						<i class="ico-facebook-gray"></i> ico-facebook-gray<br />
+						<i class="ico-twitter-gray"></i> ico-twitter-gray<br />
 						<i class="ico-youtube-gray"></i> ico-youtube-gray<br />
-						<i class="ico-faq1-gray"></i> ico-faq1-gray<br /> 
+						<i class="ico-faq1-gray"></i> ico-faq1-gray<br />
 						<i class="ico-112-sos"></i> ico-112-sos<br />
-						<i class="ico-pdf-document"></i> ico-pdf-document<br /> 
-						<i class="ico-articles-brown"></i> ico-articles-brown<br /> 
-						<i class="ico-articles-blue"></i> ico-articles-blue<br /> 
-						<i class="ico-rss-brown"></i> ico-rss-brown<br /> 
-						<i class="ico-rss-blue"></i> ico-rss-blue<br /> 
-						<i class="ico-2g"></i> ico-2g<br /> 
-						<i class="ico-3g"></i> ico-3g<br /> 
-						<i class="ico-lte"></i> ico-lte<br /> 
-						<i class="ico-popolna-pisarna-telefonija"></i> ico-popolna-pisarna-telefonija<br /> 
-						<i class="ico-popolna-pisarna-internet"></i> ico-popolna-pisarna-internet<br /> 
-						<i class="ico-popolna-pisarna-pr"></i> ico-popolna-pisarna-pr<br /> 
-						<i class="ico-popolna-pisarna-naprave"></i> ico-popolna-pisarna-naprave<br /> 
+						<i class="ico-pdf-document"></i> ico-pdf-document<br />
+						<i class="ico-articles-brown"></i> ico-articles-brown<br />
+						<i class="ico-articles-blue"></i> ico-articles-blue<br />
+						<i class="ico-rss-brown"></i> ico-rss-brown<br />
+						<i class="ico-rss-blue"></i> ico-rss-blue<br />
+						<i class="ico-2g"></i> ico-2g<br />
+						<i class="ico-3g"></i> ico-3g<br />
+						<i class="ico-lte"></i> ico-lte<br />
+						<i class="ico-popolna-pisarna-telefonija"></i> ico-popolna-pisarna-telefonija<br />
+						<i class="ico-popolna-pisarna-internet"></i> ico-popolna-pisarna-internet<br />
+						<i class="ico-popolna-pisarna-pr"></i> ico-popolna-pisarna-pr<br />
+						<i class="ico-popolna-pisarna-naprave"></i> ico-popolna-pisarna-naprave<br />
 						<i class="ico-pin-simobil-centri"></i> ico-pin-simobil-centri<br />
-						<i class="ico-download"></i> ico-download<br /> 
-						<i class="ico-infocircle-blue"></i> ico-infocircle-blue<br /> 
-						<i class="ico-target-blue"></i> ico-target-blue<br /> 
-						<i class="ico-man-tie-blue"></i> ico-man-tie-blue<br /> 
-						<i class="ico-data-blue"></i> ico-data-blue<br /> 
-						<i class="ico-man-blue"></i> ico-man-blue<br /> 
-						<i class="ico-shield-blue"></i> ico-shield-blue<br /> 
-						<i class="ico-world-blue"></i> ico-world-blue<br /> 
-						<i class="ico-exclamation-blue"></i> ico-exclamation-blue<br /> 
-						<i class="ico-support"></i> ico-support<br /> 
-						<i class="ico-pin-simobil-fransize"></i> ico-pin-simobil-fransize<br /> 
-						<i class="ico-pin-simobil-pooblasceni"></i> ico-pin-simobil-pooblasceni<br /> 
-						<i class="ico-pin-popolna-pisarna"></i> ico-pin-popolna-pisarna<br /> 
-						<i class="ico-pin-simpl-kidz"></i> ico-pin-simpl-kidz<br /> 
-						<i class="ico-pin-placilni-avtomati"></i> ico-pin-placilni-avtomati<br /> 
+						<i class="ico-download"></i> ico-download<br />
+						<i class="ico-infocircle-blue"></i> ico-infocircle-blue<br />
+						<i class="ico-target-blue"></i> ico-target-blue<br />
+						<i class="ico-man-tie-blue"></i> ico-man-tie-blue<br />
+						<i class="ico-data-blue"></i> ico-data-blue<br />
+						<i class="ico-man-blue"></i> ico-man-blue<br />
+						<i class="ico-shield-blue"></i> ico-shield-blue<br />
+						<i class="ico-world-blue"></i> ico-world-blue<br />
+						<i class="ico-exclamation-blue"></i> ico-exclamation-blue<br />
+						<i class="ico-support"></i> ico-support<br />
+						<i class="ico-pin-simobil-fransize"></i> ico-pin-simobil-fransize<br />
+						<i class="ico-pin-simobil-pooblasceni"></i> ico-pin-simobil-pooblasceni<br />
+						<i class="ico-pin-popolna-pisarna"></i> ico-pin-popolna-pisarna<br />
+						<i class="ico-pin-simpl-kidz"></i> ico-pin-simpl-kidz<br />
+						<i class="ico-pin-placilni-avtomati"></i> ico-pin-placilni-avtomati<br />
 						<i class="ico-pin-apple-naprave"></i> ico-pin-apple-naprave<br />
-						<i class="ico-notifications"></i> ico-notifications<br /> 
-						<i class="ico-faq2"></i> ico-faq2<br /> 
-						<i class="ico-e-chat"></i> ico-e-chat<br /> 
+						<i class="ico-notifications"></i> ico-notifications<br />
+						<i class="ico-faq2"></i> ico-faq2<br />
+						<i class="ico-e-chat"></i> ico-e-chat<br />
 						<i class="ico-question-forms"></i> ico-question-forms<br />
-						<i class="ico-shops"></i> ico-shops<br /> 
+						<i class="ico-shops"></i> ico-shops<br />
 						<i class="ico-telephone-numbers"></i> ico-telephone-numbers<br />
-						<i class="ico-menjava-kartice-sim"></i> ico-menjava-kartice-sim<br /> 
-						<i class="ico-dodatna-sim-kartica"></i> ico-dodatna-sim-kartica<br /> 
-						<i class="ico-mikro-sim-kartica"></i> ico-mikro-sim-kartica<br /> 
-						<i class="ico-servis-telefona"></i> ico-servis-telefona<br /> 
-						<i class="ico-si-podpora"></i> ico-si-podpora<br /> 
-						<i class="ico-tezave-s-telefonom"></i> ico-tezave-s-telefonom<br /> 
-						<i class="ico-nakup-telefona"></i> ico-nakup-telefona<br /> 
-						<i class="ico-iphone"></i> ico-iphone<br /> 
-						<i class="ico-telefoni-in-naprave"></i> ico-telefoni-in-naprave<br /> 
-						<i class="ico-moj-simobilov-paket"></i> ico-moj-simobilov-paket<br /> 
-						<i class="ico-storitve-in-aplikacije"></i> ico-storitve-in-aplikacije<br /> 
+						<i class="ico-menjava-kartice-sim"></i> ico-menjava-kartice-sim<br />
+						<i class="ico-dodatna-sim-kartica"></i> ico-dodatna-sim-kartica<br />
+						<i class="ico-mikro-sim-kartica"></i> ico-mikro-sim-kartica<br />
+						<i class="ico-servis-telefona"></i> ico-servis-telefona<br />
+						<i class="ico-si-podpora"></i> ico-si-podpora<br />
+						<i class="ico-tezave-s-telefonom"></i> ico-tezave-s-telefonom<br />
+						<i class="ico-nakup-telefona"></i> ico-nakup-telefona<br />
+						<i class="ico-iphone"></i> ico-iphone<br />
+						<i class="ico-telefoni-in-naprave"></i> ico-telefoni-in-naprave<br />
+						<i class="ico-moj-simobilov-paket"></i> ico-moj-simobilov-paket<br />
+						<i class="ico-storitve-in-aplikacije"></i> ico-storitve-in-aplikacije<br />
 						<i class="ico-internet"></i> ico-internet<br />
-						<i class="ico-imam-paket-z-narocnino"></i> ico-imam-paket-z-narocnino<br /> 
-						<i class="ico-prestop-k-simobilu"></i> ico-prestop-k-simobilu<br /> 
-						<i class="ico-racuni"></i> ico-racuni<br /> 
-						<i class="ico-imam-paket-brez-narocnine-simpl"></i> ico-imam-paket-brez-narocnine-simpl<br /> 
-						<i class="ico-nadzor-nad-porabo"></i> ico-nadzor-nad-porabo<br /> 
-						<i class="ico-varnost-kraja-izguba"></i> ico-varnost-kraja-izguba<br /> 
-						<i class="ico-tujina"></i> ico-tujina<br /> 
-						<i class="ico-vse-cene-na-enem-mestu"></i> ico-vse-cene-na-enem-mestu<br /> 
-						<i class="ico-vsi-obrazci-na-enem-mestu"></i> ico-vsi-obrazci-na-enem-mestu<br /> 
-						<i class="ico-navodila-za-rocno-nastavljanje"></i> ico-navodila-za-rocno-nastavljanje<br /> 
-						<i class="ico-ota-nastavitve"></i> ico-ota-nastavitve<br /> 
-						<i class="ico-video-predstavitev"></i> ico-video-predstavitev<br /> 
-						<i class="ico-navodila-za-uporabo"></i> ico-navodila-za-uporabo<br /> 
-						<i class="ico-servis"></i> ico-servis<br /> 
+						<i class="ico-imam-paket-z-narocnino"></i> ico-imam-paket-z-narocnino<br />
+						<i class="ico-prestop-k-simobilu"></i> ico-prestop-k-simobilu<br />
+						<i class="ico-racuni"></i> ico-racuni<br />
+						<i class="ico-imam-paket-brez-narocnine-simpl"></i> ico-imam-paket-brez-narocnine-simpl<br />
+						<i class="ico-nadzor-nad-porabo"></i> ico-nadzor-nad-porabo<br />
+						<i class="ico-varnost-kraja-izguba"></i> ico-varnost-kraja-izguba<br />
+						<i class="ico-tujina"></i> ico-tujina<br />
+						<i class="ico-vse-cene-na-enem-mestu"></i> ico-vse-cene-na-enem-mestu<br />
+						<i class="ico-vsi-obrazci-na-enem-mestu"></i> ico-vsi-obrazci-na-enem-mestu<br />
+						<i class="ico-navodila-za-rocno-nastavljanje"></i> ico-navodila-za-rocno-nastavljanje<br />
+						<i class="ico-ota-nastavitve"></i> ico-ota-nastavitve<br />
+						<i class="ico-video-predstavitev"></i> ico-video-predstavitev<br />
+						<i class="ico-navodila-za-uporabo"></i> ico-navodila-za-uporabo<br />
+						<i class="ico-servis"></i> ico-servis<br />
 					</div>
 					<div class="span4">
-						
-						<i class="ico-povezave"></i> ico-povezave<br /> 
-						<i class="ico-direktna-pomoc"></i> ico-direktna-pomoc<br /> 
-						<i class="ico-storitve"></i> ico-storitve<br /> 
-						<i class="ico-techspec-measures-blue"></i> ico-techspec-measures-blue<br /> 
-						<i class="ico-techspec-measures-brown"></i> ico-techspec-measures-brown<br /> 
-						<i class="ico-favourite-blue"></i> ico-favourite-blue<br /> 
-						<i class="ico-favourite-brown"></i> ico-favourite-brown<br /> 
-						<i class="ico-favourite-gray"></i> ico-favourite-gray<br /> 
-						<i class="ico-plus"></i> ico-plus<br /> 
-						<i class="ico-equals"></i> ico-equals<br /> 
-						<i class="ico-calls-internal"></i> ico-calls-internal<br /> 
-						<i class="ico-wifi"></i> ico-wifi<br /> 
-						<i class="ico-cloud-plus-orange"></i> ico-cloud-plus-orange<br /> 
-						<i class="ico-cloud-percent-orange"></i> ico-cloud-percent-orange<br /> 
-						<i class="ico-cloud-plus-blue"></i> ico-cloud-plus-blue<br /> 
-						<i class="ico-cloud-percent-blue"></i> ico-cloud-percent-blue<br /> 
-						<i class="ico-savings"></i> ico-savings<br /> 
-						
-						<i class="ico-call-sms-data"></i> ico-call-sms-data<br /> 
-						<i class="ico-simpl-tel-sim"></i> ico-simpl-tel-sim<br /> 
-						<i class="ico-simpl-sim"></i> ico-simpl-sim<br /> 
-						<i class="ico-corpo-call"></i> ico-corpo-call<br /> 
-						<i class="ico-features-brown"></i> ico-features-brown<br /> 
-						<i class="ico-screen-brown"></i> ico-screen-brown<br /> 
-						<i class="ico-contents-brown"></i> ico-contents-brown<br /> 
-						<i class="ico-features-blue"></i> ico-features-blue<br /> 
-						<i class="ico-screen-blue"></i> ico-screen-blue<br /> 
-						<i class="ico-contents-blue"></i> ico-contents-blue<br /> 
-						<i class="ico-heart-orange"></i> ico-heart-orange<br /> 
-						<i class="ico-heart-blue"></i> ico-heart-blue<br /> 
-						<i class="ico-ortonet"></i> ico-ortonet<br /> 
-						<i class="ico-heart-semiorange"></i> ico-heart-semiorange<br /> 
-						<i class="ico-heart-semiblue"></i> ico-heart-semiblue<br /> 
-						<i class="ico-app-android"></i> ico-app-android<br /> 
-						<i class="ico-app-ios"></i> ico-app-ios<br /> 
-						<i class="ico-app-win"></i> ico-app-win<br /> 
-						<i class="ico-app-bb"></i> ico-app-bb<br /> 
-						<i class="ico-eracun-trees"></i> ico-eracun-trees<br /> 
-						<i class="ico-eracun-clock"></i> ico-eracun-clock<br /> 
-						<i class="ico-eracun-drawer"></i> ico-eracun-drawer<br /> 
-						<i class="ico-eracun-package"></i> ico-eracun-package<br /> 
-						<i class="ico-eracun-devices"></i> ico-eracun-devices<br /> 
-						<i class="ico-eracun-search"></i> ico-eracun-search<br /> 
-						<i class="ico-eracun-video"></i> ico-eracun-video<br /> 
-						<i class="ico-ms-tujina"></i> ico-ms-tujina<br /> 
-						<i class="ico-ms-drugo"></i> ico-ms-drugo<br /> 
-						<i class="ico-ms-izhodni"></i> ico-ms-izhodni<br /> 
-						<i class="ico-ms-excel"></i> ico-ms-excel<br /> 
-						<i class="ico-techspec-apps-brown"></i> ico-techspec-apps-brown<br /> 
-						<i class="ico-techspec-apps-blue"></i> ico-techspec-apps-blue<br /> 
-						<i class="ico-number-listed"></i> ico-number-listed<br /> 
-						<i class="ico-simplnet"></i> ico-simplnet<br /> 
-						<i class="ico-usb-modem"></i> ico-usb-modem<br /> 
-						<i class="ico-print"></i> ico-print<br /> 
-						<i class="ico-save"></i> ico-save<br /> 
-						<i class="ico-pdf"></i> ico-pdf<br /> 
-						<i class="ico-klici-eu"></i> ico-klici-eu<br /> 
-						<i class="ico-4glte"></i> ico-4glte<br /> 
+
+						<i class="ico-povezave"></i> ico-povezave<br />
+						<i class="ico-direktna-pomoc"></i> ico-direktna-pomoc<br />
+						<i class="ico-storitve"></i> ico-storitve<br />
+						<i class="ico-techspec-measures-blue"></i> ico-techspec-measures-blue<br />
+						<i class="ico-techspec-measures-brown"></i> ico-techspec-measures-brown<br />
+						<i class="ico-favourite-blue"></i> ico-favourite-blue<br />
+						<i class="ico-favourite-brown"></i> ico-favourite-brown<br />
+						<i class="ico-favourite-gray"></i> ico-favourite-gray<br />
+						<i class="ico-plus"></i> ico-plus<br />
+						<i class="ico-equals"></i> ico-equals<br />
+						<i class="ico-calls-internal"></i> ico-calls-internal<br />
+						<i class="ico-wifi"></i> ico-wifi<br />
+						<i class="ico-cloud-plus-orange"></i> ico-cloud-plus-orange<br />
+						<i class="ico-cloud-percent-orange"></i> ico-cloud-percent-orange<br />
+						<i class="ico-cloud-plus-blue"></i> ico-cloud-plus-blue<br />
+						<i class="ico-cloud-percent-blue"></i> ico-cloud-percent-blue<br />
+						<i class="ico-savings"></i> ico-savings<br />
+
+						<i class="ico-call-sms-data"></i> ico-call-sms-data<br />
+						<i class="ico-simpl-tel-sim"></i> ico-simpl-tel-sim<br />
+						<i class="ico-simpl-sim"></i> ico-simpl-sim<br />
+						<i class="ico-corpo-call"></i> ico-corpo-call<br />
+						<i class="ico-features-brown"></i> ico-features-brown<br />
+						<i class="ico-screen-brown"></i> ico-screen-brown<br />
+						<i class="ico-contents-brown"></i> ico-contents-brown<br />
+						<i class="ico-features-blue"></i> ico-features-blue<br />
+						<i class="ico-screen-blue"></i> ico-screen-blue<br />
+						<i class="ico-contents-blue"></i> ico-contents-blue<br />
+						<i class="ico-heart-orange"></i> ico-heart-orange<br />
+						<i class="ico-heart-blue"></i> ico-heart-blue<br />
+						<i class="ico-ortonet"></i> ico-ortonet<br />
+						<i class="ico-heart-semiorange"></i> ico-heart-semiorange<br />
+						<i class="ico-heart-semiblue"></i> ico-heart-semiblue<br />
+						<i class="ico-app-android"></i> ico-app-android<br />
+						<i class="ico-app-ios"></i> ico-app-ios<br />
+						<i class="ico-app-win"></i> ico-app-win<br />
+						<i class="ico-app-bb"></i> ico-app-bb<br />
+						<i class="ico-eracun-trees"></i> ico-eracun-trees<br />
+						<i class="ico-eracun-clock"></i> ico-eracun-clock<br />
+						<i class="ico-eracun-drawer"></i> ico-eracun-drawer<br />
+						<i class="ico-eracun-package"></i> ico-eracun-package<br />
+						<i class="ico-eracun-devices"></i> ico-eracun-devices<br />
+						<i class="ico-eracun-search"></i> ico-eracun-search<br />
+						<i class="ico-eracun-video"></i> ico-eracun-video<br />
+						<i class="ico-ms-tujina"></i> ico-ms-tujina<br />
+						<i class="ico-ms-drugo"></i> ico-ms-drugo<br />
+						<i class="ico-ms-izhodni"></i> ico-ms-izhodni<br />
+						<i class="ico-ms-excel"></i> ico-ms-excel<br />
+						<i class="ico-techspec-apps-brown"></i> ico-techspec-apps-brown<br />
+						<i class="ico-techspec-apps-blue"></i> ico-techspec-apps-blue<br />
+						<i class="ico-number-listed"></i> ico-number-listed<br />
+						<i class="ico-simplnet"></i> ico-simplnet<br />
+						<i class="ico-usb-modem"></i> ico-usb-modem<br />
+						<i class="ico-print"></i> ico-print<br />
+						<i class="ico-save"></i> ico-save<br />
+						<i class="ico-pdf"></i> ico-pdf<br />
+						<i class="ico-klici-eu"></i> ico-klici-eu<br />
+						<i class="ico-4glte"></i> ico-4glte<br />
 					</div>
 				</div>
 			</div>
@@ -4082,217 +4083,217 @@ $(function() {
 					<div class="span4">
 						<i class="ico-cart ico-medium"></i> ico-cart<br />
 						<i class="ico-search-header ico-medium"></i> ico-search-header<br />
-						<i class="ico-arrow-right-green ico-medium"></i> ico-arrow-right-green<br /> 
-						<i class="ico-arrow-right-black ico-medium"></i> ico-arrow-right-black<br /> 
-						<i class="ico-arrow-right-brown ico-medium"></i> ico-arrow-right-brown<br /> 
-						<i class="ico-arrow-right-white ico-medium"></i> ico-arrow-right-white<br /> 
-						<i class="ico-arrow-right-blue ico-medium"></i> ico-arrow-right-blue<br /> 
-						<i class="ico-arrow-right-gal-blue ico-medium"></i> ico-arrow-right-gal-blue<br /> 
-						<i class="ico-arrow-right-gal-brown ico-medium"></i> ico-arrow-right-gal-brown<br /> 
-						<i class="ico-arrow-right-gal-white ico-medium"></i> ico-arrow-right-gal-white<br /> 
-						<i class="ico-arrow-right-gal-shadow-white ico-medium"></i> ico-arrow-right-gal-shadow-white<br /> 
-						<i class="ico-arrow-right-config-green ico-medium"></i> ico-arrow-right-config-green<br /> 
-						<i class="ico-arrow-right-date-picker-white ico-medium"></i> ico-arrow-right-date-picker-white<br /> 
-						<i class="ico-arrow-right-progressbar-brown ico-medium"></i> ico-arrow-right-progressbar-brown<br /> 
-						<i class="ico-arrow-right-progressbar-blue ico-medium"></i> ico-arrow-right-progressbar-blue<br /> 
-						<i class="ico-arrow-left-black ico-medium"></i> ico-arrow-left-black<br /> 
-						<i class="ico-arrow-left-brown ico-medium"></i> ico-arrow-left-brown<br /> 
-						<i class="ico-arrow-left-white ico-medium"></i> ico-arrow-left-white<br /> 
-						<i class="ico-arrow-left-blue ico-medium"></i> ico-arrow-left-blue<br /> 
-						<i class="ico-arrow-left-gal-blue ico-medium"></i> ico-arrow-left-gal-blue<br /> 
-						<i class="ico-arrow-left-gal-brown ico-medium"></i> ico-arrow-left-gal-brown<br /> 
-						<i class="ico-arrow-left-gal-white ico-medium"></i> ico-arrow-left-gal-white<br /> 
-						<i class="ico-arrow-left-gal-shadow-white ico-medium"></i> ico-arrow-left-gal-shadow-white<br /> 
-						<i class="ico-arrow-left-config-green ico-medium"></i> ico-arrow-left-config-green<br /> 
-						<i class="ico-arrow-left-date-picker-white ico-medium"></i> ico-arrow-left-date-picker-white<br /> 
-						<i class="ico-arrow-up-white ico-medium"></i> ico-arrow-up-white<br /> 
-						<i class="ico-arrow-up-blue ico-medium"></i> ico-arrow-up-blue<br /> 
-						<i class="ico-arrow-up-brown ico-medium"></i> ico-arrow-up-brown<br /> 
-						<i class="ico-arrow-up-black ico-medium"></i> ico-arrow-up-black<br /> 
-						<i class="ico-arrow-down-blue ico-medium"></i> ico-arrow-down-blue<br /> 
-						<i class="ico-arrow-down-brown ico-medium"></i> ico-arrow-down-brown<br /> 
-						<i class="ico-arrow-down-black ico-medium"></i> ico-arrow-down-black<br /> 
-						<i class="ico-checkmark-brown ico-medium"></i> ico-checkmark-brown<br /> 
-						<i class="ico-checkmark-blue ico-medium"></i> ico-checkmark-blue<br /> 
-						<i class="ico-checkmark-green ico-medium"></i> ico-checkmark-green<br /> 
-						<i class="ico-refresh-blue ico-medium"></i> ico-refresh-blue<br /> 
-						<i class="ico-refresh-brown ico-medium"></i> ico-refresh-brown<br /> 
-						<i class="ico-refresh-gray ico-medium"></i> ico-refresh-gray<br /> 
-						<i class="ico-close-brown ico-medium"></i> ico-close-brown<br /> 
-						<i class="ico-close-blue ico-medium"></i> ico-close-blue<br /> 
-						<i class="ico-remove-gray ico-medium"></i> ico-remove-gray<br /> 
-						<i class="ico-information-blue ico-medium"></i> ico-information-blue<br /> 
-						<i class="ico-information-brown ico-medium"></i> ico-information-brown<br /> 
-						<i class="ico-warning-blue ico-medium"></i> ico-warning-blue<br /> 
-						<i class="ico-warning-orange ico-medium"></i> ico-warning-orange<br /> 
-						<i class="ico-tablet-7 ico-medium"></i> ico-tablet-7<br /> 
-						<i class="ico-tablet-10 ico-medium"></i> ico-tablet-10<br /> 
-						<i class="ico-circle-open ico-medium"></i> ico-circle-open<br /> 
-						<i class="ico-circle-close ico-medium"></i> ico-circle-close<br /> 
-						<i class="ico-sprememba-tarife ico-medium"></i> ico-sprememba-tarife<br /> 
-						<i class="ico-zamenjava-paketa ico-medium"></i> ico-zamenjava-paketa<br /> 
-						<i class="ico-checkmark-lightbox ico-medium"></i> ico-checkmark-lightbox<br /> 
-						<i class="ico-enkratni-zakup ico-medium"></i> ico-enkratni-zakup<br /> 
-						<i class="ico-nov-telefon ico-medium"></i> ico-nov-telefon<br /> 
+						<i class="ico-arrow-right-green ico-medium"></i> ico-arrow-right-green<br />
+						<i class="ico-arrow-right-black ico-medium"></i> ico-arrow-right-black<br />
+						<i class="ico-arrow-right-brown ico-medium"></i> ico-arrow-right-brown<br />
+						<i class="ico-arrow-right-white ico-medium"></i> ico-arrow-right-white<br />
+						<i class="ico-arrow-right-blue ico-medium"></i> ico-arrow-right-blue<br />
+						<i class="ico-arrow-right-gal-blue ico-medium"></i> ico-arrow-right-gal-blue<br />
+						<i class="ico-arrow-right-gal-brown ico-medium"></i> ico-arrow-right-gal-brown<br />
+						<i class="ico-arrow-right-gal-white ico-medium"></i> ico-arrow-right-gal-white<br />
+						<i class="ico-arrow-right-gal-shadow-white ico-medium"></i> ico-arrow-right-gal-shadow-white<br />
+						<i class="ico-arrow-right-config-green ico-medium"></i> ico-arrow-right-config-green<br />
+						<i class="ico-arrow-right-date-picker-white ico-medium"></i> ico-arrow-right-date-picker-white<br />
+						<i class="ico-arrow-right-progressbar-brown ico-medium"></i> ico-arrow-right-progressbar-brown<br />
+						<i class="ico-arrow-right-progressbar-blue ico-medium"></i> ico-arrow-right-progressbar-blue<br />
+						<i class="ico-arrow-left-black ico-medium"></i> ico-arrow-left-black<br />
+						<i class="ico-arrow-left-brown ico-medium"></i> ico-arrow-left-brown<br />
+						<i class="ico-arrow-left-white ico-medium"></i> ico-arrow-left-white<br />
+						<i class="ico-arrow-left-blue ico-medium"></i> ico-arrow-left-blue<br />
+						<i class="ico-arrow-left-gal-blue ico-medium"></i> ico-arrow-left-gal-blue<br />
+						<i class="ico-arrow-left-gal-brown ico-medium"></i> ico-arrow-left-gal-brown<br />
+						<i class="ico-arrow-left-gal-white ico-medium"></i> ico-arrow-left-gal-white<br />
+						<i class="ico-arrow-left-gal-shadow-white ico-medium"></i> ico-arrow-left-gal-shadow-white<br />
+						<i class="ico-arrow-left-config-green ico-medium"></i> ico-arrow-left-config-green<br />
+						<i class="ico-arrow-left-date-picker-white ico-medium"></i> ico-arrow-left-date-picker-white<br />
+						<i class="ico-arrow-up-white ico-medium"></i> ico-arrow-up-white<br />
+						<i class="ico-arrow-up-blue ico-medium"></i> ico-arrow-up-blue<br />
+						<i class="ico-arrow-up-brown ico-medium"></i> ico-arrow-up-brown<br />
+						<i class="ico-arrow-up-black ico-medium"></i> ico-arrow-up-black<br />
+						<i class="ico-arrow-down-blue ico-medium"></i> ico-arrow-down-blue<br />
+						<i class="ico-arrow-down-brown ico-medium"></i> ico-arrow-down-brown<br />
+						<i class="ico-arrow-down-black ico-medium"></i> ico-arrow-down-black<br />
+						<i class="ico-checkmark-brown ico-medium"></i> ico-checkmark-brown<br />
+						<i class="ico-checkmark-blue ico-medium"></i> ico-checkmark-blue<br />
+						<i class="ico-checkmark-green ico-medium"></i> ico-checkmark-green<br />
+						<i class="ico-refresh-blue ico-medium"></i> ico-refresh-blue<br />
+						<i class="ico-refresh-brown ico-medium"></i> ico-refresh-brown<br />
+						<i class="ico-refresh-gray ico-medium"></i> ico-refresh-gray<br />
+						<i class="ico-close-brown ico-medium"></i> ico-close-brown<br />
+						<i class="ico-close-blue ico-medium"></i> ico-close-blue<br />
+						<i class="ico-remove-gray ico-medium"></i> ico-remove-gray<br />
+						<i class="ico-information-blue ico-medium"></i> ico-information-blue<br />
+						<i class="ico-information-brown ico-medium"></i> ico-information-brown<br />
+						<i class="ico-warning-blue ico-medium"></i> ico-warning-blue<br />
+						<i class="ico-warning-orange ico-medium"></i> ico-warning-orange<br />
+						<i class="ico-tablet-7 ico-medium"></i> ico-tablet-7<br />
+						<i class="ico-tablet-10 ico-medium"></i> ico-tablet-10<br />
+						<i class="ico-circle-open ico-medium"></i> ico-circle-open<br />
+						<i class="ico-circle-close ico-medium"></i> ico-circle-close<br />
+						<i class="ico-sprememba-tarife ico-medium"></i> ico-sprememba-tarife<br />
+						<i class="ico-zamenjava-paketa ico-medium"></i> ico-zamenjava-paketa<br />
+						<i class="ico-checkmark-lightbox ico-medium"></i> ico-checkmark-lightbox<br />
+						<i class="ico-enkratni-zakup ico-medium"></i> ico-enkratni-zakup<br />
+						<i class="ico-nov-telefon ico-medium"></i> ico-nov-telefon<br />
 						<i class="ico-druga-omrezja ico-medium"></i> ico-druga-omrezja<br />
-						<i class="ico-zoom-gal-shadow ico-medium"></i> ico-zoom-gal-shadow<br /> 
-						<i class="ico-zoom-brown ico-medium"></i> ico-zoom-brown<br /> 
-						<i class="ico-zoom-blue ico-medium"></i> ico-zoom-blue<br /> 
-						<i class="ico-techspec-camera-brown ico-medium"></i> ico-techspec-camera-brown<br /> 
-						<i class="ico-techspec-connection-brown ico-medium"></i> ico-techspec-connection-brown<br /> 
-						<i class="ico-techspec-messaging-brown ico-medium"></i> ico-techspec-messaging-brown<br /> 
-						<i class="ico-techspec-fun-brown ico-medium"></i> ico-techspec-fun-brown<br /> 
-						<i class="ico-techspec-misc-brown ico-medium"></i> ico-techspec-misc-brown<br /> 
-						<i class="ico-techspec-battery-brown ico-medium"></i> ico-techspec-battery-brown<br /> 
-						<i class="ico-techspec-camera-blue ico-medium"></i> ico-techspec-camera-blue<br /> 
-						<i class="ico-techspec-connection-blue ico-medium"></i> ico-techspec-connection-blue<br /> 
-						<i class="ico-techspec-messaging-blue ico-medium"></i> ico-techspec-messaging-blue<br /> 
-						<i class="ico-techspec-fun-blue ico-medium"></i> ico-techspec-fun-blue<br /> 
-						<i class="ico-techspec-misc-blue ico-medium"></i> ico-techspec-misc-blue<br /> 
-						<i class="ico-techspec-battery-blue ico-medium"></i> ico-techspec-battery-blue<br /> 
-						<i class="ico-calls ico-medium"></i> ico-calls<br /> 
-						<i class="ico-data-transfer ico-medium"></i> ico-data-transfer<br /> 
-						<i class="ico-messages ico-medium"></i> ico-messages<br /> 
-						<i class="ico-plan ico-medium"></i> ico-plan<br /> 
+						<i class="ico-zoom-gal-shadow ico-medium"></i> ico-zoom-gal-shadow<br />
+						<i class="ico-zoom-brown ico-medium"></i> ico-zoom-brown<br />
+						<i class="ico-zoom-blue ico-medium"></i> ico-zoom-blue<br />
+						<i class="ico-techspec-camera-brown ico-medium"></i> ico-techspec-camera-brown<br />
+						<i class="ico-techspec-connection-brown ico-medium"></i> ico-techspec-connection-brown<br />
+						<i class="ico-techspec-messaging-brown ico-medium"></i> ico-techspec-messaging-brown<br />
+						<i class="ico-techspec-fun-brown ico-medium"></i> ico-techspec-fun-brown<br />
+						<i class="ico-techspec-misc-brown ico-medium"></i> ico-techspec-misc-brown<br />
+						<i class="ico-techspec-battery-brown ico-medium"></i> ico-techspec-battery-brown<br />
+						<i class="ico-techspec-camera-blue ico-medium"></i> ico-techspec-camera-blue<br />
+						<i class="ico-techspec-connection-blue ico-medium"></i> ico-techspec-connection-blue<br />
+						<i class="ico-techspec-messaging-blue ico-medium"></i> ico-techspec-messaging-blue<br />
+						<i class="ico-techspec-fun-blue ico-medium"></i> ico-techspec-fun-blue<br />
+						<i class="ico-techspec-misc-blue ico-medium"></i> ico-techspec-misc-blue<br />
+						<i class="ico-techspec-battery-blue ico-medium"></i> ico-techspec-battery-blue<br />
+						<i class="ico-calls ico-medium"></i> ico-calls<br />
+						<i class="ico-data-transfer ico-medium"></i> ico-data-transfer<br />
+						<i class="ico-messages ico-medium"></i> ico-messages<br />
+						<i class="ico-plan ico-medium"></i> ico-plan<br />
 					</div>
 					<div class="span4">
 						<i class="ico-callstransfer ico-medium"></i> ico-callstransfer<br />
 						<i class="ico-telephone ico-medium"></i> ico-telephone<br />
-						<i class="ico-touchscreen-phone ico-medium"></i> ico-touchscreen-phone<br /> 
-						<i class="ico-keyboard-phone ico-medium"></i> ico-keyboard-phone<br /> 
+						<i class="ico-touchscreen-phone ico-medium"></i> ico-touchscreen-phone<br />
+						<i class="ico-keyboard-phone ico-medium"></i> ico-keyboard-phone<br />
 						<i class="ico-flip-phone ico-medium"></i> ico-flip-phone<br />
-						<i class="ico-facebook-color ico-medium"></i> ico-facebook-color<br /> 
-						<i class="ico-twitter-color ico-medium"></i> ico-twitter-color<br /> 
-						<i class="ico-youtube-color ico-medium"></i> ico-youtube-color<br /> 
-						<i class="ico-facebook-gray ico-medium"></i> ico-facebook-gray<br /> 
-						<i class="ico-twitter-gray ico-medium"></i> ico-twitter-gray<br /> 
-						<i class="ico-youtube-gray ico-medium"></i> ico-youtube-gray<br /> 
-						<i class="ico-faq1-gray ico-medium"></i> ico-faq1-gray<br /> 
+						<i class="ico-facebook-color ico-medium"></i> ico-facebook-color<br />
+						<i class="ico-twitter-color ico-medium"></i> ico-twitter-color<br />
+						<i class="ico-youtube-color ico-medium"></i> ico-youtube-color<br />
+						<i class="ico-facebook-gray ico-medium"></i> ico-facebook-gray<br />
+						<i class="ico-twitter-gray ico-medium"></i> ico-twitter-gray<br />
+						<i class="ico-youtube-gray ico-medium"></i> ico-youtube-gray<br />
+						<i class="ico-faq1-gray ico-medium"></i> ico-faq1-gray<br />
 						<i class="ico-112-sos ico-medium"></i> ico-112-sos<br />
 						<i class="ico-pdf-document ico-medium"></i> ico-pdf-document<br />
-						<i class="ico-articles-brown ico-medium"></i> ico-articles-brown<br /> 
-						<i class="ico-articles-blue ico-medium"></i> ico-articles-blue<br /> 
-						<i class="ico-rss-brown ico-medium"></i> ico-rss-brown<br /> 
-						<i class="ico-rss-blue ico-medium"></i> ico-rss-blue<br /> 
-						<i class="ico-2g ico-medium"></i> ico-2g<br /> 
-						<i class="ico-3g ico-medium"></i> ico-3g<br /> 
-						<i class="ico-lte ico-medium"></i> ico-lte<br /> 
-						<i class="ico-popolna-pisarna-telefonija ico-medium"></i> ico-popolna-pisarna-telefonija<br /> 
-						<i class="ico-popolna-pisarna-internet ico-medium"></i> ico-popolna-pisarna-internet<br /> 
-						<i class="ico-popolna-pisarna-pr ico-medium"></i> ico-popolna-pisarna-pr<br /> 
-						<i class="ico-popolna-pisarna-naprave ico-medium"></i> ico-popolna-pisarna-naprave<br /> 
-						<i class="ico-pin-simobil-centri ico-medium"></i> ico-pin-simobil-centri<br /> 
-						<i class="ico-download ico-medium"></i> ico-download<br /> 
-						<i class="ico-infocircle-blue ico-medium"></i> ico-infocircle-blue<br /> 
-						<i class="ico-target-blue ico-medium"></i> ico-target-blue<br /> 
-						<i class="ico-man-tie-blue ico-medium"></i> ico-man-tie-blue<br /> 
-						<i class="ico-data-blue ico-medium"></i> ico-data-blue<br /> 
-						<i class="ico-man-blue ico-medium"></i> ico-man-blue<br /> 
-						<i class="ico-shield-blue ico-medium"></i> ico-shield-blue<br /> 
-						<i class="ico-world-blue ico-medium"></i> ico-world-blue<br /> 
-						<i class="ico-exclamation-blue ico-medium"></i> ico-exclamation-blue<br /> 
-						<i class="ico-support ico-medium"></i> ico-support<br /> 
-						<i class="ico-pin-simobil-fransize ico-medium"></i> ico-pin-simobil-fransize<br /> 
-						<i class="ico-pin-simobil-pooblasceni ico-medium"></i> ico-pin-simobil-pooblasceni<br /> 
-						<i class="ico-pin-popolna-pisarna ico-medium"></i> ico-pin-popolna-pisarna<br /> 
-						<i class="ico-pin-simpl-kidz ico-medium"></i> ico-pin-simpl-kidz<br /> 
-						<i class="ico-pin-placilni-avtomati ico-medium"></i> ico-pin-placilni-avtomati<br /> 
-						<i class="ico-pin-apple-naprave ico-medium"></i> ico-pin-apple-naprave<br /> 
-						<i class="ico-notifications ico-medium"></i> ico-notifications<br /> 
-						<i class="ico-faq2 ico-medium"></i> ico-faq2<br /> 
-						<i class="ico-e-chat ico-medium"></i> ico-e-chat<br /> 
+						<i class="ico-articles-brown ico-medium"></i> ico-articles-brown<br />
+						<i class="ico-articles-blue ico-medium"></i> ico-articles-blue<br />
+						<i class="ico-rss-brown ico-medium"></i> ico-rss-brown<br />
+						<i class="ico-rss-blue ico-medium"></i> ico-rss-blue<br />
+						<i class="ico-2g ico-medium"></i> ico-2g<br />
+						<i class="ico-3g ico-medium"></i> ico-3g<br />
+						<i class="ico-lte ico-medium"></i> ico-lte<br />
+						<i class="ico-popolna-pisarna-telefonija ico-medium"></i> ico-popolna-pisarna-telefonija<br />
+						<i class="ico-popolna-pisarna-internet ico-medium"></i> ico-popolna-pisarna-internet<br />
+						<i class="ico-popolna-pisarna-pr ico-medium"></i> ico-popolna-pisarna-pr<br />
+						<i class="ico-popolna-pisarna-naprave ico-medium"></i> ico-popolna-pisarna-naprave<br />
+						<i class="ico-pin-simobil-centri ico-medium"></i> ico-pin-simobil-centri<br />
+						<i class="ico-download ico-medium"></i> ico-download<br />
+						<i class="ico-infocircle-blue ico-medium"></i> ico-infocircle-blue<br />
+						<i class="ico-target-blue ico-medium"></i> ico-target-blue<br />
+						<i class="ico-man-tie-blue ico-medium"></i> ico-man-tie-blue<br />
+						<i class="ico-data-blue ico-medium"></i> ico-data-blue<br />
+						<i class="ico-man-blue ico-medium"></i> ico-man-blue<br />
+						<i class="ico-shield-blue ico-medium"></i> ico-shield-blue<br />
+						<i class="ico-world-blue ico-medium"></i> ico-world-blue<br />
+						<i class="ico-exclamation-blue ico-medium"></i> ico-exclamation-blue<br />
+						<i class="ico-support ico-medium"></i> ico-support<br />
+						<i class="ico-pin-simobil-fransize ico-medium"></i> ico-pin-simobil-fransize<br />
+						<i class="ico-pin-simobil-pooblasceni ico-medium"></i> ico-pin-simobil-pooblasceni<br />
+						<i class="ico-pin-popolna-pisarna ico-medium"></i> ico-pin-popolna-pisarna<br />
+						<i class="ico-pin-simpl-kidz ico-medium"></i> ico-pin-simpl-kidz<br />
+						<i class="ico-pin-placilni-avtomati ico-medium"></i> ico-pin-placilni-avtomati<br />
+						<i class="ico-pin-apple-naprave ico-medium"></i> ico-pin-apple-naprave<br />
+						<i class="ico-notifications ico-medium"></i> ico-notifications<br />
+						<i class="ico-faq2 ico-medium"></i> ico-faq2<br />
+						<i class="ico-e-chat ico-medium"></i> ico-e-chat<br />
 						<i class="ico-question-forms ico-medium"></i> ico-question-forms<br />
-						<i class="ico-shops ico-medium"></i> ico-shops<br /> 
+						<i class="ico-shops ico-medium"></i> ico-shops<br />
 						<i class="ico-telephone-numbers ico-medium"></i> ico-telephone-numbers<br />
-						<i class="ico-menjava-kartice-sim ico-medium"></i> ico-menjava-kartice-sim<br /> 
-						<i class="ico-dodatna-sim-kartica ico-medium"></i> ico-dodatna-sim-kartica<br /> 
-						<i class="ico-mikro-sim-kartica ico-medium"></i> ico-mikro-sim-kartica<br /> 
-						<i class="ico-servis-telefona ico-medium"></i> ico-servis-telefona<br /> 
-						<i class="ico-si-podpora ico-medium"></i> ico-si-podpora<br /> 
-						<i class="ico-tezave-s-telefonom ico-medium"></i> ico-tezave-s-telefonom<br /> 
-						<i class="ico-nakup-telefona ico-medium"></i> ico-nakup-telefona<br /> 
-						<i class="ico-iphone ico-medium"></i> ico-iphone<br /> 
-						<i class="ico-telefoni-in-naprave ico-medium"></i> ico-telefoni-in-naprave<br /> 
-						<i class="ico-moj-simobilov-paket ico-medium"></i> ico-moj-simobilov-paket<br /> 
-						<i class="ico-storitve-in-aplikacije ico-medium"></i> ico-storitve-in-aplikacije<br /> 
+						<i class="ico-menjava-kartice-sim ico-medium"></i> ico-menjava-kartice-sim<br />
+						<i class="ico-dodatna-sim-kartica ico-medium"></i> ico-dodatna-sim-kartica<br />
+						<i class="ico-mikro-sim-kartica ico-medium"></i> ico-mikro-sim-kartica<br />
+						<i class="ico-servis-telefona ico-medium"></i> ico-servis-telefona<br />
+						<i class="ico-si-podpora ico-medium"></i> ico-si-podpora<br />
+						<i class="ico-tezave-s-telefonom ico-medium"></i> ico-tezave-s-telefonom<br />
+						<i class="ico-nakup-telefona ico-medium"></i> ico-nakup-telefona<br />
+						<i class="ico-iphone ico-medium"></i> ico-iphone<br />
+						<i class="ico-telefoni-in-naprave ico-medium"></i> ico-telefoni-in-naprave<br />
+						<i class="ico-moj-simobilov-paket ico-medium"></i> ico-moj-simobilov-paket<br />
+						<i class="ico-storitve-in-aplikacije ico-medium"></i> ico-storitve-in-aplikacije<br />
 						<i class="ico-internet ico-medium"></i> ico-internet<br />
-						<i class="ico-imam-paket-z-narocnino ico-medium"></i> ico-imam-paket-z-narocnino<br /> 
-						<i class="ico-prestop-k-simobilu ico-medium"></i> ico-prestop-k-simobilu<br /> 
-						<i class="ico-racuni ico-medium"></i> ico-racuni<br /> 
-						<i class="ico-imam-paket-brez-narocnine-simpl ico-medium"></i> ico-imam-paket-brez-narocnine-simpl<br /> 
-						<i class="ico-nadzor-nad-porabo ico-medium"></i> ico-nadzor-nad-porabo<br /> 
-						<i class="ico-varnost-kraja-izguba ico-medium"></i> ico-varnost-kraja-izguba<br /> 
-						<i class="ico-tujina ico-medium"></i> ico-tujina<br /> 
-						<i class="ico-vse-cene-na-enem-mestu ico-medium"></i> ico-vse-cene-na-enem-mestu<br /> 
-						<i class="ico-vsi-obrazci-na-enem-mestu ico-medium"></i> ico-vsi-obrazci-na-enem-mestu<br /> 
-						<i class="ico-navodila-za-rocno-nastavljanje ico-medium"></i> ico-navodila-za-rocno-nastavljanje<br /> 
-						<i class="ico-ota-nastavitve ico-medium"></i> ico-ota-nastavitve<br /> 
-						<i class="ico-video-predstavitev ico-medium"></i> ico-video-predstavitev<br /> 
-						<i class="ico-navodila-za-uporabo ico-medium"></i> ico-navodila-za-uporabo<br /> 
-						<i class="ico-servis ico-medium"></i> ico-servis<br /> 
+						<i class="ico-imam-paket-z-narocnino ico-medium"></i> ico-imam-paket-z-narocnino<br />
+						<i class="ico-prestop-k-simobilu ico-medium"></i> ico-prestop-k-simobilu<br />
+						<i class="ico-racuni ico-medium"></i> ico-racuni<br />
+						<i class="ico-imam-paket-brez-narocnine-simpl ico-medium"></i> ico-imam-paket-brez-narocnine-simpl<br />
+						<i class="ico-nadzor-nad-porabo ico-medium"></i> ico-nadzor-nad-porabo<br />
+						<i class="ico-varnost-kraja-izguba ico-medium"></i> ico-varnost-kraja-izguba<br />
+						<i class="ico-tujina ico-medium"></i> ico-tujina<br />
+						<i class="ico-vse-cene-na-enem-mestu ico-medium"></i> ico-vse-cene-na-enem-mestu<br />
+						<i class="ico-vsi-obrazci-na-enem-mestu ico-medium"></i> ico-vsi-obrazci-na-enem-mestu<br />
+						<i class="ico-navodila-za-rocno-nastavljanje ico-medium"></i> ico-navodila-za-rocno-nastavljanje<br />
+						<i class="ico-ota-nastavitve ico-medium"></i> ico-ota-nastavitve<br />
+						<i class="ico-video-predstavitev ico-medium"></i> ico-video-predstavitev<br />
+						<i class="ico-navodila-za-uporabo ico-medium"></i> ico-navodila-za-uporabo<br />
+						<i class="ico-servis ico-medium"></i> ico-servis<br />
 					</div>
 					<div class="span4">
-						<i class="ico-povezave ico-medium"></i> ico-povezave<br /> 
-						<i class="ico-direktna-pomoc ico-medium"></i> ico-direktna-pomoc<br /> 
-						<i class="ico-storitve ico-medium"></i> ico-storitve<br /> 
-						<i class="ico-techspec-measures-blue ico-medium"></i> ico-techspec-measures-blue<br /> 
-						<i class="ico-techspec-measures-brown ico-medium"></i> ico-techspec-measures-brown<br /> 
-						<i class="ico-favourite-blue ico-medium"></i> ico-favourite-blue<br /> 
-						<i class="ico-favourite-brown ico-medium"></i> ico-favourite-brown<br /> 
+						<i class="ico-povezave ico-medium"></i> ico-povezave<br />
+						<i class="ico-direktna-pomoc ico-medium"></i> ico-direktna-pomoc<br />
+						<i class="ico-storitve ico-medium"></i> ico-storitve<br />
+						<i class="ico-techspec-measures-blue ico-medium"></i> ico-techspec-measures-blue<br />
+						<i class="ico-techspec-measures-brown ico-medium"></i> ico-techspec-measures-brown<br />
+						<i class="ico-favourite-blue ico-medium"></i> ico-favourite-blue<br />
+						<i class="ico-favourite-brown ico-medium"></i> ico-favourite-brown<br />
 						<i class="ico-favourite-gray ico-medium"></i> ico-favourite-gray<br />
-						<i class="ico-plus ico-medium"></i> ico-plus<br /> 
-						<i class="ico-equals ico-medium"></i> ico-equals<br /> 
-						<i class="ico-calls-internal ico-medium"></i> ico-calls-internal<br /> 
-						<i class="ico-wifi ico-medium"></i> ico-wifi<br /> 
-						<i class="ico-cloud-plus-orange ico-medium"></i> ico-cloud-plus-orange<br /> 
-						<i class="ico-cloud-percent-orange ico-medium"></i> ico-cloud-percent-orange<br /> 
-						<i class="ico-cloud-plus-blue ico-medium"></i> ico-cloud-plus-blue<br /> 
-						<i class="ico-cloud-percent-blue ico-medium"></i> ico-cloud-percent-blue<br /> 
-						<i class="ico-savings ico-medium"></i> ico-savings<br /> 
-						<i class="ico-print ico-medium"></i> ico-print<br /> 
-						<i class="ico-save ico-medium"></i> ico-save<br /> 
+						<i class="ico-plus ico-medium"></i> ico-plus<br />
+						<i class="ico-equals ico-medium"></i> ico-equals<br />
+						<i class="ico-calls-internal ico-medium"></i> ico-calls-internal<br />
+						<i class="ico-wifi ico-medium"></i> ico-wifi<br />
+						<i class="ico-cloud-plus-orange ico-medium"></i> ico-cloud-plus-orange<br />
+						<i class="ico-cloud-percent-orange ico-medium"></i> ico-cloud-percent-orange<br />
+						<i class="ico-cloud-plus-blue ico-medium"></i> ico-cloud-plus-blue<br />
+						<i class="ico-cloud-percent-blue ico-medium"></i> ico-cloud-percent-blue<br />
+						<i class="ico-savings ico-medium"></i> ico-savings<br />
+						<i class="ico-print ico-medium"></i> ico-print<br />
+						<i class="ico-save ico-medium"></i> ico-save<br />
 						<i class="ico-pdf ico-medium"></i> ico-pdf<br />
 						<i class="ico-ms-excel ico-medium"></i> ico-ms-excel<br />
-						<i class="ico-call-sms-data ico-medium"></i> ico-call-sms-data<br /> 
-						<i class="ico-simpl-tel-sim ico-medium"></i> ico-simpl-tel-sim<br /> 
-						<i class="ico-simpl-sim ico-medium"></i> ico-simpl-sim<br /> 
-						<i class="ico-corpo-call ico-medium"></i> ico-corpo-call<br /> 
-						<i class="ico-features-brown ico-medium"></i> ico-features-brown<br /> 
-						<i class="ico-screen-brown ico-medium"></i> ico-screen-brown<br /> 
-						<i class="ico-contents-brown ico-medium"></i> ico-contents-brown<br /> 
-						<i class="ico-features-blue ico-medium"></i> ico-features-blue<br /> 
-						<i class="ico-screen-blue ico-medium"></i> ico-screen-blue<br /> 
-						<i class="ico-contents-blue ico-medium"></i> ico-contents-blue<br /> 
-						<i class="ico-heart-orange ico-medium"></i> ico-heart-orange<br /> 
-						<i class="ico-heart-blue ico-medium"></i> ico-heart-blue<br /> 
-						<i class="ico-ortonet ico-medium"></i> ico-ortonet<br /> 
-						<i class="ico-heart-semiorange ico-medium"></i> ico-heart-semiorange<br /> 
-						<i class="ico-heart-semiblue ico-medium"></i> ico-heart-semiblue<br /> 
-						<i class="ico-app-android ico-medium"></i> ico-app-android<br /> 
-						<i class="ico-app-ios ico-medium"></i> ico-app-ios<br /> 
-						<i class="ico-app-win ico-medium"></i> ico-app-win<br /> 
-						<i class="ico-app-bb ico-medium"></i> ico-app-bb<br /> 
-						<i class="ico-eracun-trees ico-medium"></i> ico-eracun-trees<br /> 
-						<i class="ico-eracun-clock ico-medium"></i> ico-eracun-clock<br /> 
-						<i class="ico-eracun-drawer ico-medium"></i> ico-eracun-drawer<br /> 
-						<i class="ico-eracun-package ico-medium"></i> ico-eracun-package<br /> 
-						<i class="ico-eracun-devices ico-medium"></i> ico-eracun-devices<br /> 
-						<i class="ico-eracun-search ico-medium"></i> ico-eracun-search<br /> 
-						<i class="ico-eracun-video ico-medium"></i> ico-eracun-video<br /> 
-						<i class="ico-ms-tujina ico-medium"></i> ico-ms-tujina<br /> 
-						<i class="ico-ms-drugo ico-medium"></i> ico-ms-drugo<br /> 
-						<i class="ico-ms-izhodni ico-medium"></i> ico-ms-izhodni<br /> 
-						<i class="ico-ms-excel ico-medium"></i> ico-ms-excel<br /> 
-						<i class="ico-techspec-apps-brown ico-medium"></i> ico-techspec-apps-brown<br /> 
-						<i class="ico-techspec-apps-blue ico-medium"></i> ico-techspec-apps-blue<br /> 
-						<i class="ico-number-listed ico-medium"></i> ico-number-listed<br /> 
-						<i class="ico-simplnet ico-medium"></i> ico-simplnet<br /> 
-						<i class="ico-usb-modem ico-medium"></i> ico-usb-modem<br /> 
-						<i class="ico-print ico-medium"></i> ico-print<br /> 
-						<i class="ico-save ico-medium"></i> ico-save<br /> 
-						<i class="ico-pdf ico-medium"></i> ico-pdf<br /> 
-						<i class="ico-klici-eu ico-medium"></i> ico-klici-eu<br /> 
-						<i class="ico-4glte ico-medium"></i> ico-4glte<br /> 
+						<i class="ico-call-sms-data ico-medium"></i> ico-call-sms-data<br />
+						<i class="ico-simpl-tel-sim ico-medium"></i> ico-simpl-tel-sim<br />
+						<i class="ico-simpl-sim ico-medium"></i> ico-simpl-sim<br />
+						<i class="ico-corpo-call ico-medium"></i> ico-corpo-call<br />
+						<i class="ico-features-brown ico-medium"></i> ico-features-brown<br />
+						<i class="ico-screen-brown ico-medium"></i> ico-screen-brown<br />
+						<i class="ico-contents-brown ico-medium"></i> ico-contents-brown<br />
+						<i class="ico-features-blue ico-medium"></i> ico-features-blue<br />
+						<i class="ico-screen-blue ico-medium"></i> ico-screen-blue<br />
+						<i class="ico-contents-blue ico-medium"></i> ico-contents-blue<br />
+						<i class="ico-heart-orange ico-medium"></i> ico-heart-orange<br />
+						<i class="ico-heart-blue ico-medium"></i> ico-heart-blue<br />
+						<i class="ico-ortonet ico-medium"></i> ico-ortonet<br />
+						<i class="ico-heart-semiorange ico-medium"></i> ico-heart-semiorange<br />
+						<i class="ico-heart-semiblue ico-medium"></i> ico-heart-semiblue<br />
+						<i class="ico-app-android ico-medium"></i> ico-app-android<br />
+						<i class="ico-app-ios ico-medium"></i> ico-app-ios<br />
+						<i class="ico-app-win ico-medium"></i> ico-app-win<br />
+						<i class="ico-app-bb ico-medium"></i> ico-app-bb<br />
+						<i class="ico-eracun-trees ico-medium"></i> ico-eracun-trees<br />
+						<i class="ico-eracun-clock ico-medium"></i> ico-eracun-clock<br />
+						<i class="ico-eracun-drawer ico-medium"></i> ico-eracun-drawer<br />
+						<i class="ico-eracun-package ico-medium"></i> ico-eracun-package<br />
+						<i class="ico-eracun-devices ico-medium"></i> ico-eracun-devices<br />
+						<i class="ico-eracun-search ico-medium"></i> ico-eracun-search<br />
+						<i class="ico-eracun-video ico-medium"></i> ico-eracun-video<br />
+						<i class="ico-ms-tujina ico-medium"></i> ico-ms-tujina<br />
+						<i class="ico-ms-drugo ico-medium"></i> ico-ms-drugo<br />
+						<i class="ico-ms-izhodni ico-medium"></i> ico-ms-izhodni<br />
+						<i class="ico-ms-excel ico-medium"></i> ico-ms-excel<br />
+						<i class="ico-techspec-apps-brown ico-medium"></i> ico-techspec-apps-brown<br />
+						<i class="ico-techspec-apps-blue ico-medium"></i> ico-techspec-apps-blue<br />
+						<i class="ico-number-listed ico-medium"></i> ico-number-listed<br />
+						<i class="ico-simplnet ico-medium"></i> ico-simplnet<br />
+						<i class="ico-usb-modem ico-medium"></i> ico-usb-modem<br />
+						<i class="ico-print ico-medium"></i> ico-print<br />
+						<i class="ico-save ico-medium"></i> ico-save<br />
+						<i class="ico-pdf ico-medium"></i> ico-pdf<br />
+						<i class="ico-klici-eu ico-medium"></i> ico-klici-eu<br />
+						<i class="ico-4glte ico-medium"></i> ico-4glte<br />
 					</div>
 				</div>
 			</div>
@@ -4308,226 +4309,226 @@ $(function() {
 					<div class="span4">
 						<i class="ico-cart ico-large"></i> ico-cart<br />
 						<i class="ico-search-header ico-large"></i> ico-search-header<br />
-						<i class="ico-arrow-right-green ico-large"></i> ico-arrow-right-green<br /> 
-						<i class="ico-arrow-right-black ico-large"></i> ico-arrow-right-black<br /> 
-						<i class="ico-arrow-right-brown ico-large"></i> ico-arrow-right-brown<br /> 
-						<i class="ico-arrow-right-white ico-large"></i> ico-arrow-right-white<br /> 
-						<i class="ico-arrow-right-blue ico-large"></i> ico-arrow-right-blue<br /> 
-						<i class="ico-arrow-right-gal-blue ico-large"></i> ico-arrow-right-gal-blue<br /> 
-						<i class="ico-arrow-right-gal-brown ico-large"></i> ico-arrow-right-gal-brown<br /> 
-						<i class="ico-arrow-right-gal-white ico-large"></i> ico-arrow-right-gal-white<br /> 
-						<i class="ico-arrow-right-gal-shadow-white ico-large"></i> ico-arrow-right-gal-shadow-white<br /> 
-						<i class="ico-arrow-right-config-green ico-large"></i> ico-arrow-right-config-green<br /> 
-						<i class="ico-arrow-right-date-picker-white ico-large"></i> ico-arrow-right-date-picker-white<br /> 
-						<i class="ico-arrow-right-progressbar-brown ico-large"></i> ico-arrow-right-progressbar-brown<br /> 
-						<i class="ico-arrow-right-progressbar-blue ico-large"></i> ico-arrow-right-progressbar-blue<br /> 
-						<i class="ico-arrow-left-black ico-large"></i> ico-arrow-left-black<br /> 
-						<i class="ico-arrow-left-brown ico-large"></i> ico-arrow-left-brown<br /> 
-						<i class="ico-arrow-left-white ico-large"></i> ico-arrow-left-white<br /> 
-						<i class="ico-arrow-left-blue ico-large"></i> ico-arrow-left-blue<br /> 
-						<i class="ico-arrow-left-gal-blue ico-large"></i> ico-arrow-left-gal-blue<br /> 
-						<i class="ico-arrow-left-gal-brown ico-large"></i> ico-arrow-left-gal-brown<br /> 
-						<i class="ico-arrow-left-gal-white ico-large"></i> ico-arrow-left-gal-white<br /> 
-						<i class="ico-arrow-left-gal-shadow-white ico-large"></i> ico-arrow-left-gal-shadow-white<br /> 
-						<i class="ico-arrow-left-config-green ico-large"></i> ico-arrow-left-config-green<br /> 
-						<i class="ico-arrow-left-date-picker-white ico-large"></i> ico-arrow-left-date-picker-white<br /> 
-						<i class="ico-arrow-up-white ico-large"></i> ico-arrow-up-white<br /> 
-						<i class="ico-arrow-up-blue ico-large"></i> ico-arrow-up-blue<br /> 
-						<i class="ico-arrow-up-brown ico-large"></i> ico-arrow-up-brown<br /> 
-						<i class="ico-arrow-up-black ico-large"></i> ico-arrow-up-black<br /> 
-						<i class="ico-arrow-down-blue ico-large"></i> ico-arrow-down-blue<br /> 
-						<i class="ico-arrow-down-brown ico-large"></i> ico-arrow-down-brown<br /> 
-						<i class="ico-arrow-down-black ico-large"></i> ico-arrow-down-black<br /> 
-						<i class="ico-checkmark-brown ico-large"></i> ico-checkmark-brown<br /> 
-						<i class="ico-checkmark-blue ico-large"></i> ico-checkmark-blue<br /> 
-						<i class="ico-checkmark-green ico-large"></i> ico-checkmark-green<br /> 
-						<i class="ico-refresh-blue ico-large"></i> ico-refresh-blue<br /> 
-						<i class="ico-refresh-brown ico-large"></i> ico-refresh-brown<br /> 
-						<i class="ico-refresh-gray ico-large"></i> ico-refresh-gray<br /> 
-						<i class="ico-close-brown ico-large"></i> ico-close-brown<br /> 
-						<i class="ico-close-blue ico-large"></i> ico-close-blue<br /> 
-						<i class="ico-remove-gray ico-large"></i> ico-remove-gray<br /> 
-						<i class="ico-information-blue ico-large"></i> ico-information-blue<br /> 
-						<i class="ico-information-brown ico-large"></i> ico-information-brown<br /> 
-						<i class="ico-warning-blue ico-large"></i> ico-warning-blue<br /> 
+						<i class="ico-arrow-right-green ico-large"></i> ico-arrow-right-green<br />
+						<i class="ico-arrow-right-black ico-large"></i> ico-arrow-right-black<br />
+						<i class="ico-arrow-right-brown ico-large"></i> ico-arrow-right-brown<br />
+						<i class="ico-arrow-right-white ico-large"></i> ico-arrow-right-white<br />
+						<i class="ico-arrow-right-blue ico-large"></i> ico-arrow-right-blue<br />
+						<i class="ico-arrow-right-gal-blue ico-large"></i> ico-arrow-right-gal-blue<br />
+						<i class="ico-arrow-right-gal-brown ico-large"></i> ico-arrow-right-gal-brown<br />
+						<i class="ico-arrow-right-gal-white ico-large"></i> ico-arrow-right-gal-white<br />
+						<i class="ico-arrow-right-gal-shadow-white ico-large"></i> ico-arrow-right-gal-shadow-white<br />
+						<i class="ico-arrow-right-config-green ico-large"></i> ico-arrow-right-config-green<br />
+						<i class="ico-arrow-right-date-picker-white ico-large"></i> ico-arrow-right-date-picker-white<br />
+						<i class="ico-arrow-right-progressbar-brown ico-large"></i> ico-arrow-right-progressbar-brown<br />
+						<i class="ico-arrow-right-progressbar-blue ico-large"></i> ico-arrow-right-progressbar-blue<br />
+						<i class="ico-arrow-left-black ico-large"></i> ico-arrow-left-black<br />
+						<i class="ico-arrow-left-brown ico-large"></i> ico-arrow-left-brown<br />
+						<i class="ico-arrow-left-white ico-large"></i> ico-arrow-left-white<br />
+						<i class="ico-arrow-left-blue ico-large"></i> ico-arrow-left-blue<br />
+						<i class="ico-arrow-left-gal-blue ico-large"></i> ico-arrow-left-gal-blue<br />
+						<i class="ico-arrow-left-gal-brown ico-large"></i> ico-arrow-left-gal-brown<br />
+						<i class="ico-arrow-left-gal-white ico-large"></i> ico-arrow-left-gal-white<br />
+						<i class="ico-arrow-left-gal-shadow-white ico-large"></i> ico-arrow-left-gal-shadow-white<br />
+						<i class="ico-arrow-left-config-green ico-large"></i> ico-arrow-left-config-green<br />
+						<i class="ico-arrow-left-date-picker-white ico-large"></i> ico-arrow-left-date-picker-white<br />
+						<i class="ico-arrow-up-white ico-large"></i> ico-arrow-up-white<br />
+						<i class="ico-arrow-up-blue ico-large"></i> ico-arrow-up-blue<br />
+						<i class="ico-arrow-up-brown ico-large"></i> ico-arrow-up-brown<br />
+						<i class="ico-arrow-up-black ico-large"></i> ico-arrow-up-black<br />
+						<i class="ico-arrow-down-blue ico-large"></i> ico-arrow-down-blue<br />
+						<i class="ico-arrow-down-brown ico-large"></i> ico-arrow-down-brown<br />
+						<i class="ico-arrow-down-black ico-large"></i> ico-arrow-down-black<br />
+						<i class="ico-checkmark-brown ico-large"></i> ico-checkmark-brown<br />
+						<i class="ico-checkmark-blue ico-large"></i> ico-checkmark-blue<br />
+						<i class="ico-checkmark-green ico-large"></i> ico-checkmark-green<br />
+						<i class="ico-refresh-blue ico-large"></i> ico-refresh-blue<br />
+						<i class="ico-refresh-brown ico-large"></i> ico-refresh-brown<br />
+						<i class="ico-refresh-gray ico-large"></i> ico-refresh-gray<br />
+						<i class="ico-close-brown ico-large"></i> ico-close-brown<br />
+						<i class="ico-close-blue ico-large"></i> ico-close-blue<br />
+						<i class="ico-remove-gray ico-large"></i> ico-remove-gray<br />
+						<i class="ico-information-blue ico-large"></i> ico-information-blue<br />
+						<i class="ico-information-brown ico-large"></i> ico-information-brown<br />
+						<i class="ico-warning-blue ico-large"></i> ico-warning-blue<br />
 						<i class="ico-warning-orange ico-large"></i> ico-warning-orange<br />
 
-						<i class="ico-tablet-7 ico-large"></i> ico-tablet-7<br /> 
-						<i class="ico-tablet-10 ico-large"></i> ico-tablet-10<br /> 
-						<i class="ico-circle-open ico-large"></i> ico-circle-open<br /> 
-						<i class="ico-circle-close ico-large"></i> ico-circle-close<br /> 
-						<i class="ico-sprememba-tarife ico-large"></i> ico-sprememba-tarife<br /> 
-						<i class="ico-zamenjava-paketa ico-large"></i> ico-zamenjava-paketa<br /> 
-						<i class="ico-checkmark-lightbox ico-large"></i> ico-checkmark-lightbox<br /> 
-						<i class="ico-enkratni-zakup ico-large"></i> ico-enkratni-zakup<br /> 
-						<i class="ico-nov-telefon ico-large"></i> ico-nov-telefon<br /> 
-						<i class="ico-druga-omrezja ico-large"></i> ico-druga-omrezja<br /> 
-						<i class="ico-zoom-gal-shadow ico-large"></i> ico-zoom-gal-shadow<br /> 
-						<i class="ico-zoom-brown ico-large"></i> ico-zoom-brown<br /> 
-						<i class="ico-zoom-blue ico-large"></i> ico-zoom-blue<br /> 
-						<i class="ico-techspec-camera-brown ico-large"></i> ico-techspec-camera-brown<br /> 
-						<i class="ico-techspec-connection-brown ico-large"></i> ico-techspec-connection-brown<br /> 
-						<i class="ico-techspec-messaging-brown ico-large"></i> ico-techspec-messaging-brown<br /> 
-						<i class="ico-techspec-fun-brown ico-large"></i> ico-techspec-fun-brown<br /> 
-						<i class="ico-techspec-misc-brown ico-large"></i> ico-techspec-misc-brown<br /> 
-						<i class="ico-techspec-battery-brown ico-large"></i> ico-techspec-battery-brown<br /> 
-						<i class="ico-techspec-camera-blue ico-large"></i> ico-techspec-camera-blue<br /> 
-						<i class="ico-techspec-connection-blue ico-large"></i> ico-techspec-connection-blue<br /> 
-						<i class="ico-techspec-messaging-blue ico-large"></i> ico-techspec-messaging-blue<br /> 
-						<i class="ico-techspec-fun-blue ico-large"></i> ico-techspec-fun-blue<br /> 
-						<i class="ico-techspec-misc-blue ico-large"></i> ico-techspec-misc-blue<br /> 
-						<i class="ico-techspec-battery-blue ico-large"></i> ico-techspec-battery-blue<br /> 
-						<i class="ico-calls ico-large"></i> ico-calls<br /> 
-						<i class="ico-data-transfer ico-large"></i> ico-data-transfer<br /> 
-						<i class="ico-messages ico-large"></i> ico-messages<br /> 
-						<i class="ico-plan ico-large"></i> ico-plan<br /> 
+						<i class="ico-tablet-7 ico-large"></i> ico-tablet-7<br />
+						<i class="ico-tablet-10 ico-large"></i> ico-tablet-10<br />
+						<i class="ico-circle-open ico-large"></i> ico-circle-open<br />
+						<i class="ico-circle-close ico-large"></i> ico-circle-close<br />
+						<i class="ico-sprememba-tarife ico-large"></i> ico-sprememba-tarife<br />
+						<i class="ico-zamenjava-paketa ico-large"></i> ico-zamenjava-paketa<br />
+						<i class="ico-checkmark-lightbox ico-large"></i> ico-checkmark-lightbox<br />
+						<i class="ico-enkratni-zakup ico-large"></i> ico-enkratni-zakup<br />
+						<i class="ico-nov-telefon ico-large"></i> ico-nov-telefon<br />
+						<i class="ico-druga-omrezja ico-large"></i> ico-druga-omrezja<br />
+						<i class="ico-zoom-gal-shadow ico-large"></i> ico-zoom-gal-shadow<br />
+						<i class="ico-zoom-brown ico-large"></i> ico-zoom-brown<br />
+						<i class="ico-zoom-blue ico-large"></i> ico-zoom-blue<br />
+						<i class="ico-techspec-camera-brown ico-large"></i> ico-techspec-camera-brown<br />
+						<i class="ico-techspec-connection-brown ico-large"></i> ico-techspec-connection-brown<br />
+						<i class="ico-techspec-messaging-brown ico-large"></i> ico-techspec-messaging-brown<br />
+						<i class="ico-techspec-fun-brown ico-large"></i> ico-techspec-fun-brown<br />
+						<i class="ico-techspec-misc-brown ico-large"></i> ico-techspec-misc-brown<br />
+						<i class="ico-techspec-battery-brown ico-large"></i> ico-techspec-battery-brown<br />
+						<i class="ico-techspec-camera-blue ico-large"></i> ico-techspec-camera-blue<br />
+						<i class="ico-techspec-connection-blue ico-large"></i> ico-techspec-connection-blue<br />
+						<i class="ico-techspec-messaging-blue ico-large"></i> ico-techspec-messaging-blue<br />
+						<i class="ico-techspec-fun-blue ico-large"></i> ico-techspec-fun-blue<br />
+						<i class="ico-techspec-misc-blue ico-large"></i> ico-techspec-misc-blue<br />
+						<i class="ico-techspec-battery-blue ico-large"></i> ico-techspec-battery-blue<br />
+						<i class="ico-calls ico-large"></i> ico-calls<br />
+						<i class="ico-data-transfer ico-large"></i> ico-data-transfer<br />
+						<i class="ico-messages ico-large"></i> ico-messages<br />
+						<i class="ico-plan ico-large"></i> ico-plan<br />
 					</div>
 					<div class="span4">
-						<i class="ico-callstransfer ico-large"></i> ico-callstransfer<br /> 
+						<i class="ico-callstransfer ico-large"></i> ico-callstransfer<br />
 						<i class="ico-telephone ico-large"></i> ico-telephone<br />
-						<i class="ico-touchscreen-phone ico-large"></i> ico-touchscreen-phone<br /> 
-						<i class="ico-keyboard-phone ico-large"></i> ico-keyboard-phone<br /> 
-						<i class="ico-flip-phone ico-large"></i> ico-flip-phone<br /> 
-						<i class="ico-facebook-color ico-large"></i> ico-facebook-color<br /> 
-						<i class="ico-twitter-color ico-large"></i> ico-twitter-color<br /> 
-						<i class="ico-youtube-color ico-large"></i> ico-youtube-color<br /> 
-						<i class="ico-facebook-gray ico-large"></i> ico-facebook-gray<br /> 
-						<i class="ico-twitter-gray ico-large"></i> ico-twitter-gray<br /> 
-						<i class="ico-youtube-gray ico-large"></i> ico-youtube-gray<br /> 
-						<i class="ico-faq1-gray ico-large"></i> ico-faq1-gray<br /> 
-						<i class="ico-112-sos ico-large"></i> ico-112-sos<br /> 
-						<i class="ico-pdf-document ico-large"></i> ico-pdf-document<br /> 
-						<i class="ico-articles-brown ico-large"></i> ico-articles-brown<br /> 
-						<i class="ico-articles-blue ico-large"></i> ico-articles-blue<br /> 
-						<i class="ico-rss-brown ico-large"></i> ico-rss-brown<br /> 
-						<i class="ico-rss-blue ico-large"></i> ico-rss-blue<br /> 
-						<i class="ico-2g ico-large"></i> ico-2g<br /> 
-						<i class="ico-3g ico-large"></i> ico-3g<br /> 
-						<i class="ico-lte ico-large"></i> ico-lte<br /> 
-						<i class="ico-popolna-pisarna-telefonija ico-large"></i> ico-popolna-pisarna-telefonija<br /> 
-						<i class="ico-popolna-pisarna-internet ico-large"></i> ico-popolna-pisarna-internet<br /> 
-						<i class="ico-popolna-pisarna-pr ico-large"></i> ico-popolna-pisarna-pr<br /> 
-						<i class="ico-popolna-pisarna-naprave ico-large"></i> ico-popolna-pisarna-naprave<br /> 
+						<i class="ico-touchscreen-phone ico-large"></i> ico-touchscreen-phone<br />
+						<i class="ico-keyboard-phone ico-large"></i> ico-keyboard-phone<br />
+						<i class="ico-flip-phone ico-large"></i> ico-flip-phone<br />
+						<i class="ico-facebook-color ico-large"></i> ico-facebook-color<br />
+						<i class="ico-twitter-color ico-large"></i> ico-twitter-color<br />
+						<i class="ico-youtube-color ico-large"></i> ico-youtube-color<br />
+						<i class="ico-facebook-gray ico-large"></i> ico-facebook-gray<br />
+						<i class="ico-twitter-gray ico-large"></i> ico-twitter-gray<br />
+						<i class="ico-youtube-gray ico-large"></i> ico-youtube-gray<br />
+						<i class="ico-faq1-gray ico-large"></i> ico-faq1-gray<br />
+						<i class="ico-112-sos ico-large"></i> ico-112-sos<br />
+						<i class="ico-pdf-document ico-large"></i> ico-pdf-document<br />
+						<i class="ico-articles-brown ico-large"></i> ico-articles-brown<br />
+						<i class="ico-articles-blue ico-large"></i> ico-articles-blue<br />
+						<i class="ico-rss-brown ico-large"></i> ico-rss-brown<br />
+						<i class="ico-rss-blue ico-large"></i> ico-rss-blue<br />
+						<i class="ico-2g ico-large"></i> ico-2g<br />
+						<i class="ico-3g ico-large"></i> ico-3g<br />
+						<i class="ico-lte ico-large"></i> ico-lte<br />
+						<i class="ico-popolna-pisarna-telefonija ico-large"></i> ico-popolna-pisarna-telefonija<br />
+						<i class="ico-popolna-pisarna-internet ico-large"></i> ico-popolna-pisarna-internet<br />
+						<i class="ico-popolna-pisarna-pr ico-large"></i> ico-popolna-pisarna-pr<br />
+						<i class="ico-popolna-pisarna-naprave ico-large"></i> ico-popolna-pisarna-naprave<br />
 						<i class="ico-pin-simobil-centri ico-large"></i> ico-pin-simobil-centri<br />
-						<i class="ico-download ico-large"></i> ico-download<br /> 
-						<i class="ico-infocircle-blue ico-large"></i> ico-infocircle-blue<br /> 
-						<i class="ico-target-blue ico-large"></i> ico-target-blue<br /> 
-						<i class="ico-man-tie-blue ico-large"></i> ico-man-tie-blue<br /> 
-						<i class="ico-data-blue ico-large"></i> ico-data-blue<br /> 
-						<i class="ico-man-blue ico-large"></i> ico-man-blue<br /> 
-						<i class="ico-shield-blue ico-large"></i> ico-shield-blue<br /> 
-						<i class="ico-world-blue ico-large"></i> ico-world-blue<br /> 
-						<i class="ico-exclamation-blue ico-large"></i> ico-exclamation-blue<br /> 
-						<i class="ico-support ico-large"></i> ico-support<br /> 
-						<i class="ico-pin-simobil-fransize ico-large"></i> ico-pin-simobil-fransize<br /> 
-						<i class="ico-pin-simobil-pooblasceni ico-large"></i> ico-pin-simobil-pooblasceni<br /> 
-						<i class="ico-pin-popolna-pisarna ico-large"></i> ico-pin-popolna-pisarna<br /> 
-						<i class="ico-pin-simpl-kidz ico-large"></i> ico-pin-simpl-kidz<br /> 
-						<i class="ico-pin-placilni-avtomati ico-large"></i> ico-pin-placilni-avtomati<br /> 
+						<i class="ico-download ico-large"></i> ico-download<br />
+						<i class="ico-infocircle-blue ico-large"></i> ico-infocircle-blue<br />
+						<i class="ico-target-blue ico-large"></i> ico-target-blue<br />
+						<i class="ico-man-tie-blue ico-large"></i> ico-man-tie-blue<br />
+						<i class="ico-data-blue ico-large"></i> ico-data-blue<br />
+						<i class="ico-man-blue ico-large"></i> ico-man-blue<br />
+						<i class="ico-shield-blue ico-large"></i> ico-shield-blue<br />
+						<i class="ico-world-blue ico-large"></i> ico-world-blue<br />
+						<i class="ico-exclamation-blue ico-large"></i> ico-exclamation-blue<br />
+						<i class="ico-support ico-large"></i> ico-support<br />
+						<i class="ico-pin-simobil-fransize ico-large"></i> ico-pin-simobil-fransize<br />
+						<i class="ico-pin-simobil-pooblasceni ico-large"></i> ico-pin-simobil-pooblasceni<br />
+						<i class="ico-pin-popolna-pisarna ico-large"></i> ico-pin-popolna-pisarna<br />
+						<i class="ico-pin-simpl-kidz ico-large"></i> ico-pin-simpl-kidz<br />
+						<i class="ico-pin-placilni-avtomati ico-large"></i> ico-pin-placilni-avtomati<br />
 						<i class="ico-pin-apple-naprave ico-large"></i> ico-pin-apple-naprave<br />
-						<i class="ico-notifications ico-large"></i> ico-notifications<br /> 
-						<i class="ico-faq2 ico-large"></i> ico-faq2<br /> 
-						<i class="ico-e-chat ico-large"></i> ico-e-chat<br /> 
+						<i class="ico-notifications ico-large"></i> ico-notifications<br />
+						<i class="ico-faq2 ico-large"></i> ico-faq2<br />
+						<i class="ico-e-chat ico-large"></i> ico-e-chat<br />
 						<i class="ico-question-forms ico-large"></i> ico-question-forms<br />
-						<i class="ico-shops ico-large"></i> ico-shops<br /> 
+						<i class="ico-shops ico-large"></i> ico-shops<br />
 						<i class="ico-telephone-numbers ico-large"></i> ico-telephone-numbers<br />
-						<i class="ico-menjava-kartice-sim ico-large"></i> ico-menjava-kartice-sim<br /> 
-						<i class="ico-dodatna-sim-kartica ico-large"></i> ico-dodatna-sim-kartica<br /> 
-						<i class="ico-mikro-sim-kartica ico-large"></i> ico-mikro-sim-kartica<br /> 
-						<i class="ico-servis-telefona ico-large"></i> ico-servis-telefona<br /> 
-						<i class="ico-si-podpora ico-large"></i> ico-si-podpora<br /> 
-						<i class="ico-tezave-s-telefonom ico-large"></i> ico-tezave-s-telefonom<br /> 
-						<i class="ico-nakup-telefona ico-large"></i> ico-nakup-telefona<br /> 
-						<i class="ico-iphone ico-large"></i> ico-iphone<br /> 
-						<i class="ico-telefoni-in-naprave ico-large"></i> ico-telefoni-in-naprave<br /> 
-						<i class="ico-moj-simobilov-paket ico-large"></i> ico-moj-simobilov-paket<br /> 
-						<i class="ico-storitve-in-aplikacije ico-large"></i> ico-storitve-in-aplikacije<br /> 
-						<i class="ico-internet ico-large"></i> ico-internet<br /> 
-						<i class="ico-imam-paket-z-narocnino ico-large"></i> ico-imam-paket-z-narocnino<br /> 
-						<i class="ico-prestop-k-simobilu ico-large"></i> ico-prestop-k-simobilu<br /> 
-						<i class="ico-racuni ico-large"></i> ico-racuni<br /> 
-						<i class="ico-imam-paket-brez-narocnine-simpl ico-large"></i> ico-imam-paket-brez-narocnine-simpl<br /> 
-						<i class="ico-nadzor-nad-porabo ico-large"></i> ico-nadzor-nad-porabo<br /> 
-						<i class="ico-varnost-kraja-izguba ico-large"></i> ico-varnost-kraja-izguba<br /> 
-						<i class="ico-tujina ico-large"></i> ico-tujina<br /> 
-						<i class="ico-vse-cene-na-enem-mestu ico-large"></i> ico-vse-cene-na-enem-mestu<br /> 
-						<i class="ico-vsi-obrazci-na-enem-mestu ico-large"></i> ico-vsi-obrazci-na-enem-mestu<br /> 
+						<i class="ico-menjava-kartice-sim ico-large"></i> ico-menjava-kartice-sim<br />
+						<i class="ico-dodatna-sim-kartica ico-large"></i> ico-dodatna-sim-kartica<br />
+						<i class="ico-mikro-sim-kartica ico-large"></i> ico-mikro-sim-kartica<br />
+						<i class="ico-servis-telefona ico-large"></i> ico-servis-telefona<br />
+						<i class="ico-si-podpora ico-large"></i> ico-si-podpora<br />
+						<i class="ico-tezave-s-telefonom ico-large"></i> ico-tezave-s-telefonom<br />
+						<i class="ico-nakup-telefona ico-large"></i> ico-nakup-telefona<br />
+						<i class="ico-iphone ico-large"></i> ico-iphone<br />
+						<i class="ico-telefoni-in-naprave ico-large"></i> ico-telefoni-in-naprave<br />
+						<i class="ico-moj-simobilov-paket ico-large"></i> ico-moj-simobilov-paket<br />
+						<i class="ico-storitve-in-aplikacije ico-large"></i> ico-storitve-in-aplikacije<br />
+						<i class="ico-internet ico-large"></i> ico-internet<br />
+						<i class="ico-imam-paket-z-narocnino ico-large"></i> ico-imam-paket-z-narocnino<br />
+						<i class="ico-prestop-k-simobilu ico-large"></i> ico-prestop-k-simobilu<br />
+						<i class="ico-racuni ico-large"></i> ico-racuni<br />
+						<i class="ico-imam-paket-brez-narocnine-simpl ico-large"></i> ico-imam-paket-brez-narocnine-simpl<br />
+						<i class="ico-nadzor-nad-porabo ico-large"></i> ico-nadzor-nad-porabo<br />
+						<i class="ico-varnost-kraja-izguba ico-large"></i> ico-varnost-kraja-izguba<br />
+						<i class="ico-tujina ico-large"></i> ico-tujina<br />
+						<i class="ico-vse-cene-na-enem-mestu ico-large"></i> ico-vse-cene-na-enem-mestu<br />
+						<i class="ico-vsi-obrazci-na-enem-mestu ico-large"></i> ico-vsi-obrazci-na-enem-mestu<br />
 						<i class="ico-navodila-za-rocno-nastavljanje ico-large"></i> ico-navodila-za-rocno-nastavljanje<br />
-						<i class="ico-ota-nastavitve ico-large"></i> ico-ota-nastavitve<br /> 
-						<i class="ico-video-predstavitev ico-large"></i> ico-video-predstavitev<br /> 
-						<i class="ico-navodila-za-uporabo ico-large"></i> ico-navodila-za-uporabo<br /> 
-						<i class="ico-servis ico-large"></i> ico-servis<br /> 
+						<i class="ico-ota-nastavitve ico-large"></i> ico-ota-nastavitve<br />
+						<i class="ico-video-predstavitev ico-large"></i> ico-video-predstavitev<br />
+						<i class="ico-navodila-za-uporabo ico-large"></i> ico-navodila-za-uporabo<br />
+						<i class="ico-servis ico-large"></i> ico-servis<br />
 					</div>
 					<div class="span4">
-						<i class="ico-povezave ico-large"></i> ico-povezave<br /> 
-						<i class="ico-direktna-pomoc ico-large"></i> ico-direktna-pomoc<br /> 
-						<i class="ico-storitve ico-large"></i> ico-storitve<br /> 
-						<i class="ico-techspec-measures-blue ico-large"></i> ico-techspec-measures-blue<br /> 
-						<i class="ico-techspec-measures-brown ico-large"></i> ico-techspec-measures-brown<br /> 
-						<i class="ico-favourite-blue ico-large"></i> ico-favourite-blue<br /> 
-						<i class="ico-favourite-brown ico-large"></i> ico-favourite-brown<br /> 
+						<i class="ico-povezave ico-large"></i> ico-povezave<br />
+						<i class="ico-direktna-pomoc ico-large"></i> ico-direktna-pomoc<br />
+						<i class="ico-storitve ico-large"></i> ico-storitve<br />
+						<i class="ico-techspec-measures-blue ico-large"></i> ico-techspec-measures-blue<br />
+						<i class="ico-techspec-measures-brown ico-large"></i> ico-techspec-measures-brown<br />
+						<i class="ico-favourite-blue ico-large"></i> ico-favourite-blue<br />
+						<i class="ico-favourite-brown ico-large"></i> ico-favourite-brown<br />
 						<i class="ico-favourite-gray ico-large"></i> ico-favourite-gray<br />
-						<i class="ico-plus ico-large"></i> ico-plus<br /> 
-						<i class="ico-equals ico-large"></i> ico-equals<br /> 
-						<i class="ico-calls-internal ico-large"></i> ico-calls-internal<br /> 
-						<i class="ico-wifi ico-large"></i> ico-wifi<br /> 
-						<i class="ico-cloud-plus-orange ico-large"></i> ico-cloud-plus-orange<br /> 
-						<i class="ico-cloud-percent-orange ico-large"></i> ico-cloud-percent-orange<br /> 
-						<i class="ico-cloud-plus-blue ico-large"></i> ico-cloud-plus-blue<br /> 
-						<i class="ico-cloud-percent-blue ico-large"></i> ico-cloud-percent-blue<br /> 
-						<i class="ico-savings ico-large"></i> ico-savings<br /> 
-						<i class="ico-print ico-large"></i> ico-print<br /> 
-						<i class="ico-save ico-large"></i> ico-save<br /> 
-						<i class="ico-pdf ico-large"></i> ico-pdf<br /> 
+						<i class="ico-plus ico-large"></i> ico-plus<br />
+						<i class="ico-equals ico-large"></i> ico-equals<br />
+						<i class="ico-calls-internal ico-large"></i> ico-calls-internal<br />
+						<i class="ico-wifi ico-large"></i> ico-wifi<br />
+						<i class="ico-cloud-plus-orange ico-large"></i> ico-cloud-plus-orange<br />
+						<i class="ico-cloud-percent-orange ico-large"></i> ico-cloud-percent-orange<br />
+						<i class="ico-cloud-plus-blue ico-large"></i> ico-cloud-plus-blue<br />
+						<i class="ico-cloud-percent-blue ico-large"></i> ico-cloud-percent-blue<br />
+						<i class="ico-savings ico-large"></i> ico-savings<br />
+						<i class="ico-print ico-large"></i> ico-print<br />
+						<i class="ico-save ico-large"></i> ico-save<br />
+						<i class="ico-pdf ico-large"></i> ico-pdf<br />
 						<i class="ico-ms-excel ico-large"></i> ico-ms-excel<br />
-						<i class="ico-call-sms-data ico-large"></i> ico-call-sms-data<br /> 
-						<i class="ico-simpl-tel-sim ico-large"></i> ico-simpl-tel-sim<br /> 
-						<i class="ico-simpl-sim ico-large"></i> ico-simpl-sim<br /> 
-						<i class="ico-corpo-call ico-large"></i> ico-corpo-call<br /> 
-						<i class="ico-features-brown ico-large"></i> ico-features-brown<br /> 
-						<i class="ico-screen-brown ico-large"></i> ico-screen-brown<br /> 
-						<i class="ico-contents-brown ico-large"></i> ico-contents-brown<br /> 
-						<i class="ico-features-blue ico-large"></i> ico-features-blue<br /> 
-						<i class="ico-screen-blue ico-large"></i> ico-screen-blue<br /> 
-						<i class="ico-contents-blue ico-large"></i> ico-contents-blue<br /> 
-						<i class="ico-heart-orange ico-large"></i> ico-heart-orange<br /> 
-						<i class="ico-heart-blue ico-large"></i> ico-heart-blue<br /> 
-						<i class="ico-ortonet ico-large"></i> ico-ortonet<br /> 
-						<i class="ico-heart-semiorange ico-large"></i> ico-heart-semiorange<br /> 
-						<i class="ico-heart-semiblue ico-large"></i> ico-heart-semiblue<br /> 
-						<i class="ico-app-android ico-large"></i> ico-app-android<br /> 
-						<i class="ico-app-ios ico-large"></i> ico-app-ios<br /> 
-						<i class="ico-app-win ico-large"></i> ico-app-win<br /> 
-						<i class="ico-app-bb ico-large"></i> ico-app-bb<br /> 
-						<i class="ico-eracun-trees ico-large"></i> ico-eracun-trees<br /> 
-						<i class="ico-eracun-clock ico-large"></i> ico-eracun-clock<br /> 
-						<i class="ico-eracun-drawer ico-large"></i> ico-eracun-drawer<br /> 
-						<i class="ico-eracun-package ico-large"></i> ico-eracun-package<br /> 
-						<i class="ico-eracun-devices ico-large"></i> ico-eracun-devices<br /> 
-						<i class="ico-eracun-search ico-large"></i> ico-eracun-search<br /> 
-						<i class="ico-eracun-video ico-large"></i> ico-eracun-video<br /> 
-						<i class="ico-ms-tujina ico-large"></i> ico-ms-tujina<br /> 
-						<i class="ico-ms-drugo ico-large"></i> ico-ms-drugo<br /> 
-						<i class="ico-ms-izhodni ico-large"></i> ico-ms-izhodni<br /> 
-						<i class="ico-ms-excel ico-large"></i> ico-ms-excel<br /> 
-						<i class="ico-techspec-apps-brown ico-large"></i> ico-techspec-apps-brown<br /> 
-						<i class="ico-techspec-apps-blue ico-large"></i> ico-techspec-apps-blue<br /> 
-						<i class="ico-number-listed ico-large"></i> ico-number-listed<br /> 
-						<i class="ico-simplnet ico-large"></i> ico-simplnet<br /> 
-						<i class="ico-usb-modem ico-large"></i> ico-usb-modem<br /> 
-						<i class="ico-print ico-large"></i> ico-print<br /> 
-						<i class="ico-save ico-large"></i> ico-save<br /> 
-						<i class="ico-pdf ico-large"></i> ico-pdf<br /> 
-						<i class="ico-klici-eu ico-large"></i> ico-klici-eu<br /> 
+						<i class="ico-call-sms-data ico-large"></i> ico-call-sms-data<br />
+						<i class="ico-simpl-tel-sim ico-large"></i> ico-simpl-tel-sim<br />
+						<i class="ico-simpl-sim ico-large"></i> ico-simpl-sim<br />
+						<i class="ico-corpo-call ico-large"></i> ico-corpo-call<br />
+						<i class="ico-features-brown ico-large"></i> ico-features-brown<br />
+						<i class="ico-screen-brown ico-large"></i> ico-screen-brown<br />
+						<i class="ico-contents-brown ico-large"></i> ico-contents-brown<br />
+						<i class="ico-features-blue ico-large"></i> ico-features-blue<br />
+						<i class="ico-screen-blue ico-large"></i> ico-screen-blue<br />
+						<i class="ico-contents-blue ico-large"></i> ico-contents-blue<br />
+						<i class="ico-heart-orange ico-large"></i> ico-heart-orange<br />
+						<i class="ico-heart-blue ico-large"></i> ico-heart-blue<br />
+						<i class="ico-ortonet ico-large"></i> ico-ortonet<br />
+						<i class="ico-heart-semiorange ico-large"></i> ico-heart-semiorange<br />
+						<i class="ico-heart-semiblue ico-large"></i> ico-heart-semiblue<br />
+						<i class="ico-app-android ico-large"></i> ico-app-android<br />
+						<i class="ico-app-ios ico-large"></i> ico-app-ios<br />
+						<i class="ico-app-win ico-large"></i> ico-app-win<br />
+						<i class="ico-app-bb ico-large"></i> ico-app-bb<br />
+						<i class="ico-eracun-trees ico-large"></i> ico-eracun-trees<br />
+						<i class="ico-eracun-clock ico-large"></i> ico-eracun-clock<br />
+						<i class="ico-eracun-drawer ico-large"></i> ico-eracun-drawer<br />
+						<i class="ico-eracun-package ico-large"></i> ico-eracun-package<br />
+						<i class="ico-eracun-devices ico-large"></i> ico-eracun-devices<br />
+						<i class="ico-eracun-search ico-large"></i> ico-eracun-search<br />
+						<i class="ico-eracun-video ico-large"></i> ico-eracun-video<br />
+						<i class="ico-ms-tujina ico-large"></i> ico-ms-tujina<br />
+						<i class="ico-ms-drugo ico-large"></i> ico-ms-drugo<br />
+						<i class="ico-ms-izhodni ico-large"></i> ico-ms-izhodni<br />
+						<i class="ico-ms-excel ico-large"></i> ico-ms-excel<br />
+						<i class="ico-techspec-apps-brown ico-large"></i> ico-techspec-apps-brown<br />
+						<i class="ico-techspec-apps-blue ico-large"></i> ico-techspec-apps-blue<br />
+						<i class="ico-number-listed ico-large"></i> ico-number-listed<br />
+						<i class="ico-simplnet ico-large"></i> ico-simplnet<br />
+						<i class="ico-usb-modem ico-large"></i> ico-usb-modem<br />
+						<i class="ico-print ico-large"></i> ico-print<br />
+						<i class="ico-save ico-large"></i> ico-save<br />
+						<i class="ico-pdf ico-large"></i> ico-pdf<br />
+						<i class="ico-klici-eu ico-large"></i> ico-klici-eu<br />
 						<i class="ico-4glte ico-large"></i> ico-4glte<br />
 					</div>
 				</div>
 			</div>
 		</div>
-		
+
 	</div>
-	
-	
+
+
 </section>
 
 <!-- LIGHTBOX
@@ -4541,15 +4542,15 @@ $(function() {
 			<p>
 			Lightbox elements are based on <a href="http://jquerytools.org/" target="_blank">jQueryTools</a> plugin <a href="http://jquerytools.org/demos/overlay/index.html" target="_blank">Overlay</a>.
 			<p>
-			To create a lighbox, you need a trigger element (an element which opens the lightbox). 
-			This can be any html element with a class <code>.lightbox-trigger</code> and a <code>rel</code> 
+			To create a lighbox, you need a trigger element (an element which opens the lightbox).
+			This can be any html element with a class <code>.lightbox-trigger</code> and a <code>rel</code>
 			attribute which contains the id of the lightbox window element.
 			</p>
 			<p>
-			The lightbox element can be any div element with a <code>class="lightbox"</code> and a specific <code>id</code>. 
+			The lightbox element can be any div element with a <code>class="lightbox"</code> and a specific <code>id</code>.
 			This element must contain a <code>div</code> element with a <code>class="lightbox-content"</code>.
 			</p>
-			
+
 		</div>
 		<div class="span5">
 			<p>
@@ -4582,7 +4583,7 @@ $('.lightbox-trigger[rel]').overlay({
 					<p>Lorem ipsum...</p>
 				</div>
 			</div>
-			
+
 <pre class="prettyprint linenums">
 &lt;a class="lightbox-trigger" rel="#lb1"&gt;Lightbox 1&lt;/a&gt;
 
@@ -4607,8 +4608,8 @@ $('.lightbox-trigger[rel]').overlay({
 					</div>
 				</div>
 			</div>
-			
-<pre class="prettyprint linenums">		
+
+<pre class="prettyprint linenums">
 &lt;a class="lightbox-trigger" rel="#lb2"&gt;Lightbox 2&lt;/a&gt;
 
 &lt;div class="lightbox" id="lb2"&gt;
@@ -4623,7 +4624,7 @@ $('.lightbox-trigger[rel]').overlay({
 </pre>
 		</div>
 	</div>
-	
+
 	<div class="row">
 		<div class="span6">
 			<h3>Lightbox with 2 box elements <span class="label">LB3</span></h3>
@@ -4663,11 +4664,11 @@ $('.lightbox-trigger[rel]').overlay({
 					</div>
 				</div>
 			</div>
-			
-<pre class="prettyprint linenums">	
-&lt;button class="btn btn-green lightbox-trigger" 
+
+<pre class="prettyprint linenums">
+&lt;button class="btn btn-green lightbox-trigger"
  rel="#lb3"&gt;LIGHTBOX 3&lt;/button&gt;
-	
+
 &lt;div class="lightbox" id="lb3"&gt;
  &lt;div class="lightbox-content"&gt;
   &lt;h2&gt;Lightbox heading&lt;/h2&gt;
@@ -4691,7 +4692,7 @@ $('.lightbox-trigger[rel]').overlay({
    &lt;/div&gt;
   &lt;/div&gt;
  &lt;/div&gt;
-&lt;/div&gt;	
+&lt;/div&gt;
 </pre>
 		</div>
 		<div class="span6">
@@ -4744,11 +4745,11 @@ $('.lightbox-trigger[rel]').overlay({
 					</div>
 				</div>
 			</div>
-			
-<pre class="prettyprint linenums">	
-&lt;button class="btn btn-green lightbox-trigger" 
+
+<pre class="prettyprint linenums">
+&lt;button class="btn btn-green lightbox-trigger"
  rel="#lb3"&gt;LIGHTBOX 3&lt;/button&gt;
-	
+
 &lt;div class="lightbox" id="lb3"&gt;
  &lt;div class="lightbox-content"&gt;
   &lt;h2&gt;Lightbox heading&lt;/h2&gt;
@@ -4772,7 +4773,7 @@ $('.lightbox-trigger[rel]').overlay({
    &lt;/div&gt;
   &lt;/div&gt;
  &lt;/div&gt;
-&lt;/div&gt;	
+&lt;/div&gt;
 </pre>
 		</div>
 	</div>
@@ -4800,9 +4801,9 @@ $('.lightbox-trigger[rel]').overlay({
 				</div>
 			</div>
 
-			
-<pre class="prettyprint linenums">	
-&lt;button class="btn btn-green lightbox-trigger" 
+
+<pre class="prettyprint linenums">
+&lt;button class="btn btn-green lightbox-trigger"
  rel="#lb5"&gt;LIGHTBOX 5&lt;/button&gt;
 
 &lt;div class="lightbox" id="lb5"&gt;
@@ -4810,19 +4811,19 @@ $('.lightbox-trigger[rel]').overlay({
   &lt;h2&gt;Lorem ipsum:&lt;/h2&gt;
   &lt;div class="control bordered"&gt;
    &lt;label&gt;
-     &lt;input type="radio" name="dodatek" value="1"&gt; 
+     &lt;input type="radio" name="dodatek" value="1"&gt;
      Lorem ipsum
    &lt;/label&gt;
   &lt;/div&gt;
   &lt;div class="control bordered"&gt;
    &lt;label&gt;
-     &lt;input type="radio" name="dodatek" value="2"&gt; 
+     &lt;input type="radio" name="dodatek" value="2"&gt;
      Lorem ipsum
    &lt;/label&gt;
   &lt;/div&gt;
   &lt;div class="control bordered"&gt;
    &lt;label&gt;
-     &lt;input type="radio" name="dodatek" value="3"&gt; 
+     &lt;input type="radio" name="dodatek" value="3"&gt;
      Lorem ipsum
    &lt;/label&gt;
   &lt;/div&gt;
@@ -4830,7 +4831,7 @@ $('.lightbox-trigger[rel]').overlay({
     &lt;a class="btn btn-green large"&gt;CONTINUE&lt;/a&gt;
   &lt;/div&gt;
  &lt;/div&gt;
-&lt;/div&gt;	
+&lt;/div&gt;
 </pre>
 		</div>
 		<div class="span6">
@@ -4889,8 +4890,8 @@ $('.lightbox-trigger[rel]').overlay({
 				</div>
 			</div>
 			</div>
-			
-<pre class="prettyprint linenums">	
+
+<pre class="prettyprint linenums">
 &lt;div class="help-info"&gt;
  &lt;div id="lb6" class="lightbox"&gt;
   &lt;div class="lightbox-content"&gt;
@@ -4928,11 +4929,11 @@ $('.lightbox-trigger[rel]').overlay({
    &lt;/div&gt;
   &lt;/div&gt;
  &lt;/div&gt;
-&lt;/div&gt;	
+&lt;/div&gt;
 </pre>
 		</div>
 	</div>
-	
+
 </section>
 <!-- GALLERY
 ================================================== -->
@@ -4963,7 +4964,7 @@ $('.lightbox-trigger[rel]').overlay({
     .scrollable()
     .navigator('.navi');
 &lt;/script&gt;
-</pre>	
+</pre>
 		</div>
 	</div>
 	<div class="row">
@@ -5024,7 +5025,7 @@ $('.lightbox-trigger[rel]').overlay({
 </pre>
 						</div>
 					</div>
-					
+
 					</div>
 					<div class="tab-pane" id="gal-phone">
 						<h3>Phone mini gallery</h3>
@@ -5070,9 +5071,9 @@ $('.lightbox-trigger[rel]').overlay({
  &lt;/div&gt;
 &lt;/div&gt;
 </pre>
-							</div>						
+							</div>
 						</div>
-					
+
 					</div>
 					<div class="tab-pane" id="gal-big">
 						<h3>Large image gallery</h3>
@@ -5098,7 +5099,7 @@ $('.lightbox-trigger[rel]').overlay({
 								</div>
 							</div>
 						</div>
-							
+
 						<p>Markup:</p>
 <pre class="prettyprint linenums">
 &lt;div class="product-detail"&gt;
@@ -5149,7 +5150,7 @@ $('.lightbox-trigger[rel]').overlay({
 				<h2>HTML content</h2>
 				<p>Lorem ipsum... this element must be styled manualy for responsive behaviour.</p>
 				</div>
-				
+
 			</div>
 			<div><img src="http://placehold.it/960x420&text=image2" alt=""></div>
 			<div><img src="http://placehold.it/960x420&text=image3" alt=""></div>
@@ -5204,7 +5205,7 @@ $('.mediascreen .navigation').tabs('.mediascreen .banners &gt; div', {
  clickable: false,
  autopause: true
 });
-</pre>	
+</pre>
 		</div>
 	</div>
 </section>
@@ -5215,15 +5216,15 @@ $('.mediascreen .navigation').tabs('.mediascreen .banners &gt; div', {
   <div class="page-header">
     <h3>Banners</h3>
   </div>
-	
+
 	<h3>Revolving banners  <span class="label">BN1</span></h3>
 	<br>
 	<div class="row">
 		<div class="span4">
 			<p>
-			Revolving banner is defined by a <code>div</code> element with a class <code>.revolving-banner</code>. The div element must contain a link element. 
-			The width of the banner is defined by the wrapping element, the height is always 130px. The containing link (<code>a</code>) element has a height of 260px. 
-			</p> 
+			Revolving banner is defined by a <code>div</code> element with a class <code>.revolving-banner</code>. The div element must contain a link element.
+			The width of the banner is defined by the wrapping element, the height is always 130px. The containing link (<code>a</code>) element has a height of 260px.
+			</p>
 		</div>
 		<div class="span8">
 		Markup:
@@ -5274,7 +5275,7 @@ $('.mediascreen .navigation').tabs('.mediascreen .banners &gt; div', {
       <p>
       Banner is defined by a <code>div</code> element with a class <code>.banner</code>, nested in <code>div.banners</code> element.
       The width of the banner is defined by the wrapping element, the height is always 135px. You can place an optional <code>img.ribbon</code> image.
-      </p> 
+      </p>
 
       <div class="banners">
         <a class="banner" href="#">
@@ -5310,7 +5311,7 @@ $('.mediascreen .navigation').tabs('.mediascreen .banners &gt; div', {
 </section>
 
 
-	
+
      <!-- Footer
       ================================================== -->
       <footer class="footer">
@@ -5339,7 +5340,7 @@ $('.mediascreen .navigation').tabs('.mediascreen .banners &gt; div', {
     <script src="assets/js/bootstrap-collapse.js"></script>
     <script src="assets/js/bootstrap-carousel.js"></script>
     <script src="assets/js/bootstrap-typeahead.js"></script>
-	    
+
 
 	<script src="simobil_assets/script/lib/jquery.tools.min.js"></script>
 	<script src="simobil_assets/script/lib/jquery.hdimensions.js"></script>

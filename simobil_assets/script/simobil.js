@@ -104,6 +104,7 @@ var Simobil = {
 				$(_opened_lightbox).overlay().close();
 			}
 		}).addClass('bound');
+
 	},
 	updateScrollableNav: function(el) {
 		var api = el.data('scrollable');
@@ -136,62 +137,33 @@ var Simobil = {
 			},200);
 		});
 	}
-		
+
 };
 
 (function($) {
-	
+
 	$(function() {
-		
+                //do not merge this
+		$(".package-accordian-top.accordion-group").click(function(e) {
+			e.preventDefault();
+			$(this).hide();
+			$(".package-accordian-bottom.accordion-group").css("display","block");
+			$(".package-accordian-bottom.accordion-group").show();
+			//$("#hiddenpackages").css("padding-top","28px");
+		});
+
+		$(".package-accordian-bottom.accordion-group").click(function(e) {
+			e.preventDefault();
+			$(this).hide();
+			$(".package-accordian-top.accordion-group").show();
+		});
+
 		var placeHolderSupport = ("placeholder" in document.createElement("input"));
 		if (!placeHolderSupport) {
-			$.getScript('simobil_assets/script/lib/placeholder.min.js', function() {
+			$.getScript('script/lib/placeholder.min.js', function() {
 				 Placeholder.init();
 			});
 		}
-		
-		/**
-		 * Custom search input for device search
-		 * @see: http://loopj.com/jquery-tokeninput/
-		 */
-		$.getScript('simobil_assets/script/lib/jquery.tokeninput.js', function() {
-			$('#device-search-input').tokenInput("demo-naprave.json", {
-				
-				method:			"GET",
-				queryParam:		"q",
-				
-				hintText: 		"Vpišite ime naprave",
-				noResultsText:	"Ni rezultatov",
-				searchingText:	"Iščem...",
-				deleteText:		"&times;",
-				tokenLimit:		"1",  // allow only one result
-				tokenValue:		"id",
-				theme:			"simobil",
-				
-				onAdd: function(token) {
-					console.log(token);
-				},
-				
-				onDelete: function(token) {
-					console.log(token);
-				}
-			});
-		});
-		
-		
-		
-		
-		
-		/** Login toggle **/
-		$('.top-bar li.user a').click(function(event) {
-			event.preventDefault();
-			$('.login-bar').slideToggle(300, function() {
-				$('.cart')[0].className = $('.cart')[0].className; // IE7 force redraw
-			});
-		});
-
-
-		Simobil.init();
 
 		/** Top Menu */
 		$('nav ul.first').on('click', 'li.has-sub-menu', function(e) {
@@ -212,8 +184,8 @@ var Simobil = {
 		});
 
 		/** Close main menu if clicked elsewhere than on menu */
-		$(document).on('click', function(e){
-			var that = $('body');
+		$('body').on('click', function(e){
+			var that = $(this);
 
 			if( $(e.target).parents('nav ul.first').length == 0 && that.hasClass('main-menu-opened') ) {
 				that.removeClass('main-menu-opened');
@@ -221,12 +193,56 @@ var Simobil = {
 			}
 		});
 
+		/** Close last bought container */
+		$('.last-bought').on('click', '.close-last-bought', function(){
+			$(this).parent('.last-bought').removeClass('visible');
+		});
+
+		/**
+		 * Custom search input for device search
+		 * @see: http://loopj.com/jquery-tokeninput/
+		 */
+		$.getScript('script/lib/jquery.tokeninput.js', function() {
+			$('#device-search-input').tokenInput("demo-naprave.json", {
+
+				method:			"GET",
+				queryParam:		"q",
+
+				hintText: 		"Vpišite ime naprave",
+				noResultsText:	"Ni rezultatov",
+				searchingText:	"Iščem...",
+				deleteText:		"&times;",
+				tokenLimit:		"1",  // allow only one result
+				tokenValue:		"id",
+				theme:			"simobil",
+
+				onAdd: function(token) {
+					console.log(token);
+				},
+
+				onDelete: function(token) {
+					console.log(token);
+				}
+			});
+		});
+
+		/** Login toggle **/
+		$('.top-bar li.user a').click(function(event) {
+			event.preventDefault();
+			$('.login-bar').slideToggle(300, function() {
+				$('.cart')[0].className = $('.cart')[0].className; // IE7 force redraw
+			});
+		});
+
+
+		Simobil.init();
+
 		$('a[data-toggle="tab"]').on('shown', function (e) {
 			$('.scrollable').each(function() {
 				Simobil.updateScrollableNav($(this));
 			});
 		});
-		
+
 		$(window).on('resize', function() {
 			$('.scrollable').each(function() {
 				Simobil.updateScrollableNav($(this));
@@ -239,19 +255,19 @@ var Simobil = {
 			$('.product .data').hide();
 			$('.product .big-gallery').show();
         }));
-		
+
         $( document).on("click", '.big-gallery .close', (function() {
 			$('.product .big-gallery').hide();
 			$('.product .data').show();
         }));
-		
+
 		/** Submenu mobile toggle **/
 		$('nav ul.first > li > a').click(function(e) {
 			var _submenu = $(this).next('.submenu');
 			if (_submenu.length == 0) {
 				return true;
 			}
-			
+
 			if ($('.nav-collapse').hasClass('in')) {
 				var _visibleItem = $('.collapse .submenu:visible');
 				if (_submenu) {
@@ -270,12 +286,12 @@ var Simobil = {
 				}
 			}
 		});
-		
+
 		/** Footer navigation phone **/
 		$('#footer-nav-select').change(function() {
 			document.location.href = $(':selected', $(this)).val();
 		});
-		
+
 		/** Firstpage mediascreen **/
 		$('.mediascreen .navigation').tabs('.mediascreen .banners > div', {
 			current:	'active',
@@ -287,9 +303,56 @@ var Simobil = {
 			clickable:	false,
 			autopause: true
 		});
-		
-		
-		
+
+		var activeToolTip = null;
+		var toolTipX = null;
+		var toolTipY = null;
+
+		/** White tooltips */
+		$('body').on('click', '.open-tooltip', function(e){
+			var that = $(this);
+
+			activeToolTip = that;
+			toolTipX = that.offset().left;
+			toolTipY = that.offset().top;
+
+			/** Close all visible tooltips */
+			$('.white-tooltip').removeClass('visible');
+
+			tooltipLocation( that, toolTipX, toolTipY );
+
+			that.next('.white-tooltip').addClass('visible');
+
+		});
+
+		function tooltipLocation( element, xPosition, yPosition ) {
+			/** Set the position, show it */
+			element.next('.white-tooltip').css({
+				left 	: xPosition + 35,
+				top 	: ( yPosition - $(document).scrollTop() ) - 15
+			});
+		}
+
+		$(window).on('scroll', function(){
+
+			if( activeToolTip != null )
+				tooltipLocation( activeToolTip, toolTipX, toolTipY );
+		});
+
+		/** Close white tooltip when clicked elsewhere */
+		$(document).on('click', function(e){
+			if( !$(e.target).closest('.white-tooltip').length && !$(e.target).siblings('.white-tooltip').length ) {
+				$('.white-tooltip').removeClass('visible');
+				activeToolTip = null;
+			}
+		});
+		$(document).on('keyup', function(e){
+			if( e.keyCode === 27 ) {
+				$('.white-tooltip').removeClass('visible');
+				activeToolTip = null;
+			}
+		});
+
 		/** Products list item hover **/
 		var activatable = ".product-listing .item:not(.no-hover), .extras .listing .item:not(.no-hover)";
 
@@ -327,61 +390,65 @@ var Simobil = {
 		$( document ).on( 'click', '.lightbox a.button-close', function(e) {
 			$(this).parents('.lightbox').find('a.close').click();
 		});
-		
+
 		/** Product list selection floater **/
-		var $win = $(window)
-	      , $nav = $('#selection .selection')
-	      , $navParent = $('#selection')
-	      , navTop = $('#selection').length && $('#selection').offset().top
-	      , isFixed = 0;
-	    
-		$win.on('scroll', processScroll);
-		
-		function processScroll() {
-			var scrollTop = $win.scrollTop();
-			
-			var toolsHeight = $('.selection .tools').height();
-			var toolsTop = navTop - toolsHeight + $('.selection').height();
-			
-			if ($('.selection .tools .scroll-top').css('display') == 'none') {
-				if (scrollTop >= navTop && !isFixed) {
-					isFixed = 1;
-					
-					$navParent.css('height', $navParent.height());
-					$nav.addClass('fixed');
-					
-				} else if (scrollTop <= navTop && isFixed) {
-					isFixed = 0;
-					$nav.removeClass('fixed');
-					$navParent.css('height', 'auto');
-				}
-			} else {
-				if (scrollTop > toolsTop && !isFixed) {
-					isFixed = 1;
-					
-					$navParent.css('height', $navParent.height());
-					$('.selection .tools').addClass('fixed');
-					
-				} else if (scrollTop <= (toolsTop+toolsHeight) && isFixed) {
-					isFixed = 0;
-					$('.selection .tools').removeClass('fixed');
-					$navParent.css('height', 'auto');
-				}
-				
-			}
-		}
-		
+        window.initScroll = function() {
+            var $win = $(window)
+                , $nav = $('#selection .selection')
+                , $navParent = $('#selection')
+                , navTop = $('#selection').length && $('#selection').offset().top
+                , isFixed = 0;
+
+            if ($navParent.length > 0 && !$navParent.hasClass('bound')) {
+                $navParent.addClass('bound');
+                $win.on('scroll', function() {
+                    var scrollTop = $win.scrollTop();
+
+                    var toolsHeight = $('.selection .tools').height();
+                    var toolsTop = navTop - toolsHeight + $('.selection').height();
+
+                    if ($('.selection .tools .scroll-top').css('display') == 'none') {
+                        if (scrollTop >= navTop && !isFixed) {
+                            isFixed = 1;
+
+                            $navParent.css('height', $navParent.height());
+                            $nav.addClass('fixed');
+
+                        } else if (scrollTop <= navTop && isFixed) {
+                            isFixed = 0;
+                            $nav.removeClass('fixed');
+                            $navParent.css('height', 'auto');
+                        }
+                    } else {
+                        if (scrollTop > toolsTop && !isFixed) {
+                            isFixed = 1;
+
+                            $navParent.css('height', $navParent.height());
+                            $('.selection .tools').addClass('fixed');
+
+                        } else if (scrollTop <= (toolsTop+toolsHeight) && isFixed) {
+                            isFixed = 0;
+                            $('.selection .tools').removeClass('fixed');
+                            $navParent.css('height', 'auto');
+                        }
+
+                    }
+                });
+            }
+        };
+        initScroll();
+
 		/** Product list - close selection **/
 		$('.close-selection').click(function(e) {
 			e.preventDefault();
 			closeSelection();
 		});
-		
+
 		$('.open-selection').click(function(e) {
 			e.preventDefault();
 			openSelection();
 		});
-		
+
 		$('.close-info').click(function(e) {
 			e.preventDefault();
 			if ($(this).hasClass('closed')) {
@@ -391,11 +458,11 @@ var Simobil = {
 				$('#selection .info').hide();
 				$(this).addClass('closed');
 			}
-			
+
 		});
-		
+
 		function openSelection() {
-			var _data = $('.selection .container.data'); 
+			var _data = $('.selection .container.data');
 			_data.removeClass('closed');
 			$('.selection .prices, .selection .tools').removeClass('closed');
 			$('.open-selection').hide();
@@ -403,8 +470,8 @@ var Simobil = {
 			resizeSelection();
 		}
 
-		function closeSelection() {	
-			var _data = $('.selection .container.data'); 
+		function closeSelection() {
+			var _data = $('.selection .container.data');
 			if (_data.is(':visible')) {
 				_data.addClass('closed');
 				$('.selection .prices, .selection .number, .selection .tools').addClass('closed');
@@ -414,12 +481,12 @@ var Simobil = {
 			$('.selection .scroll').height('auto');
 		}
 
-		
+
 		/** bottom nav equal height **/
 		Simobil.equalize('.bottom-nav', 'ul');
 		Simobil.equalize('.equalize', '.item');
 		Simobil.equalize('.equalize', '.pp-paket');
-		
+
 		/** product detail combinations selector max height **/
 		if ($('.product-detail .combinations')) {
 			_max_height = 0;
@@ -428,9 +495,9 @@ var Simobil = {
 			});
 			$('.product-detail .combinations .scrollable').height(_max_height);
 		}
-		
-		
-		
+
+
+
 		/** podrobne informacije - product **/
 		$('.product-detail .features .more').click(function (e) {
 			e.preventDefault();
@@ -439,22 +506,22 @@ var Simobil = {
 			$('html, body').animate({
 				scrollTop: tab_lastnosti.offset().top
 			});
-			
+
 		});
-		
+
 		/** tabs **/
 		$('a[data-toggle="tab"]').on('shown', function (e) {
 			if (screen.width > 480) {
 				Simobil.equalize($(this).attr('href') + ' .equal-height', '> div .box');
 			}
-		
+
 		}).first().click();
-		
+
 		$('.tabbable-nav a').click(function(e) {
 			e.preventDefault();
 			var _links = $('a[data-toggle="tab"]');
 			var _next = $('ul.nav-tabs li.active').index();
-			
+
 			if ($(this).attr('class') == 'next') {
 				_next = Math.min(_next + 1, _links.length-1);
 			} else {
@@ -462,38 +529,159 @@ var Simobil = {
 			}
 			$(_links.get(_next)).click();
 		});
-		
+
 		$.ajaxSetup ({
 		    cache: false
 		});
-		
+
+		/** Vertical banner */
+		$('.vertical-banner').on('click', '.title', function(){
+			var that = $(this),
+				banner = that.parents('.vertical-banner'),
+				numberOfElements = banner.find('li').length,
+				li = that.parent('li'),
+				thisIndex = li.index() + 1;
+
+			banner.find('.active').removeClass('active');
+
+			/** Over the half */
+			if( numberOfElements / thisIndex < 2 ) {
+				li.addClass('below');
+			} else {
+				banner.find('.below').removeClass('below');
+			}
+
+			li.addClass('active');
+		});
+
+		/** Rezervacija za webinarje, gumb za prenesi PDF */
+		$('body').on('click', '.btn-prijava-na-event, .btn-prenesi-pdf', function(e){
+			e.preventDefault();
+
+			var prijavnica = $('.prijavnica') || $('.pdf-download-wrapper'),
+				prijavnicaHeight = prijavnica[0].scrollHeight,
+				isPdfButton = false;
+
+			/**
+			 * Če smo kliknili na prenos PDF-ja gumb, vzami url link
+			 * @param  {if} $(this).hasClass('btn-prenesi-pdf')
+			 * @return {none}
+			 */
+			if( $(this).hasClass('btn-prenesi-pdf') ) {
+				isPdfButton = true;
+				var pdfLink = $(this).attr('data-pdf-link'),
+					pdfName = $(this).attr('data-pdf-name');
+			}
+
+			if( !prijavnica.is(':animated') ) {
+				if( prijavnica.hasClass('opened') && !isPdfButton ) {
+					/** Zapri prijavnico */
+					prijavnica.css('max-height', 0).removeClass('opened');
+
+					if( isPdfButton ) {
+						prijavnica.find('#pdf-url').val('');
+					}
+				} else {
+					/** Odpri prijavnico */
+					prijavnica.css('max-height', prijavnicaHeight).addClass('opened');
+
+					$('html, body').animate({
+						scrollTop: prijavnica.offset().top - 5
+					}, 700);
+
+					if( isPdfButton ) {
+						prijavnica.find('#pdf-url').val( pdfLink );
+						prijavnica.find('.pdf-name').html( pdfName );
+					}
+				}
+			}
+		});
+
+		/** Zapri rezervacijo za webinarje */
+		$('.prijavnica').on('click', '.zapri-prijavnico', function(){
+			var prijavnica = $('.prijavnica');
+
+			if( !prijavnica.is(':animated') ) {
+				prijavnica.css('max-height', 0).removeClass('opened');
+			}
+		});
+
+		/** Landing rezervacija */
+		var marketPlaceOptions = {
+			valueNames : ['title', 'address']
+		};
+
+		/** List.js */
+		//var marketPlaceList = new List('search-market', marketPlaceOptions);
+
+		/** Custom counter for marketplaces */
+		$('#search-market').on('load change keyup', '.search', function(e) {
+			var that = $(this),
+				count = that.siblings('.search-results-wrapper').children().length,
+				countSpan = that.siblings('.search-results-name').children('.count');
+
+			countSpan.html( count );
+		});
+
 		/** Configurator paket selector **/
-		$.getScript('simobil_assets/script/paket.selector.js', function() {
+		$.getScript('script/paket.selector.js', function() {
 			$('.configurator .paket-selector').paketSelector(function(obj) {
 				//console.log(obj);
 			});
-			
 		});
-		
+
+		var extraoffset = 5;
+
 		/** Configurator options checkbox->radio **/
-		$('.configurator .choice input[type=checkbox], .shops input[type=checkbox]').live('change', function(){
+		$('.configurator .choice input[type=checkbox], .shops input[type=checkbox]').on('change', function(){
 			var _el = $(this);
+
+			if( $('.collapse.in').length ) {
+				if( _el.closest('.choice').offset().top > $('.collapse.in').offset().top ) {
+					extraoffset = $('.collapse.in').height();
+				} else {
+					extraoffset = 5;
+				}
+			}
+
 			if ( _el.closest('.choices').hasClass('multiple')) return;
 			if (_el.attr('checked')) {
 				$('input[type=checkbox]', _el.closest('.choices')).attr('checked', false);
 				$(this).attr('checked', true);
 			}
 		});
-		
+
+		$('.configurator').on('click', '.show-all-options', function(e) {
+			e.preventDefault();
+
+			if ($(window).width()<768) {
+				$('html, body').animate({
+					scrollTop: $('.extra-options-title').offset().top - 70
+				}, 600);
+
+			} else {
+				$('html, body').animate({
+					scrollTop: $('.extra-options-title').offset().top - $('.selection').height() - 20
+				}, 600);
+			}
+		});
+
 		/** Configurator options more info **/
-		$('.configurator .choice .c4 a').live('click', function(){
-			var _info = $('.info', $(this).closest('.choice'));
+		$('.configurator .choice .c4 a').on('click', function(){
+			var _info = $('.info', $(this).closest('.choice'));;
 			if (_info.length) {
 				_info.slideToggle('fast');
 				return false;
 			}
 		});
-		
+
+		/** Configurator search results select **/
+		$('.search-results-wrapper').on('change', 'input[type="checkbox"]', function(e){
+			var _choices = $('input[type="checkbox"]', $(this).closest('.result').siblings('.result'));
+			_choices.prop('checked', false);
+			return false;
+		});
+
 		/** Configurator disable options **/
 		$('.configurator .paket-selector .tools input, .configurator .paket-selector-table .tools input,  #toggle-free').change(function(){
 			if (this.checked) {
@@ -502,7 +690,7 @@ var Simobil = {
 				$('.configurator').removeClass('paket-none');
 			}
 		});
-		
+
 		/** Configurator paket keep **/
 		$('.configurator .number input').change(function(){
 			if (this.checked) {
@@ -511,12 +699,12 @@ var Simobil = {
 				$('.configurator').removeClass('paket-keep');
 			}
 		});
-		
+
 		/** Configurator choices more options **/
 		$(document).on('change', '.with-options .data input[type=checkbox]', function() {
 			$('.with-options .data input[type=checkbox]').each(function() {
-				
-				var _options = $('.mini-info, .info.inline-form', $(this).closest('.choice'));	
+
+				var _options = $('.mini-info, .info.inline-form', $(this).closest('.choice'));
 				if ($(this).attr('checked')) {
 					_options.show();
 				} else {
@@ -524,7 +712,7 @@ var Simobil = {
 				}
 			});
 		});
-		
+
 		// Toggle input/checkbox based on value
 		/*
 		$(document).on('change', '.with-options input[type=checkbox][data-toggle]', function() {
@@ -542,23 +730,62 @@ var Simobil = {
 				$(_obj.data('toggle')).attr('checked', 'checked');
 			}*/
 		});
-		
+
 		/** Form date fields **/
-		$.tools.dateinput.localize("si", {
-			months: 	  'januar,februar,marec,april,maj,junij,julij,avgust,september,oktober,november,december',
-			shortMonths:  'jan,feb,mar,apr,maj,jun,jul,avg,sep,okt,nov,dec',
-			days:         'nedelja,ponedeljek,torek,sreda,četrtek,petek,sobota',
-			shortDays:    'Ned,Pon,Tor,Sre,Čet,Pet,Sob'
+                /** don't merge **/
+        if( $.fn.datepicker != undefined ) {
+		$.fn.datepicker.dates['sl'] = {
+			days: ["Nedelja", "Ponedeljek", "Torek", "Sreda", "Četrtek", "Petek", "Sobota", "Nedelja"],
+			daysShort: ["Ned", "Pon", "Tor", "Sre", "Čet", "Pet", "Sob", "Ned"],
+			daysMin: ["Ne", "Po", "To", "Sr", "Če", "Pe", "So", "Ne"],
+			months: ["Januar", "Februar", "Marec", "April", "Maj", "Junij", "Julij", "Avgust", "September", "Oktober", "November", "December"],
+			monthsShort: ["Jan", "Feb", "Mar", "Apr", "Maj", "Jun", "Jul", "Avg", "Sep", "Okt", "Nov", "Dec"],
+			today: "Danes"
+		}
+
+			$('form .field.d.birthdate1218 input').datepicker({
+				format: "d.m.yyyy",
+				startView: 2,
+				language: "sl",
+				forceParse: false,
+				autoclose: true
+			}).on('changeDate', function(e) {
+				var $inputs = $(e.target.parentElement).find('input.third');
+				$($inputs[0]).val(e.date.getDate());
+				$($inputs[1]).val(e.date.getMonth() + 1);
+				$($inputs[2]).val(e.date.getYear() + 1900);
+
+				$(e.target.parentElement).find('input.hidden-important').val($($inputs[0]).val() + '.' + $($inputs[1]).val() + '.' + $($inputs[2]).val());
+				$(e.target.parentElement).find('input.hidden-important').change();
+			});
+
+		$('form .field.d.birthdate18 input').datepicker({
+			format: "d.m.yyyy",
+			startView: 2,
+			language: "sl",
+			forceParse: false,
+			autoclose: true
+		}).on('changeDate', function(e){
+			var $inputs = $(e.target.parentElement).find('input.third');
+			$($inputs[0]).val(e.date.getDate());
+			$($inputs[1]).val(e.date.getMonth()+1);
+			$($inputs[2]).val(e.date.getYear()+1900);
+
+			$(e.target.parentElement).find('input.hidden-important').val($($inputs[0]).val() + '.' + $($inputs[1]).val() + '.' + $($inputs[2]).val());
+			$(e.target.parentElement).find('input.hidden-important').change();
 		});
-		  
-		$('form .field.d input').dateinput({
-			lang: 'si',
-			format: 'd.m.yyyy',
-			firstDay: 1,
-			selectors: true,
-			offset: [-10, 0]
-		});
-		
+        }
+
+		// Validate user text input
+		//$('form .field.d input').on('blur', function (e) {
+		//	var $this = $(this);
+		//	var date = "";
+		//	$this.parent().find('input').each(function(e) {
+		//		date += $(this).val() + ".";
+		//	});
+		//	console.log(date);
+		//});
+
 		/** Ammount number picker **/
 		$('.choice .ammount a').click(function(e) {
 			e.preventDefault();
@@ -571,73 +798,79 @@ var Simobil = {
 				}
 			}
 		});
-		
+
 		/** Custom file input **/
 		$(document).on('change', '.custom-file-input input[type=file]', function() {
 			var _selectedFiles = $(this)[0].files;
 			var _output = [];
-			
+
 			if (typeof _selectedFiles == 'undefined') {
 				_selectedFiles = Array({name: $(this).val().split(/\\/).pop()});
 			}
-			
+
 			for (var i=0; i<_selectedFiles.length; i++) {
 				_output.push(_selectedFiles[i].name);
 			}
-			
+
 			$(this).siblings('.selection').empty().append(_output.join(', '));
 			_output = [];
 		});
-		
+
 		$(document).on('click', '.custom-file-input .btn', function() {
 			$('.custom-file-input input[type=file]').val('').trigger('click');
 		});
-		
-		
+
 		/** Accordion **/
 		function scrollToAcGrou($obj) {
 			var _ac_group = $obj.parent('.accordion-group.opened');
 			if (_ac_group.offset() != null) {
 				setTimeout(function() {
 					if ($('body').scrollTop() > _ac_group.offset().top)
-						$('body').scrollTop(_ac_group.offset().top);
-				}, 300);
+						$('body').scrollTop(_ac_group.offset().top + 159);
+				}, 600);
 			}
 		}
 
-		$('.collapse').live('show' , function(e) {
+		function closeOthers() {
+			$('.collapse.in').collapse('hide');
+		}
+
+		$('.collapse').on('show' , function(e) {
 			e.stopPropagation();
 			if ($(this).hasClass('stop')) return;
 			$(this).parent('.accordion-group').addClass('opened');
+			// close other configurator packages
+			closeOthers();
 			// scroll to current opened item
 			scrollToAcGrou($(this));
-			
-		}).live('hidden', function(e) {
+
+		}).on('hidden', function(e) {
 			e.stopPropagation();
 			if ($(this).hasClass('stop')) return;
+			closeOthers();
 			 scrollToAcGrou($(this));
 			$(this).parent('.accordion-group').removeClass('opened');
 		});
-		
+
 		$('body').on('click', '.accordion-heading a', function(e) { e.preventDefault();});
-		
+
 		// Tooltips
 		$('[rel="tooltip"]').tooltip();
-		
+
 		/** Corpo **/
 		function equalize_team_list() {
 			if (screen.width > 767) {
 				setTimeout(function() {Simobil.equalize('.corpo .equal-height', '.item');}, 200);
 			}
 		}
-		
+
 		equalize_team_list();
 		$(window).on('resize', equalize_team_list);
 
-		
+
 		// E-racun
-		$.getScript('simobil_assets/script/lib/waypoints.min.js', function() {
-			
+		$.getScript('script/lib/waypoints.min.js', function() {
+
 			$('.eracun .slides .slide').waypoint(function(direction) {
 				if (direction == 'down') {
 					$(this).addClass('active');
@@ -649,23 +882,286 @@ var Simobil = {
 					$(this).removeClass('active');
 				}
 			}, { offset: '80%' });
-			
+
 		});
-		
-		$('.eracun .infogram li, .landing-infogram li').on('mouseover', function(e) {
-			
+
+		/** Landing Res & Smart Repricing */
+		$.getScript('script/lib/waypoints.min.js', function() {
+
+			$('.landing-res-smart .comparison-table').waypoint(function(direction){
+				if (direction == 'down') {
+					$(this).parents('.landing-section').addClass('active');
+					var i = 0;
+
+					/** Odometer for each price */
+					$(this).find('.zdruzi-prihrani-animate-price').each(function(){
+						var oldValue = i === 0 ? 9.99 : i === 1 ? 12.99 : i === 2 ? 15.99 : i === 3 ? 20.99 : 99.99;
+						var newValue = i === 0 ? 8 : i === 1 ? 10.99 : i === 2 ? 11.99 : i === 3 ? 17.99 : 87.99;
+						var newOdoMeter = new Odometer({
+							el : $(this).children('span')[0],
+							format: '(,dd),dd',
+							duration : '200',
+							theme : 'default',
+							value : oldValue.toFixed(2)
+						}); newOdoMeter.update(newValue.toFixed(2));
+						i++;
+					});
+				}
+			}, { offset : '90%' });
+
+			$('.landing-res-smart .with-infographics').waypoint(function(direction) {
+				if( direction == 'down' ) {
+					$(this).parents('.landing-section').addClass('active');
+					var i = 0;
+					$(this).find('.special-price').each(function(){
+						var oldValue = i === 0 ? 12.99 : i === 1 ? 19.99 : i === 2 ? 7.99 : 9.99;
+						var newValue = i === 0 ? 10.99 : i === 1 ? 17.99 : i === 2 ? 5.99 : 7.99;
+						var newOdoMeter = new Odometer({
+							el : $(this).children('span')[0],
+							format: '(,dd),dd',
+							duration : '200',
+							theme : 'default',
+							value : oldValue
+						});
+						setTimeout(function(){
+							newOdoMeter.update(newValue);
+						}, i * 300);
+						i++;
+					});
+
+					var startingPrice = 0;
+					var endingPrice = 8;
+
+					var skupniZnesekPrihrani = new Odometer({
+						el : $(this).find('.total-value span')[0],
+						format: '(,dd),dd',
+						duration : '200',
+						theme : 'default',
+						value : startingPrice.toFixed(2)
+					});
+
+					setTimeout(function(){
+						skupniZnesekPrihrani.update(endingPrice.toFixed(2));
+					}, 1500);
+				}
+			}, { offset : '60%' });
+
+			$('.landing-res-smart .comparison-table').waypoint(function(direction){
+				if (direction == 'up') {
+					$(this).parents('.landing-section').removeClass('active');
+
+					/** Reset the values */
+					var i = 0;
+
+					/** Odometer for each price */
+					$(this).find('.zdruzi-prihrani-animate-price').each(function(){
+						var oldValue = i === 0 ? 9.99 : i === 1 ? 12.99 : i === 2 ? 15.99 : i === 3 ? 20.99 : 99.99;
+						$(this).children('span').html( oldValue.toFixed(2) );
+						i++;
+					});
+
+				}
+			}, { offset: '90%' });
+
+			$('.landing-res-smart .with-infographics').waypoint(function(direction){
+				if (direction == 'up') {
+					$(this).parents('.landing-section').removeClass('active');
+
+					var i = 0;
+					$(this).find('.special-price').each(function(){
+						var oldValue = i === 0 ? 12.99 : i === 1 ? 19.99 : i === 2 ? 7.99 : 9.99;
+						$(this).children('span').html( oldValue );
+						i++;
+					});
+					$(this).find('.total-value span').html(0);
+
+				}
+			}, { offset: '90%' });
+
+		});
+
+		/** Izračun prihranek svoje skupine */
+		var packets = [
+			{
+				'paket' : 'ZAČETNI M',
+				'price' : 10, 'discount' : 2
+			},
+			{
+				'paket' : 'SENIOR I',
+				'price' : 14.99, 'discount' : 2
+			},
+			{
+				'paket' : 'NAPREDNI S',
+				'price' : 10, 'discount' : 2
+			},
+			{
+				'paket' : 'ORTO FANTASTIK',
+				'price' : 14.99, 'discount' : 2
+			},
+			{
+				'paket' : 'ORTO BOMBASTIK',
+				'price' : 19.99, 'discount' : 2
+			},
+			{
+				'paket' : 'Mobilni internet 3GIGA',
+				'price' : 11.99, 'discount' : 2
+			},
+			{
+				'paket' : 'Mobilni internet 15GIGA',
+				'price' : 17.99, 'discount' : 2
+			},
+			{
+				'paket' : 'NAPREDNI M',
+				'price' : 12.99, 'discount' : 4
+			},
+			{
+				'paket' : 'NAPREDNI L',
+				'price' : 15.99, 'discount' : 4
+			},
+			{
+				'paket' : 'ORTO GIGASTIK',
+				'price' : 20.99, 'discount' : 4
+			},
+			{
+				'paket' : 'Domači internet 1',
+				'price' : 26.90, 'discount' : 4
+			},
+			{
+				'paket' : 'Domači internet 2',
+				'price' : 31.90, 'discount' : 4
+			},
+			{
+				'paket' : 'NAPREDNI XL',
+				'price' : 20.99, 'discount' : 8
+			},
+			{
+				'paket' : 'ALL INCLUSIVE',
+				'price' : 99.99, 'discount' : 12
+			},
+			{
+				'paket' : 'Mobilni internet 45GIGA',
+				'price' : 39.99, 'discount' : 8
+			},
+			{
+				'paket' : 'Domači internet 3',
+				'price' : 41.90, 'discount' : 8
+			}
+		];
+
+		var totalMembers = 0;
+
+		/** Show the package chooser */
+		$('.combine-and-save.calculator').on('click', '.add-member-wrapper', function(e) {
+			var that = $(this);
+
+			/** Increase number or members */
+			totalMembers++;
+
+			/** Show package chooser */
+			that.parent('.member').addClass('member-active');
+
+			updateMembersTitles( that );
+		});
+
+		var totalDiscount = 0;
+
+		if( $('.combine-and-save.calculator').length > 0 ) {
+			var totalValueOdometer = new Odometer({
+				el : $('.combine-and-save.calculator .total-value .value')[0],
+				format: '(,dd),dd',
+				duration : '200',
+				theme : 'default',
+				value : totalDiscount.toFixed(2)
+			});
+		}
+
+		$('.combine-and-save.calculator').on('click', '.remove-member', function(e) {
+			/** Decrease number or members */
+			totalMembers--;
+
+			var that = $(this);
+
+			that.parent('.member').removeClass('member-active member-and-package-active');
+
+			/** Remove the discount if package selected */
+			if( that.attr('data-discount') != undefined ) {
+				totalDiscount = totalDiscount - parseInt( that.attr('data-discount') );
+				totalValueOdometer.update( totalDiscount.toFixed(2) );
+
+				that.parent('.member').find('.special-price .value').html('')
+			}
+
+			updateMembersTitles( that );
+		});
+
+		function updateMembersTitles( element ) {
+			/** Update member titles (Član 1, Član 2, ...) */
+			var i = 1;
+			element.parents('.combine-and-save.calculator').find('.member').each(function() {
+				var thatThis = $(this);
+				if( thatThis.hasClass('member-active') || thatThis.hasClass('member-and-package-active') ) {
+					thatThis.find('.member-title').html('Član ' + i);
+					i++;
+				}
+			});
+		}
+
+		/** Show package details */
+		$('.combine-and-save.calculator').on('change', 'select', function(e){
+			var that = $(this),
+				text = that.find('option:selected').html();
+
+			/** User must select an option */
+			if( text !== 'Paket...' ) {
+				var member = that.parents('.member');
+				member.removeClass('member-active').addClass('member-and-package-active');
+
+				/** Find Appropriate Package Object */
+				var selectedPackage = $.grep( packets, function(e) {
+					return e.paket === text;
+				});
+
+				var basicPrice = selectedPackage[0].price.toFixed(2);
+				var discountPrice = ( selectedPackage[0].price - selectedPackage[0].discount ).toFixed(2);
+
+				/** Add discount to remove button */
+				that.parents('.member').children('.remove-member').attr('data-discount', selectedPackage[0].discount);
+
+				var basicShownPrice = discountPrice < 10 ? (9.99).toFixed(2) : basicPrice;
+
+				odometer = new Odometer({
+					el : member.find('.with-discount .special-price .value')[0],
+					format: '(,dd),dd',
+					duration : '200',
+					theme : 'default',
+					value : basicShownPrice
+				});
+
+				totalDiscount += selectedPackage[0].discount;
+
+				member.find('.title-value').html( selectedPackage[0].paket );
+				member.find('.basic .price:not(.special-price)').html( basicPrice.replace( '.', ',' ) + ' €' );
+
+				odometer.update( discountPrice );
+				totalValueOdometer.update( totalDiscount.toFixed(2) );
+
+			}
+		});
+
+		$('.eracun .infogram li, .landing-promo-page .infogram li, .why-simobil .infogram li, .ponudba-za-velika-podjetja .infogram li').on('mouseover', function(e) {
+
 			if (!$(this).children('a').length) return;
-			
-			$('.eracun .infogram li, .landing-infogram li').removeClass('active');
+
+			$('.eracun .infogram li, .landing-promo-page .infogram li, .why-simobil .infogram li, .ponudba-za-velika-podjetja .infogram li').removeClass('active');
 			$(this).addClass('active');
 
-			$_pane = $('.eracun .infogram .pane, .landing-infogram .pane');
+			$_pane = $('.eracun .infogram .pane, .landing-promo-page .infogram .pane, .why-simobil .infogram .pane, .ponudba-za-velika-podjetja .infogram .pane');
 			$('img', $_pane).attr('src', $(this).data('img'));
 			$('h3', $_pane).text($('a span', $(this)).not('.desc').text());
 			$('p', $_pane).text($('.desc', $(this)).text());
 
 		});
-		
+
 		$.fn.overlayMask = function (action) {
 			var mask = this.find('.overlay-mask');
 
@@ -711,7 +1207,7 @@ var Simobil = {
 		$('.product-listing').overlayMask();
 		});
          */
-		
+
 		var resizeTimer = null;
 		function multiline_choices() {
 			var $choices = $('.choices .choice');
@@ -726,31 +1222,473 @@ var Simobil = {
 				resizeTimer = setTimeout(function() {
 				$choices.each(function() {
 					var _self = $(this);
-					var $label = $('.c1 label, .c12 label', _self);
+					var $label = $('>.data>.c1 label,>.data>.c12 label', _self);
 					var lw = $label.innerWidth();
 					var sw = $('span', $label).outerWidth();
-					
+
 					if (lw < sw || !_self.hasClass('.expand')) {
 						if (!_self.hasClass('.expand'))
 							_self.addClass('expand');
 						setTimeout(function() {
-							var $data = $('> .data', _self);
-							$('.c3, .c4', _self).css('height', $data.innerHeight());
+                            var $data = $('>.data', _self);
+                            if ( $(window).width()>767 ){
+                                $('.c3, ', $data).css({'height' : $data.innerHeight(), 'line-height' : $data.innerHeight()+"px"});
+                                $('.c3, ', $data).parent().parent().find( ".mini-info" ).css('line-height', $data.innerHeight()+"px");
+                                $('.c3, ', $data).parent().parent().find( ".c12").find("label").css({'height' : $data.innerHeight(), 'line-height' : $data.innerHeight()+"px"});
+                                $('.c1 > label, ', $data).css({'height' : $data.innerHeight(), 'line-height' : $data.innerHeight()+"px"});
+                                $('.c4', _self).css({'height' : $data.innerHeight(), 'line-height' : $data.innerHeight()+"px"});
+                                $('.c4 > a', _self).css('line-height', $data.innerHeight()+"px");
+                            }
+                            else if ($(window).width() < 767) {
+                                $('.c3, ', $data).css({height : $data.innerHeight(), 'line-height' : ""});
+                                //$('.c3, ', $data).parent().parent().find( ".mini-info" ).css('line-height', "normal");
+                                //$('.c3, ', $data).parent().parent().find( ".c12").find("label").css({'height' : 'auto', 'line-height' : "normal"});
+                                //$('.c1 > label, ', $data).css({'height' : 'auto', 'line-height' : "normal"});
+                                //$('.c4', _self).css({height : $data.innerHeight(), 'line-height' : "normal"});
+                                //$('.c4 > a', _self).css('line-height', "normal");
+                            }
 						}, 500);
 					}
 				});
 			}, 200);
-			
 		}
+
+        function highlight_position_fixer() {
+            var $highlights = $('.choice > h2');
+            $highlights.each(function() {
+                    $(this).css("top", ($(this).height() * -1) + "px");
+                    if ($(this).parent().index() == 0) {
+                        $(this).parent().css("margin-top", $(this).height() + "px");
+                    }
+                    else {
+                        $(this).parent().css("margin-top", $(this).height() + 12 + "px");
+                    }
+                })
+        }
 		$(window).on('resize', multiline_choices);
-		multiline_choices();
-		
-		var mql = window.matchMedia("(orientation: portrait)");
-		mql.addListener(function(m) {
-			var sc = $('.combinations .scrollable').data('scrollable');
-			sc.seekTo(sc.getIndex());
+        $(window).load(function() {
+            multiline_choices();
+            highlight_position_fixer();
+        });
+
+        $('.notices').prev().css("margin-bottom","0px");
+
+        // do not merge this
+        $('.collapse').on('show', function () {
+            if ( $(this).prev().hasClass( "buttler" )){
+                var bulterheight = $(this).prev().height();
+            }
+            else {
+                var bulterheight = 0;
+            }
+
+            if ($(window).width() < 767) {
+                $('html,body').animate({
+                    scrollTop: ($(this).offset().top - $(".row.tools.fixed").height() - 175 - extraoffset - bulterheight)
+                }, 600);
+            }
+            else {
+                $('html,body').animate({
+                    scrollTop: ($(this).offset().top - $(".selection").height() - 60 - extraoffset - bulterheight)
+                }, 600);
+            }
+        });
+
+		if (window.matchMedia) {
+			var mql = window.matchMedia("(orientation: portrait)");
+			mql.addListener(function(m) {
+				var sc = $('.combinations .scrollable').data('scrollable');
+				sc.seekTo(sc.getIndex());
+			});
+		}
+
+		/* Racun na pol */
+		var $person = $('.racun-na-pol .visualise .selector .person');
+		var $months = $('.racun-na-pol .visualise .months .number .big');
+		$person.on( 'hover touchstart', function(e) {
+			e.preventDefault();
+			var $this = $(this);
+			$person.removeClass('active');
+			$this.addClass('active');
+
+			//$months.text($this.data('months'));
+
+			jQuery({val: parseInt($months.text())}).animate({val: $this.data('months')}, {
+				duration: 500,
+				easing: 'linear',
+				step: function() {
+					if (this.val > 23) {
+						$months.text(Math.ceil(this.val));
+					} else if (this.val < 7) {
+						$months.text(Math.floor(this.val));
+					} else {
+						$months.text(this.val.toFixed(0));
+					}
+				}
+			});
 		});
 
+		$('.racun-na-pol .process .nav-tabs a').click(function (e) {
+			e.preventDefault();
+			$(this).tab('show');
+		});
+
+		$('.racun-na-pol #use-code').click(function (e) {
+			e.preventDefault();
+			$('.racun-na-pol .nav-tabs .has-code a').tab('show');
+		});
+
+		$('.racun-na-pol #packages-carousel').carousel({
+			interval: 4000
+		});
+
+		if( $.fn.bxSlider != undefined) {
+		$('.product-listing .product-slider').bxSlider({
+			slideMargin: 24,
+			moveSlides: 1,
+			autoReload: true,
+			nextText: '',
+			prevText: '',
+			parfix: true,
+			auto: true,
+			pager:false,
+			breaks: [{screen:0, slides:1}, {screen:480, slides:2}, {screen: 768, slides:4}]
+		});
+		}
+
+		/* IE placeholders */
+		if( !('placeholder' in document.createElement('input')) ){
+			$("[placeholder]").focus(function(){
+				if( this.value == $(this).attr("placeholder") )
+					this.value = '';
+				$(this).removeClass('empty');
+			})
+				.blur(function(){
+					if( this.value == "" )
+						this.value = $(this).addClass('empty').attr("placeholder");
+					else
+						$(this).removeClass('empty');
+				})
+				.blur();
+		}
+
+		// Resize textarea
+		var area = $('.resize'),content = null;
+
+		area.each(function() {
+			$(this).after('<div class="hiddendiv input"></div>');
+		});
+
+		area.on('keyup', function () {
+			console.log('keyup');
+			content = $(this).val();
+
+			content = content.replace('<', ' ');
+			content = content.replace(/\n/g, '<br>');
+			content = content.replace('&#13;&#10;', '<br>');
+			var hiddenDiv = $(this).next('.hiddendiv');
+			hiddenDiv.html(content + '<br class="lbr">');
+
+			$(this).height(hiddenDiv.outerHeight());
+
+		});
+
+		area.trigger('keyup');
+
+		var hash = window.location.hash.substring(1);
+		if (hash != 'undefined') {
+			hash = $('#' + hash).data('num');
+		} else {
+			hash = 4
+		}
+
+
+		if( $.fn.bxSlider != undefined ) {
+		/* Table slider */
+		var $slider = $('#primerjalna-tabela .slider').bxSlider({
+			mode: 'vertical',
+			slideMargin: 40,
+			adaptiveHeight: true,
+			nextText:'',
+			prevText:'',
+			preventDefaultSwipeY: true,
+			preventDefaultSwipeX: false,
+			startSlide: hash
+		});
+
+		if ($slider.length > 0 && $(window).width() < 599 || ($(window).width() < 767 && Math.abs(window.orientation) === 90)) {
+			$slider.reloadSlider({
+				mode: 'horizontal',
+				preventDefaultSwipeY: false,
+				preventDefaultSwipeX: true,
+				slideMargin: 40,
+				adaptiveHeight: true,
+				nextText:'',
+				prevText:'',
+				preventDefaultSwipeY: true,
+				preventDefaultSwipeX: false,
+				startSlide: hash
+			});
+
+			if ($slider.length > 0 && $(window).width() < 599 || ($(window).width() < 767 && Math.abs(window.orientation) === 90)) {
+				$slider.reloadSlider({
+					mode: 'horizontal',
+					preventDefaultSwipeY: false,
+					preventDefaultSwipeX: true,
+					slideMargin: 40,
+					adaptiveHeight: true,
+					nextText:'',
+					prevText:'',
+					startSlide: hash
+				});
+			}
+		}
+		}
+
+		/* Address combobox */
+                /* do not merge */
+        if( $.fn.select2 != undefined ) {
+		$("input.combobox").select2({
+			placeholder: "Vnesite naslov",
+			allowClear: true,
+			minimumInputLength: 0,
+			dropdownAutoWidth: true,
+			loadMorePadding: 100,
+			autofocus: false,
+			width: '20px',
+			keybindSelector: '.address.dump',
+			shouldFocusInput: function(){return false;},
+			ajax: {
+				url: "http://tibcolbt.simobil.net:9442/jquery/autocomplete/street",
+				dataType: 'json',
+				quietMillis: 250,
+				data: function (term, page) { // page is the one-based page number tracked by Select2
+					return {
+						street: term, //search term
+						offsetstart: 30 * (page - 1), // page number
+						pagesize: 30
+					};
+				},
+				results: function (data, page) {
+					var more = page < data.totalPageCount;
+					return { results: data.places, more: more };
+				}
+			},
+			id: function (repo) {
+				return repo.STREETNAME + ', ' + parseFloat(repo.POSTNUMBER) + ' ' + repo.CITYNAME;
+			},
+			formatResult: function (repo) {
+				return '<span>' + repo.STREETNAME + ', ' + parseFloat(repo.POSTNUMBER) + ' ' + repo.CITYNAME +'</span>';
+			},
+			formatSelection: function (repo) {
+				// when input selected
+				var posts = $(this.element).parents('div.container').find('div.post input');
+				$(posts[0]).val(Number(repo.POSTNUMBER));
+				$(posts[1]).val(repo.CITYNAME);
+				$(this.element).parent().find('input.address.dump').val(repo.STREETNAME);
+				$(this.element).parents('div.container').find("div.hne input.numeric.hn").val('');
+				$(this.element).parents('div.container').find("div.hne input.alpha").val('');
+
+				return repo.STREETNAME;
+			},
+			formatAjaxError: function () { return 'Iskanje ni vrnilo rezultatov'; },
+			formatLoadMore: function () { return 'Nalagamo več rezultatov...'; },
+			formatSearching: function () { return 'Iščemo...'; },
+			formatInputTooShort: function (term, minLength) { return 'Prosimo vnesite vsaj ' + minLength + ' znak.'; }
+		});
+        }
+
+		$('.address.dump').on('keyup', function(event){
+			var nonInputKeys = [9, 13, 27, 32, 37, 38, 39, 40, 16, 17, 18, 33, 34, 36, 35];
+			if ($.inArray(event.keyCode, nonInputKeys) < 0) {
+				$("input.combobox").select2('search', $(this).val());
+				$(this).parents('div.container').find('div.post input').val('');
+			}
+		});
+
+		$('input.numeric.hn').on('keyup', function(event){
+			var nonInputKeys = [9, 13, 27, 32, 37, 38, 39, 40, 16, 17, 18, 33, 34, 36, 35];
+			if ($.inArray(event.keyCode, nonInputKeys) < 0) {
+				$("input.houseno").select2('search', $(this).val());
+			}
+		});
+
+		/* House number combobox */
+		if( $.fn.select2 != undefined ) {
+		$("input.houseno").select2({
+			placeholder: "Vpišite številko",
+			allowClear: true,
+			minimumInputLength: 0,
+			dropdownAutoWidth: true,
+			loadMorePadding: 100,
+			z_index: '-1',
+			width: 'auto',
+			keybindSelector: 'input.numeric.hn',
+			ajax: {
+				url: "http://tibcolbt.simobil.net:9442/jquery/autocomplete/street",
+				dataType: 'json',
+				quietMillis: 250,
+				data: function (term, page) { // page is the one-based page number tracked by Select2
+					return {
+						streetnumber: term, //search term
+						postnumber: $(this).parents('div.container').find('div.post input:first').val(),
+						street: $(this).parents('div.container').find("input.address.dump").val(),
+						offsetstart: 30 * (page - 1), // page number
+						pagesize: 30
+					};
+				},
+				id: function (repo) {
+					if (repo.STREETNUMBERLETTER) {
+						return Number(repo.STREETNUMBER) + ' ' + repo.STREETNUMBERLETTER;
+					} else {
+						return Number(repo.STREETNUMBER);
+					}
+				},
+				formatResult: function (repo) {
+					if (repo.STREETNUMBERLETTER) {
+						return '<span>' + Number(repo.STREETNUMBER) + ' ' + repo.STREETNUMBERLETTER +'</span>';
+					} else {
+						return '<span>' + Number(repo.STREETNUMBER) +'</span>';
+					}
+				},
+				formatSelection: function (repo) {
+					// when input selected
+					$(this.element).parents('div.container').find('div.hne input.numeric.hn').val(Number(repo.STREETNUMBER));
+					if (repo.STREETNUMBERLETTER) {
+						$(this.element).parents('div.container').find('div.hne input.alpha').val(repo.STREETNUMBERLETTER);
+					}
+					return Number(repo.STREETNUMBER);
+				}
+			},
+			formatResult: function (repo) {
+				if (repo.STREETNUMBERLETTER) {
+					return '<span>' + Number(repo.STREETNUMBER) + ' ' + repo.STREETNUMBERLETTER +'</span>';
+				} else {
+					return '<span>' + Number(repo.STREETNUMBER) +'</span>';
+				}
+			},
+			formatSelection: function (repo) {
+				// when input selected
+				$(this.element).parents('div.container').find('div.hne input.numeric.hn').val(Number(repo.STREETNUMBER));
+				if (repo.STREETNUMBERLETTER) {
+					$(this.element).parents('div.container').find('div.hne input.alpha').val(repo.STREETNUMBERLETTER);
+				}
+				return Number(repo.STREETNUMBER);
+			},
+			formatAjaxError: function () { return 'Iskanje ni vrnilo rezultatov'; },
+			formatLoadMore: function () { return 'Nalagamo več rezultatov...'; },
+			formatSearching: function () { return 'Iščemo...'; },
+			formatInputTooShort: function (term, minLength) { return 'Prosimo vnesite vsaj ' + minLength + ' znak.'; }
+		});
+		}
+                /** don't merge **/
+		$('[data-toggle="tooltip"], div.bithdaydate18.warning').tooltip({
+			placement: function() { return 'top'; },
+			container: 'body'
+		});
+
+		$('[data-toggle="popover"]').popover();
+
+        /* Countdown */
+        if ($(window).width()<768){
+	        $('#clock').hide();
+	        $('#clockbanner').show();
+       	}else {
+       		initcountdown();
+       	}
+
+        function initcountdown(){
+       		$('#clock').each(function () {
+				var $this = $(this);
+	            var countdownText = $this.data('countdown-text');
+	            var countdownDate = $this.data('countdown-date').split(" ");
+
+	            endDate = new Date(countdownDate[0], countdownDate[1], countdownDate[2], countdownDate[3], countdownDate[4], countdownDate[5], 0);
+	            thisDate  = new Date();
+	            thisDate  = new Date(thisDate.getFullYear(), thisDate.getMonth() + 1, thisDate.getDate(), thisDate.getHours(), thisDate.getMinutes(), thisDate.getSeconds(), 0, 0);
+
+
+	            //Checks if input date is valid (Larger than current date)
+	            //Otherwise dont start counter, places null values
+	            if (endDate > thisDate){
+
+		            daysLeft = parseInt((endDate-thisDate)/86400000);
+		            hoursLeft = parseInt((endDate-thisDate)/3600000);
+		            minutesLeft = parseInt((endDate-thisDate)/60000);
+		            secondsLeft = parseInt((endDate-thisDate)/1000);
+
+		            seconds = minutesLeft*60;
+		            seconds = secondsLeft-seconds;
+
+		            minutes = hoursLeft*60;
+		            minutes = minutesLeft-minutes;
+
+		            hours = daysLeft*24;
+		            hours = (hoursLeft-hours) < 0 ? 0 : hoursLeft-hours;
+
+		            days = daysLeft;
+		            startcountdown();
+	            	countdown = setInterval(startcountdown, 1000)
+	            }
+				else {
+		           $('#days,#hours,#minutes,#seconds').css('display','none');
+		           $(".clockbox").text('Invalid input');
+				}
+        	});
+		}
+
+		function startcountdown(){
+	    	//Checks if timer has reached 0
+	    	//else contnue countdown
+	    	if (secondsLeft == 0){
+	        	clearInterval(countdown);
+	        }
+	    	else {
+		        seconds --;
+		        secondsLeft--;
+		        if (seconds < 0) {
+		            minutes --;
+		            seconds = 59;
+		        }
+		        if (minutes < 0) {
+		            hours --;
+		            minutes = 59;
+		        }
+		        if (hours < 0) {
+		            days --;
+		            hours = 23;
+		        }
+
+		        if (days == 0){
+		           $("#days").parent().next().css('display','none');//Removes first : from counter
+		           $("#days").parent().css('display','none'); //Removes day counter block
+		        }
+
+		        $('#days').text(days);
+		        $('#hours').text(hours);
+		        $('#minutes').text(minutes);
+		        $('#seconds').text(seconds);
+			}
+		}
+
+		function highlight_position_fixer() {
+
+			var resizer = function() {
+				var $highlights = $('.choice > h2');
+				$highlights.each(function() {
+					$(this).css("top", ($(this).height() * -1) + "px");
+					if ($(this).parent().index() == 0) {
+						$(this).parent().css("margin-top", $(this).height() + "px");
+					}
+					else {
+						$(this).parent().css("margin-top", $(this).height() + 12 + "px");
+					}
+				});
+			}
+
+			$(window).on('resize', resizer);
+			resizer();
+		}
+		highlight_position_fixer();
 	});
-	
 })(jQuery);
