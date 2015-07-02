@@ -13234,6 +13234,42 @@ i[class*=ico-medium].align-with-label {
     background-size: 64px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+.ico-poraba.ico-small-svg,
+.page-block .ico-poraba.ico-small-svg {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background-image: url("../../images/layout/icons/svg/ico-poraba.svg");
+  background-size: 16px;
+}
+.ico-poraba.ico-medium-svg,
+.page-block .ico-poraba.ico-medium-svg {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background: transparent url("../../images/layout/icons/svg/ico-poraba.svg") 0 0 no-repeat;
+  background-size: 32px;
+}
+.ico-poraba.ico-large-svg,
+.page-block .ico-poraba.ico-large-svg {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  background: transparent url("../../images/layout/icons/svg/ico-poraba.svg") 0 0 no-repeat;
+  background-size: 64px;
+}
+
 .ico-ekskluzivne.ico-small-svg,
 .page-block .ico-ekskluzivne.ico-small-svg {
   width: 16px;
@@ -13258,6 +13294,21 @@ i[class*=ico-medium].align-with-label {
   background: transparent url("../../images/layout/icons/svg/ico-ekskluzivne.svg") 0 0 no-repeat;
   background-size: 64px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .ico-ekskluzivne-purple.ico-small-svg,
 .page-block .ico-ekskluzivne-purple.ico-small-svg {
     width: 16px;
@@ -13510,5 +13561,55 @@ i[class*=ico-medium].align-with-label {
   height: 64px;
   line-height: 64px;
   background: transparent url("../../images/layout/icons/svg/ico-simobil-logo.svg") 0 0 no-repeat;
+  background-size: 64px 64px !important;
+}
+
+.ico-mala-podjetja.ico-small-svg,
+.page-block .ico-mala-podjetja.ico-small-svg {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background: url("../../images/layout/icons/svg/ico-mala-podjetja.svg") 0 0 no-repeat;
+  background-size: 16px 16px !important;
+}
+.ico-mala-podjetja.ico-medium-svg,
+.page-block .ico-mala-podjetja.ico-medium-svg {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background: transparent url("../../images/layout/icons/svg/ico-mala-podjetja.svg") 0 0 no-repeat;
+  background-size: 32px 32px !important;
+}
+.ico-mala-podjetja.ico-large-svg,
+.page-block .ico-mala-podjetja.ico-large-svg {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  background: transparent url("../../images/layout/icons/svg/ico-mala-podjetja.svg") 0 0 no-repeat;
+  background-size: 64px 64px !important;
+}
+
+.ico-velika-podjetja.ico-small-svg,
+.page-block .ico-velika-podjetja.ico-small-svg {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background: url("../../images/layout/icons/svg/ico-velika-podjetja.svg") 0 0 no-repeat;
+  background-size: 16px 16px !important;
+}
+.ico-velika-podjetja.ico-medium-svg,
+.page-block .ico-velika-podjetja.ico-medium-svg {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background: transparent url("../../images/layout/icons/svg/ico-velika-podjetja.svg") 0 0 no-repeat;
+  background-size: 32px 32px !important;
+}
+.ico-velika-podjetja.ico-large-svg,
+.page-block .ico-velika-podjetja.ico-large-svg {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  background: transparent url("../../images/layout/icons/svg/ico-velika-podjetja.svg") 0 0 no-repeat;
   background-size: 64px 64px !important;
 }
