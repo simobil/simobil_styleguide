@@ -13613,3 +13613,77 @@ i[class*=ico-medium].align-with-label {
   background: transparent url("../../images/layout/icons/svg/ico-velika-podjetja.svg") 0 0 no-repeat;
   background-size: 64px 64px !important;
 }
+
+.ico-poraba-sumarno.ico-small-svg,
+.page-block .ico-poraba-sumarno.ico-small-svg {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background: url("../../images/layout/icons/svg/ico-poraba-sumarno.svg") 0 0 no-repeat;
+  background-size: 16px 16px !important;
+}
+.ico-poraba-sumarno.ico-medium-svg,
+.page-block .ico-poraba-sumarno.ico-medium-svg {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background: transparent url("../../images/layout/icons/svg/ico-poraba-sumarno.svg") 0 0 no-repeat;
+  background-size: 32px 32px !important;
+}
+.ico-poraba-sumarno.ico-large-svg,
+.page-block .ico-poraba-sumarno.ico-large-svg {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  background: transparent url("../../images/layout/icons/svg/ico-poraba-sumarno.svg") 0 0 no-repeat;
+  background-size: 64px 64px !important;
+}
+
+.ico-vezave-sumarno.ico-small-svg,
+.page-block .ico-vezave-sumarno.ico-small-svg {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background: url("../../images/layout/icons/svg/ico-vezave-sumarno.svg") 0 0 no-repeat;
+  background-size: 16px 16px !important;
+}
+.ico-vezave-sumarno.ico-medium-svg,
+.page-block .ico-vezave-sumarno.ico-medium-svg {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background: transparent url("../../images/layout/icons/svg/ico-vezave-sumarno.svg") 0 0 no-repeat;
+  background-size: 32px 32px !important;
+}
+.ico-vezave-sumarno.ico-large-svg,
+.page-block .ico-vezave-sumarno.ico-large-svg {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  background: transparent url("../../images/layout/icons/svg/ico-vezave-sumarno.svg") 0 0 no-repeat;
+  background-size: 64px 64px !important;
+}
+.ico-puscica-naprej.ico-small-svg,
+.page-block .ico-puscica-naprej.ico-small-svg {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background: url("../../images/layout/icons/svg/ico-puscica-naprej.svg") 0 0 no-repeat;
+  background-size: 16px 16px !important;
+}
+.ico-puscica-naprej.ico-medium-svg,
+.page-block .ico-puscica-naprej.ico-medium-svg {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background: transparent url("../../images/layout/icons/svg/ico-puscica-naprej.svg") 0 0 no-repeat;
+  background-size: 32px 32px !important;
+}
+.ico-puscica-naprej.ico-large-svg,
+.page-block .ico-puscica-naprej.ico-large-svg {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  background: transparent url("../../images/layout/icons/svg/ico-puscica-naprej.svg") 0 0 no-repeat;
+  background-size: 64px 64px !important;
+}
