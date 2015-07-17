@@ -2308,8 +2308,8 @@ small {
   background-color: #000000;
   color: #ffffff;
 }
-#calroot #calweeks a.caloff {
-  color: #999999;
+#calroot #calweeks a.caldisabled {
+  color: #ccc;
 }
 .circle {
   display: table-cell;
@@ -5471,7 +5471,7 @@ h2 > .icon-messages {
 }
 .page-block nav.main ul.first > li {
   margin: 0;
-  padding: 0 20px 0 15px;
+  padding: 0 12px 0 10px;
   float: left;
   cursor: pointer;
   -webkit-transition: all .14s ease;
@@ -5491,7 +5491,7 @@ h2 > .icon-messages {
   height: 40px;
   width: 1px;
   position: relative;
-  right: -20px;
+  right: -13px;
   top: 15px;
   content: '';
   display: inline-block;
