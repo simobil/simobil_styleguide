@@ -174,6 +174,7 @@
           <li><a href="#dotted-table">Dotted table</a></li>
           <li><a href="#content-table">Content table</a></li>
           <li><a href="#orders-table">Orders table</a></li>
+          <li><a href="#package-selector-table">Package selector table</a></li>
         </ul>
       </li>
       <li class="dropdown">
@@ -199,6 +200,7 @@
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#mediascreen">Mediascreen</a></li>
           <li><a href="#banners">Banners</a></li>
+          <li><a href="#usage-graphs">Usage Graphs</a></li>
         </ul>
       </li>
     </ul>
@@ -3552,6 +3554,191 @@ function processScroll() {
 		folder and ass a <code>.responsive</code> class to the table element.
 		</p>
 	</div>
+
+
+  <h3 id="package-selector-table" class="top-margin">Package selector table <span class="label">TB4</span></h3>
+  <div class="row">
+    <div class="span12">
+      <p>
+        Simple table purposed for selecting package from the offer. Clicking on the radio button visually shows selected package with green borders around the package.
+      </p>
+      <table class="horizontal comparison-table responsive paket-selector-table">
+          <thead>
+              <tr>
+                  <th><p class="title">&nbsp;</p><a href="#">&nbsp;</a></th>
+                  <th class="included">
+                      <p class="title">ORTO STARTASTIK</p>
+                  </th>
+                  <th class="included">
+                      <p class="title">ORTO FANTASTIK</p>
+                  </th>
+                  <th class="included">
+                      <p class="title">ORTO BOMBASTIK</p>
+                  </th>
+                  <th class="included">
+                      <p class="title">ORTO TRIPSTER PLUS</p>
+                  </th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Mesečna naročnina</td>
+                  <td class="included price darker">19,99 <small>€/m</small></td>
+                  <td class="included price darker">22,99 <small>€/m</small></td>
+                  <td class="included price darker">26,99 <small>€/m</small></td>
+                  <td class="included price darker">34,99 <small>€/m</small></td>
+              </tr>
+              <tr>
+                  <td>Klici v vsa omrežja</td>
+                  <td class="included"><span class="infinite">&#8734;</span></td>
+                  <td class="included"><span class="infinite">&#8734;</span></td>
+                  <td class="included"><span class="infinite">&#8734;</span></td>
+                  <td class="included"><span class="infinite">&#8734;</span></td>
+              </tr>
+              <tr>
+                  <td>SMS/MMS</td>
+                  <td class="included"><span class="infinite">&#8734;</span></td>
+                  <td class="included"><span class="infinite">&#8734;</span></td>
+                  <td class="included"><span class="infinite">&#8734;</span></td>
+                  <td class="included"><span class="infinite">&#8734;</span></td>
+              </tr>
+              <tr>
+                  <td>Prenos podatkov</td>
+                  <td class="included">1 <small>GB</small></td>
+                  <td class="included">3 <small>GB</small></td>
+                  <td class="included">6 <small>GB</small></td>
+                  <td class="included">15 <small>GB</small></td>
+              </tr>
+              <tr>
+                  <td>Hitrost prenosa podatkov</td>
+                  <td class="included">20/3 <small>Mbit/s</small></td>
+                  <td class="included">40/5 <small>Mbit/s</small></td>
+                  <td class="included">150/50 <small>Mbit/s</small></td>
+                  <td class="included">150/50 <small>Mbit/s</small></td>
+              </tr>
+              <tr>
+                  <td>Neomejen prenos podatkov z najvišjo 4G/LTE hitrostjo za 3 mesece</td>
+                  <td><span class="bigger"><i class="ico-checkmark-green ico-small-svg"></i></span></td>
+                  <td><span class="bigger"><i class="ico-checkmark-green ico-small-svg"></i></span></td>
+                  <td><span class="bigger"><i class="ico-checkmark-green ico-small-svg"></i></span></td>
+                  <td><span class="bigger"><i class="ico-checkmark-green ico-small-svg"></i></span></td>
+              </tr>
+              <tr>
+                  <td>Uporaba v tujini po porabi, a ne več kot 10 EUR v EU</td>
+                  <td><span class="bigger"><i class="ico-checkmark-green ico-small-svg"></i></span></td>
+                  <td><span class="bigger"><i class="ico-checkmark-green ico-small-svg"></i></span></td>
+                  <td><span class="bigger"><i class="ico-checkmark-green ico-small-svg"></i></span></td>
+                  <td><span class="bigger"><i class="ico-checkmark-green ico-small-svg"></i></span></td>
+              </tr>
+              <tr>
+                  <td>Prenos podatkov</td>
+                  <td>250 MB<br>za 1,99 EUR</td>
+                  <td>250 MB<br>za 1,99 EUR</td>
+                  <td>250 MB<br>za 1,99 EUR</td>
+                  <td>250 MB<br>za 1,99 EUR</td>
+              </tr>
+              <tr>
+                  <td>&nbsp;</td>
+                  <td><input type="radio" name="paket-selector"></td>
+                  <td><input type="radio" name="paket-selector"></td>
+                  <td><input type="radio" name="paket-selector"></td>
+                  <td><input type="radio" name="paket-selector"></td>
+              </tr>
+          </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="row top-margin">
+    <div class="span12">
+<pre class="prettyprint linenums">
+&lt;table class=&quot;horizontal comparison-table responsive paket-selector-table&quot;&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;p class=&quot;title&quot;&gt;&nbsp;&lt;/p&gt;&lt;a href=&quot;#&quot;&gt;&nbsp;&lt;/a&gt;&lt;/th&gt;
+          &lt;th class=&quot;included&quot;&gt;
+              &lt;p class=&quot;title&quot;&gt;ORTO STARTASTIK&lt;/p&gt;
+          &lt;/th&gt;
+          &lt;th class=&quot;included&quot;&gt;
+              &lt;p class=&quot;title&quot;&gt;ORTO FANTASTIK&lt;/p&gt;
+          &lt;/th&gt;
+          &lt;th class=&quot;included&quot;&gt;
+              &lt;p class=&quot;title&quot;&gt;ORTO BOMBASTIK&lt;/p&gt;
+          &lt;/th&gt;
+          &lt;th class=&quot;included&quot;&gt;
+              &lt;p class=&quot;title&quot;&gt;ORTO TRIPSTER PLUS&lt;/p&gt;
+          &lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Mesečna naročnina&lt;/td&gt;
+          &lt;td class=&quot;included price darker&quot;&gt;19,99 &lt;small&gt;€/m&lt;/small&gt;&lt;/td&gt;
+          &lt;td class=&quot;included price darker&quot;&gt;22,99 &lt;small&gt;€/m&lt;/small&gt;&lt;/td&gt;
+          &lt;td class=&quot;included price darker&quot;&gt;26,99 &lt;small&gt;€/m&lt;/small&gt;&lt;/td&gt;
+          &lt;td class=&quot;included price darker&quot;&gt;34,99 &lt;small&gt;€/m&lt;/small&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Klici v vsa omrežja&lt;/td&gt;
+          &lt;td class=&quot;included&quot;&gt;&lt;span class=&quot;infinite&quot;&gt;&#8734;&lt;/span&gt;&lt;/td&gt;
+          &lt;td class=&quot;included&quot;&gt;&lt;span class=&quot;infinite&quot;&gt;&#8734;&lt;/span&gt;&lt;/td&gt;
+          &lt;td class=&quot;included&quot;&gt;&lt;span class=&quot;infinite&quot;&gt;&#8734;&lt;/span&gt;&lt;/td&gt;
+          &lt;td class=&quot;included&quot;&gt;&lt;span class=&quot;infinite&quot;&gt;&#8734;&lt;/span&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;SMS/MMS&lt;/td&gt;
+          &lt;td class=&quot;included&quot;&gt;&lt;span class=&quot;infinite&quot;&gt;&#8734;&lt;/span&gt;&lt;/td&gt;
+          &lt;td class=&quot;included&quot;&gt;&lt;span class=&quot;infinite&quot;&gt;&#8734;&lt;/span&gt;&lt;/td&gt;
+          &lt;td class=&quot;included&quot;&gt;&lt;span class=&quot;infinite&quot;&gt;&#8734;&lt;/span&gt;&lt;/td&gt;
+          &lt;td class=&quot;included&quot;&gt;&lt;span class=&quot;infinite&quot;&gt;&#8734;&lt;/span&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Prenos podatkov&lt;/td&gt;
+          &lt;td class=&quot;included&quot;&gt;1 &lt;small&gt;GB&lt;/small&gt;&lt;/td&gt;
+          &lt;td class=&quot;included&quot;&gt;3 &lt;small&gt;GB&lt;/small&gt;&lt;/td&gt;
+          &lt;td class=&quot;included&quot;&gt;6 &lt;small&gt;GB&lt;/small&gt;&lt;/td&gt;
+          &lt;td class=&quot;included&quot;&gt;15 &lt;small&gt;GB&lt;/small&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Hitrost prenosa podatkov&lt;/td&gt;
+          &lt;td class=&quot;included&quot;&gt;20/3 &lt;small&gt;Mbit/s&lt;/small&gt;&lt;/td&gt;
+          &lt;td class=&quot;included&quot;&gt;40/5 &lt;small&gt;Mbit/s&lt;/small&gt;&lt;/td&gt;
+          &lt;td class=&quot;included&quot;&gt;150/50 &lt;small&gt;Mbit/s&lt;/small&gt;&lt;/td&gt;
+          &lt;td class=&quot;included&quot;&gt;150/50 &lt;small&gt;Mbit/s&lt;/small&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Neomejen prenos podatkov z najvišjo 4G/LTE hitrostjo za 3 mesece&lt;/td&gt;
+          &lt;td&gt;&lt;span class=&quot;bigger&quot;&gt;&lt;i class=&quot;ico-checkmark-green ico-small-svg&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;span class=&quot;bigger&quot;&gt;&lt;i class=&quot;ico-checkmark-green ico-small-svg&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;span class=&quot;bigger&quot;&gt;&lt;i class=&quot;ico-checkmark-green ico-small-svg&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;span class=&quot;bigger&quot;&gt;&lt;i class=&quot;ico-checkmark-green ico-small-svg&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Uporaba v tujini po porabi, a ne več kot 10 EUR v EU&lt;/td&gt;
+          &lt;td&gt;&lt;span class=&quot;bigger&quot;&gt;&lt;i class=&quot;ico-checkmark-green ico-small-svg&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;span class=&quot;bigger&quot;&gt;&lt;i class=&quot;ico-checkmark-green ico-small-svg&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;span class=&quot;bigger&quot;&gt;&lt;i class=&quot;ico-checkmark-green ico-small-svg&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;span class=&quot;bigger&quot;&gt;&lt;i class=&quot;ico-checkmark-green ico-small-svg&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Prenos podatkov&lt;/td&gt;
+          &lt;td&gt;250 MB&lt;br&gt;za 1,99 EUR&lt;/td&gt;
+          &lt;td&gt;250 MB&lt;br&gt;za 1,99 EUR&lt;/td&gt;
+          &lt;td&gt;250 MB&lt;br&gt;za 1,99 EUR&lt;/td&gt;
+          &lt;td&gt;250 MB&lt;br&gt;za 1,99 EUR&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&nbsp;&lt;/td&gt;
+          &lt;td&gt;&lt;input type=&quot;radio&quot; name=&quot;paket-selector&quot;&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;input type=&quot;radio&quot; name=&quot;paket-selector&quot;&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;input type=&quot;radio&quot; name=&quot;paket-selector&quot;&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;input type=&quot;radio&quot; name=&quot;paket-selector&quot;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</pre>
+    </div>
+  </div>
+
 </section>
 
 <!-- FORMS
@@ -6316,9 +6503,9 @@ $('.mediascreen .navigation').tabs('.mediascreen .banners &gt; div', {
 		</div>
 	</div>
 </section>
+
 <!-- BANNERS
 ================================================== -->
-
 <section id="banners">
   <div class="page-header">
     <h3>Banners</h3>
@@ -6417,6 +6604,71 @@ $('.mediascreen .navigation').tabs('.mediascreen .banners &gt; div', {
 
 </section>
 <!-- BANNERS
+================================================== -->
+
+
+<!-- USAGE GRAPHS
+================================================== -->
+<section id="usage-graphs">
+  <div class="page-header">
+    <h3>Usage Graphs</h3>
+  </div>
+
+  <h3>Internet usage  <span class="label">IU1</span></h3>
+  <br>
+  <div class="row">
+    <div class="span6">
+      <div class="period-internet-usage" data-max="6000" data-used="3200" data-day-percent="60">
+        <p class="heading no-margin">
+          <span class="min text-left">0 MB</span>
+          <span class="title text-center">Used data</span>
+          <span class="max text-right">6000 MB</span>
+        </p>
+        <div class="actual-usage">
+          <div class="used" data-used="3200"></div>
+        </div>
+        <div class="month">
+          <div class="current-day">
+            <span class="today">25.7.</span>
+          </div>
+        </div>
+        <p class="footer no-margin">
+          <span class="min text-left">1.8.</span>
+          <span class="title text-center">Billing period</span>
+          <span class="max text-right">1.9.</span>
+        </p>
+      </div>
+    </div>
+    <div class="span6">
+      <p>This module shows monthly internet usage for user. It accepts 3 data variables, total internet, used internet and which day in current billing interval is (in percent).</p>
+      <pre class="prettyprint linenums">
+&lt;div class=&quot;period-internet-usage&quot; data-max=&quot;6000&quot; data-used=&quot;3200&quot; data-day-percent=&quot;60&quot;&gt;
+  &lt;p class=&quot;heading no-margin&quot;&gt;
+    &lt;span class=&quot;min text-left&quot;>0 MB&lt;/span&gt;
+    &lt;span class=&quot;title text-center&quot;>Used data&lt;/span&gt;
+    &lt;span class=&quot;max text-right&quot;>6000 MB&lt;/span&gt;
+  &lt;/p&gt;
+  &lt;div class=&quot;actual-usage&quot;&gt;
+    &lt;div class=&quot;used&quot; data-used=&quot;3200&quot;>&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;month&quot;&gt;
+    &lt;div class=&quot;current-day&quot;&gt;
+      &lt;span class=&quot;today&quot;>25.7.&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;p class=&quot;footer no-margin&quot;&gt;
+    &lt;span class=&quot;min text-left&quot;>1.8.&lt;/span&gt;
+    &lt;span class=&quot;title text-center&quot;>Billing period&lt;/span&gt;
+    &lt;span class=&quot;max text-right&quot;>1.9.&lt;/span&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+</pre>
+    </div>
+  </div>
+  <hr>
+
+</section>
+<!-- USAGE GRAPHS
 ================================================== -->
 
 <section id="landing" class="page-block landing">

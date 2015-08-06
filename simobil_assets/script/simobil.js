@@ -682,6 +682,20 @@ var Simobil = {
 			return false;
 		});
 
+		/** Moj.simobil preklapljanje med paketi */
+		$('body').on('change', '.paket-selector-table input[type="radio"]', function(){
+			var that = $(this),
+				thatIndex = that.parent().index(),
+				table = that.parents('table'),
+				tr = table.find(':not(tfoot) tr');
+
+			table.find('.selected-td').removeClass('selected-td');
+
+			tr.each(function(){
+				$(this).children().eq( thatIndex ).addClass('selected-td');
+			});
+		});
+
 		/** Configurator disable options **/
 		$('.configurator .paket-selector .tools input, .configurator .paket-selector-table .tools input,  #toggle-free').change(function(){
 			if (this.checked) {
@@ -730,6 +744,46 @@ var Simobil = {
 				$(_obj.data('toggle')).attr('checked', 'checked');
 			}*/
 		});
+
+		/** Animate moj.simobil monthly internet usage and current day in month */
+		if( $('.period-internet-usage').length ) {
+			var PIS = $('.period-internet-usage'),
+				max 	= parseInt( PIS.data('max') ), 	// Max monthly data for user
+				used 	= parseInt( PIS.data('used') ),	// Used data for user
+				ratio 	= used / max * 100,				// Calculate used percentage
+				USEDNET	= PIS.find('.used'),
+
+				DAY 		= PIS.find('.current-day'),
+				VALUE 		= PIS.find('.value'),
+				dayPercent 	= parseInt( PIS.data('day-percent') );
+
+			/**
+			 * Setup odometerOptions object for number animation
+			 * @type {Object}
+			 */
+			window.odometerOptions = {
+				duration 	: 8000
+			};
+
+			$(window).on('load', function(){
+
+				/** Animate day width */
+				DAY.css('min-width', dayPercent + '%');
+
+				/** Animate usage width */
+				USEDNET.css('min-width', ratio + '%');
+
+				/** Animate the number with slight delay */
+				setTimeout(function(){
+
+					/** Animation has ended */
+					USEDNET.addClass('loaded');
+
+					/** Animate the numbers */
+					VALUE.html( used );
+				}, 1500);
+			});
+		}
 
 		/** Form date fields **/
                 /** don't merge **/
