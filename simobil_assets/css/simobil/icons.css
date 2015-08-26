@@ -3923,6 +3923,27 @@
   background: transparent url("../../images/layout/icons/svg/ico-data-transfer.svg") 0 0 no-repeat;
   background-size: 64px 64px;
 }
+.ico-data-transfer-pink.ico-small-svg,
+.page-block .ico-data-transfer-pink.ico-small-svg {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background: url("../../images/layout/icons/svg/ico-data-transfer-pink.svg") 0 0 no-repeat;
+}
+.ico-data-transfer-pink.ico-medium-svg,
+.page-block .ico-data-transfer-pink.ico-medium-svg {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background: transparent url("../../images/layout/icons/svg/ico-data-transfer-pink.svg") 0 0 no-repeat;
+}
+.ico-data-transfer-pink.ico-large-svg,
+.page-block .ico-data-transfer-pink.ico-large-svg {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  background: transparent url("../../images/layout/icons/svg/ico-data-transfer-pink.svg") 0 0 no-repeat;
+}
 .ico-messages,
 .page-block .ico-messages {
   width: 16px;
@@ -9736,6 +9757,27 @@
   line-height: 64px;
   background: transparent url("../../images/layout/icons/svg/ico-heart-orange.svg") 0 0 no-repeat;
 }
+.ico-heart-pink.ico-small-svg,
+.page-block .ico-heart-pink.ico-small-svg {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background: url("../../images/layout/icons/svg/ico-heart-pink.svg") 0 0 no-repeat;
+}
+.ico-heart-pink.ico-medium-svg,
+.page-block .ico-heart-pink.ico-medium-svg {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background: transparent url("../../images/layout/icons/svg/ico-heart-pink.svg") 0 0 no-repeat;
+}
+.ico-heart-pink.ico-large-svg,
+.page-block .ico-heart-pink.ico-large-svg {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  background: transparent url("../../images/layout/icons/svg/ico-heart-pink.svg") 0 0 no-repeat;
+}
 .ico-heart-blue,
 .page-block .ico-heart-blue {
   width: 16px;
@@ -11947,6 +11989,27 @@
   line-height: 64px;
   background: transparent url("../../images/layout/icons/svg/ico-tekoca-poraba.svg") 0 0 no-repeat;
 }
+.ico-tekoca-poraba-pink.ico-small-svg,
+.page-block .ico-tekoca-poraba-pink.ico-small-svg {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background: url("../../images/layout/icons/svg/ico-tekoca-poraba-pink.svg") 0 0 no-repeat;
+}
+.ico-tekoca-poraba-pink.ico-medium-svg,
+.page-block .ico-tekoca-poraba-pink.ico-medium-svg {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background: transparent url("../../images/layout/icons/svg/ico-tekoca-poraba-pink.svg") 0 0 no-repeat;
+}
+.ico-tekoca-poraba-pink.ico-large-svg,
+.page-block .ico-tekoca-poraba-pink.ico-large-svg {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  background: transparent url("../../images/layout/icons/svg/ico-tekoca-poraba-pink.svg") 0 0 no-repeat;
+}
 .ico-pretekla-poraba,
 .page-block .ico-pretekla-poraba {
   width: 16px;
@@ -12290,6 +12353,27 @@
   line-height: 64px;
   background: transparent url("../../images/layout/icons/svg/ico-world-black.svg") 0 0 no-repeat;
 }
+.ico-world-pink.ico-small-svg,
+.page-block .ico-world-pink.ico-small-svg {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background: url("../../images/layout/icons/svg/ico-world-pink.svg") 0 0 no-repeat;
+}
+.ico-world-pink.ico-medium-svg,
+.page-block .ico-world-pink.ico-medium-svg {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background: transparent url("../../images/layout/icons/svg/ico-world-pink.svg") 0 0 no-repeat;
+}
+.ico-world-pink.ico-large-svg,
+.page-block .ico-world-pink.ico-large-svg {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  background: transparent url("../../images/layout/icons/svg/ico-world-pink.svg") 0 0 no-repeat;
+}
 .ico-data-transfer-black,
 .page-block .ico-data-transfer-black {
   width: 16px;
@@ -12587,7 +12671,30 @@
   background: transparent url("../../images/layout/icons/svg/ico-messages-gray.svg") 0 0 no-repeat;
   background-size: 64px;
 }
-
+.ico-messages-pink.ico-small-svg,
+.page-block .ico-messages-pink.ico-small-svg {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background: url("../../images/layout/icons/svg/ico-messages-pink.svg") 0 0 no-repeat;
+  background-size: 16px;
+}
+.ico-messages-pink.ico-medium-svg,
+.page-block .ico-messages-pink.ico-medium-svg {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background: transparent url("../../images/layout/icons/svg/ico-messages-pink.svg") 0 0 no-repeat;
+  background-size: 32px;
+}
+.ico-messages-pink.ico-large-svg,
+.page-block .ico-messages-pink.ico-large-svg {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  background: transparent url("../../images/layout/icons/svg/ico-messages-pink.svg") 0 0 no-repeat;
+  background-size: 64px;
+}
 .ico-messages-gray.ico-large,
 .page-block .ico-messages-gray-center.ico-large {
     width: 64px;
@@ -12862,6 +12969,27 @@
   line-height: 64px;
   background: transparent url("../../images/layout/icons/svg/ico-sim-dvojni.svg") 0 0 no-repeat;
 }
+.ico-sim-dvojni-pink.ico-small-svg,
+.page-block .ico-sim-dvojni-pink.ico-small-svg {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background: transparent url("../../images/layout/icons/svg/ico-sim-dvojni-pink.svg");
+}
+.ico-sim-dvojni-pink.ico-medium-svg,
+.page-block .ico-sim-dvojni-pink.ico-medium-svg {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background: transparent url("../../images/layout/icons/svg/ico-sim-dvojni-pink.svg") 0 0 no-repeat;
+}
+.ico-sim-dvojni-pink.ico-large-svg,
+.page-block .ico-sim-dvojni-pink.ico-large-svg {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  background: transparent url("../../images/layout/icons/svg/ico-sim-dvojni-pink.svg") 0 0 no-repeat;
+}
 .ico-sim-dvojni.ico-small-medium-svg {
   width: 22px !important;
   height: 23px !important;
@@ -12894,7 +13022,69 @@ i[class*=ico-medium].align-with-label {
     top: -7px;
     margin: 0 8px;
 }
-
+.ico-lock-pink.ico-small-svg,
+.page-block .ico-lock-pink.ico-small-svg {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background-image: url("../../images/layout/icons/svg/ico-lock-pink.svg");
+}
+.ico-lock-pink.ico-medium-svg,
+.page-block .ico-lock-pink.ico-medium-svg {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    background: transparent url("../../images/layout/icons/svg/ico-lock-pink.svg") 0 0 no-repeat;
+}
+.ico-lock-pink.ico-large-svg,
+.page-block .ico-lock-pink.ico-large-svg {
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    background: transparent url("../../images/layout/icons/svg/ico-lock-pink.svg") 0 0 no-repeat;
+}
+.ico-ruler-pink.ico-small-svg,
+.page-block .ico-ruler-pink.ico-small-svg {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background-image: url("../../images/layout/icons/svg/ico-ruler-pink.svg");
+}
+.ico-ruler-pink.ico-medium-svg,
+.page-block .ico-ruler-pink.ico-medium-svg {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    background: transparent url("../../images/layout/icons/svg/ico-ruler-pink.svg") 0 0 no-repeat;
+}
+.ico-ruler-pink.ico-large-svg,
+.page-block .ico-ruler-pink.ico-large-svg {
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    background: transparent url("../../images/layout/icons/svg/ico-ruler-pink.svg") 0 0 no-repeat;
+}
+.ico-1gb-1eur.ico-small-svg,
+.page-block .ico-1gb-1eur.ico-small-svg {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background-image: url("../../images/layout/icons/svg/ico-1gb-1eur.svg");
+}
+.ico-1gb-1eur.ico-medium-svg,
+.page-block .ico-1gb-1eur.ico-medium-svg {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    background: transparent url("../../images/layout/icons/svg/ico-1gb-1eur.svg") 0 0 no-repeat;
+}
+.ico-1gb-1eur.ico-large-svg,
+.page-block .ico-1gb-1eur.ico-large-svg {
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    background: transparent url("../../images/layout/icons/svg/ico-1gb-1eur.svg") 0 0 no-repeat;
+}
 .ico-dostava-na-dom.ico-small-svg,
 .page-block .ico-dostava-na-dom.ico-small-svg {
     width: 16px;

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="17px"
+	 viewBox="0 0 30 17" enable-background="new 0 0 30 17" xml:space="preserve">
+<title>Shape</title>
+<desc>Created with Sketch.</desc>
+<g id="Page-1" sketch:type="MSPage">
+	<g id="Configurator" transform="translate(-191.000000, -411.000000)" sketch:type="MSArtboardGroup">
+		<path id="Shape" sketch:type="MSShapeGroup" fill="#E61E6B" d="M218.255,428h-25.194c-0.988,0-1.799-0.812-1.799-1.8v-12.268
+			l13.149,7.12c0.291,0.153,0.735,0.369,0.812,0.376c0.084,0.008,0.214,0.008,0.291,0c0.084-0.007,0.521-0.214,0.811-0.367
+			l13.73-7.207V426.2C220.055,427.188,219.244,428,218.255,428L218.255,428z M219.129,412.209l-13.227,7.03
+			c-0.291,0.153-0.765,0.153-1.056-0.007l-12.927-7.093c0.314-0.26,0.705-0.421,1.142-0.421h25.019c0.406,0,0.774,0.137,1.08,0.367
+			C219.145,412.094,219.136,412.202,219.129,412.209L219.129,412.209z"/>
+	</g>
+</g>
+</svg>
