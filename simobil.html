@@ -14,6 +14,7 @@
     -->
 	<link href="simobil_assets/css/bootstrap/bootstrap.css" rel="stylesheet">
 	<link href="simobil_assets/css/bootstrap/responsive.css" rel="stylesheet">
+  <link href="simobil_assets/css/odometer/odometer-theme-default.css" rel="stylesheet">
 	<link href="simobil_assets/css/simobil/simobil.css" rel="stylesheet">
   <link href="simobil_assets/css/simobil/icons.css" rel="stylesheet">
   <link href="simobil_assets/css/simobil/poslovni.css" rel="stylesheet">
@@ -201,6 +202,7 @@
           <li><a href="#mediascreen">Mediascreen</a></li>
           <li><a href="#banners">Banners</a></li>
           <li><a href="#usage-graphs">Usage Graphs</a></li>
+          <li><a href="#elastik-configurator">Elastik Configurator</a></li>
         </ul>
       </li>
     </ul>
@@ -6682,6 +6684,192 @@ $('.mediascreen .navigation').tabs('.mediascreen .banners &gt; div', {
 <!-- USAGE GRAPHS
 ================================================== -->
 
+<!-- Elastik Configurator
+================================================== -->
+<section id="elastik-configurator">
+  <div class="page-header">
+    <h3>Configurators</h3>
+  </div>
+
+  <h3>ORTO ELASTIK  <span class="label">OE1</span></h3>
+  <br>
+  <div class="row">
+    <div class="span12">
+      <!-- Start: Elastik Configuratior -->
+      <div class="elastik-configurator in-reset-state">
+        <h2 class="title">Izberi količino GB in preveri, kako elastičen je paket.</h2>
+        <div class="elastik-configurator-wrapper clearfix">
+  
+          <!-- Start: Locked Wrapper lines -->
+          <span class="locked-wrapper-line first"></span>
+          <span class="locked-wrapper-line second"></span>
+          <!-- End: Locked Wrapper lines -->
+
+          <!-- Total Per Month -->
+          <div class="total-per-month-wrapper pull-left text-center">
+            <span class="total">0,00</span>
+            <span class="title">EUR / MESEC</span>
+          </div>
+          <!-- Total Per Month -->
+
+          <!-- Icons -->
+          <div class="including pull-left">
+            <span class="infinity">∞</span>
+            <span><i class="ico-calls-brown ico-medium-svg"></i></span>
+            <span><i class="ico-messages-brown ico-medium-svg"></i></span>
+            <span><i class="ico-mms-brown ico-medium-svg"></i></span>
+            <span data-cost="0" class="reset pull-right">+ 2 GB</span>
+          </div>
+          <!-- Icons -->
+
+          <!-- Meter -->
+          <div class="meter pull-left">
+            <span class="number" data-cost="1">+1</span>
+            <span class="number" data-cost="2">+2</span>
+            <span class="number" data-cost="3">+3</span>
+            <span class="number" data-cost="4">+4</span>
+            <span class="number" data-cost="5">+5</span>
+            <span class="number" data-cost="6">+6</span>
+            <span class="number" data-cost="7">+7</span>
+            <span class="number" data-cost="8">+8</span>
+            <span class="number" data-cost="9">+9</span>
+            <span class="number" data-cost="10">+10</span>
+            <span class="title"><i class="ico-up-down-brown ico-small-svg"></i> GB</span>
+            <div class="current-configuration"></div>
+          </div>
+          <!-- Meter -->
+
+          <!-- Start: Mobile meter -->
+          <div class="meter-mobile visible-phone visible-tablet">
+            <span class="number" data-cost="1">+1</span>
+            <span class="number" data-cost="2">+2</span>
+            <span class="number" data-cost="3">+3</span>
+            <span class="number" data-cost="4">+4</span>
+            <span class="number" data-cost="5">+5</span>
+            <span class="number" data-cost="6">+6</span>
+            <span class="number" data-cost="7">+7</span>
+            <span class="number" data-cost="8">+8</span>
+            <span class="number" data-cost="9">+9</span>
+            <span class="number" data-cost="10">+10</span>
+            <div class="additional-gb-per-month"></div>
+          </div>
+          <!-- End: Mobile meter -->
+
+          <!-- Start: Mobile configurator -->
+          <div class="mobile-configurator visible-phone visible-tablet text-center">
+            <span class="button" data-operation="subtract">-</span>
+            <span class="number"><span class="value">0</span> GB</span>
+            <span class="button" data-operation="add">+</span>
+          </div>
+          <!-- End: Mobile configurator -->
+
+        </div>
+
+        <div class="lock-wrapper clearfix">
+          <svg height="32" version="1.1" width="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" class="pull-left"><desc></desc><defs></defs><g>
+            <g transform="matrix(0.60144232,0,0,0.51599595,1.7120429,0.5915785)">
+              <path fill="#ab9d80" d="m 74.243261,65.070058 -8.771,0 0,-15.417951 c 0,-9.437 -5.68,-15.116 -15.117,-15.116 -9.438,0 -15.114,5.679 -15.114,15.116 l 0,24.451 -8.771,0 0,-24.451 c 0,-13.171 10.716,-23.885 23.886,-23.885 13.172,0 23.89,10.714 23.89,23.885 -0.0037,8.148799 0.0066,7.275332 -0.003,15.417951 z" transform="matrix(1,0,0,1,0,-11)"></path>
+            </g>
+            <rect fill="#ab9d80" stroke-width="5" stroke-linecap="round" width="32" height="28" x="16" y="32.5"></rect>
+          </g></svg>
+          <span class="pull-left before">Določite, koliko GB želite največ porabiti na mesec. Zaklepanje GB znaša samo 1 EUR/mesec. Kliknite na ključavnico in preverite svojo ceno paketa.</span>
+          <span class="pull-left after">ORTO ELASTIK je zaklenjen na največ <span class="number-of-updates"></span> <span class="beseda-dodatni-gb"></span> GB, zato je mesečna naročnina 19,99 EUR + <span class="number-of-updates"></span> EUR <span class="additional-euro">+ 1 EUR</span> = <span class="total-price"></span> <strong>EUR</strong></span>
+        </div>
+      </div>
+      <!-- End: Elastik Configuratior -->
+    </div>
+    <div class="span12">
+      <p>This is configurator for the new ORTO ELASTIK offer. You can add or subtract internet data usage by clicking on the numbers in the ruler. Mobile version has a different functionality; ruler is there only for visual presentation, you operate the monthly cost by clicking the - and + buttons.</p>
+      <pre class="prettyprint linenums">
+&lt;div class=&quot;elastik-configurator in-reset-state&quot;&gt;
+  &lt;h2 class=&quot;title&quot;&gt;Izberi količino GB in preveri, kako elastičen je paket.&lt;/h2&gt;
+  &lt;div class=&quot;elastik-configurator-wrapper clearfix&quot;&gt;
+
+    &lt;!-- Start: Locked Wrapper lines --&gt;
+    &lt;span class=&quot;locked-wrapper-line first&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;locked-wrapper-line second&quot;&gt;&lt;/span&gt;
+    &lt;!-- End: Locked Wrapper lines --&gt;
+
+    &lt;!-- Total Per Month --&gt;
+    &lt;div class=&quot;total-per-month-wrapper pull-left text-center&quot;&gt;
+      &lt;span class=&quot;total&quot;&gt;0,00&lt;/span&gt;
+      &lt;span class=&quot;title&quot;&gt;EUR / MESEC&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;!-- Total Per Month --&gt;
+
+    &lt;!-- Icons --&gt;
+    &lt;div class=&quot;including pull-left&quot;&gt;
+      &lt;span class=&quot;infinity&quot;&gt;∞&lt;/span&gt;
+      &lt;span&gt;&lt;i class=&quot;ico-calls-brown ico-medium-svg&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+      &lt;span&gt;&lt;i class=&quot;ico-messages-brown ico-medium-svg&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+      &lt;span&gt;&lt;i class=&quot;ico-mms-brown ico-medium-svg&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+      &lt;span data-cost=&quot;0&quot; class=&quot;reset pull-right&quot;&gt;+ 2 GB&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;!-- Icons --&gt;
+
+    &lt;!-- Meter --&gt;
+    &lt;div class=&quot;meter pull-left&quot;&gt;
+      &lt;span class=&quot;number&quot; data-cost=&quot;1&quot;&gt;+1&lt;/span&gt;
+      &lt;span class=&quot;number&quot; data-cost=&quot;2&quot;&gt;+2&lt;/span&gt;
+      &lt;span class=&quot;number&quot; data-cost=&quot;3&quot;&gt;+3&lt;/span&gt;
+      &lt;span class=&quot;number&quot; data-cost=&quot;4&quot;&gt;+4&lt;/span&gt;
+      &lt;span class=&quot;number&quot; data-cost=&quot;5&quot;&gt;+5&lt;/span&gt;
+      &lt;span class=&quot;number&quot; data-cost=&quot;6&quot;&gt;+6&lt;/span&gt;
+      &lt;span class=&quot;number&quot; data-cost=&quot;7&quot;&gt;+7&lt;/span&gt;
+      &lt;span class=&quot;number&quot; data-cost=&quot;8&quot;&gt;+8&lt;/span&gt;
+      &lt;span class=&quot;number&quot; data-cost=&quot;9&quot;&gt;+9&lt;/span&gt;
+      &lt;span class=&quot;number&quot; data-cost=&quot;10&quot;&gt;+10&lt;/span&gt;
+      &lt;span class=&quot;title&quot;&gt;&lt;i class=&quot;ico-up-down-brown ico-small-svg&quot;&gt;&lt;/i&gt; GB&lt;/span&gt;
+      &lt;div class=&quot;current-configuration&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- Meter --&gt;
+
+    &lt;!-- Start: Mobile meter --&gt;
+    &lt;div class=&quot;meter-mobile visible-phone visible-tablet&quot;&gt;
+      &lt;span class=&quot;number&quot; data-cost=&quot;1&quot;&gt;+1&lt;/span&gt;
+      &lt;span class=&quot;number&quot; data-cost=&quot;2&quot;&gt;+2&lt;/span&gt;
+      &lt;span class=&quot;number&quot; data-cost=&quot;3&quot;&gt;+3&lt;/span&gt;
+      &lt;span class=&quot;number&quot; data-cost=&quot;4&quot;&gt;+4&lt;/span&gt;
+      &lt;span class=&quot;number&quot; data-cost=&quot;5&quot;&gt;+5&lt;/span&gt;
+      &lt;span class=&quot;number&quot; data-cost=&quot;6&quot;&gt;+6&lt;/span&gt;
+      &lt;span class=&quot;number&quot; data-cost=&quot;7&quot;&gt;+7&lt;/span&gt;
+      &lt;span class=&quot;number&quot; data-cost=&quot;8&quot;&gt;+8&lt;/span&gt;
+      &lt;span class=&quot;number&quot; data-cost=&quot;9&quot;&gt;+9&lt;/span&gt;
+      &lt;span class=&quot;number&quot; data-cost=&quot;10&quot;&gt;+10&lt;/span&gt;
+      &lt;div class=&quot;additional-gb-per-month&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- End: Mobile meter --&gt;
+
+    &lt;!-- Start: Mobile configurator --&gt;
+    &lt;div class=&quot;mobile-configurator visible-phone visible-tablet text-center&quot;&gt;
+      &lt;span class=&quot;button&quot; data-operation=&quot;subtract&quot;&gt;-&lt;/span&gt;
+      &lt;span class=&quot;number&quot;&gt;&lt;span class=&quot;value&quot;&gt;0&lt;/span&gt; GB&lt;/span&gt;
+      &lt;span class=&quot;button&quot; data-operation=&quot;add&quot;&gt;+&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;!-- End: Mobile configurator --&gt;
+
+  &lt;/div&gt;
+
+  &lt;div class=&quot;lock-wrapper clearfix&quot;&gt;
+    &lt;svg height=&quot;32&quot; version=&quot;1.1&quot; width=&quot;32&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 64 64&quot; class=&quot;pull-left&quot;&gt;&lt;desc&gt;&lt;/desc&gt;&lt;defs&gt;&lt;/defs&gt;&lt;g&gt;
+      &lt;g transform=&quot;matrix(0.60144232,0,0,0.51599595,1.7120429,0.5915785)&quot;&gt;
+        &lt;path fill=&quot;#ab9d80&quot; d=&quot;m 74.243261,65.070058 -8.771,0 0,-15.417951 c 0,-9.437 -5.68,-15.116 -15.117,-15.116 -9.438,0 -15.114,5.679 -15.114,15.116 l 0,24.451 -8.771,0 0,-24.451 c 0,-13.171 10.716,-23.885 23.886,-23.885 13.172,0 23.89,10.714 23.89,23.885 -0.0037,8.148799 0.0066,7.275332 -0.003,15.417951 z&quot; transform=&quot;matrix(1,0,0,1,0,-11)&quot;&gt;&lt;/path&gt;
+      &lt;/g&gt;
+      &lt;rect fill=&quot;#ab9d80&quot; stroke-width=&quot;5&quot; stroke-linecap=&quot;round&quot; width=&quot;32&quot; height=&quot;28&quot; x=&quot;16&quot; y=&quot;32.5&quot;&gt;&lt;/rect&gt;
+    &lt;/g&gt;&lt;/svg&gt;
+    &lt;span class=&quot;pull-left before&quot;&gt;Določite, koliko GB želite največ porabiti na mesec. Zaklepanje GB znaša samo 1 EUR/mesec. Kliknite na ključavnico in preverite svojo ceno paketa.&lt;/span&gt;
+    &lt;span class=&quot;pull-left after&quot;&gt;ORTO ELASTIK je zaklenjen na največ &lt;span class=&quot;number-of-updates&quot;&gt;&lt;/span&gt; &lt;span class=&quot;beseda-dodatni-gb&quot;&gt;&lt;/span&gt; GB, zato je mesečna naročnina 19,99 EUR + &lt;span class=&quot;number-of-updates&quot;&gt;&lt;/span&gt; EUR &lt;span class=&quot;additional-euro&quot;&gt;+ 1 EUR&lt;/span&gt; = &lt;span class=&quot;total-price&quot;&gt;&lt;/span&gt; &lt;strong&gt;EUR&lt;/strong&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+    </div>
+  </div>
+  <hr>
+
+</section>
+<!-- Elastik Configurator
+================================================== -->
+
 <section id="landing" class="page-block landing">
   <div class="page-header">
     <h3>Landing page elements</h3>
@@ -7886,6 +8074,8 @@ $('.mediascreen .navigation').tabs('.mediascreen .banners &gt; div', {
 	<script src="simobil_assets/script/lib/jquery.tools.min.js"></script>
 	<script src="simobil_assets/script/lib/jquery.hdimensions.js"></script>
 	<script src="simobil_assets/script/lib/responsive-tables.js"></script>
+  <script src="simobil_assets/script/lib/odometer.min.js"></script>
+  <script src="simobil_assets/script/lib/hammer.min.js"></script>
 	<script src="simobil_assets/script/simobil.js"></script>
 
 	<script src="assets/js/application.js"></script>

@@ -3871,6 +3871,30 @@
   background: transparent url("../../images/layout/icons/svg/ico-calls.svg") 0 0 no-repeat;
   background-size: 64px 64px;
 }
+.ico-calls-brown.ico-small-svg,
+.page-block .ico-calls-brown.ico-small-svg {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background: url("../../images/layout/icons/svg/ico-calls-brown.svg") 0 0 no-repeat;
+  background-size: 16px 16px;
+}
+.ico-calls-brown.ico-medium-svg,
+.page-block .ico-calls-brown.ico-medium-svg {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background: transparent url("../../images/layout/icons/svg/ico-calls-brown.svg") 0 0 no-repeat;
+  background-size: 32px 32px;
+}
+.ico-calls-brown.ico-large-svg,
+.page-block .ico-calls-brown.ico-large-svg {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  background: transparent url("../../images/layout/icons/svg/ico-calls-brown.svg") 0 0 no-repeat;
+  background-size: 64px 64px;
+}
 .ico-data-transfer,
 .page-block .ico-data-transfer {
   width: 16px;
@@ -3994,6 +4018,30 @@
   height: 64px;
   line-height: 64px;
   background: transparent url("../../images/layout/icons/svg/ico-messages.svg") 0 0 no-repeat;
+  background-size: 64px 64px;
+}
+.ico-messages-brown.ico-small-svg,
+.page-block .ico-messages-brown.ico-small-svg {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background: url("../../images/layout/icons/svg/ico-messages-brown.svg") 0 0 no-repeat;
+  background-size: 16px 16px;
+}
+.ico-messages-brown.ico-medium-svg,
+.page-block .ico-messages-brown.ico-medium-svg {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background: transparent url("../../images/layout/icons/svg/ico-messages-brown.svg") 0 0 no-repeat;
+  background-size: 32px 32px;
+}
+.ico-messages-brown.ico-large-svg,
+.page-block .ico-messages-brown.ico-large-svg {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  background: transparent url("../../images/layout/icons/svg/ico-messages-brown.svg") 0 0 no-repeat;
   background-size: 64px 64px;
 }
 .ico-plan,
@@ -13876,4 +13924,130 @@ i[class*=ico-medium].align-with-label {
   line-height: 64px;
   background: transparent url("../../images/layout/icons/svg/ico-puscica-naprej.svg") 0 0 no-repeat;
   background-size: 64px 64px !important;
+}
+.ico-up-down-brown.ico-small-svg,
+.page-block .ico-up-down-brown.ico-small-svg {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background-image: url("../../images/layout/icons/svg/ico-up-down-brown.svg");
+}
+.ico-up-down-brown.ico-medium-svg,
+.page-block .ico-up-down-brown.ico-medium-svg {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    background: transparent url("../../images/layout/icons/svg/ico-up-down-brown.svg") 0 0 no-repeat;
+}
+.ico-up-down-brown.ico-large-svg,
+.page-block .ico-up-down-brown.ico-large-svg {
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    background: transparent url("../../images/layout/icons/svg/ico-up-down-brown.svg") 0 0 no-repeat;
+}
+.ico-lock.ico-small-svg,
+.page-block .ico-lock.ico-small-svg {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background-image: url("../../images/layout/icons/svg/ico-lock.svg");
+}
+.ico-lock.ico-medium-svg,
+.page-block .ico-lock.ico-medium-svg {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    background: transparent url("../../images/layout/icons/svg/ico-lock.svg") 0 0 no-repeat;
+}
+.ico-lock.ico-large-svg,
+.page-block .ico-lock.ico-large-svg {
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    background: transparent url("../../images/layout/icons/svg/ico-lock.svg") 0 0 no-repeat;
+}
+.ico-lock-pink.ico-small-svg,
+.page-block .ico-lock-pink.ico-small-svg {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background-image: url("../../images/layout/icons/svg/ico-lock-pink.svg");
+}
+.ico-lock-pink.ico-medium-svg,
+.page-block .ico-lock-pink.ico-medium-svg {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    background: transparent url("../../images/layout/icons/svg/ico-lock-pink.svg") 0 0 no-repeat;
+}
+.ico-lock-pink.ico-large-svg,
+.page-block .ico-lock-pink.ico-large-svg {
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    background: transparent url("../../images/layout/icons/svg/ico-lock-pink.svg") 0 0 no-repeat;
+}
+.ico-ruler-pink.ico-small-svg,
+.page-block .ico-ruler-pink.ico-small-svg {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background-image: url("../../images/layout/icons/svg/ico-ruler-pink.svg");
+}
+.ico-ruler-pink.ico-medium-svg,
+.page-block .ico-ruler-pink.ico-medium-svg {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    background: transparent url("../../images/layout/icons/svg/ico-ruler-pink.svg") 0 0 no-repeat;
+}
+.ico-ruler-pink.ico-large-svg,
+.page-block .ico-ruler-pink.ico-large-svg {
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    background: transparent url("../../images/layout/icons/svg/ico-ruler-pink.svg") 0 0 no-repeat;
+}
+.ico-1gb-1eur.ico-small-svg,
+.page-block .ico-1gb-1eur.ico-small-svg {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background-image: url("../../images/layout/icons/svg/ico-1gb-1eur.svg");
+}
+.ico-1gb-1eur.ico-medium-svg,
+.page-block .ico-1gb-1eur.ico-medium-svg {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    background: transparent url("../../images/layout/icons/svg/ico-1gb-1eur.svg") 0 0 no-repeat;
+}
+.ico-1gb-1eur.ico-large-svg,
+.page-block .ico-1gb-1eur.ico-large-svg {
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    background: transparent url("../../images/layout/icons/svg/ico-1gb-1eur.svg") 0 0 no-repeat;
+}
+.ico-mms-brown.ico-small-svg,
+.page-block .ico-mms-brown.ico-small-svg {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background-image: url("../../images/layout/icons/svg/ico-mms-brown.svg");
+}
+.ico-mms-brown.ico-medium-svg,
+.page-block .ico-mms-brown.ico-medium-svg {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    background: transparent url("../../images/layout/icons/svg/ico-mms-brown.svg") 0 0 no-repeat;
+}
+.ico-mms-brown.ico-large-svg,
+.page-block .ico-mms-brown.ico-large-svg {
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    background: transparent url("../../images/layout/icons/svg/ico-mms-brown.svg") 0 0 no-repeat;
 }

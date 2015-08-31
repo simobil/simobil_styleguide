@@ -160,7 +160,7 @@ var Simobil = {
 
 		var placeHolderSupport = ("placeholder" in document.createElement("input"));
 		if (!placeHolderSupport) {
-			$.getScript('script/lib/placeholder.min.js', function() {
+			$.getScript('simobil_assets/script/lib/placeholder.min.js', function() {
 				 Placeholder.init();
 			});
 		}
@@ -202,7 +202,7 @@ var Simobil = {
 		 * Custom search input for device search
 		 * @see: http://loopj.com/jquery-tokeninput/
 		 */
-		$.getScript('script/lib/jquery.tokeninput.js', function() {
+		$.getScript('simobil_assets/script/lib/jquery.tokeninput.js', function() {
 			$('#device-search-input').tokenInput("demo-naprave.json", {
 
 				method:			"GET",
@@ -682,6 +682,311 @@ var Simobil = {
 			return false;
 		});
 
+		/** Elastik Configurator */
+		if( $('.elastik-configurator').length ) {
+
+			var EC 				= $('.elastik-configurator'),
+				METER 			= $('.meter'),
+				totalSpan 		= EC.find('.total'),
+				totalPrice 		= EC.find('.total-price'),
+				currentConf 	= EC.find('.current-configuration'),
+				lockLine 		= EC.find('.locked-wrapper-line'),
+				numOfUpdates 	= EC.find('.number-of-updates'),
+				mobileConfig 	= EC.find('.mobile-configurator'),
+				mobileGB 		= EC.find('.additional-gb-per-month'),
+				dodatniGBWord 	= EC.find('.beseda-dodatni-gb'),
+				elastikTotal 	= 19.99,
+				priceLocked 	= false
+				lockedPrice 	= undefined,
+				price 			= 0,
+
+				/** Drag offsets */
+				dragLeftOffset 	= -88;
+
+			/** Animate the small triangle */
+			EC.addClass('no-configuration loaded');
+
+			function moveDragHandle( el, offset, transition ) {
+				el.style.webkitTransform = 'translate3d(' + offset + 'px,0,0) scale(.9999)';
+				el.style.MozTransform = 'translate3d(' + offset + 'px,0,0) scale(.9999)';
+				el.style.msTransform = 'translate3d(' + offset + 'px,0,0) scale(.9999)';
+				el.style.OTransform = 'translate3d(' + offset + 'px,0,0) scale(.9999)';
+				el.style.transform = 'translate3d(' + offset + 'px,0,0) scale(.9999)';
+				el.style.webkitTransition = 'all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275)';
+				el.style.MozTransition = 'all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275)';
+				el.style.msTransition = 'all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275)';
+				el.style.oTransition = 'all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275)';
+				el.style.transition = 'all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275)';
+				if( transition === false ) {
+					el.style.webkitTransition = 'none';
+					el.style.MozTransition = 'none';
+					el.style.msTransition = 'none';
+					el.style.oTransition = 'none';
+					el.style.transition = 'none';
+				}
+			}
+
+			/** Drag functionality */
+			var drag = new Hammer( currentConf[0], {
+				drag_horizontal: true,
+				drag_vertical: false
+			});
+
+			function setActiveGB(activeNumber) {
+				EC.find('.number.active').removeClass('active');
+				EC.find('.meter .number').eq( activeNumber - 1 ).addClass('active');
+			}
+
+			/**
+			 * Calculate the drag handle position after the pan event has stop
+			 * @return {none}
+			 */
+			function calculateDragHandlePosition() {
+				var currentDragPosition = currentConf.position().left - ( EC.find('.total-per-month-wrapper').outerWidth() + EC.find('.including').outerWidth() + 3 ),
+					oneGBWidth 			= EC.find('.number').first().width(),
+					activeNumber 		= Math.ceil( currentDragPosition / oneGBWidth ),
+					shouldBePosition	= 0;
+
+				/**
+				 * Center position for specific number
+				 * @type {}
+				 */
+				if( currentDragPosition < 0 ) {
+					shouldBePosition = dragLeftOffset;
+					activeNumber = -1;
+					price = 0;
+				} else {
+					shouldBePosition = ( activeNumber * oneGBWidth ) - ( oneGBWidth / 2 ) - ( currentConf.outerWidth() / 2 );
+					price = shouldBePosition;
+				}
+
+				/**
+				 * Write the position into the element data attribute
+				 */
+				currentConf.attr('data-current-x', shouldBePosition);
+
+				/**
+				 * Set active number
+				 */
+				setActiveGB( activeNumber );
+
+				/**
+				 * Set price value
+				 * @type {int}
+				 */
+				price = activeNumber;
+
+				/**
+				 * Move the drag handle
+				 */
+				moveDragHandle( currentConf[0], shouldBePosition, true );
+
+				/**
+				 * Update the total price
+				 */
+				updateTotalPrice();
+			}
+
+			/** Functionality */
+			drag.on('panleft panright swipeleft swiperight panend', function( event ){
+				var type 			= event.type,
+					offset 			= event.deltaX;
+
+				if( currentConf.attr('data-current-x') === undefined ) {
+
+					/** Only on first drag */
+					if( ( event.deltaX + dragLeftOffset > -( ( EC.find('.including').outerWidth() + ( currentConf.outerWidth() / 2 ) ) ) ) && ( event.deltaX + dragLeftOffset < ( EC.outerWidth() - ( EC.find('.total-per-month-wrapper').outerWidth() + EC.find('.including').outerWidth() + EC.find('.meter .title').outerWidth() ) - ( currentConf.outerWidth() / 2 ) ) ) ) {
+						moveDragHandle( currentConf[0], event.deltaX + dragLeftOffset, false );
+					}
+				} else {
+					if( ( parseInt( currentConf.attr('data-current-x') ) + event.deltaX > -( ( EC.find('.including').outerWidth() + ( currentConf.outerWidth() / 2 ) ) ) ) && ( parseInt( currentConf.attr('data-current-x') ) + event.deltaX < ( EC.outerWidth() - ( EC.find('.total-per-month-wrapper').outerWidth() + EC.find('.including').outerWidth() + EC.find('.meter .title').outerWidth() ) - ( currentConf.outerWidth() / 2 ) ) ) ) {
+						moveDragHandle( currentConf[0], parseInt( currentConf.attr('data-current-x') ) + event.deltaX, false );
+					}
+				}
+
+				if( type === 'panend' ) {
+					calculateDragHandlePosition();
+				}
+			});
+
+			var total = new Odometer({
+				el 			: totalSpan[0],
+				value 		: 0,
+				format 		: '(.ddd),dd',
+				duration 	: 2000
+			});
+
+			total.update( elastikTotal );
+
+			function updateTotalPrice(el, actualNumber) {
+
+				if( actualNumber ) {
+					var that = el;
+
+					/** Remove active classes if clicked on 0 */
+					if( that.hasClass('reset') || price === 0 ) {
+						EC.addClass('in-reset-state');
+						moveDragHandle( currentConf[0], dragLeftOffset );
+						METER.find('.active').removeClass('active');
+						EC.addClass('no-configuration');
+					} else if( that.hasClass('number') ) {
+						EC.removeClass('in-reset-state');
+						if( priceLocked && ( lockedPrice < price ) ) return false;
+						that.addClass('active').siblings('.number').removeClass('active');
+						EC.removeClass('no-configuration');
+
+						var leftOffset 	= ( that.index() + 1 ) * ( that.width() ) - ( that.width() / 2 ) - ( currentConf[0].offsetWidth / 2 );
+
+						/** Set the attribute */
+						currentConf.attr('data-current-x', leftOffset);
+
+						/** Move the handle */
+						moveDragHandle( currentConf[0], leftOffset );
+					}
+				}
+
+				/** @type {float} if price is locked, add 1 EUR to price */
+				elastikTotal = priceLocked ? 20.99 : 19.99;
+
+				if( priceLocked ) {
+					if( price < lockedPrice ) {
+						elastikTotal += price;
+					} else {
+						elastikTotal += lockedPrice;
+					}
+					numOfUpdates.html( lockedPrice );
+				} else {
+					elastikTotal += price;
+					numOfUpdates.html( price );
+				}
+
+				elastikTotal = Math.round( elastikTotal * 100 ) / 100;
+
+				var dodatnaGBBeseda = lockedPrice === 1 ? 'dodatni' : lockedPrice === 2 ? 'dodatna' : ( lockedPrice > 2 || lockedPrice === 0 ) ? 'dodatnih' : '';
+				dodatniGBWord.html( dodatnaGBBeseda );
+				total.update( elastikTotal );
+				if( priceLocked ) {
+					totalPrice.html( (20.99 + lockedPrice).toString().replace('.', ',') );
+				} else {
+					totalPrice.html( elastikTotal.toString().replace('.', ',') );
+				}
+			}
+
+			/** Calculations */
+			EC.on('click', '[data-cost]', function(){
+				price = $(this).data('cost');
+
+				updateTotalPrice( $(this), true );
+			});
+
+			/** Mobile configurator */
+			var startingGB = 0;
+
+			EC.on('click', '.mobile-configurator .button', function() {
+				var that = $(this),
+					operation = that.data('operation');
+
+				if( operation === 'subtract' && startingGB > 0 ) {
+					startingGB--;
+					price--;
+				} else if( operation === 'add' && startingGB < 10 ) {
+					if( priceLocked ) {
+						if( startingGB < lockedPrice ) {
+							startingGB++;
+							price++;
+						}
+					} else {
+						startingGB++;
+						price++;
+					}
+				}
+
+				EC.find('.meter-mobile .number').removeClass('active');
+
+				for( var i = 0; i < startingGB; i++ ) {
+					EC.find('.meter-mobile .number').eq( i ).addClass('active');
+				}
+
+				mobileGB.css({
+					'min-width' : startingGB * 10 + '%',
+					'max-width' : startingGB * 10 + '%'
+				});
+
+				mobileConfig.find('.number .value').html( startingGB );
+
+				updateTotalPrice( '', false );
+			});
+
+			/** Animate lock in vertical positions */
+			function animatePath(el, input) {
+				el.style.webkitTransform = 'matrix(1,0,0,1,0,' + input + ')';
+				el.style.MozTransform = 'matrix(1,0,0,1,0,' + input + ')';
+				el.style.msTransform = 'matrix(1,0,0,1,0,' + input + ')';
+				el.style.OTransform = 'matrix(1,0,0,1,0,' + input + ')';
+				el.style.transform = 'matrix(1,0,0,1,0,' + input + ')';
+			}
+
+			/** Function to animate the lock lines */
+			function animateLockLines(direction) {
+				if( direction === 'open' ) {
+					var linesWidth;
+					if( EC.find('.number.locked').length ) {
+						linesWidth = EC.find('.locked').position().left + EC.find('.locked').width() + 3;
+					} else {
+						linesWidth = EC.find('.total-per-month-wrapper').outerWidth() + EC.find('.including').outerWidth() + 3;
+					}
+					lockLine.css({
+						'min-width' : linesWidth,
+						'max-width' : linesWidth
+					});
+
+					setTimeout(function(){
+						lockLine.addClass('end');
+					}, 600);
+				} else {
+					lockLine.removeClass('end');
+
+					setTimeout(function(){
+						lockLine.css({
+							'min-width' : 0,
+							'max-width' : 0
+						});
+					}, 200);
+				}
+			}
+
+			/** Animate lock icon */
+			EC.on('click', 'svg', function(e) {
+				var svg = $(e.currentTarget),
+					path = svg.find('path')[0];
+
+				if( priceLocked ) {
+					EC.find('.meter .locked').removeClass('locked');
+					svg.attr('class', 'pull-left');
+					EC.removeClass('locked');
+					EC.find('.meter-mobile .number.last').removeClass('last');
+					animatePath( path, -11 );
+					priceLocked = false;
+					lockedPrice = undefined;
+					animateLockLines('close');
+				} else {
+					EC.find('.meter .active').addClass('locked');
+					svg.attr('class', 'pull-left locked');
+					EC.addClass('locked');
+					if( lockedPrice === undefined ) {
+						lockedPrice = price;
+						EC.find('.meter-mobile .number').eq( lockedPrice - 1 ).addClass('last');
+					}
+					animatePath( path, 0 );
+					priceLocked = true;
+					animateLockLines('open');
+				}
+
+				updateTotalPrice( '', false );
+
+			});
+		}
+
 		/** Moj.simobil preklapljanje med paketi */
 		$('body').on('change', '.paket-selector-table input[type="radio"]', function(){
 			var that = $(this),
@@ -923,7 +1228,7 @@ var Simobil = {
 
 
 		// E-racun
-		$.getScript('script/lib/waypoints.min.js', function() {
+		$.getScript('simobil_assets/script/lib/waypoints.min.js', function() {
 
 			$('.eracun .slides .slide').waypoint(function(direction) {
 				if (direction == 'down') {
@@ -940,7 +1245,7 @@ var Simobil = {
 		});
 
 		/** Landing Res & Smart Repricing */
-		$.getScript('script/lib/waypoints.min.js', function() {
+		$.getScript('simobil_assets/script/lib/waypoints.min.js', function() {
 
 			$('.landing-res-smart .comparison-table').waypoint(function(direction){
 				if (direction == 'down') {
