@@ -13851,7 +13851,34 @@ i[class*=ico-medium].align-with-label {
   background: transparent url("../../images/layout/icons/svg/ico-velika-podjetja.svg") 0 0 no-repeat;
   background-size: 64px 64px !important;
 }
-
+.ico-poraba-sumarno,
+.page-block .ico-poraba-sumarno {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background: transparent url("../../images/layout/icons/16x16/ico-poraba-sumarno.png") 0 0 no-repeat;
+}
+.ico-poraba-sumarno.ico-small,
+.page-block .ico-poraba-sumarno.ico-small {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background-image: url("../../images/layout/icons/16x16/ico-poraba-sumarno.png");
+}
+.ico-poraba-sumarno.ico-medium,
+.page-block .ico-poraba-sumarno.ico-medium {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background: transparent url("../../images/layout/icons/32x32/ico-poraba-sumarno.png") 0 0 no-repeat;
+}
+.ico-poraba-sumarno.ico-large,
+.page-block .ico-poraba-sumarno.ico-large {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  background: transparent url("../../images/layout/icons/64x64/ico-poraba-sumarno.png") 0 0 no-repeat;
+}
 .ico-poraba-sumarno.ico-small-svg,
 .page-block .ico-poraba-sumarno.ico-small-svg {
   width: 16px;
@@ -13876,7 +13903,34 @@ i[class*=ico-medium].align-with-label {
   background: transparent url("../../images/layout/icons/svg/ico-poraba-sumarno.svg") 0 0 no-repeat;
   background-size: 64px 64px !important;
 }
-
+.ico-vezave-sumarno,
+.page-block .ico-vezave-sumarno {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background: transparent url("../../images/layout/icons/16x16/ico-vezave-sumarno.png") 0 0 no-repeat;
+}
+.ico-vezave-sumarno.ico-small,
+.page-block .ico-vezave-sumarno.ico-small {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background-image: url("../../images/layout/icons/16x16/ico-vezave-sumarno.png");
+}
+.ico-vezave-sumarno.ico-medium,
+.page-block .ico-vezave-sumarno.ico-medium {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background: transparent url("../../images/layout/icons/32x32/ico-vezave-sumarno.png") 0 0 no-repeat;
+}
+.ico-vezave-sumarno.ico-large,
+.page-block .ico-vezave-sumarno.ico-large {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  background: transparent url("../../images/layout/icons/64x64/ico-vezave-sumarno.png") 0 0 no-repeat;
+}
 .ico-vezave-sumarno.ico-small-svg,
 .page-block .ico-vezave-sumarno.ico-small-svg {
   width: 16px;
