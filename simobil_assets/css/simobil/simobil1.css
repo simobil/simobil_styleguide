@@ -12322,8 +12322,137 @@ nav.main .usp li:not(:last-child) {
     background-size: 90px !important;
     background-position: center !important;
 }
+.big-panel-background {
+  background: rgba(0, 0, 0, .3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+.big-panel-background.visible {
+  opacity: 1;
+  visibility: visible;  
+}
+.big-panel {
+  position: fixed;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 10000;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 48px 24px 24px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .12);
 
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+.big-panel.white {
+  background: rgba(255, 255, 255, .95);
+}
+.big-panel.from-right {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  right: 0;
+}
+.big-panel.from-left {
+  left: 0;
+}
+.big-panel.opened.from-right {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+.big-panel .telefonske-stevilke tbody {
+  
+}
+.big-panel .search-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.big-panel .search-wrapper i {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  cursor: pointer;
+}
+.big-panel .alphabet {
+  padding: 5px 0 0;
+  color: #6e7683;
+}
+.big-panel .alphabet span:not(:last-child) {
+  display: inline-block;
+  margin-right: 4px;
+  cursor: pointer;
+}
+.big-panel .telefonske-stevilke {
+  max-height: initial;
+}
+.close-big-panel {
+  display: inline-block;
+  cursor: pointer;
+}
 @media(max-width: 767px) {
+    .telefonske-stevilke thead {
+      display: none;
+    }
+    .telefonske-stevilke th,
+    .telefonske-stevilke td {
+      height: auto;
+    }
+    .telefonske-stevilke td {
+      width: 50%;
+    }
+    .telefonske-stevilke input {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 4px !important;
+      height: auto !important;
+    }
+    .telefonske-stevilke td:first-child,
+    .telefonske-stevilke td:last-child {
+      width: 100%;
+    }
+    .telefonske-stevilke td:not(:last-child) {
+      background: none;
+    }
+    .telefonske-stevilke tbody {
+      height: 250px;
+    }
+    .telefonske-stevilke tbody a.btn {
+      width: 100%;
+    }
+    .big-panel {
+      width: 100%;
+      padding: 24px;
+    }
+    .close-big-panel {
+      position: relative;
+      top: 11px;
+    }
+    .big-panel .alphabet span {
+      margin: 0 9px 9px 0;
+      padding: 3px 8px;
+      border-radius: 3px;
+      border: 1px solid #E5E5E5;
+    }
+    .big-panel .alphabet span.active {
+      border-color: #9299A9;
+    }
     .elastik-configurator .total-per-month-wrapper {
         width: 30%;
     }

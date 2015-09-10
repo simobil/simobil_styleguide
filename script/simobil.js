@@ -189,7 +189,58 @@ var Simobil = {
 				$('.cart')[0].className = $('.cart')[0].className; // IE7 force redraw
 			});
 		});
-		
+
+		/** Open Big Panel */
+		if( $('.big-panel').length ) {
+
+			var bigPanelBackground = $('.big-panel-background'),
+				bigPanel = $('.big-panel'),
+				bigPanelHeader = bigPanel.find('.header'),
+				bigPanelTable = bigPanel.find('tbody'),
+				bigPanelTableHeight = bigPanel.height() - bigPanelHeader.height() - 50,
+				bigPanelAlphabet = bigPanel.find('.alphabet');
+
+			var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+			$(window).on('resize', function(){
+				if( width > 768 ) {
+					bigPanelTable.css('height', bigPanel.height() - bigPanelHeader.height() - 50);
+				} else {
+					bigPanelTable.css('height', bigPanel.height() - bigPanelHeader.height() + 20);
+				}
+			});
+
+			if( width > 768 ) {
+				bigPanelTable.css('height', bigPanelTableHeight);
+			} else {
+				bigPanelTable.css('height', bigPanelTableHeight+70);
+			}
+
+			$('.moj-simobil-new').on('click', '.big-panel-trigger', function(e){
+				e.preventDefault();
+
+				bigPanelBackground.addClass('visible');
+				bigPanel.addClass('opened');
+			});
+
+			/** Iskanje po črkah */
+			bigPanelAlphabet.on('click', 'span', function(){
+				bigPanelAlphabet.find('.active').removeClass('active');
+
+				/** AJAX za iskanje po črkah */
+				$(this).addClass('active');
+			});
+
+			function closeBigPanel() {
+				bigPanelBackground.removeClass('visible');
+				bigPanel.removeClass('opened');
+			}
+
+			bigPanel.on('click', '.close-big-panel', closeBigPanel);
+
+			bigPanelBackground.on('click', closeBigPanel);
+
+		}
 		
 		Simobil.init();
 
