@@ -202,6 +202,7 @@
           <li><a href="#banners">Banners</a></li>
           <li><a href="#usage-graphs">Usage Graphs</a></li>
           <li><a href="#elastik-configurator">Elastik Configurator</a></li>
+          <li><a href="#big-panel">Big Panel</a></li>
         </ul>
       </li>
     </ul>
@@ -6869,6 +6870,118 @@ $('.mediascreen .navigation').tabs('.mediascreen .banners &gt; div', {
 <!-- Elastik Configurator
 ================================================== -->
 
+<!-- Big panel
+================================================== -->
+<section id="big-panel">
+  <div class="page-header">
+    <h3>Big Panel</h3>
+  </div>
+
+  <h3>BIG PANEL  <span class="label">BP1</span></h3>
+  <br>
+  <div class="row">
+    <div class="span12">
+      <p>Big panel is used on Moj Si.mobil for the business section, if user has registered more numbers than usual. Big panel is triggered by a any HTML element with <code>.big-panel-trigger</code> class on it.</p>
+      <p><a href="#" class="btn btn-green big-panel-trigger">Open big panel<i class="arrow"></i></a></p>
+    </div>
+    <div class="span12">
+      <p>Below is the markup for the big panel component. There is some extra markup for IE9.</p>
+      <pre class="prettyprint linenums">
+&lt;div class=&quot;big-panel-background&quot;&gt;&lt;/div&gt;
+
+&lt;div class=&quot;big-panel white from-right numbers&quot;&gt;
+  &lt;div class=&quot;header&quot;&gt;
+    &lt;div class=&quot;row-fluid&quot;&gt;
+      &lt;div class=&quot;span12&quot;&gt;
+        &lt;span class=&quot;close-big-panel pull-right&quot;&gt;
+          &lt;i class=&quot;ico-close-blue ico-small-svg&quot;&gt;&lt;/i&gt;
+        &lt;/span&gt;
+        &lt;h2 class=&quot;pull-left&quot;&gt;Izberite telefonsko številko&lt;/h2&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;horizontal-dots-business-spacer&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;row-fluid&quot;&gt;
+      &lt;div class=&quot;span12&quot;&gt;
+        &lt;div class=&quot;search-wrapper&quot;&gt;
+          &lt;input type=&quot;text&quot; placeholder=&quot;Išči po opisu ali številki&quot; class=&quot;nomargin&quot;&gt;
+          &lt;i class=&quot;ico-search-header&quot;&gt;&lt;/i&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;alphabet&quot;&gt;
+          &lt;span&gt;A&lt;/span&gt;
+          &lt;span&gt;B&lt;/span&gt;
+          &lt;span&gt;C&lt;/span&gt;
+          &lt;span&gt;Č&lt;/span&gt;
+          &lt;span&gt;D&lt;/span&gt;
+          &lt;span&gt;E&lt;/span&gt;
+          &lt;span&gt;F&lt;/span&gt;
+          &lt;span&gt;G&lt;/span&gt;
+          &lt;span&gt;H&lt;/span&gt;
+          &lt;span&gt;I&lt;/span&gt;
+          &lt;span&gt;J&lt;/span&gt;
+          &lt;span&gt;K&lt;/span&gt;
+          &lt;span&gt;L&lt;/span&gt;
+          &lt;span&gt;M&lt;/span&gt;
+          &lt;span&gt;N&lt;/span&gt;
+          &lt;span&gt;O&lt;/span&gt;
+          &lt;span&gt;P&lt;/span&gt;
+          &lt;span&gt;R&lt;/span&gt;
+          &lt;span&gt;S&lt;/span&gt;
+          &lt;span&gt;Š&lt;/span&gt;
+          &lt;span&gt;T&lt;/span&gt;
+          &lt;span&gt;U&lt;/span&gt;
+          &lt;span&gt;V&lt;/span&gt;
+          &lt;span&gt;Z&lt;/span&gt;
+          &lt;span&gt;Ž&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;horizontal-dots-business-spacer&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;row-fluid&quot;&gt;
+    &lt;div class=&quot;span12&quot;&gt;
+&lt;!--[if lte IE 9]&gt;
+&lt;div class=&quot;telefonske-stevilke-ie9&quot;&gt;
+  &lt;![endif]--&gt;
+  &lt;table class=&quot;content-table telefonske-stevilke&quot;&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Opis&lt;/th&gt;
+        &lt;th&gt;Telefonska številka&lt;/th&gt;
+        &lt;th&gt;Status&lt;/th&gt;
+        &lt;th&gt;&nbsp;&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;&lt;div class=&quot;name&quot;&gt;Dodajte opis&lt;/div&gt;&lt;input type=&quot;text&quot;&gt;&lt;/td&gt;
+        &lt;td&gt;+386 40 400 400&lt;/td&gt;
+        &lt;td class=&quot;stock in-stock&quot;&gt;&lt;i&gt;&lt;/i&gt; Aktivna&lt;/td&gt;
+        &lt;td class=&quot;text-right&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-green&quot;&gt;IZBERI&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;&lt;div class=&quot;name&quot;&gt;Dodajte opis&lt;/div&gt;&lt;input type=&quot;text&quot;&gt;&lt;/td&gt;
+        &lt;td&gt;+386 40 400 400&lt;/td&gt;
+        &lt;td class=&quot;stock out-of-stock&quot;&gt;&lt;i&gt;&lt;/i&gt; Neaktivna&lt;/td&gt;
+        &lt;td class=&quot;text-right&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-green&quot;&gt;IZBERI&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      ...
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;!--[if lte IE 9]&gt;
+&lt;/div&gt;
+&lt;![endif]--&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+    </div>
+  </div>
+  <hr>
+
+</section>
+<!-- Big panel
+================================================== -->
+
 <section id="landing" class="page-block landing">
   <div class="page-header">
     <h3>Landing page elements</h3>
@@ -8042,12 +8155,203 @@ $('.mediascreen .navigation').tabs('.mediascreen .banners &gt; div', {
      <!-- Footer
       ================================================== -->
     <div class="container">
-	<footer class="footer">
-        <p class="pull-right"><a href="#">Back to top</a></p>
-    </footer>
+  	<footer class="footer">
+          <p class="pull-right"><a href="#">Back to top</a></p>
+      </footer>
 
-    </div><!-- /container -->
+      </div><!-- /container -->
 
+
+
+    <!-- Big panel content -->
+    <div class="big-panel-background"></div>
+
+        <div class="big-panel white from-right numbers">
+          <div class="header">
+            <div class="row-fluid">
+              <div class="span12">
+                <span class="close-big-panel pull-right">
+                        <i class="ico-close-blue ico-small-svg"></i>
+                    </span>
+                <h2 class="pull-left">Izberite telefonsko številko</h2>
+              </div>
+            </div>
+            <div class="horizontal-dots-business-spacer"></div>
+            <div class="row-fluid">
+              <div class="span12">
+                <div class="search-wrapper">
+                  <input type="text" placeholder="Išči po opisu ali številki" class="nomargin">
+                  <i class="ico-search-header"></i>
+                </div>
+                <div class="alphabet">
+                  <span>A</span>
+                  <span>B</span>
+                  <span>C</span>
+                  <span>Č</span>
+                  <span>D</span>
+                  <span>E</span>
+                  <span>F</span>
+                  <span>G</span>
+                  <span>H</span>
+                  <span>I</span>
+                  <span>J</span>
+                  <span>K</span>
+                  <span>L</span>
+                  <span>M</span>
+                  <span>N</span>
+                  <span>O</span>
+                  <span>P</span>
+                  <span>R</span>
+                  <span>S</span>
+                  <span>Š</span>
+                  <span>T</span>
+                  <span>U</span>
+                  <span>V</span>
+                  <span>Z</span>
+                  <span>Ž</span>
+                </div>
+              </div>
+            </div>
+            <div class="horizontal-dots-business-spacer"></div>
+          </div>
+          <div class="row-fluid">
+            <div class="span12">
+              <!--[if lte IE 9]>
+              <div class="telefonske-stevilke-ie9">
+              <![endif]-->
+              <table class="content-table telefonske-stevilke">
+                <thead>
+                  <tr>
+                    <th>Opis</th>
+                    <th>Telefonska številka</th>
+                    <th>Status</th>
+                    <th>&nbsp;</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><div class="name">Dodajte opis</div><input type="text"></td>
+                    <td>+386 40 400 400</td>
+                    <td class="stock in-stock"><i></i> Aktivna</td>
+                    <td class="text-right"><a href="#" class="btn btn-green">IZBERI</a></td>
+                  </tr>
+                  <tr>
+                    <td><div class="name">Dodajte opis</div><input type="text"></td>
+                    <td>+386 40 400 400</td>
+                    <td class="stock out-of-stock"><i></i> Neaktivna</td>
+                    <td class="text-right"><a href="#" class="btn btn-green">IZBERI</a></td>
+                  </tr>
+                  <tr>
+                    <td><div class="name">Tajništvo</div><input type="text"></td>
+                    <td>+386 40 400 400</td>
+                    <td class="stock in-stock"><i></i> Aktivna</td>
+                    <td class="text-right"><a href="#" class="btn btn-green">IZBERI</a></td>
+                  </tr>
+                  <tr>
+                    <td><div class="name">Računovodstvo</div><input type="text"></td>
+                    <td>+386 40 400 400</td>
+                    <td class="stock in-stock"><i></i> Aktivna</td>
+                    <td class="text-right"><a href="#" class="btn btn-green">IZBERI</a></td>
+                  </tr>
+                  <tr>
+                    <td><div class="name">Komerciala</div><input type="text"></td>
+                    <td>+386 40 400 400</td>
+                    <td class="stock in-stock"><i></i> Aktivna</td>
+                    <td class="text-right"><a href="#" class="btn btn-green">IZBERI</a></td>
+                  </tr>
+                  <tr>
+                    <td><div class="name">Dodajte opis</div><input type="text"></td>
+                    <td>+386 40 400 400</td>
+                    <td class="stock in-stock"><i></i> Aktivna</td>
+                    <td class="text-right"><a href="#" class="btn btn-green">IZBERI</a></td>
+                  </tr>
+                  <tr>
+                    <td><div class="name">Dodajte opis</div><input type="text"></td>
+                    <td>+386 40 400 400</td>
+                    <td class="stock in-stock"><i></i> Aktivna</td>
+                    <td class="text-right"><a href="#" class="btn btn-green">IZBERI</a></td>
+                  </tr>
+                  <tr>
+                    <td><div class="name">Dodajte opis</div><input type="text"></td>
+                    <td>+386 40 400 400</td>
+                    <td class="stock in-stock"><i></i> Aktivna</td>
+                    <td class="text-right"><a href="#" class="btn btn-green">IZBERI</a></td>
+                  </tr>
+                  <tr>
+                    <td><div class="name">Dodajte opis</div><input type="text"></td>
+                    <td>+386 40 400 400</td>
+                    <td class="stock in-stock"><i></i> Aktivna</td>
+                    <td class="text-right"><a href="#" class="btn btn-green">IZBERI</a></td>
+                  </tr>
+                  <tr>
+                    <td><div class="name">Dodajte opis</div><input type="text"></td>
+                    <td>+386 40 400 400</td>
+                    <td class="stock in-stock"><i></i> Aktivna</td>
+                    <td class="text-right"><a href="#" class="btn btn-green">IZBERI</a></td>
+                  </tr>
+                  <tr>
+                    <td><div class="name">Dodajte opis</div><input type="text"></td>
+                    <td>+386 40 400 400</td>
+                    <td class="stock in-stock"><i></i> Aktivna</td>
+                    <td class="text-right"><a href="#" class="btn btn-green">IZBERI</a></td>
+                  </tr>
+                  <tr>
+                    <td><div class="name">Dodajte opis</div><input type="text"></td>
+                    <td>+386 40 400 400</td>
+                    <td class="stock in-stock"><i></i> Aktivna</td>
+                    <td class="text-right"><a href="#" class="btn btn-green">IZBERI</a></td>
+                  </tr>
+                  <tr>
+                    <td><div class="name">Dodajte opis</div><input type="text"></td>
+                    <td>+386 40 400 400</td>
+                    <td class="stock in-stock"><i></i> Aktivna</td>
+                    <td class="text-right"><a href="#" class="btn btn-green">IZBERI</a></td>
+                  </tr>
+                  <tr>
+                    <td><div class="name">Dodajte opis</div><input type="text"></td>
+                    <td>+386 40 400 400</td>
+                    <td class="stock in-stock"><i></i> Aktivna</td>
+                    <td class="text-right"><a href="#" class="btn btn-green">IZBERI</a></td>
+                  </tr>
+                  <tr>
+                    <td><div class="name">Dodajte opis</div><input type="text"></td>
+                    <td>+386 40 400 400</td>
+                    <td class="stock in-stock"><i></i> Aktivna</td>
+                    <td class="text-right"><a href="#" class="btn btn-green">IZBERI</a></td>
+                  </tr>
+                  <tr>
+                    <td><div class="name">Dodajte opis</div><input type="text"></td>
+                    <td>+386 40 400 400</td>
+                    <td class="stock in-stock"><i></i> Aktivna</td>
+                    <td class="text-right"><a href="#" class="btn btn-green">IZBERI</a></td>
+                  </tr>
+                  <tr>
+                    <td><div class="name">Dodajte opis</div><input type="text"></td>
+                    <td>+386 40 400 400</td>
+                    <td class="stock in-stock"><i></i> Aktivna</td>
+                    <td class="text-right"><a href="#" class="btn btn-green">IZBERI</a></td>
+                  </tr>
+                  <tr>
+                    <td><div class="name">Dodajte opis</div><input type="text"></td>
+                    <td>+386 40 400 400</td>
+                    <td class="stock in-stock"><i></i> Aktivna</td>
+                    <td class="text-right"><a href="#" class="btn btn-green">IZBERI</a></td>
+                  </tr>
+                  <tr>
+                    <td><div class="name">Dodajte opis</div><input type="text"></td>
+                    <td>+386 40 400 400</td>
+                    <td class="stock in-stock"><i></i> Aktivna</td>
+                    <td class="text-right"><a href="#" class="btn btn-green">IZBERI</a></td>
+                  </tr>
+                </tbody>
+              </table>
+              <!--[if lte IE 9]>
+              </div>
+              <![endif]-->
+            </div>
+          </div>
+        </div>
+        <!-- Big panel content -->
 
 
     <!-- Le javascript

@@ -12695,16 +12695,65 @@ ul.more-info .e-chat > div {
     margin-bottom: 0;
   }
 }
+.moj-simobil-new .bg {
+  z-index: 0;
+}
+.moj-simobil-new .section .header {
+  min-height: 128px;
+}
+.moj-simobil-new .section .header.with-navigation .nav-tabs > .active {
+  background: #f1eee7 !important;
+  color: red !important;
+}
+.moj-simobil-new .section .header.with-navigation .nav-tabs > .active a {
+  background: none !important;
+}
+.moj-simobil-new .section .header.with-navigation .desc {
+  width: auto;
+}
+.moj-simobil-new .section .tab-subnav {
+  background: #f1eee7;
+  padding: 24px;
+}
+.moj-simobil-new .table span {
+  display: inline;
+}
+.moj-simobil-new h3 a.pull-right,
+.moj-simobil-new h3 a {
+  font-size: 13px;
+  padding-top: 3px;
+}
+.moj-simobil-new p i.ico-medium,
+.moj-simobil-new p i.ico-medium-svg {
+  vertical-align: middle;
+  margin-right: 7px;
+}
+.moj-simobil-new p .disclamer {
+  padding-top: 0;
+}
+.moj-simobil-new a.pull-right {
+  padding-top: 7px;
+}
+.moj-simobil-new .desc a.pull-right {
+  padding-top: 0;
+}
+.moj-simobil-new .desc .pull-right.no-padding {
+  padding: 0;
+}
+.moj-simobil-new .configurator .section {
+  cursor: pointer;
+  cursor: hand;
+}
 .moj-simobil .text-left {
   text-align: left;
 }
-.moj-simobil table tfoot {
+.moj-simobil table:not(.comparison-table):not(.telefonske-stevilke) tfoot {
   font-weight: bold;
 }
-.moj-simobil table tr.wrap th {
+.moj-simobil table:not(.comparison-table):not(.telefonske-stevilke) tr.wrap th {
   white-space: normal;
 }
-.moj-simobil table td span {
+.moj-simobil table:not(.comparison-table):not(.telefonske-stevilke) td span {
   display: none;
 }
 .moj-simobil a.btn.heading-action {
@@ -12825,7 +12874,7 @@ ul.more-info .e-chat > div {
 }
 .moj-simobil .accordion-group.opened table {
   border-top: 0;
-  background: url("../../images/layout/dots-residential-horizontal.svg") repeat-x left top;
+  background: url("../../images/layout/dots-residential-horizontal.png") repeat-x left top;
   margin: 18px 0 36px 0;
 }
 .moj-simobil .accordion-group.opened table td:first-child {

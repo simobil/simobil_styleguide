@@ -234,6 +234,110 @@ var Simobil = {
 			});
 		});
 
+		$('.telefonske-stevilke').on('click', '.name', function(){
+			var nameDiv = $(this),
+				name = nameDiv.html();
+
+			name === 'Dodajte opis' ? nameDiv.next('input').attr( 'placeholder', name ) : nameDiv.next('input').val( name );
+
+			nameDiv.addClass('edit');
+			nameDiv.next('input').focus();
+		});
+
+		/** Telefonske številke v pop-up, big panel */
+		$('.telefonske-stevilke').on('keydown', 'input', function(event){
+			event = event || window.event;
+
+			var input = $(this),
+				value = input.val();
+
+			// Enter
+			if( event.keyCode == '13' ) {
+				if( value != '' ) {
+					input.prev('.name').html( value ).removeClass('edit');
+
+					// Ajax to update name for the selected number
+					
+				} else {
+					input.prev('.name').removeClass('edit');
+				}
+				return false;
+			}
+
+			// Escape
+			if( event.keyCode == '27' ) {
+				input.prev('.name').removeClass('edit');
+				return false;
+			}
+		});
+
+		/** Open Big Panel */
+		if( $('.big-panel').length ) {
+
+			var bigPanelBackground = $('.big-panel-background'),
+				bigPanel = $('.big-panel'),
+				bigPanelHeader = bigPanel.find('.header'),
+				bigPanelTable = $('.telefonske-stevilke-ie9').length ? $('.telefonske-stevilke-ie9') : bigPanel.find('tbody'),
+				bigPanelTableHeight = bigPanel.height() - bigPanelHeader.height() - 50,
+				bigPanelAlphabet = bigPanel.find('.alphabet');
+
+			var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+			$(window).on('resize', function(){
+				if( width > 768 ) {
+					bigPanelTable.css({
+						'height': bigPanel.height() - bigPanelHeader.height() - 50,
+						'max-height': bigPanel.height() - bigPanelHeader.height() - 50,
+						'min-height': bigPanel.height() - bigPanelHeader.height() - 50
+					});
+				} else {
+					bigPanelTable.css({
+						'height': bigPanel.height() - bigPanelHeader.height() + 20,
+						'max-height': bigPanel.height() - bigPanelHeader.height() + 20,
+						'min-height': bigPanel.height() - bigPanelHeader.height() + 20
+					});
+				}
+			});
+
+			if( width > 768 ) {
+				bigPanelTable.css({
+					'height': bigPanelTableHeight,
+					'max-height': bigPanelTableHeight,
+					'min-height': bigPanelTableHeight
+				});
+			} else {
+				bigPanelTable.css({
+					'height': bigPanelTableHeight+70,
+					'max-height': bigPanelTableHeight+70,
+					'min-height': bigPanelTableHeight+70
+				});
+			}
+
+			$('body').on('click', '.big-panel-trigger', function(e){
+				e.preventDefault();
+
+				bigPanelBackground.addClass('visible');
+				bigPanel.addClass('opened');
+			});
+
+			/** Iskanje po črkah */
+			bigPanelAlphabet.on('click', 'span', function(){
+				bigPanelAlphabet.find('.active').removeClass('active');
+
+				/** AJAX za iskanje po črkah */
+				$(this).addClass('active');
+			});
+
+			function closeBigPanel() {
+				bigPanelBackground.removeClass('visible');
+				bigPanel.removeClass('opened');
+			}
+
+			bigPanel.on('click', '.close-big-panel', closeBigPanel);
+
+			bigPanelBackground.on('click', closeBigPanel);
+
+		}
 
 		Simobil.init();
 

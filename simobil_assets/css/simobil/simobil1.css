@@ -12322,6 +12322,109 @@ nav.main .usp li:not(:last-child) {
     background-size: 90px !important;
     background-position: center !important;
 }
+.telefonske-stevilke-lightbox .search-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.telefonske-stevilke-lightbox .search-wrapper i {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  cursor: pointer;
+}
+.telefonske-stevilke {
+  max-height: 400px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.telefonske-stevilke input[type="text"] {
+  margin: 0 !important;
+}
+.telefonske-stevilke tbody,
+.telefonske-stevilke thead,
+.telefonske-stevilke tr {
+  display: block;
+  font-size: 0;
+}
+.telefonske-stevilke tbody tr {
+  height: 45px;
+  line-height: 45px;
+}
+.telefonske-stevilke th,
+.telefonske-stevilke td {
+  display: inline-block;
+  font-size: 13px;
+  width: 23.333333333%;
+  box-sizing: border-box;
+  height: 45px;
+}
+.telefonske-stevilke th:first-child,
+.telefonske-stevilke td:first-child {
+  width: 30%;
+}
+.telefonske-stevilke tbody,
+.telefonske-stevilke thead,
+.telefonske-stevilke tr {
+  display: block;
+  font-size: 0;
+}
+.telefonske-stevilke tbody tr {
+  height: 45px;
+  max-height: 45px;
+  min-height: 45px;
+  line-height: 45px;
+}
+.telefonske-stevilke th,
+.telefonske-stevilke td {
+  display: inline-block;
+  font-size: 13px;
+  width: 23.333333333%;
+  box-sizing: border-box;
+  height: 45px;
+}
+.telefonske-stevilke th:first-child,
+.telefonske-stevilke td:first-child {
+  width: 30%;
+}
+.telefonske-stevilke tbody {
+  height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.telefonske-stevilke-ie9 {
+  height: 300px;
+  overflow: auto;
+}
+.telefonske-stevilke-ie9 tbody {
+  height: auto;
+}
+.telefonske-stevilke tbody td {
+  line-height: 25px;
+}
+.telefonske-stevilke .name {
+  cursor: pointer;
+  display: inline-block;
+  height: 28px;
+}
+.telefonske-stevilke .name:hover {
+  text-decoration: underline;
+}
+.telefonske-stevilke .name + input {
+  display: none;
+}
+.telefonske-stevilke .name.edit {
+  display: none;
+}
+.telefonske-stevilke .name.edit + input {
+  display: block;
+  width: 100%;
+}
+.horizontal-dots-business-spacer {
+  height: 1px;
+  width: 100%;
+  padding: 12px 0;
+  background: url("../../images/layout/dots-business-horizontal.png") repeat-x left center;
+}
 .big-panel-background {
   background: rgba(0, 0, 0, .3);
   position: fixed;
@@ -12367,8 +12470,12 @@ nav.main .usp li:not(:last-child) {
 }
 .big-panel.from-right {
   -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -o-transform: translateX(100%);
   transform: translateX(100%);
   right: 0;
+  right: auto\9;
+  left: 100%\9;
 }
 .big-panel.from-left {
   left: 0;
@@ -12376,6 +12483,7 @@ nav.main .usp li:not(:last-child) {
 .big-panel.opened.from-right {
   -webkit-transform: translateX(0%);
   transform: translateX(0%);
+  left: 50%\9;
 }
 .big-panel .telefonske-stevilke tbody {
   
