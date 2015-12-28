@@ -1,14 +1,21 @@
 $(document).ready(function() {
   var switched = false;
+  var isLargeTable = false;
+  $('table.responsive').each(function(){
+    if( $(this).hasClass('large-table') && $(window).width() > 767 ) {
+      isLargeTable = true;
+      return;
+    }
+  });
   var updateTables = function() {
-    if (($(window).width() < 767) && !switched ){
+    if ( ( $(window).width() < 767 && !switched ) || isLargeTable ){
       switched = true;
       $("table.responsive").each(function(i, element) {
         splitTable($(element));
       });
       return true;
     }
-    else if (switched && ($(window).width() > 767)) {
+    else if ( ( switched && $(window).width() > 767 ) || isLargeTable ) {
       switched = false;
       $("table.responsive").each(function(i, element) {
         unsplitTable($(element));
@@ -17,12 +24,13 @@ $(document).ready(function() {
   };
 
   $(window).load(updateTables);
-  $(window).bind("resize", updateTables);
+  /*$(window).bind("resize", updateTables);*/
 
   var screenWidth = 0,
   pinnedTableWidth = 0;
 
   function checkForButtons( table, currentColumn, numberOfColumns ) {
+
     table.siblings('.move-table-icon').removeClass('disabled');
 
     /** Disable next button */
@@ -39,6 +47,10 @@ $(document).ready(function() {
   function splitTable(original) {
     original.wrap("<div class='table-wrapper' />");
 
+    if(isLargeTable) {
+      original.closest('.table-wrapper').addClass('large-table-wrapper');
+    }
+
     var copy = original.clone();
     copy.find("td:not(:first-child), th:not(:first-child)").css("display", "none");
     copy.removeClass("responsive");
@@ -51,53 +63,42 @@ $(document).ready(function() {
     original.attr('current-translate-x', 0);
     original.attr('is-animated', false);
 
-    var tableHeights = [],
-        tableI = 0;
+    var tableHeights = [];
     /** Calculate maximum height for each tr */
-    original.find('tbody > tr').each(function(){
-      tableHeights[tableI] = 0;
+    original.find('tbody > tr').each(function(index) {
+      tableHeights[index] = 0;
 
       $(this).find('td').each(function(){
-        if( $(this).outerHeight() > tableHeights[tableI] ) {
-          tableHeights[tableI] = $(this).outerHeight();
+        if( $(this).outerHeight() > tableHeights[index] ) {
+          tableHeights[index] = $(this).outerHeight();
         }
       });
-
-      tableI++;
 
     });
 
-    var copyTableI = 0;
     /** If pinned table td is higher, assign the value to */
-    copy.find('tbody > tr').each(function(){
+    copy.find('tbody > tr').each(function(index) {
 
       $(this).find('td').each(function(){
-        if( $(this).outerHeight() > tableHeights[copyTableI] ) {
-          tableHeights[copyTableI] = $(this).outerHeight();
+        if( $(this).outerHeight() > tableHeights[index] ) {
+          tableHeights[index] = $(this).outerHeight();
         }
       });
-
-      copyTableI++;
 
     });
 
     /** Assign the height to both tables */
-    var i = 0;
-    copy.find('tbody > tr').each(function(){
-      $(this).children('td').css('height', tableHeights[i]);
-      i++;
+    copy.find('tbody > tr').each(function(index){
+      $(this).children('td').css('height', tableHeights[index]);
     });
 
-    var j = 0;
-    original.find('tbody > tr').each(function(){
-      $(this).children('td').css('height', tableHeights[j]);
-      j++;
+    original.find('tbody > tr').each(function(index){
+      $(this).children('td').css('height', tableHeights[index]);
     });
 
-    screenWidth = $(window).width();
-    pinnedTableWidth = $('.pinned').width();
-    original.find('th').css('width', screenWidth - pinnedTableWidth);
-    original.find('td').css('width', screenWidth - pinnedTableWidth);
+    pinnedTableWidth = isLargeTable ? '120px' : $(window).width() - $('.pinned').width();
+    original.find('th').css('width', pinnedTableWidth);
+    original.find('td').css('width', pinnedTableWidth);
 
     original.before( $('<i>', { 'class' : 'ico-arrow-right-brown ico-medium move-table-icon move-table-right' }));
     original.before( $('<i>', { 'class' : 'ico-arrow-left-brown ico-medium move-table-icon move-table-left' }));
@@ -115,6 +116,10 @@ $(document).ready(function() {
           leftOffset = 0,
           currentTranslateX = parseInt( table.attr('current-translate-x') ),
           numberOfColumns = parseInt( table.attr('number-of-columns') );
+
+      if( isLargeTable ) {
+        numberOfColumns -= 4; // We show 5 columns by default on desktop, width is 120px of one
+      }
 
       if( table.attr('is-animated') === "false" ) {
         table.attr('is-animated', true);
@@ -166,6 +171,10 @@ $(document).ready(function() {
     nextColumnWidth = currentTable.find('tbody tr:first-child td').outerWidth(),
     currentTranslateX = parseInt( currentTable.attr('current-translate-x') );
 
+    if( isLargeTable ) {
+      numberOfColumns -= 4; // We show 5 columns by default on desktop, width is 120px of one
+    }
+
     if( !currentTable.is(':animated') ) {
 
       if( direction === 'right' ) {
@@ -199,32 +208,37 @@ $(document).ready(function() {
 
   /** Set table X position */
   function setTablePosition( element, leftOffset, transition ) {
-    if( transition ) {
-      element.css({
-        '-webkit-transform' : 'matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,' + leftOffset + ',0,0,1)',
-        '-moz-transform' : 'matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,' + leftOffset + ',0,0,1)',
-        '-ms-transform' : 'matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,' + leftOffset + ',0,0,1)',
-        '-o-transform' : 'matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,' + leftOffset + ',0,0,1)',
-        'transform' : 'matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,' + leftOffset + ',0,0,1)',
-        '-webkit-transition' : 'all .5s ease',
-        '-moz-transition' : 'all .5s ease',
-        '-ms-transition' : 'all .5s ease',
-        '-o-transition' : 'all .5s ease',
-        'transition' : 'all .5s ease'
-      });
+    /** If browser doesnt support transforms3d, animate the left property, otherwise animate it via matrix3d */
+    if(!Modernizr.csstransforms3d) {
+      element.animate({ 'left': leftOffset });
     } else {
-      element.css({
-        '-webkit-transform' : 'matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,' + leftOffset + ',0,0,1)',
-        '-moz-transform' : 'matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,' + leftOffset + ',0,0,1)',
-        '-ms-transform' : 'matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,' + leftOffset + ',0,0,1)',
-        '-o-transform' : 'matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,' + leftOffset + ',0,0,1)',
-        'transform' : 'matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,' + leftOffset + ',0,0,1)',
-        '-webkit-transition' : 'none',
-        '-moz-transition' : 'none',
-        '-ms-transition' : 'none',
-        '-o-transition' : 'none',
-        'transition' : 'none'
-      });
+      if( transition ) {
+        element.css({
+          '-webkit-transform' : 'matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,' + leftOffset + ',0,0,1)',
+          '-moz-transform' : 'matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,' + leftOffset + ',0,0,1)',
+          '-ms-transform' : 'matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,' + leftOffset + ',0,0,1)',
+          '-o-transform' : 'matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,' + leftOffset + ',0,0,1)',
+          'transform' : 'matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,' + leftOffset + ',0,0,1)',
+          '-webkit-transition' : 'all .5s ease',
+          '-moz-transition' : 'all .5s ease',
+          '-ms-transition' : 'all .5s ease',
+          '-o-transition' : 'all .5s ease',
+          'transition' : 'all .5s ease'
+        });
+      } else {
+        element.css({
+          '-webkit-transform' : 'matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,' + leftOffset + ',0,0,1)',
+          '-moz-transform' : 'matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,' + leftOffset + ',0,0,1)',
+          '-ms-transform' : 'matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,' + leftOffset + ',0,0,1)',
+          '-o-transform' : 'matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,' + leftOffset + ',0,0,1)',
+          'transform' : 'matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,' + leftOffset + ',0,0,1)',
+          '-webkit-transition' : 'none',
+          '-moz-transition' : 'none',
+          '-ms-transition' : 'none',
+          '-o-transition' : 'none',
+          'transition' : 'none'
+        });
+      }
     }
   }
 

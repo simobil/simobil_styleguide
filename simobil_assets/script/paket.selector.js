@@ -54,7 +54,6 @@
 				var _p = $('a.box', $this);
 				var _distance = $('.distance', $this);
 				var _scroll = $('.paketi .scroll', $this);
-				
 				_p.removeClass('selected');
 				$(_p.get(idx)).addClass('selected');
 				
