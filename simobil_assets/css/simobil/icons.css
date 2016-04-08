@@ -14105,3 +14105,387 @@ i[class*=ico-medium].align-with-label {
     line-height: 64px;
     background: transparent url("../../images/layout/icons/svg/ico-mms-brown.svg") 0 0 no-repeat;
 }
+
+.ico-plane-pink,
+.page-block .ico-plane-pink {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background: transparent url("../../images/layout/icons/16x16/ico-plane-pink.png") 0 0 no-repeat;
+}
+.ico-plane-pink.ico-small,
+.page-block .ico-plane-pink.ico-small {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background-image: url("../../images/layout/icons/16x16/ico-plane-pink.png");
+}
+.ico-plane-pink.ico-medium,
+.page-block .ico-plane-pink.ico-medium {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    background: transparent url("../../images/layout/icons/32x32/ico-plane-pink.png") 0 0 no-repeat;
+}
+.ico-plane-pink.ico-large,
+.page-block .ico-plane-pink.ico-large {
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    background: transparent url("../../images/layout/icons/64x64/ico-plane-pink.png") 0 0 no-repeat;
+}
+
+.ico-plane-pink.ico-small-svg,
+.page-block .ico-plane-pink.ico-small-svg {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background-image: url("../../images/layout/icons/svg/ico-plane-pink.svg");
+}
+.ico-plane-pink.ico-medium-svg,
+.page-block .ico-plane-pink.ico-medium-svg {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    background: transparent url("../../images/layout/icons/svg/ico-plane-pink.svg") 0 0 no-repeat;
+}
+.ico-plane-pink.ico-large-svg,
+.page-block .ico-plane-pink.ico-large-svg {
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    background: transparent url("../../images/layout/icons/svg/ico-plane-pink.svg") 0 0 no-repeat;
+}
+
+.ico-slovenia-pink,
+.page-block .ico-slovenia-pink {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background: transparent url("../../images/layout/icons/16x16/ico-slovenia-pink.png") 0 0 no-repeat;
+}
+.ico-slovenia-pink.ico-small,
+.page-block .ico-slovenia-pink.ico-small {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background-image: url("../../images/layout/icons/16x16/ico-slovenia-pink.png");
+}
+.ico-slovenia-pink.ico-medium,
+.page-block .ico-slovenia-pink.ico-medium {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    background: transparent url("../../images/layout/icons/32x32/ico-slovenia-pink.png") 0 0 no-repeat;
+}
+.ico-slovenia-pink.ico-large,
+.page-block .ico-slovenia-pink.ico-large {
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    background: transparent url("../../images/layout/icons/64x64/ico-slovenia-pink.png") 0 0 no-repeat;
+}
+
+.ico-slovenia-pink.ico-small-svg,
+.page-block .ico-slovenia-pink.ico-small-svg {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background-image: url("../../images/layout/icons/svg/ico-slovenia-pink.svg");
+}
+.ico-slovenia-pink.ico-medium-svg,
+.page-block .ico-slovenia-pink.ico-medium-svg {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    background: transparent url("../../images/layout/icons/svg/ico-slovenia-pink.svg") 0 0 no-repeat;
+}
+.ico-slovenia-pink.ico-large-svg,
+.page-block .ico-slovenia-pink.ico-large-svg {
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    background: transparent url("../../images/layout/icons/svg/ico-slovenia-pink.svg") 0 0 no-repeat;
+}
+
+
+.ico-infinity-pink,
+.page-block .ico-infinity-pink {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background: transparent url("../../images/layout/icons/16x16/ico-infinity-pink.png") 0 0 no-repeat;
+}
+.ico-infinity-pink.ico-small,
+.page-block .ico-infinity-pink.ico-small {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background-image: url("../../images/layout/icons/16x16/ico-infinity-pink.png");
+}
+.ico-infinity-pink.ico-medium,
+.page-block .ico-infinity-pink.ico-medium {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    background: transparent url("../../images/layout/icons/32x32/ico-infinity-pink.png") 0 0 no-repeat;
+}
+.ico-infinity-pink.ico-large,
+.page-block .ico-infinity-pink.ico-large {
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    background: transparent url("../../images/layout/icons/64x64/ico-infinity-pink.png") 0 0 no-repeat;
+}
+
+.ico-infinity-pink.ico-small-svg,
+.page-block .ico-infinity-pink.ico-small-svg {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background-image: url("../../images/layout/icons/svg/ico-infinity-pink.svg");
+}
+.ico-infinity-pink.ico-medium-svg,
+.page-block .ico-infinity-pink.ico-medium-svg {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    background: transparent url("../../images/layout/icons/svg/ico-infinity-pink.svg") 0 0 no-repeat;
+}
+.ico-infinity-pink.ico-large-svg,
+.page-block .ico-infinity-pink.ico-large-svg {
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    background: transparent url("../../images/layout/icons/svg/ico-infinity-pink.svg") 0 0 no-repeat;
+}
+
+.ico-telephone2-pink,
+.page-block .ico-telephone2-pink {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background: transparent url("../../images/layout/icons/16x16/ico-telephone2-pink.png") 0 0 no-repeat;
+}
+.page-block .ico-telephone2-pink {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background: transparent url("../../images/layout/icons/16x16/ico-telephone2-pink.png") 0 0 no-repeat;
+}
+.ico-telephone2-pink.ico-small,
+.page-block .ico-telephone2-pink.ico-small {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background-image: url("../../images/layout/icons/16x16/ico-telephone2-pink.png");
+}
+.ico-telephone2-pink.ico-medium,
+.page-block .ico-telephone2-pink.ico-medium {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    background: transparent url("../../images/layout/icons/32x32/ico-telephone2-pink.png") 0 0 no-repeat;
+}
+.ico-telephone2-pink.ico-large,
+.page-block .ico-telephone2-pink.ico-large {
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    background: transparent url("../../images/layout/icons/64x64/ico-telephone2-pink.png") 0 0 no-repeat;
+}
+
+.ico-telephone2-pink.ico-small-svg,
+.page-block .ico-telephone2-pink.ico-small-svg {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background-image: url("../../images/layout/icons/svg/ico-telephone2-pink.svg");
+}
+.ico-telephone2-pink.ico-medium-svg,
+ .page-block .ico-telephone2-pink.ico-medium-svg {
+     width: 32px;
+     height: 32px;
+     line-height: 32px;
+     background: transparent url("../../images/layout/icons/svg/ico-telephone2-pink.svg") 0 0 no-repeat;
+ }
+.ico-telephone2-pink.ico-large-svg,
+.page-block .ico-telephone2-pink.ico-large-svg {
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    background: transparent url("../../images/layout/icons/svg/ico-telephone2-pink.svg") 0 0 no-repeat;
+}
+
+.ico-text-price-pink,
+.page-block .ico-text-price-pink {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background: transparent url("../../images/layout/icons/16x16/ico-text-price-pink.png") 0 0 no-repeat;
+}
+.page-block .ico-text-price-pink {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background: transparent url("../../images/layout/icons/16x16/ico-text-price-pink.png") 0 0 no-repeat;
+}
+.ico-text-price-pink.ico-small,
+.page-block .ico-text-price-pink.ico-small {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background-image: url("../../images/layout/icons/16x16/ico-text-price-pink.png");
+}
+.ico-text-price-pink.ico-medium,
+.page-block .ico-text-price-pink.ico-medium {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    background: transparent url("../../images/layout/icons/32x32/ico-text-price-pink.png") 0 0 no-repeat;
+}
+.ico-text-price-pink.ico-large,
+.page-block .ico-text-price-pink.ico-large {
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    background: transparent url("../../images/layout/icons/64x64/ico-text-price-pink.png") 0 0 no-repeat;
+}
+
+.ico-text-price-pink.ico-small-svg,
+.page-block .ico-text-price-pink.ico-small-svg {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background-image: url("../../images/layout/icons/svg/ico-text-price-pink.svg");
+}
+.ico-text-price-pink.ico-medium-svg,
+.page-block .ico-text-price-pink.ico-medium-svg {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    background: transparent url("../../images/layout/icons/svg/ico-text-price-pink.svg") 0 0 no-repeat;
+}
+.ico-text-price-pink.ico-large-svg,
+.page-block .ico-text-price-pink.ico-large-svg {
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    background: transparent url("../../images/layout/icons/svg/ico-text-price-pink.svg") 0 0 no-repeat;
+}
+
+
+.ico-telephone2wtext-pink,
+.page-block .ico-telephone2wtext-pink {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background: transparent url("../../images/layout/icons/16x16/ico-telephone2wtext-pink.png") 0 0 no-repeat;
+}
+.page-block .ico-telephone2wtext-pink {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background: transparent url("../../images/layout/icons/16x16/ico-telephone2wtext-pink.png") 0 0 no-repeat;
+}
+.ico-telephone2wtext-pink.ico-small,
+.page-block .ico-telephone2wtext-pink.ico-small {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background-image: url("../../images/layout/icons/16x16/ico-telephone2wtext-pink.png");
+}
+.ico-telephone2wtext-pink.ico-medium,
+.page-block .ico-telephone2wtext-pink.ico-medium {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    background: transparent url("../../images/layout/icons/32x32/ico-telephone2wtext-pink.png") 0 0 no-repeat;
+}
+.ico-telephone2wtext-pink.ico-large,
+.page-block .ico-telephone2wtext-pink.ico-large {
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    background: transparent url("../../images/layout/icons/64x64/ico-telephone2wtext-pink.png") 0 0 no-repeat;
+}
+
+.ico-telephone2wtext-pink.ico-small-svg,
+.page-block .ico-telephone2wtext-pink.ico-small-svg {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background-image: url("../../images/layout/icons/svg/ico-telephone2wtext-pink.svg");
+}
+.ico-telephone2wtext-pink.ico-medium-svg,
+.page-block .ico-telephone2wtext-pink.ico-medium-svg {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    background: transparent url("../../images/layout/icons/svg/ico-telephone2wtext-pink.svg") 0 0 no-repeat;
+}
+.ico-telephone2wtext-pink.ico-large-svg,
+.page-block .ico-telephone2wtext-pink.ico-large-svg {
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    background: transparent url("../../images/layout/icons/svg/ico-telephone2wtext-pink.svg") 0 0 no-repeat;
+}
+
+
+.ico-4gLTE2-pink,
+.page-block .ico-4gLTE2-pink {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background: transparent url("../../images/layout/icons/16x16/ico-4gLTE2-pink.png") 0 0 no-repeat;
+}
+.page-block .ico-4gLTE2-pink {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background: transparent url("../../images/layout/icons/16x16/ico-4gLTE2-pink.png") 0 0 no-repeat;
+}
+.ico-4gLTE2-pink.ico-small,
+.page-block .ico-4gLTE2-pink.ico-small {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background-image: url("../../images/layout/icons/16x16/ico-4gLTE2-pink.png");
+}
+.ico-4gLTE2-pink.ico-medium,
+.page-block .ico-4gLTE2-pink.ico-medium {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    background: transparent url("../../images/layout/icons/32x32/ico-4gLTE2-pink.png") 0 0 no-repeat;
+}
+.ico-4gLTE2-pink.ico-large,
+.page-block .ico-4gLTE2-pink.ico-large {
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    background: transparent url("../../images/layout/icons/64x64/ico-4gLTE2-pink.png") 0 0 no-repeat;
+}
+
+.ico-4gLTE2-pink.ico-small-svg,
+.page-block .ico-4gLTE2-pink.ico-small-svg {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background-image: url("../../images/layout/icons/svg/ico-4gLTE2-pink.svg");
+}
+.ico-4gLTE2-pink.ico-medium-svg,
+.page-block .ico-4gLTE2-pink.ico-medium-svg {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    background: transparent url("../../images/layout/icons/svg/ico-4gLTE2-pink.svg") 0 0 no-repeat;
+}
+.ico-4gLTE2-pink.ico-large-svg,
+.page-block .ico-4gLTE2-pink.ico-large-svg {
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    background: transparent url("../../images/layout/icons/svg/ico-4gLTE2-pink.svg") 0 0 no-repeat;
+}
