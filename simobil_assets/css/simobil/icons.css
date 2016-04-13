@@ -14156,6 +14156,14 @@ i[class*=ico-medium].align-with-label {
     line-height: 64px;
     background: transparent url("../../images/layout/icons/svg/ico-plane-pink.svg") 0 0 no-repeat;
 }
+.ico-plane-pink.ico-full-svg,
+.page-block .ico-plane-pink.ico-full-svg {
+    width: 73px;
+    height: 73px;
+    line-height: 73px;
+    background: transparent url("../../images/layout/icons/svg/ico-plane-pink.svg") 0 0 no-repeat;
+}
+
 
 .ico-slovenia-pink,
 .page-block .ico-slovenia-pink {
@@ -14203,6 +14211,13 @@ i[class*=ico-medium].align-with-label {
 .ico-slovenia-pink.ico-large-svg,
 .page-block .ico-slovenia-pink.ico-large-svg {
     width: 64px;
+    height: 64px;
+    line-height: 64px;
+    background: transparent url("../../images/layout/icons/svg/ico-slovenia-pink.svg") 0 0 no-repeat;
+}
+.ico-slovenia-pink.ico-full-svg,
+.page-block .ico-slovenia-pink.ico-full-svg {
+    width: 93px;
     height: 64px;
     line-height: 64px;
     background: transparent url("../../images/layout/icons/svg/ico-slovenia-pink.svg") 0 0 no-repeat;
@@ -14259,6 +14274,15 @@ i[class*=ico-medium].align-with-label {
     line-height: 64px;
     background: transparent url("../../images/layout/icons/svg/ico-infinity-pink.svg") 0 0 no-repeat;
 }
+.ico-infinity-pink.ico-full-svg,
+.page-block .ico-infinity-pink.ico-full-svg {
+    width: 85px;
+    height: 40px;
+    line-height: 40px;
+    background: transparent url("../../images/layout/icons/svg/ico-infinity-pink.svg") 0 0 no-repeat;
+}
+
+
 
 .ico-telephone2-pink,
 .page-block .ico-telephone2-pink {
@@ -14316,6 +14340,15 @@ i[class*=ico-medium].align-with-label {
     line-height: 64px;
     background: transparent url("../../images/layout/icons/svg/ico-telephone2-pink.svg") 0 0 no-repeat;
 }
+.ico-telephone2-pink.ico-full-svg,
+.page-block .ico-telephone2-pink.ico-full-svg {
+    width: 40px;
+    height: 67px;
+    line-height: 67px;
+    background: transparent url("../../images/layout/icons/svg/ico-telephone2-pink.svg") 0 0 no-repeat;
+}
+
+
 
 .ico-text-price-pink,
 .page-block .ico-text-price-pink {
@@ -14371,6 +14404,13 @@ i[class*=ico-medium].align-with-label {
     width: 64px;
     height: 64px;
     line-height: 64px;
+    background: transparent url("../../images/layout/icons/svg/ico-text-price-pink.svg") 0 0 no-repeat;
+}
+.ico-text-price-pink.ico-full-svg,
+.page-block .ico-text-price-pink.ico-full-svg{
+    width: 172px;
+    height: 51px;
+    line-height: 51px;
     background: transparent url("../../images/layout/icons/svg/ico-text-price-pink.svg") 0 0 no-repeat;
 }
 
@@ -14431,7 +14471,13 @@ i[class*=ico-medium].align-with-label {
     line-height: 64px;
     background: transparent url("../../images/layout/icons/svg/ico-telephone2wtext-pink.svg") 0 0 no-repeat;
 }
-
+.ico-telephone2wtext-pink.ico-full-svg,
+.page-block .ico-telephone2wtext-pink.ico-full-svg{
+    width: 203px;
+    height: 68px;
+    line-height: 68px;
+    background: transparent url("../../images/layout/icons/svg/ico-telephone2wtext-pink.svg") 0 0 no-repeat;
+}
 
 .ico-4gLTE2-pink,
 .page-block .ico-4gLTE2-pink {
@@ -14487,5 +14533,12 @@ i[class*=ico-medium].align-with-label {
     width: 64px;
     height: 64px;
     line-height: 64px;
+    background: transparent url("../../images/layout/icons/svg/ico-4gLTE2-pink.svg") 0 0 no-repeat;
+}
+.ico-4gLTE2-pink.ico-full-svg,
+.page-block .ico-4gLTE2-pink.ico-full-svg{
+    width: 124px;
+    height: 47px;
+    line-height: 47px;
     background: transparent url("../../images/layout/icons/svg/ico-4gLTE2-pink.svg") 0 0 no-repeat;
 }
