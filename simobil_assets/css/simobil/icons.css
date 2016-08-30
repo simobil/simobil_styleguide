@@ -14542,3 +14542,24 @@ i[class*=ico-medium].align-with-label {
     line-height: 47px;
     background: transparent url("../../images/layout/icons/svg/ico-4gLTE2-pink.svg") 0 0 no-repeat;
 }
+.ico-phone-calendar.ico-small-svg,
+.page-block .ico-phone-calendar.ico-small-svg {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background-image: url("../../images/layout/icons/svg/ico-phone-calendar.svg");
+}
+.ico-phone-calendar.ico-medium-svg,
+.page-block .ico-phone-calendar.ico-medium-svg {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    background: transparent url("../../images/layout/icons/svg/ico-phone-calendar.svg") 0 0 no-repeat;
+}
+.ico-phone-calendar.ico-large-svg,
+.page-block .ico-phone-calendar.ico-large-svg {
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    background: transparent url("../../images/layout/icons/svg/ico-phone-calendar.svg") 0 0 no-repeat;
+}
