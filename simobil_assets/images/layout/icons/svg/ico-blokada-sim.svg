@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39 (31667) - http://www.bohemiancoding.com/sketch -->
+    <title>Blokada SIM</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M11.8438376,14.1191759 C11.0158798,14.5545701 10.0730081,14.8009514 9.07259106,14.8009514 C5.77957936,14.8009514 3.11006593,12.131438 3.11006593,8.8384263 C3.11006593,7.24103335 3.73822421,5.79035463 4.76099914,4.71993177 L11.8438376,14.1191759 Z M13.384183,12.9569208 C14.4069579,11.886498 15.0351162,10.4358193 15.0351162,8.8384263 C15.0351162,5.5454146 12.3656028,2.87590117 9.07259106,2.87590117 C8.072174,2.87590117 7.12930237,3.12228247 6.30134452,3.55767673 L13.384183,12.9569208 Z M9.07259106,16.4797249 C13.2927637,16.4797249 16.7138896,13.058599 16.7138896,8.8384263 C16.7138896,4.61825364 13.2927637,1.19712774 9.07259106,1.19712774 C4.85241839,1.19712774 1.43129249,4.61825364 1.43129249,8.8384263 C1.43129249,13.058599 4.85241839,16.4797249 9.07259106,16.4797249 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="17.2825971" height="17.2825971">
+            <rect x="0.431292493" y="0.197127736" width="17.2825971" height="17.2825971" fill="white"></rect>
+            <use xlink:href="#path-1" fill="black"></use>
+        </mask>
+    </defs>
+    <g id="DLABS-101-Pripraviti-nove-ikone-za-sklop-Blokada-kartice-SIM-in-Zamrznitev-naročniškega-razmerja" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Blokada-SIM">
+            <image id="ico-dodatna-sim-kartica" x="5.12301685" y="4.76760983" width="23.7446973" height="26.8418317" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAaCAYAAABctMd+AAAABGdBTUEAA1teXP8meAAAAmpJREFUSA2tlD2IE1EQx7MfyflRKGilYmVjKrtNpSI2aicECwu1ENIErgkBQyQkhUTEHMEjHFgJCoKoIDY2ItikEkvhCkGwUAkeKNHNx/qbZGd97O1xSe4G3s68//zn/+bNbmKlsFqtdgyXkXgB61H/M6nOqlarr23bvpiUnAUbDofr6XTa44BenI/u4sIi5rruidFo9DSfzzubxIMgSIXr03g8Pku8phjkFeJzdPc5xAI4N4kvs/ohlrIs63w2m723pTiJl41G4x03uatFiK7U6/W3YM9C7Cuch2Av4H9QnngOXWbE180DbIMQhImhYswyjo20GLGx8tTTzBoHeMqJxOFOsH6/r2NKSSwmOREwTTEVFs8NM8z/eaVSOSrcSNws1II4pg0orjzTkzvC/oxwXEmIqY/Hso+LCiZm1kyR6ZMXPAkicXZpQSjYq0WIRpjkuPKSeDE4GeVNkf9PbcYql8s6zG+k66xLrAtChfSKLt7ga47jHBKM/QP2P1i3wWzBDHvEgauDwWC91Wr1rFKppOIGZ7GQF3qq2Wx+1GpzLIot7H3fn35yocKuise72lVx5j35APQQJ5fL1XSzU8/MT6Lne5630e12N1ze+k41zfrTbGRdZT0xx/Kdz+wOV/ttsreLqdlPg7fwh5VLPAlN8cftdrulhHl8sVg8TlPLWqPTMMX/aHJej3BibSSuV5lXWPkcoKH8iidxJG4mI9aMgY5B6bqPxEkc0OS8nsYOJtWY4jcKhcI+iH+TiFthjGCJmitmftNYSO5hXTNJs8RJ40T8i9TaBG28P4vQdhz+73/Bud/pdN4L9x8dJLyZIBSJ7QAAAABJRU5ErkJggg=="></image>
+            <g id="Combined-Shape">
+                <use fill="#E78601" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <use stroke="#F4F2ED" mask="url(#mask-2)" stroke-width="2" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

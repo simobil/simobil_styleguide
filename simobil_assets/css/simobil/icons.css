@@ -14563,3 +14563,45 @@ i[class*=ico-medium].align-with-label {
     line-height: 64px;
     background: transparent url("../../images/layout/icons/svg/ico-phone-calendar.svg") 0 0 no-repeat;
 }
+.ico-blokada-sim.ico-small-svg,
+.page-block .ico-blokada-sim.ico-small-svg {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background-image: url("../../images/layout/icons/svg/ico-blokada-sim.svg");
+}
+.ico-blokada-sim.ico-medium-svg,
+.page-block .ico-blokada-sim.ico-medium-svg {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    background: transparent url("../../images/layout/icons/svg/ico-blokada-sim.svg") 0 0 no-repeat;
+}
+.ico-blokada-sim.ico-large-svg,
+.page-block .ico-blokada-sim.ico-large-svg {
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    background: transparent url("../../images/layout/icons/svg/ico-blokada-sim.svg") 0 0 no-repeat;
+}
+.ico-zamrznitev.ico-small-svg,
+.page-block .ico-zamrznitev.ico-small-svg {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background-image: url("../../images/layout/icons/svg/ico-zamrznitev.svg");
+}
+.ico-zamrznitev.ico-medium-svg,
+.page-block .ico-zamrznitev.ico-medium-svg {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    background: transparent url("../../images/layout/icons/svg/ico-zamrznitev.svg") 0 0 no-repeat;
+}
+.ico-zamrznitev.ico-large-svg,
+.page-block .ico-zamrznitev.ico-large-svg {
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    background: transparent url("../../images/layout/icons/svg/ico-zamrznitev.svg") 0 0 no-repeat;
+}
